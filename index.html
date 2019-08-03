@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="#" type="image/png">
+	
+</head>
+<body>
+  <header>
+   <a href="/" class="logo">
+    <img src="img/logo.png" alt="logov">
+  </a>
+    <ul class="nav">
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="chlens.html">Члены УАП</a></li>
+      <li><a href="whot.html">Психоанализ это</a></li>
+      <li><a href="help.html">Психоаналитическая <br>помощь</a></li>
+      <li><a href="educ.html">Психоаналитическое <br>образование</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="#" class="ru">RU</a><a href="#" class="ru active">EN</a></li>
+    </ul>
+    <button class="mob"><span></span></button>
+    <ul class="nav_mob">
+     <li><a href="about.html">О нас</a></li>
+     <li><a href="chlens.html">Члены УАП</a></li>
+     <li><a href="whot.html">Психоанализ это</a></li>
+     <li><a href="help.html">Психоаналитическая <br>помощь</a></li>
+     <li><a href="educ.html">Психоаналитическое <br>образование</a></li>
+     <li><a href="news.html">Новости</a></li>
+     <li><a href="#" class="ru">RU</a><a href="#" class="ru active">EN</a></li>
+   </ul>
+</header>
+  <main>
+  	<div class="slider">
+  		<div class="slider_item" style="background: url(img/baner1.jpg);"></div>
+  		<div class="slider_item" style="background: url(img/baner1.jpg);"></div>
+  		<div class="slider_item" style="background: url(img/baner1.jpg);"></div>
+  	</div>
+
+  	<div class="grid">
+  		 <a  href="whot.html" class="grid_item1">ПОЧЕМУ ПСИХОАНАЛИЗ</a>
+  		 <a  href="news.html" class="grid_item2">Специализации и курсы</a>
+  		 <a  href="news.html" class="grid_item3">ПУБЛИКАЦИИ</a>
+  	</div>
+  	<div class="grid1">
+  		 <a  href="help.html" class="grid_item1">ПОЛУЧИТЬ ПОМОЩЬ ПСИХОАНАЛИТИКА</a>
+  		 <a  href="/" class="grid_item2">ОСТАВИТЬ ЗАЯВКУ  НА КОНСУЛЬТАЦИЮ</a>
+  		 <a  href="educ.html" class="grid_item3">Психоаналитическое образование</a>
+  	</div>
+     <div class="calendar">
+     	<div class="calendar_iiem">
+     		<img src="img/kalendar.jpg" alt="">
+     	</div>
+     	<div class="calendar_iiem">
+     		КАЛЕНДАРЬ МЕРОПРИЯТИЙ
+     	</div>
+     </div>
+  </main>    
+  <footer>
+  	 <a href="/" class="logo"><img src="img/logo2_ru.png" alt="logo"></a>
+  	 <ul class="nav">
+  	 	 <li class="footer_item">
+  	 	<p>Звоните </p>
+  	 	<a href="tel:(044)353-90-79">(044)353-90-79 </a>
+  	 </li>
+  	 <li class="footer_item">
+  	 	<p>Пишите</p>
+  	 	<a href="mailto:uap.ecpp@gmail.com">uap.ecpp@gmail.com</a>
+  	 </li>
+  	 <li class="footer_item">
+  	 	<p>Приезжайте</p>
+  	 	<p>Украина, г. Киев,</p>
+  	 	<p>ул. Лаврская , 16</p>
+  	 </li>
+  	 <li class="footer_item">
+  	 	<a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  	 	<a href="https://uk-ua.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+  	 	<a href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+  	 </li>
+  	 </ul>
+  </footer>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+ <!-- https://developers.google.com/speed/libraries/  actual version -->
+ <script type="text/javascript" src="js/libs.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ <link rel="stylesheet" href="css/libs.min.css">
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ <script type="text/javascript">
+   $(document).ready(function(){
+    $(".ru").click(function(e) {
+     e.preventDefault();
+     $(".ru").removeClass('active');
+     $(this).addClass('active');
+   });
+///////////////////////////////////////////////
+      $('.slider').slick({
+        nextArrow: '<button class="next" ></button>',
+        prevArrow: '<button class="prev"></button>',
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 500,
+            settings: {  
+              arrows: false,
+            }          
+          }
+        ]
+      });  
+///////////////////////////////////////////////
+         
+          $('.mob').on('click', function(){
+          $('.nav_mob').slideToggle();
+          $('.mob span').toggleClass('active');
+         }); 
+      }); // end ready
+ </script>
+</body>
+</html>
