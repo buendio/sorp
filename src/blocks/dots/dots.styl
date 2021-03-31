@@ -1,0 +1,7 @@
+.dots { margin: 40px auto 0 auto; display: flex; justify-content: center; cursor: pointer;
+  &__item, li > button { font-size: 0; width: 8px; height: 8px; margin: 0 5px; padding: 0; border: none; cursor: pointer; border-radius: 50%; background-color: #F0ACB5; transition: .3s; }
+  &__item:hover, &__item.active, li:hover > button, li.slick-active > button { background-color: #D64356; }
+  
+  &_blue &__item, &_blue li > button { background-color: rgba(102,97,223, 0.2); }
+  &_blue &__item:hover, &__item.active, &_blue li.slick-active > button, &_blue li:hover > button { background-color: #6661DF; }
+}

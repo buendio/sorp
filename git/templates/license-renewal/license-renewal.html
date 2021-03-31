@@ -1,0 +1,433 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+    	<path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+    	<path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+    <symbol id="block11-new__icon" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">        
+        <path d="M2.65381 20.6538L18.6538 4.65381H28.6538V14.6538L12.6538 30.6538L2.65381 20.6538Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M23.6538 11.6538C24.7584 11.6538 25.6538 10.7584 25.6538 9.65381C25.6538 8.54924 24.7584 7.65381 23.6538 7.65381C22.5492 7.65381 21.6538 8.54924 21.6538 9.65381C21.6538 10.7584 22.5492 11.6538 23.6538 11.6538Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24.6538 8.65381L30.6538 2.65381" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17.6538 11.6538L9.65381 19.6538" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21.6538 15.6538L17.6538 19.6538" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>        
+    </symbol>
+</svg>
+
+<style>
+	.block1 .block1__item:hover .block1__head { background-color: #[[*link_attributes]]; } 
+	@media (min-width: 992px) { .block1 .block1__head { padding: 28px 24px; } }
+</style>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+            <div class="first-screen__box">
+                <div class="first-screen__logo-box first-screen__logo-box_new">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">Продление лицензии в ОАЭ</h1>
+                    <p class="first-screen__text">Продлите Вашу бизнес-лицензию и сэкономьте до 30% затрат, заказав все <br class="hide-sm-min"> необходимые услуги у SORP Group – ведущей консалтинговой группы Дубая,<br class="hide-sm-min"> предоставляющей безупречный и высококачественный сервис.</p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">Лицензия в ОАЭ – это паспорт компании, который выдается госорганом на 1 год и выполняет функцию контроля за ведением бизнеса и скрытых налоговых обязательств в интересах государства. SORP Group предоставит оперативную и качественную поддержку при ежегодном продлении Вашей лицензии для непрерывного ведения бизнеса в рамках локальных компаний или компаний, учрежденных в СЭЗ</div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <div class="r60 hide-sm-min"></div>
+    </div>
+		<div class="r1 r_bg-gray"></div>
+</section>
+
+<section class="bg-F9" id="scrollBlock1">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Комплексные услуги SORP Group в рамках продления лицензий</h2>
+        <div class="r30"></div>
+        <div class="description">Получите качественный сервис от экспертов SORP Group в виде комплекса услуг по обязательному ежегодному<br class="hide-sm-min"> продлению лицензий на ведение бизнеса</div>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block1 block1_modal">
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/legal-support/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">PRO услуги</div>
+                        <div class="block1__head-text">
+														Представление Ваших интересов <br class="hide-sm-min">в госорганах, осуществляющих в ОАЭ процедуры лицензирования <br class="hide-sm-min">и контроля                            
+                        </div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <ul class="list2">
+													<li class="list2__item">Формирование и сбор всех необходимых документов <br class="hide-sm-min">для проведения процедуры продления бизнес-лицензии</li>
+													<li class="list2__item">Получение разрешений от регулирующих органов на<br class="hide-sm-min"> ведение деятельности при <br class="hide-sm-min">наличии сложной лицензии</li>
+													<li class="list2__item">Работа с миграционными <br class="hide-sm-min">службами и минтрудом по <br class="hide-sm-min">продлению срока действия <br class="hide-sm-min">виз и иммиграционных карт</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Выбрать решение
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/business-nominee-services/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Номинальный сервис</div>
+                        <div class="block1__head-text">Привлечение в Вашу компанию локального партнера или агента после проведения юридической экспертизы уставных документов</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <ul class="list2">            
+													<li class="list2__item">Проверка правильности и безопасности оформления отношений с локальным <br class="hide-sm-min">партнером или агентом</li>
+													<li class="list2__item">При наличии юридических, экономических оснований номинальный сервис может предоставляться SORP</li>
+													<li class="list2__item">Оформление отношений номинального сервиса по стандарту, прошедшему международную экпертизу</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Выбрать решение
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/business-center/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Юридический адрес</div>
+                        <div class="block1__head-text">Предоставление офисов в аренду с оформлением Ejari или рабочих мест с заключением Sustainability Contract (Estidama)</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                    <ul class="list2">                  
+											<li class="list2__item">Оптимальное предложение <br class="hide-sm-min">аренды офисных площадей с <br class="hide-sm-min"> Ejari с возможностью оплаты <br class="hide-sm-min">по графику платежей</li>
+											<li class="list2__item">Снижение затрат на аренду <br class="hide-sm-min">при продлении лицензии для локальной компании за счет Sustainability Contract</li>
+											<li class="list2__item">Экономия на расходах при продлении лицензии за счет размещения сотрудников на минимальных площадях</li>
+                    </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Выбрать решение
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/business-management/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Технические владелец</div>
+                        <div class="block1__head-text">Сервис для сокрытия информации о бенефициарах, подтверждения ОАЭ-резидентности управленцев, решения административных задач</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                    <ul class="list2">
+											<li class="list2__item">Разработка защищенной и безопасной корпоративной структуры в целях ведения <br class="hide-sm-min"> бизнеса в ОАЭ</li>
+											<li class="list2__item">Предоставление технических директоров-резидентов ОАЭ <br class="hide-sm-min">как выполнение требования <br class="hide-sm-min">по Economic Substance</li>
+											<li class="list2__item">Администрирование Вашего бизнеса в ОАЭ в интересах владельцев в случае заказа <br class="hide-sm-min">пакета услуг по управлению</li>
+                    </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Выбрать решение
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/business-support/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Аутсорсинговые услуги</div>
+                        <div class="block1__head-text">Комплексная поддержка Вашего бизнеса, позволяющая избежать использования дорогостоящих специалистов в штате компании</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                    <ul class="list2">
+											<li class="list2__item">Налоговое консультирование<br class="hide-sm-min"> по ведению бизнеса в ОАЭ, организация бухучета, сдача налоговой отчётности</li>
+											<li class="list2__item">Миграционная поддержка и правовая помощь, экспертиза договоров, консультирование <br class="hide-sm-min">по вопросам трудового права</li>
+											<li class="list2__item">Подготовка документов для <br class="hide-sm-min">аудита, который требуется в отдельных случая<br class="hide-sm-min"> со стороны  регулирующих органов СЭЗ</li>
+                    </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Выбрать решение
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/tax-adviser/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Международный сервис</div>
+                        <div class="block1__head-text">Услуги в целях подтверждения легитимности, а также сервисы оптимизации международного бизнеса на территории ОАЭ</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                    <ul class="list2">          
+											<li class="list2__item">Пакеты услуг «виртуальный<br class="hide-sm-min"> офис», «коммуникация с<br class="hide-sm-min"> контрагентами из ОАЭ» и «корпоративные секретари» </li>
+											<li class="list2__item">Подтверждение реального<br class="hide-sm-min"> наличия центра управления<br class="hide-sm-min"> и контроля, экономического присутствия бизнеса в ОАЭ </li>
+											<li class="list2__item">Выполнение требований по созданию центра жизненных интересов для акционеров и директоров компаний в ОАЭ</li>
+                    </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Выбрать решение
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>        
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Получите индивидуальное предложение по продлению Вашей <br class="hide-sm-min">лицензии и оптимизации затрат на ведение деятельности в ОАЭ</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Связаться со специалистом</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section class="bg-F9" id="scrollBlock2">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Обртившись к экспертам SORP Group,<br class="hide-sm-min"> Вы получите следующие решения:</h2>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block18 block18_big">
+            <div class="block18__item">
+                <div class="block18__icon-wrap">
+                    <img src="/git/img/contour-only/black-and-red/doc.svg" alt="" class="block18__icon" loading="lazy">
+                </div>
+                <div class="box-thin-shape"></div>
+                <div class="box-shape bg-F9"></div>
+                <div class="block18__text">
+                    <div class="block18__title">Своевременное продление бизнес-лицензии<br class="hide-sm-min"> Вашей компании</div>
+                    <div class="block18__description">Даже при Вашем отсутствии в Эмиратах все необходимые действия, регламентированные правилами продления лицензии, будут в срок выполнены специалистами SORP Group</div>
+                </div>
+            </div>
+            <div class="block18__item">
+                <div class="block18__icon-wrap">
+                    <img src="/git/img/contour-only/black-and-red/minus30percent.svg" alt="" class="block18__icon" style="width: 110px !important;" loading="lazy">
+                </div>
+                <div class="block18__text">
+                    <div class="block18__title">Экономия затрат компании за счет заказа<br class="hide-sm-min"> комплекса услуг достигает 30%</div>
+                    <div class="block18__description">Сокращение расходов бизнеса обеспечивается <br class="hide-sm-min">за счет комплекса услуг, предлагаемого SORP, собственного бизнес-центра и правильности ценообразования</div>
+                </div>
+            </div>
+            
+            <div class="block18__item">
+                <div class="block18__icon-wrap">
+                    <img src="/git/img/contour-only/black-and-red/navigation.svg" alt="" class="block18__icon" loading="lazy">
+                </div>
+                <div class="block18__text">
+                    <div class="block18__title">Исполнение требований по подтверждению<br class="hide-sm-min"> экономического присутствия в ОАЭ</div>
+                    <div class="block18__description">Реализация положений законодательства по субъектам, ведущим международный бизнес, в отношении подтверждения экономического присутствия и сдачи отчетности регулятору</div>
+                </div>
+            </div>
+            <div class="block18__item">
+                <div class="block18__icon-wrap">
+                    <img src="/git/img/contour-only/black-and-red/shield.svg" alt="" class="block18__icon" loading="lazy">
+                </div>
+            <div class="box-thin-shape box-thin-shape_XY-Lside"></div>
+            <div class="box-shape bg-F9 box-shape_XY-Lside"></div>
+                <div class="block18__text"> 
+                    <div class="block18__title block18__title_big">Безопасность компании в рамках обмена<br class="hide-sm-min"> налоговой информацией</div>
+                    <div class="block18__description">Организация корпоративной структуры и её защищенности от автоматического обмена, включая конфиденциальность акционеров, директоров компаний, подписантов по счету</div>
+                </div>
+            </div>
+        </div>
+        <div class="r50_adaptive"></div>
+        <a href="#" class="btn btn_gray-bg btn_center btn_border2 btn_white btn_space-between z-idx3" onclick="toggleModal('form01');">
+            Получить консультацию
+            <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+              <use href="#btn__icon-modal"></use>
+            </svg>
+        </a>
+        <div class="r60_adaptive"></div>
+			</div>
+			<div class="r1 r_bg-gray"></div>
+</section>
+
+<section class="bg-F9" id="scrollBlock3">
+    <div class="container_bem">
+        <div class="r40"></div>
+        <h2 class="title">Антикризисные решения для резидентов бизнес-центра SORP</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block11-new block11-new_white block11-new_dark-hover z-idx3">
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">                    
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">Бесплатно</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#block11-new__icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                            Локальный партнер<br>или агент
+                        </div>
+                        <div class="block11-new__desc">
+                            Предоставляется сроком на 1 год при открытии компании и аренде офиса в нашем бизнес-центре
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">       
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">Бесплатно</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#block11-new__icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                            Один офис на две лицензии
+                        </div>
+                        <div class="block11-new__desc">
+                            При регистрации 2-х локальных компаний в SORP, второй офис предоставляется бесплатно
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">       
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">Бесплатно</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#block11-new__icon"></use>
+                            </svg>                       
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                            Долгосрочная <br class="hide-sm-min"> аренда
+                        </div>
+                        <div class="block11-new__desc">
+                            Оплатите годовую аренду одним чеком и три месяца пользуйтесь офисом бесплатно
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+        <div class="r60_adaptive"></div>
+		</div>
+		<div class="r1 r_bg-gray"></div>
+</section>
+
+<section class="bg-F9" id="scrollBlock4">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP  — полный цикл услуг по учреждению, сопровождению и управлению бизнесом в ОАЭ</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">Экспертиза</div>
+                    <div class="tslider-item__text wow fadeInUp">Мы способны провести экспертизу правильности организации основных бизнес процессов вашей компании в ОАЭ</div>					
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+                        <div class="back"></div>
+                        <div class="tslider-item__number">15 лет опыта</div>
+                        <div class="tslider-item__text fadeInUp">В области регистрации, сопровождения компаний и решения бизнес-задач клиентов для сопровождения деятельности в ОАЭ</div>												
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">Собственный бизнес-центр SORP</div>
+						<div class="tslider-item__text">5000 квадратных метров современных офисных пространств престижной локации Дубая в аренду для размещения бизнеса и прохождения процедур продления разрешений</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Комплексное обслуживание</div>
+						<div class="tslider-item__text">Наличие широкого спектра инструментов для оказания аутсорсинговых услуг по сопровождению и поддержанию вашего бизнеса в ОАЭ</div>
+					</div>
+
+                    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">Международные стандарты</div>
+						<div class="tslider-item__text">Конфиденциальные юридические решения для оптимизации налогообложения, сокрытия бенефициаров и защиты от автоматического обмена данными в соответствии со стандартом CRS</div>
+					</div>
+					
+				    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">Легитимность  и анонимность</div>
+						<div class="tslider-item__text">Мы обеспечим безопасность ваших инвестиций, примем меры по надлежащему исполнению действующего законодательства и сохранению конфиденциальности информации</div>
+					</div>
+				    <div class="tns-controls">
+					    <div class="button" onclick="slideup()"></div>
+					    <div class="button" onclick="slidedown()"></div>
+				    </div>
+			    </div>
+		</div>
+	</div>
+	<div class="r1 r_bg-gray"></div>
+</section>
+
+<section class="bg-F9" id="scrollBlock5">
+	<div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<div class="registration">
+			<div class="registration__info">
+				<div class="registration__title">Получите бесплатную<br class="hide-sm-min"> консультацию <br class="hide-sm-min">эксперта</div>
+				<div class="r20"></div>          
+					Продлите лицензию на ведение деятельности и передайте на аутсорсинг все непрофильные вопросы по сопровождению бизнеса в ОАЭ.
+					<br><br>
+					Эксперты SORP Group помогут Вам подобрать оптимальный пакет решений и своевременно продлить бизнес-лицензию, а также окажут полную поддержку Вашего бизнеса.
+					<br><br>
+					Обратитесь в SORP и закажите весь комплекс  услуг для Вашего бизнеса уже сейчас!
+				<div class="r20"></div>
+			</div>
+			<div class="registration__form-block">
+					<div class="registration__title">Получить индивидуальное решение</div>
+					<div class="r10"></div>
+					{$_modx->getChunk('form4_new')}
+			</div>
+		</div>
+		<div class="r60_adaptive"></div>
+	</div>
+	<div class="r1 r_bg-gray"></div>
+</section>
+
+{/block}
+{include 'footer_new'}

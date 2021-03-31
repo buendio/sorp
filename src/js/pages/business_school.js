@@ -1,0 +1,9 @@
+import "%baseJS%/global";
+import "../../blocks/Utilities/bg/_right-side/bg_right-side";
+import "../vendor/import/slick";
+import "../../blocks/block43/block43";
+import "../../blocks/block35/block35";
+import "../../blocks/experts/-mentoring/experts-mentoring";
+import "../../blocks/tabs/tabs";
+import "../../blocks/calendar/calendar";
+import "../../blocks/block56/block56";

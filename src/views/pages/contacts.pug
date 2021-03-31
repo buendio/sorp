@@ -1,0 +1,127 @@
+extends ../layouts/default
+
+block variables
+  - const title = "contacts";
+  - page = "contacts";
+
+block content
+  main
+    section
+      .bg.bg_first-screen
+        .container
+          .first-screen
+            .first-screen__box
+              .first-screen__logo-box
+                .first-screen__logo(data-bg="/git/img/blocks/logo-inner.gif")
+              .first-screen__content
+                h1.first-screen__title Контактная информация
+                p.first-screen__text.
+                  SORP Group создала уникальную платформу для бизнеса на базе значимых подразделений Группы, прошедших лицензирование и имеющих аккредитацию и поддержку ряда международных и локальных ведомств.
+                label.first-screen__btn.btn.btn_radius5.btn_hover-red.btn_h55(for="modal1") Оставить заявку
+      .bg.bg_first-screen
+        .first-screen-statistics
+          .container
+            .first-screen-statistics__box
+              .first-screen-statistics__item
+                p.first-screen-statistics__number 15
+                p.first-screen-statistics__text лет на рынке <br class="hide-tn show-md-min"> ОАЭ
+              .first-screen-statistics__item
+                p.first-screen-statistics__number 54
+                p.first-screen-statistics__text эксперта <br class="hide-tn show-md-min"> в штате
+              .first-screen-statistics__item
+                p.first-screen-statistics__number 55
+                p.first-screen-statistics__text решений для <br class="hide-tn show-md-min"> вашего бизнеса
+              .first-screen-statistics__item
+                p.first-screen-statistics__number 503
+                p.first-screen-statistics__text компании в <br class="hide-tn show-md-min"> управлении
+
+    section
+      .r60_adaptive
+      .container
+        h2.title SORP Group — ведущая консалтинговая компания в Арабских Эмиратах
+        .r50_adaptive
+        .flex.flex_width2
+          .flex__item
+            p.text.text_font-s18.
+              Оказываем предпринимателям всего мира уникальные услуги, опираясь на возможности законодательства ОАЭ и 15 лет экспертизы в организации и развитии бизнеса.
+              <br><br>
+              SORP Group — не виртуальное пространство. Мы владеем бизнес-центром в престижном районе Дубая площадью 5000 кв.м., в нашем штате 54 эксперта и мы обладаем большим инвестиционным потенциалом.
+          .flex__item.flex__item_flex.flex__item_justify-content-end.hide-tn.show-sm-min
+            .flex.flex_justify-content-end
+              .bg.bg_map-dubai.lazy(data-bg="./dist/img/pages/article1/bg1.svg")
+      .r60_adaptive
+
+    section
+      .r1.r_bg-e3
+      .bg_f9
+        .container
+          .contacts
+            .contacts__item
+              p.contacts__title Телефон
+              .contacts__info
+                .contacts__content
+                  a.contacts__phone(href="tel:+97145594594") +971 4 559 4594
+                  .contacts__signature Круглосуточно
+                .contacts__icon.lazy(data-bg="./dist/img/pages/contacts/phone-icon.svg")
+            .contacts__item
+              p.contacts__title Локальный телефон для звонков из Дубая
+              .contacts__info
+                .contacts__content
+                  a.contacts__phone(href="tel:+97145594594") 800 767723
+                    span.contacts__phone-span &nbsp;(800-SORPAE)
+                .contacts__icon.lazy(data-bg="./dist/img/pages/contacts/phone-icon.svg")
+            .contacts__item
+              p.contacts__title Адрес
+              .contacts__info
+                .contacts__content
+                  address.contacts__address
+                    p Tameem House Building, Floor 6 / 25 / 28 / 29
+                    p SORP Business Center Barsha Heights (Tecom)
+                    p Dubai, United Arab Emirates <br>
+                .contacts__icon.lazy(data-bg="./dist/img/pages/contacts/location-icon.svg")
+            .contacts__item
+              p.contacts__title Электронная почта
+              .contacts__info
+                .contacts__content
+                  a.contacts__btn.contacts__btn_email(href="mailto:info@sorp.ae") info@sorp.ae
+                .contacts__icon.lazy(data-bg="./dist/img/pages/contacts/email-icon.svg")
+            .contacts__item
+              p.contacts__title Мессенджеры
+              .contacts__info
+                .contacts__content
+                  a.contacts__btn(href="")
+                    .contacts__btn-icon.lazy(data-bg="./dist/img/pages/contacts/whatsapp.svg")
+                    .contacts__btn-text whatsapp
+                  a.contacts__btn(href="")
+                    .contacts__btn-icon.lazy(data-bg="./dist/img/pages/contacts/telegram.svg")
+                    .contacts__btn-text telegram
+                  a.contacts__btn(href="")
+                    .contacts__btn-icon.lazy(data-bg="./dist/img/pages/contacts/messages.svg")
+                    .contacts__btn-text messages
+                  a.contacts__btn(href="")
+                    .contacts__btn-icon.lazy(data-bg="./dist/img/pages/contacts/viber.svg")
+                    .contacts__btn-text viber
+                .contacts__icon.lazy(data-bg="./dist/img/pages/contacts/messengerl-icon.svg")
+            .contacts__item
+              p.contacts__title Социальные сети
+              .contacts__info
+                .contacts__content
+                  a.contacts__btn(href="")
+                    .contacts__btn-icon.lazy(data-bg="./dist/img/pages/contacts/instagram.svg")
+                    .contacts__btn-text instagram
+                  a.contacts__btn(href="")
+                    .contacts__btn-icon.lazy(data-bg="./dist/img/pages/contacts/twitter.svg")
+                    .contacts__btn-text twitter
+                  a.contacts__btn(href="")
+                    .contacts__btn-icon.lazy(data-bg="./dist/img/pages/contacts/facebook.svg")
+                    .contacts__btn-text facebook
+                  a.contacts__btn(href="")
+                    .contacts__btn-icon.lazy(data-bg="./dist/img/pages/contacts/linkedin.svg")
+                    .contacts__btn-text linkedin
+                .contacts__icon.lazy(data-bg="./dist/img/pages/contacts/socials-icon.svg")
+
+    include ../blocks/about-company/RU_about-company
+    include ../blocks/form/form_footer
+
+    #map
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84142.93801242771!2d55.11920432886234!3d25.109796720172486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b5b5b3fffff%3A0xbe5aa9347ed5d5e1!2sSORP%20Business%20Centre!5e0!3m2!1sru!2sru!4v1580725392796!5m2!1sru!2sru', width='100%', height='450', frameborder='0', style='border:0;', allowfullscreen='')

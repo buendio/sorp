@@ -1,0 +1,85 @@
+| {ignore}
+// Google Tag Manager (noscript)
+noscript
+  iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-KBNM6Q4' height='0' width='0' style='display:none;visibility:hidden')
+noscript
+  iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5N8VTS6' height='0' width='0' style='display:none;visibility:hidden')
+// End Google Tag Manager (noscript)
+| {/ignore}
+
+.preloader-wrapper
+  .preloader
+    span
+    span
+    span
+    span
+
+<div class="header{if $_modx->resource.id == '1' || $_modx->resource.id == '80' || $_modx->resource.id == '477'} header_main{/if} header_landing">
+  .header__container
+    .header__logo-box
+      <a href="{$_modx->config.site_url}" title="SORP">
+        svg.header__logo
+          if logo_main
+            <use xlink:href="#logo_main"></use>
+          else
+            <use xlink:href="#logo_white"></use>
+      </a>
+
+      if minilends_gitex
+        style
+          | .header__logo-gitex {
+          |   width: 96px;
+          |   height: 41px;
+          |   margin-left: 18px;
+          |   background-position: center;
+          | }
+        .header__logo-gitex.lazy(data-bg="/dist/img/minilends/blocks/header/gitex.svg")
+
+    if anchors
+      .header__anchors
+        | {$_modx->runSnippet('!getImageList', [
+        | 'tvname' => 'minimenu',
+        | 'tpl' => 'minimenuTpl'
+        | ])}
+
+    .header__right
+      //-a.header__right-item(href="")
+        .header__icon-box
+          svg.header__icon(xmlns='http://www.w3.org/2000/svg')
+            use(xlink:href='#message')
+        .header__text Центр экспертизы
+      //-a.header__right-item(href="")
+        .header__icon-box
+          svg.header__icon(xmlns='http://www.w3.org/2000/svg')
+            use(xlink:href='#phone')
+        .header__text Контакты
+
+      if minilends
+        a.header__mobile-btn.js-modal(href="mailto:info@sorp.ae")
+          svg.header__mobile-phone-icon(xmlns='http://www.w3.org/2000/svg')
+            use(xlink:href='#email_mobile')
+
+      | {if $_modx->config.cultureKey == 'ru'}
+      label.header__btn.btn.btn_h35.btn_font-s14.btn_radius30.btn_hover-red.js-modal(for="modal3" data-reason="Позвоните мне (кнопка в шапке)") Позвоните мне
+      label.header__mobile-btn.js-modal(for="modal3" data-title="Позвоните мне" data-reason="Позвоните мне (кнопка в шапке на мобильной версии)")
+        svg.header__mobile-phone-icon(xmlns='http://www.w3.org/2000/svg')
+          use(xlink:href='#phone_mobile')
+      | {/if}
+
+      | {if $_modx->config.cultureKey == 'en'}
+      label.header__btn.btn.btn_h35.btn_font-s14.btn_radius30.btn_hover-red.js-modal(for="modal3" data-title="Get a callback" data-reason="Позвоните мне (кнопка в шапке)") Get a callback
+      label.header__mobile-btn.js-modal(for="modal3" data-reason="Позвоните мне (кнопка в шапке на мобильной версии)")
+        svg.header__mobile-phone-icon(xmlns='http://www.w3.org/2000/svg')
+          use(xlink:href='#phone_mobile')
+      | {/if}
+
+      if !minilends
+        | {$_modx->runSnippet('!BabelLinks', [ 'showCurrent' => 0, 'tpl' => 'babelLink1', ])}
+
+      if !burgerHide
+        .header__nav.nav
+          .nav__burger
+            .nav__burger-line
+            .nav__burger-line
+            .nav__burger-line
+</div>

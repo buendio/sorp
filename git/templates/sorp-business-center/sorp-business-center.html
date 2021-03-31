@@ -1,0 +1,514 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+            <path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+            <path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+</svg>
+<style>
+    .block7_modal .block7__item:hover { background-color: #[[*link_attributes]]; border-bottom-color: #[[*link_attributes]]; }
+    @media (min-width: 770px) { .block5 { padding-right: 60px; }  #scrollBlock5 .title { font-size: 47px; } }
+    @media (min-width: 1200px) { .block7__item { padding: 35px 29px 35px 29px; } }
+</style>
+
+<section class="tops-wrapper">
+        <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+            <div class="first-screen">
+                <div class="first-screen__box">
+                    <div class="first-screen__logo-box first-screen__logo-box_new">
+                        <img class="first-screen__logo" src="/assets/templates/main/img/mask.png" data-src="/assets/templates/main/img/logo-inner.gif" alt="SORP">
+                    </div>
+                    <div class="first-screen__content first-screen__content_new">
+                        <h1 class="first-screen__title">Подтверждение Economic <br class="hide-sm-min">Substance в ОАЭ</h1>
+                        <p class="first-screen__text">
+                            Выполнение требований Economic Substance Regulation (ESR) - это исключение<br class="hide-sm-min"> рисков потери налоговых льгот, соответствие мировым стандартам, введенным<br class="hide-sm-min"> ОЭСР,  банковским регуляциям и законодательству Арабских Эмиратов.
+                        </p>
+                        <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container_bem">
+            <div class="r60_adaptive"></div>
+            <div class="block-frames">
+                <div class="block-frames__border"></div>
+                <div class="block-frames__wrapper">Ужесточение политики местных банков и усиленный контроль над построением схем международного налогового планирования стали современными реалиями, обязывающими бизнесменов принимать необходимые меры по выполнению требований подтверждения экономического присутствия и центра управления и контроля бизнесом внутри страны. SORP Group поможет избежать финансовые, правовые <br class="hide-sm-min">и налоговые риски и предоставит комплексное решение данной задачи.</div>
+            </div>
+            <div class="r60_adaptive"></div>
+            <div class="r60 hide-sm-min"></div>
+        </div>
+</section>
+
+<section id="scrollBlock1" class="bg-F9 z-idx3">
+    <div class="r1 r_bg-gray"></div>
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Виды международной деятельности, которые требуют подтверждения ESR в ОАЭ</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block41">
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Сервис и <br class="hide-sm-min"> диструбуция</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/delivery-box.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">                
+                    Реализация товаров, управление складами, консультационные или административные услуги, центры сервисного обслуживания.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Финансовые<br class="hide-sm-min"> институты</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/bank-building.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">                
+                    Банки, кредитные организации и страхование, а также управление инвестиционными фондами или <br class="hide-sm-min">ценными бумагами.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Холдинговые <br class="hide-sm-min">структуры</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/human-network.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Построение бизнес - структур в <br class="hide-sm-min">целях эффективного управления <br class="hide-sm-min">и оптимизации международного <br class="hide-sm-min">бизнеса.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Зарубежный <br class="hide-sm-min">менеджмент</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/mortgage.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Ведение любых международных проектов: учреждение, управление, сопровождение, финансирование иностранных бизнесов с территории ОАЭ.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Интеллектуальная <br class="hide-sm-min">собственность</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/brain.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Регистрация и управление объектами интеллектуальной собственности (IP): патентами, торговыми марками, в том числе авторского права.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Логистическая <br class="hide-sm-min">деятельность</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/ship-front.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Перевозка грузов наземным, морским транспортом,  а также экспедиторское сопровождение, как и предоставление диспетчерских сервисов.
+                </div>
+            </div>
+        </div>
+        <div class="r50_adaptive"></div>
+        <div class="block5">
+            <img src="/git/img/contour-only/black-and-red/doc.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__content">
+                <div class="block5__text">
+                    Компании, попадающие под требования Economic Substance (ESR), ежегодно и в течение 12-ти месяцев, следующими за прошедшим финансовым периодом, должны проходить специальный тест на соответствие требованиям экономического присутствия в ОАЭ и предоставлять отчет<br class="hide-sm-min"> в регулирующий орган. Обычно, все регуляторы уполномочены самостоятельно устанавливать форму отчета и порядок его подачи в зависимости от вида деятельности и места регистрации.                    
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Узнайте, попадает ли Ваша деятельность под требования ESR</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Связаться с экспертом</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--    Деятельность    -->
+<section id="scrollBlock2" class="bg-F9 z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Какие меры нужно предпринять для выполнения требований ESR:</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block41 block41_red-style">
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Аренда реального офиса</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/office.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="r1 r_bg-linear-gray"></div>
+                <div class="r20"></div>
+                <div class="block41__desc">                
+                    Подтверждение размещения в ОАЭ через аренду или покупку офисных, иных коммерчесих помещений или складов - с обязательным адресом <br class="hide-sm-min">по месту ведения деятельности.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Формирование<br class="hide-sm-min"> штата сотрудников</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/three-people-2.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="r1 r_bg-linear-gray"></div>
+                <div class="r20"></div>
+                <div class="block41__desc">
+                    Обеспечение наличия достаточного количества трудоустроенных в штат сотрудников на полный день. Размер бизнеса определяет, сколько человек должно быть оформлено в компании.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Наличие средств <br class="hide-sm-min">коммуникации</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/hands.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="r1 r_bg-linear-gray"></div>
+                <div class="r20"></div>
+                <div class="block41__desc">
+                    Подключение местного телефонного номера, создание сайта с доменом и хостингом в ОАЭ (ae), подтверждение почтового адреса, отправки и приема корреспонденции.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Центр контроля <br class="hide-sm-min">бизнесом</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/human-network.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="r1 r_bg-linear-gray"></div>
+                <div class="r20"></div>
+                <div class="block41__desc">
+                    Доказательство наличия центра принятия управленческих решений, ведения протоколов внеочередных <br class="hide-sm-min">и очередных собраний акционеров  <br class="hide-sm-min">на территории ОАЭ.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Корпоративная <br class="hide-sm-min">отчетность</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/pasted.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="r1 r_bg-linear-gray"></div>
+                <div class="r20"></div>
+                <div class="block41__desc">
+                    Ведение бухгалтерии внутри ОАЭ <br class="hide-sm-min"> и формирование ежегодного фин<br class="hide-sm-min">отчета по месту инкорпорации и <br class="hide-sm-min">фактического ведения  операций<br class="hide-sm-min"> в зависимости от требований. 
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Статус налогового <br class="hide-sm-min">резидента</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/person-percentage.svg" alt="" class="block41__icon" loading="lazy">                        
+                        </div>                    
+                    </div>
+                </div>
+                <div class="r1 r_bg-linear-gray"></div>
+                <div class="r20"></div>
+                <div class="block41__desc">
+                    Получение сертификата налогового резидента с ежеквартальной подачей налоговых деклараций в фискальные органы страны и для подтверждения требований регуляторов
+                </div>
+            </div>
+        </div>
+        <div class="r50_adaptive"></div>
+        <div class="block5">
+            <img src="/git/img/contour-only/black-and-red/data-analysis.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__content">
+                <div class="block5__text">
+                    SORP Group имеет собственные ресурсы и инструменты, а также государственные лицензии, которые помогут Вашему бизнесу выполнить требования ESR в ОАЭ точно в соответствии с законодательством, не неся больших финансовых затрат и с гарантией отсутствия правовых <br class="hide-sm-min">и налоговых рисков.
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Узнайте, какие меры должен принять именно Ваш бизнес в целях выполнения требований ESR</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Связаться с экспертом</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--    Требования    -->
+<section id="scrollBlock3" class="bg-FA z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Решения SORP для выполнения требований регуляций Economic Substance в ОАЭ</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block7 block7_modal block7_icon-visible">
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01');">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/tax-graph.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Номинальные <br class="hide-sm-min"> сервисы</div>
+                    <div class="block7__text">Предоставление ограниченного <br class="hide-sm-min"> в правах директора - резидента для подтверждения нахождения исполнительного органа в ОАЭ</div>
+                    <br><br>
+                </div>
+            </div>    
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01');">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/tie.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Аутсорсинг <br class="hide-sm-min"> бизнес-процессов</div>
+                    <div class="block7__text">Административная, налоговая <br class="hide-sm-min">юридическая и PRO - поддержка,<br class="hide-sm-min"> IT-услуги, предоставим персонал<br class="hide-sm-min"> на условиях аутсорсинга</div>
+                    <br><br>
+                </div>
+            </div>    
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01');">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/office.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Размещение <br class="hide-sm-min">бизнеса</div>
+                    <div class="block7__text">Офисы в аренду в SORP БЦ для прохождения проверок KYC или подтверждения экономического присутствия в ОАЭ</div>
+                    <br><br>
+                </div>
+            </div>
+            
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01');">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/diploma.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Статус налогового <br class="hide-sm-min">резидента<br class="hide-sm-min"><br class="hide-sm-min"></div>
+                    <div class="block7__text">Содействие при оформлении сертификата tax domicile как доказательство выполнения требований принадлежности<br class="hide-sm-min"> к юрисдикции ОАЭ</div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01');">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/partners-2.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Ведение бухгалтерского учета<br class="hide-sm-min"><br class="hide-sm-min"></div>
+                    <div class="block7__text">Формирование аудиторского отчета и сопровождение при вопросах подачи налоговых деклараций и постановке на налоговый учет</div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01');">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/office.svg"  loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Редомициляция <br class="hide-sm-min">бизнеса<br class="hide-sm-min"><br class="hide-sm-min"></div>
+                    <div class="block7__text">Сопровождение по смене юрисдикции  регистрации иностранной компании на <br class="hide-sm-min">ОАЭ-страну с уникальным<br class="hide-sm-min"> налоговым режимом</div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <a href="#" class="btn btn_gray-bg btn_center btn_border2 btn_white z-idx3 btn_space-between" onclick="toggleModal('form01');">
+            Получить консультацию
+            <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+            <use xlink:href="#btn__icon-modal"></use>
+            </svg>
+        </a>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<!--  Змейка    -->
+<section id="scrollBlock4" class="bg-FF z-idx3">
+    <div class="r1 r_bg-gray"></div>
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Риски при несоблюдении требований экономического присутствия в ОАЭ</h2>
+        <div class="r50_adaptive"></div>        
+        <div class="block-snake block-snake_line-right">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/bank-building.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Сложность банковского обслуживания</div>
+                    Невозможность пройти KYC с целью открытия банковского счета в ОАЭ и подтвердить ведение операционной деятельности
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/calculator-tax.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>                
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Финансовые <br class="hide-sm-min"> издержки</div>
+                    Несвоевременное выполнение ESR приведет к тому, что ваша компания <br class="hide-sm-min"> будет оштрафована в соответствии с законодательством ОАЭ
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/percentage-papers.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Риск потери налоговых <br class="hide-sm-min"> льгот</div>
+                    Проблема налогов у источников:  применение обычных ставок при <br class="hide-sm-min"> выплате процентов, дивидендов <br class="hide-sm-min"> и роялти за рубеж.
+                </div>
+                </div>
+        </div>
+        <div class="block-snake">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/bank2.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Риск признания сделок фиктивными</div>
+                    Возникает вследствие признания <br class="hide-sm-min">схем налоговой оптимизации или трансфертного ценообразования.
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/diploma.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Смена налогового резидентства компаний</div>
+                    Без подтверждения ESR компании <br class="hide-sm-min">будут облагаться налогами по месту фактического размещения бизнеса
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/diploma.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Потеря конфиденциальности бизнеса</div>
+                    Раскрытие информации в рамках стандарта CRS - налоговые данные передаются в страну резидентства
+                </div>
+            </div>
+        </div>        
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">SORP Group предлагает индивидуальные пакеты по <br class="hide-sm-min">подтверждению экономического присутствия</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Связаться с экспертом</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!-- Почему SORP - Slider -->
+<section id="scrollBlock5" class="bg-F9">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">SORP - ваш надёжный партнер в долгосрочной работе на территории ОАЭ</h2>
+        <div id="vslideouter" class="slider_02 text_slider">
+            <div class="slide-elem tslider-item-new flex_column first">
+                <div class="back"></div>
+                <div class="tslider-item__number">Статус эксперта</div>
+                <div class="tslider-item__text fadeInUp">Мы способны принять юридически правильное решение по выбору лицензии на основе анализа Ваших потребностей и провести консультацию по всем вопросам, связанным с лицензированием</div>
+            </div>
+            <div class="text_slider__inner">
+                <div class="slide-elem tslider-item-new flex_column second">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">Комплекс всех услуг</div>
+                    <div class="tslider-item__text wow fadeInUp">Компания предлагает комплексное решение для бизнеса и акционеров: от регистрации компаний до получения статуса налогового резидента страны</div>
+                </div>
+                <div class="slide-elem tslider-item-new flex_column third">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">15 лет опыта</div>
+                    <div class="tslider-item__text">В сфере регистрации, сопровождения компаний и решения бизнес-целей клиентов и организации прибыльной деятельности инвестиционно - финансовой компании и сопутствующих направлений</div>
+                </div>
+                <div class="slide-elem tslider-item-new flex_column">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">Комплексное обслуживание</div>
+                    <div class="tslider-item__text">Выполняем работы “под ключ” - составим план развития Вашей компании, поможем получить все разрешительные документы и найти квалифицированный персонал, соответствующий требованиям финансовых регуляторов</div>
+                </div>
+                <div class="slide-elem tslider-item-new flex_column">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">Безопасность и анонимность</div>
+                    <div class="tslider-item__text">Мы обеспечим безопасность ваших инвестиций, примем меры по надлежащему исполнению действующего законодательства и сохранению конфиденциальности информации</div>
+                </div>
+                <div class="slide-elem tslider-item-new flex_column">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">Размещение бизнеса</div>
+                    <div class="tslider-item__text">В состав группы компаний SORP входит SORP Business Center – 5000 кв. м современных офисных пространств для прохождения процедуры лицензирования в ОАЭ и выполнения требований KYC и Economic Substance</div>
+                </div>
+                
+            <div class="tns-controls">
+                <div class="button" onclick="slideup()"></div>
+                <div class="button" onclick="slidedown()"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- registration -->
+<section class="bg-F9" id="scrollBlock6">
+    <div class="r1 r_bg-gray"></div>
+    <div class="container_bem">
+      <div class="r60_adaptive"></div>
+      <div class="registration">
+        <div class="registration__info">
+          <div class="registration__title">Подтвердите <br class="hide-sm-min"> управление вашим <br class="hide-sm-min"> бизнесом из ОАЭ</div>
+          <div class="r20"></div>
+            Оставьте заявку и получите развернутую консультацию нашего специалиста.
+            <br><br>
+            Эксперты SORP в курсе всех мировых тенденций и оперативно отслеживают требования местного законодательства и международных стандартов.
+            <br><br>
+            Уже сегодня Вы сможете сделать первый шаг на пути к созданию успешного бизнеса в Эмиратах.
+        </div>
+        <div class="registration__form-block">
+            <div class="registration__title">Получить консультацию</div>
+            <div class="r10"></div>
+            {$_modx->getChunk('form4_new')}
+        </div>
+      </div>
+      <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+{/block}
+{include 'footer_new'}

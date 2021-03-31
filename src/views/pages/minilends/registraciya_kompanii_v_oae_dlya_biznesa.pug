@@ -1,0 +1,117 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "registraciya_kompanii_v_oae_dlya_biznesa"
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      style
+        | .first-screen {
+        |  background-position: center 41%;
+        | }
+
+      .first-screen
+        h1.first-screen__title
+          +lang(
+          'Регистрация компании<br> в&nbsp;ОАЭ для&nbsp;бизнеса<br> без налогов',
+          'The UAE company incorporation for doing business without taxes'
+          )
+        p.first-screen__text
+          +lang(
+          'Извлекай сверхдоходы прибыльного<br> Арабского рынка. Оптимизируй весь<br> свой зарубежный бизнес',
+          'Extract excess profits from the lucrative<br> Arab market. Optimize your entire foreign<br> business'
+          )
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Leave a request'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          style
+            | .block-frames__box {
+            |  background-position: 100%;
+            | }
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/blocks/block-frames/circle.svg")
+            p.block-frames__text
+              +lang(
+              'В Эмиратах отсутствуют основные корпоративные налоги и&nbsp;налоги на&nbsp;доходы физических лиц. 5% ставка НДС на&nbsp;ряд внутренних операций.',
+              'There are&nbsp;no major corporate and personal income taxes in&nbsp;the&nbsp;Emirates. The 5% VAT rate is&nbsp;applied for a&nbsp;number of&nbsp;internal operations.'
+              )
+      .r20
+      .r5
+
+    section
+      .container
+        h2.title
+          +lang(
+          'Возможности юрисдикции',
+          'Opportunities of&nbsp;jurisdiction'
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/1.svg")
+            p.block1__text
+              +lang(
+              'Регистрация оншорной компании возможна на&nbsp;локальной земле (форма собственности LLC, SE, CС) и&nbsp;на&nbsp;территории одной из&nbsp;СЭЗ ОАЭ (форма собственности FZE и FZC).',
+              'Onshore company formation is&nbsp;possible while registering a&nbsp;legal Mainland entity (in&nbsp;the&nbsp;form of&nbsp;incorporation of&nbsp;LLC, SE, CС) and in&nbsp;the&nbsp;territory of&nbsp;Free Trade Zones (in&nbsp;the&nbsp;form of&nbsp;incorporation of&nbsp;FZE or&nbsp;FZC).'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/2.svg")
+            p.block1__text
+              +lang(
+              'Лицензирование бизнеса, открытие счета в&nbsp;банке, вывод дивидендов, оформление налогового резидентства.',
+              'Business licensing, opening bank account, withdrawal of&nbsp;dividends, registration of&nbsp;tax residency.'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/3.svg")
+            p.block1__text
+              +lang(
+              'Защита от&nbsp;обмена налоговой информацией (сведений о&nbsp;ваших иностранных счетах, активах). ',
+              'Protection from automatic exchange of&nbsp;tax information (information about your foreign accounts and&nbsp;assets).'
+              )
+        .r20
+        .r5
+
+    section
+      .quote
+        .quote__icon.lazy(data-bg="/dist/img/minilends/blocks/quote/quote.svg")
+        p.quote__text
+          +lang(
+          'SORP предоставляет полный комплекс услуг: регистрация, консалтинговая поддержка, открытие счета в&nbsp;банке ОАЭ',
+          'SORP provides a&nbsp;full range of services: registration, consulting support, opening a&nbsp;bank account in&nbsp;the&nbsp;UAE'
+          )
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        p.description.description_center
+          +lang(
+          'Мы не регистрируем компании - мы создаем для&nbsp;вас рабочий инструмент, позволяющий построить бизнес и&nbsp;извлекать прибыль.',
+          'We do not just register companies - we create a&nbsp;working tool for you that allows you to&nbsp;build a&nbsp;business and&nbsp;make a&nbsp;profit.'
+          )
+        .r10
+        .r5
+        h1.title.title_center
+          +lang(
+          'Начать регистрацию можно дистанционно.',
+          'You can start registration remotely'
+          )
+        .r20
+        include ../../blocks/minilends/form/form
+      .r30
+      .r5
+
+    include ../../blocks/minilends/pnumber/pnumber

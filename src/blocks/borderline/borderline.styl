@@ -1,0 +1,20 @@
+.borderline {
+  position: relative; z-index: 2; padding: 25px 15px; background: #fff; border: 7px solid #F1F6FB; transition: .3s;
+
+  &_pattern-right::before {
+    content: ''; position: absolute; top: 35px; right: -8px; width: 9px; height: 130px; background: #DADADA; border-top: 60px solid #fff; border-bottom: 60px solid #fff; transition: .3s; }
+  &_red { border-color: #D64356; }
+
+  &:hover { border-color: #CC4052; }
+  &:hover::before { background: #CC4052; }
+
+  &_border10 { border-width: 10px; }
+}
+
+@media (min-width: screen-md-min) {
+  .borderline {
+    padding: 35px 45px;
+
+    &_pattern-form::before { content: ''; position: absolute; top: 15%; right: -43px; width: 75px; height: 70px; background: #d64356; border: 30px solid #f9f9f9; border-right: 0; border-left: 0; }
+  }
+}

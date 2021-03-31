@@ -1,0 +1,441 @@
+extends ../layouts/default
+
+block variables
+  - const title = "venture_capital_online";
+  - page = "venture_capital_online";
+
+block content
+  style
+    | @media (min-width: 576px) { .first-screen__btn { max-width: 254px; } }
+    | #events .container { background-position-y: 140px; }
+    | .image-block { background-repeat: no-repeat; height: 270px; background-size: cover; background-position-y: center; border-radius: 2px; } 
+  section.bg.bg_first-screen
+    .container.bg.bg_right-side.lazy(data-bg="/dist/img/blocks/first-screen/doing-dubai_offline.svg")
+      .first-screen.first-screen_no-logo
+        .first-screen__box
+          .first-screen__content
+            h1.first-screen__title Startup mentor – why your 
+              br.hide-tn.show-md-min 
+              | company doesn't need a leader
+            p.first-screen__text На вебинаре мы разберем различия между различными провайдерами, 
+              br.hide-tn.show-md-min 
+              | их ответственностью и моделями компенсаций, а также более подробно
+              br.hide-tn.show-md-min 
+              | рассмотрим работу с менторами.
+            .first-screen__workshop-wrap
+              label.first-screen__btn.btn.btn_radius5.btn_hover-red.btn_h55(for="modal1") Register for an online seminar
+              .first-screen__workshop-start
+                img.first-screen__workshop-icon.lazy(data-src="/dist/img/blocks/first-screen/clocks.svg", alt="")
+                p.first-screen__workshop-text free workshop start: 
+                  span 7 december at 18:00
+  section.bg.bg_first-screen
+    .first-screen-statistics
+      .container
+        .first-screen-statistics__box.first-screen-statistics_column
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 2 hours
+            p.first-screen-statistics__text duration of the training course
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 9 topics
+            p.first-screen-statistics__text in one program
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 25 cases
+            p.first-screen-statistics__text proven business solutions
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 15 years
+            p.first-screen-statistics__text of business experience
+  
+  section.bg.bg_wave
+    .container
+      .r60_adaptive
+      h2.title Who Should Attend?
+      .r30_adaptive
+      p.description Лекция предназначена для предпринимателей, владельцев стартапов в начальной стадии и стадии роста, а также<br class="hide-tn show-sm-min"> стартапов планирующих привлечь инвестиции и/или подать заявку в акселераторы.
+      .r50_adaptive
+      .block41
+        .block41__item
+          .block41__head
+            .block41__title Business owners and shareholders
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/person-lifesaver.svg", alt="")
+          .block41__desc Ready made solutions for increasing <br class="hide-tn show-sm-min">profits and saving capital
+        .block41__item
+          .block41__head
+            .block41__title Heads of <br class="hide-tn show-sm-min">corporates
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/tie.svg", alt="")
+          .block41__desc Profitable investments and<br class="hide-tn show-sm-min"> seek-for funding
+        .block41__item
+          .block41__head
+            .block41__title Private <br class="hide-tn show-sm-min">investors
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/coins.svg", alt="")
+          .block41__desc  Extending networking and investment<br class="hide-tn show-sm-min"> solutions.
+        .block41__item
+          .block41__head
+            .block41__title Small and medium business owners
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/shopping-cart.svg", alt="")
+          .block41__desc Tailor-made business <br class="hide-tn show-sm-min">solutions
+        .block41__item
+          .block41__head
+            .block41__title International<br class="hide-tn show-sm-min"> companies
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/save-the-world.svg", alt="")
+          .block41__desc Business ownership and <br class="hide-tn show-sm-min">tax optimization
+        .block41__item
+          .block41__head
+            .block41__title Startups and new<br class="hide-tn show-sm-min"> businesses
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/growth.svg", alt="")
+          .block41__desc Transparent set up, acceleration,<br class="hide-tn show-sm-min"> community networking
+      .r60_adaptive
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Learn about the benefits of doing business in the UAE with a<br class="hide-tn show-sm-min"> personalised consultation
+        label.feedback-block__btn(for="modal1") Call a consultant
+    .r30
+    .r5
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title What will you learn?
+      .r50_adaptive
+      .block57
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/social-growth.svg", alt="")
+          h3.block57__title The peculiarities of the UAE,<br class="hide-tn show-sm-min"> main market features and<br class="hide-tn show-sm-min"> target audiences
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/hand-graph.svg", alt="")
+          h3.block57__title The main advantages and perspectives of business<br class="hide-tn show-sm-min"> conduction in the UAE
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/todolist.svg", alt="")
+          h3.block57__title First stages and common <br class="hide-tn show-sm-min">mistakes of business <br class="hide-tn show-sm-min">setup in the UAE
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/save-the-world.svg", alt="")
+          h3.block57__title The possibilities for entering the UAE market as an international business
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/graph-tax.svg", alt="")
+          h3.block57__title Tax planning tools for<br class="hide-tn show-sm-min"> international business<br class="hide-tn show-sm-min"> optimization
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/golf.svg", alt="")
+          h3.block57__title You will learn how to save<br class="hide-tn show-sm-min"> money on registration and<br class="hide-tn show-sm-min"> licensing of a business
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Opportunities for students
+      .r50_adaptive
+      .block58
+        .block58__row
+          a.block58__item.block58__item_image.block58__item_play-button.lazy(data-bg="/dist/img/pages/venture_capital_online/block58/1.jpg")
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/quotes.svg", alt="")
+            .block58__text-content
+              h3.block58__title Maxim Perlin
+              p.block58__description Лекция предназначена для предпринимателей, владельцев стартапов в начальной стадии и стадии роста, а также стартапов планирующих привлечь инвестиции и/или подать заявку в акселераторы.
+        .block58__row.block58__row_reverse
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/quotes.svg", alt="")
+            .block58__text-content
+              h3.block58__title Guy Zbarsky
+              p.block58__description Лекция предназначена для предпринимателей, владельцев стартапов в начальной стадии и стадии роста, а также стартапов планирующих привлечь инвестиции и/или подать заявку в акселераторы.
+          a.block58__item.block58__item_image.block58__item_play-button.lazy(data-bg="/dist/img/pages/venture_capital_online/block58/2.jpg")
+      
+      .r50_adaptive
+      label.btn.btn_white.btn_space-between.btn_center(for="modal1") Sign up for a seminar
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Webinar Plan
+      .r50_adaptive
+      .tabs.tabs_full-width.tabs_width2
+        ul.tabs__head
+          li.tab.tab_active guy zbarsky
+          li.tab maxim perlin
+        .tabs__content-wrap
+          .tab__content.tab_active
+            .block35.block35_width3.block35_workshop.block35_head-only
+              .block35__item
+                .block35__head
+                  h3.block35__title Функции различных провайдеров консультационных<br class="hide-tn show-sm-min"> услуг и их отличия 
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 1
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 15 minutes
+              .block35__item
+                .block35__head
+                  h3.block35__title Компенсационные<br class="hide-tn show-sm-min"> модели консультантов
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 2
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 10 minutes
+              .block35__item
+                .block35__head
+                  h3.block35__title Ментор - цели и<br class="hide-tn show-sm-min"> задачи
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 3
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 10 minutes
+              
+              .block35__item
+                .block35__head
+                  h3.block35__title Где найти и как<br class="hide-tn show-sm-min"> выбрать правильного ментора для вашего бизнеса
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 4
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 15 minutes
+              .block35__item
+                .block35__head
+                  h3.block35__title Как быстро понять, справляется ли<br class="hide-tn show-sm-min"> ментор со своими обязанностями
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 5
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 10 minutes
+              .block35__item
+                .block35__head
+                  h3.block35__title Процесс менторства<br class="hide-tn show-sm-min"> – основные этапы и<br class="hide-tn show-sm-min"> сколько времени<br class="hide-tn show-sm-min"> занимают
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 6
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 15 minutes
+
+              .block35__item
+                .block35__head
+                  h3.block35__title Лайфхаки по работе с ментором
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 7
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 15 minutes
+              .block35__item
+                .block35__head
+                  h3.block35__title Как стать ментором
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 8
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 15 minutes
+              .block35__item
+                .block35__head
+                  h3.block35__title Ответы на ваши<br class="hide-tn show-sm-min"> вопросы
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 9
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 10 minutes
+          .tab__content 
+            .block35.block35_width3.block35_workshop.block35_head-only
+              .block35__item
+                .block35__head
+                  h3.block35__title Лайфхаки по работе с ментором
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 1
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 15 minutes
+              .block35__item
+                .block35__head
+                  h3.block35__title Как стать ментором
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 2
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+                  p.block35__description-duration 15 minutes
+              .block35__item
+                .block35__head
+                  h3.block35__title Ответы на ваши<br class="hide-tn show-sm-min"> вопросы
+                  .block35__icon-wrap.block35__icon-wrap_circle
+                    p.block35__icon-char 3
+                .block35__description_workshop
+                  img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+      .r50_adaptive
+      label.btn.btn_white.btn_space-between.btn_center.bg.bg_fa(for="modal1") Sign up for a seminar
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section.bg.bg_right-side.bg_right-side-fullcenter.lazy(data-bg="/dist/img/blocks/arc-ellipse.svg")
+    .r60_adaptive
+    .container
+      .about-company
+        .about-company__left
+          .about-company__img-box.about-company__img-box_gray
+            .about-company__play
+              .about-company__play-icon
+            .about-company__duration 2:20
+            picture            
+              source(type="image/jpeg", data-srcset="/dist/img/pages/venture_capital_online/about-company/left-video.jpg, /dist/img/pages/venture_capital_online/about-company/left-video_2x.jpg 2x")
+              img.about-company__img.lazy(src="/dist/img/blocks/mask.png" data-src="/dist/img/pages/venture_capital_online/about-company/left-video.jpg", alt="Maxim Perlin's video")
+
+        .about-company__right
+          .about-company__img-box.about-company__img-box_gray
+            .about-company__play
+              .about-company__play-icon
+            .about-company__duration 2:20
+            picture            
+              source(type="image/jpeg", data-srcset="/dist/img/pages/venture_capital_online/about-company/right-video.jpg, /dist/img/pages/venture_capital_online/about-company/right-video_2x.jpg 2x")
+              img.about-company__img.lazy(src="/dist/img/blocks/mask.png" data-src="/dist/img/pages/venture_capital_online/about-company/right-video.jpg", alt="Guy Zbarsky's video")
+    .r60_adaptive  
+
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Interested in customizing the Venture Capital Executive program for your organization?
+        label.feedback-block__btn(for="modal1") Call a consultant
+    .r30
+    .r5
+  
+  section.bg.bg_right-side.bg_right-side-top.bg_remove-sm-min.lazy(data-bg="/dist/img/blocks/arc-lines.svg")
+    .container
+      .r60_adaptive
+      h2.title About the workshop teachers
+      .r50_adaptive
+      .experts-about.experts-about_width2
+        .experts-about__item
+          img.experts-about__image.lazy(data-src="/dist/img/blocks/experts/about/zbarsky.png" alt="Guy Zbarsky")
+          h3.experts-about__name Guy Zbarsky
+          p.experts-about__position-title Управляющий партнер Sabra Capital, Венчурный<br class="hide-tn show-sm-min"> партнер AltaIR Capital 
+          p.experts-about__description Является ментором в топовых израильских акселераторах:<br class="hide-tn show-sm-min"> IBM AlfaZone, WeWork Labs, 365x. Был основателем Keepgo,<br class="hide-tn show-sm-min"> SevenCarat, Droam. Обладатель трех степеней Technion IIT,<br class="hide-tn show-sm-min"> майор израильской армии, дайвмастер NAUI
+        .experts-about__item
+          img.experts-about__image.lazy(data-src="/dist/img/blocks/experts/about/perlin.png" alt="Maxim Perlin")
+          .experts-about__name Maxim Perlin
+          .experts-about__position-title Director, SORP Business school<br class="hide-tn show-sm-min"><br class="hide-tn show-sm-min">
+          .experts-about__description Предприниматель, эксперт и ведущий трекер в ФРИИ,<br class="hide-tn show-sm-min"> Startup, EdMarket, Модульбанк, Ростех, Билайн, GVA,<br class="hide-tn show-sm-min"> Ростелеком. Ментор нескольких стартапов, курса директор<br class="hide-tn show-sm-min"> по маркетингу в Нетологии. 
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section.bg.bg_f9
+    .container
+      .r60_adaptive
+      .modal.modal_block
+        label.modal__close
+        .modal__content
+          .modal__left.form-block
+            h2.modal__title.modal__title_right Sign up for a free course 
+            .modal__text-block 
+              div(style="display: flex;")
+                img.modal__text-icon.lazy(data-src="/dist/img/blocks/duration-clock.svg" alt="")
+                p.modal__text.modal__text_bold 7 december at 18:00 
+              p.modal__text Remaining: 
+                span.modal__text_bold 15 places             
+            .r60_adaptive
+            form.modal__form
+              input.callOrderReason(type='hidden', name='reason')
+              input.page(type='hidden', name='page', value='[[~[[*id]]? &scheme=`full`]]')
+              input.site-message(type='text', name='name', value='')
+              input.site-message(type='text', name='firstname', value='')
+              input.site-message(type='text', name='lastname', value='')
+              .form-block__item
+                label.form-block__label(for="fio1") Name
+                input.form-block__input#fio1(type='text' name='fio' value='')
+              .form-block__item
+                label.form-block__label(for="phone1") Phone
+                input.form-block__input#phone1(type='tel' name='phone' value='')
+              .form-block__item
+                label.form-block__label(for="email1") Email
+                input.form-block__input#email1(type='email' name='email' value='')
+              .r60_adaptive
+              .form-block__item
+                input.btn.btn_radius5.btn_w100(type='submit', value='Leave a request')
+          .modal__right.modal__background.bg.bg_remove-sm-min.lazy(data-bg="/dist/img/pages/venture_capital/about-company/graph-grow.png")
+            h3.modal__title.modal__title_right Cost of education
+            .r30
+            h4.title.title_color-black.title_font-w400.title_font-s38 Free introductory course
+            .r10
+            .r5
+            .modal__text
+              p.modal__text-p participation is free by prior registration
+            
+      .r60_adaptive 
+    .r1.r_bg-e3
+  section#events
+    .container.bg.bg_right-side.bg_right-side-fullcenter.lazy(data-bg="/dist/img/blocks/red-lightning.png")
+      .r60_adaptive
+      h2.title How are our events
+      .r50_adaptive
+      p.title.title_font-s32.title_color-black.title_font-w300 Daily schedule
+      .r40
+      .block41.block41_column-direction.block41_accent-red
+        .block41__item
+          .block41__head
+            .block41__title Seminar from an experienced<br class="hide-tn show-sm-min"> lecturer
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/verified-person.svg", alt="")
+          .block41__desc Вы получите актуальные знания от мастеров своего дела, которые получили знания на своем многолетнем опыте ведения бизнеса
+        .block41__item
+          .block41__head
+            .block41__title Coffee breaks and exchange of experience with event participants
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/girl.svg", alt="")
+          .block41__desc Вы сможете знакомиться и общаться с другими студентами, совместно выполнять задания и готовить проекты
+        .block41__item
+          .block41__head
+            .block41__title Communication with the speaker and short consultations
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/communication.svg", alt="")
+          .block41__desc Общение с преподавателями и другими студентами — быстрые ответы на вопросы и обмен опытом.
+      .r50_adaptive 
+      .image-block.lazy(data-bg="/dist/img/pages/doing_in_dubai_offline/about-company/people-photo.jpg" alt="")
+      .r50_adaptive 
+      label.btn.btn_white.btn_space-between.btn_center(for="modal1") Sign up for a online seminar
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+    .r1.r_bg-e3
+    .r60_adaptive
+    .container
+      h2.title Event partners
+      .r50_adaptive
+      .slider-departments.slider-departments_static
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/venture_capital/about-company/1.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/venture_capital/about-company/1.png" alt="SORP Business School")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/venture_capital/about-company/2.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/venture_capital/about-company/2.png" alt="Altaclub")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/venture_capital/about-company/3.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/venture_capital/about-company/3.png" alt="SABRA Capital")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/venture_capital/about-company/4.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/venture_capital/about-company/4.png" alt="Dubai Knowledge")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/venture_capital/about-company/5.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/venture_capital/about-company/5.png" alt="Dubai Economy")
+    .r60_adaptive
+  
+  #map
+    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84142.93801242771!2d55.11920432886234!3d25.109796720172486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b5b5b3fffff%3A0xbe5aa9347ed5d5e1!2sSORP%20Business%20Centre!5e0!3m2!1sru!2sru!4v1580725392796!5m2!1sru!2sru', width='100%', height='450', frameborder='0', style='border:0;', allowfullscreen='')

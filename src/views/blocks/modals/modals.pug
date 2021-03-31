@@ -1,0 +1,215 @@
+input#modal1.modal__checkbox(type='checkbox')
+label.bg_modal(for='modal1')
+.modal
+  label.modal__close(for='modal1')
+  .modal__content
+    .modal__left.form-block
+      .modal__title.modal__title_left
+        +lang(
+        'Оставить заявку',
+        'Get more details'
+         )
+      .modal__left-subtitle
+        +lang(
+        'Пожалуйста, оставьте данные, и наш менеджер свяжется с Вами в ближайшее время',
+        'Please, leave your details and our manager will contact you as soon as possible:'
+        )
+
+      | {if $_modx->config.cultureKey == 'ru'}
+      | {set $redirect = 476}
+      | {else}
+      | {set $redirect = 489}
+      | {/if}
+
+      | {'!FormIt' | snippet : [
+      |      'hooks'=>'amo, FormItSaveForm, email, redirect',
+      |      'emailSubject'=>'Заявка с сайта SORP',
+      |      'emailTo'=>'yudin-1337@yandex.ru, letters@sorp.ae',
+      |      'emailTpl' => 'response_modal.tpl',
+      |      'validate'=>'phone:required,name:blank,firstname:blank,lastname:blank',
+      |      'fieldNames'=>'fio==Имя,phone==Телефон,page==Страница',
+      |      'redirectTo' => $redirect,
+      | ]}
+
+      <form class="modal__form" method="post">
+      input.callOrderReason(type='hidden' name='reason' value='')
+      <input class="page" type='hidden' name='pageurl' value='{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}'>
+      <input type="hidden" name="pagetitle" value='{$_modx->resource['pagetitle']}'>
+      <input type="hidden" name="pageid" value="{$_modx->resource.id}" />
+
+      input.site-message(type='text' name='name' value='')
+      input.site-message(type='text' name='firstname' value='')
+      input.site-message(type='text' name='lastname' value='')
+      .form-block__item
+        label.form-block__label
+          +lang(
+          'Ваше имя',
+          'Name:'
+          )
+        input.form-block__input(type='text' name='fio' value='' required)
+      .form-block__item
+        label.form-block__label
+          +lang(
+          'Телефон',
+          'Telephone:'
+          )
+        input.form-block__input(type='tel' name='phone' value='' required)
+      .form-block__item
+        label.form-block__label
+          +lang(
+          'Электронная почта',
+          'E-mail:'
+          )
+        input.form-block__input(type='email' name='email' value='')
+      .form-block__item
+        button.btn.btn_radius5.btn_w100.btn_hover-red(type='submit')
+          +lang(
+          'Оставить заявку',
+          'Request information'
+          )
+      //-.form-block__confid Поля, отмеченные символом * обязательны для заполнения
+      </form>
+
+    .modal__right
+      //-div
+        .modal__title.modal__title_right Становитесь частью бизнес-сообщества
+        .modal__text
+          p.modal__text-p Пример описания в 5 строк, не более. Бизнес-центр лицензирован и имеет квалификацию и ресурсы для оказания услуг виртуального офиса.
+          p.modal__text-p Пример описания в 5 строк, не более.
+        .modal__points.bg.bg_triangle
+          .modal__point
+            .modal__point-icon
+            .modal__point-text Престижный бизнес-адрес в Дубаи
+          .modal__point
+            .modal__point-icon
+            .modal__point-text Продвинутые телеком-решения
+          .modal__point
+            .modal__point-icon
+            .modal__point-text Профессиональную секретарскую поддержку
+          .modal__point
+            .modal__point-icon
+            .modal__point-text 55 консалтинговых решений для успеха вашего бизнеса
+
+      //-.modal__right-sales
+        div
+          .modal__title.modal__title_right Используйте возможность получить до
+          .modal__sales
+            .modal__sales-number 75%
+            .modal__sales-text экономии на развитии проекта
+          .modal__text-box.modal_bg-triangle
+            .modal__right-subtitle Как это работает?
+            .modal__text
+              p.modal__text-p Бизнес-планы прошедшие экспертизу смогут получить до 70% финансирования на создание и развитие.
+              p.modal__text-p Утвержденные проекты будут направлены профессиональным инвесторам, с которыми мы находимся в постоянной коммуникации.
+
+input#modal2.modal__checkbox(type='checkbox')
+label.bg_modal(for='modal2')
+.modal.modal_simple.modal_dynamic-title
+  label.modal__close(for='modal2')
+  .modal__content
+    .modal__center.form-block
+      .modal__title
+        +lang(
+        'Оставить заявку на консультацию',
+        'Leave a request for an expert advice'
+        )
+      .modal__subtitle
+        +lang(
+        'Пожалуйста, оставьте данные, и наш менеджер свяжется с Вами в ближайшее время',
+        'Please, leave your details and our manager will contact you as soon as possible:'
+        )
+
+
+      <form class="modal__form" method="post">
+      input.callOrderReason(type='hidden' name='reason' value='')
+      <input class="page" type='hidden' name='pageurl' value='{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}'>
+      <input type="hidden" name="pagetitle" value='{$_modx->resource['pagetitle']}'>
+      <input type="hidden" name="pageid" value="{$_modx->resource.id}" />
+
+      input.site-message(type='text' name='name' value='')
+      input.site-message(type='text' name='firstname' value='')
+      input.site-message(type='text' name='lastname' value='')
+      .form-block__item
+        label.form-block__label
+          +lang(
+          'Ваше имя',
+          'Name:'
+          )
+        input.form-block__input(type='text' name='fio' value='' required)
+      .form-block__item
+        label.form-block__label
+          +lang(
+          'Телефон',
+          'Telephone:'
+          )
+        input.form-block__input(type='tel' name='phone' value='' required)
+      .form-block__item
+        label.form-block__label
+          +lang(
+          'Электронная почта',
+          'E-mail:'
+          )
+        input.form-block__input(type='email' name='email' value='')
+      .form-block__item
+        button.btn.btn_radius5.btn_w100.btn_hover-red(type='submit')
+          +lang(
+          'Оставить заявку',
+          'Request information'
+          )
+      </form>
+      //-.form-block__confid Поля, отмеченные символом * обязательны для заполнения
+
+input#modal3.modal__checkbox(type='checkbox')
+label.bg_modal(for='modal3')
+.modal.modal_simple
+  label.modal__close(for='modal3')
+  .modal__content
+    .modal__center.form-block
+      .modal__title
+        +lang(
+        'Позвоните мне',
+        'Call me back'
+        )
+      .modal__subtitle
+        +lang(
+        'Пожалуйста, оставьте данные, и наш менеджер свяжется с Вами в ближайшее время',
+        'Please, leave your details and our manager will contact you as soon as possible:'
+        )
+
+      <form class="modal__form" method="post" action="[[~[[*id]]]]">
+      input.callOrderReason(type='hidden' name='reason' value='')
+      <input class="page" type='hidden' name='pageurl' value='{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}'>
+      <input type="hidden" name="pagetitle" value='{$_modx->resource['pagetitle']}'>
+      <input type="hidden" name="pageid" value="{$_modx->resource.id}" />
+
+      input.site-message(type='text' name='name' value='')
+      input.site-message(type='text' name='firstname' value='')
+      input.site-message(type='text' name='lastname' value='')
+
+      .modal__messengers
+        .modal__messengers-title
+          +lang(
+          'Как с вами связаться?',
+          'How do I contact you?'
+          )
+        .modal__messengers-box
+          .modal__messengers-item.modal__messengers-item_active(data-messenger='Телефон')
+            +lang(
+            'Телефон',
+            'Telephone:'
+            )
+          .modal__messengers-item(data-messenger='Viber') Viber
+          .modal__messengers-item(data-messenger='Whatsapp') Whatsapp
+          .modal__messengers-item(data-messenger='Telegram') Telegram
+        input.modal__messengers-input(type='hidden' name='messengers' value='Телефон')
+
+      .form-block__item
+        input.form-block__input(type='tel' name='phone' value='' required)
+      .form-block__item
+        button.btn.btn_radius5.btn_w100.btn_hover-red(type='submit', value='Оставить заявку')
+          +lang(
+          'Оставить заявку',
+          'Request information'
+          )
+      </form>
+      //-.form-block__confid Поля, отмеченные символом * обязательны для заполнения

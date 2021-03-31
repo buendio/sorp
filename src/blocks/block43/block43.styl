@@ -1,0 +1,15 @@
+.block43 { display: flex; flex-wrap: wrap; justify-content: space-between;
+  
+  &_wave-ltr .block43__item { background-image: url("../img/blocks/block43/wave-ltr.png"); background-position: center; }
+  &_wave-rtl .block43__item { background-image: url("../img/blocks/block43/wave-rtl.png"); background-position: center; }
+
+  &__item { display: flex; flex-direction: column; width: calc(100% - 15px); margin-bottom: 20px; padding: 25px 25px 22px 25px; background-color: #FFF; 
+    background-repeat: no-repeat; background-size: cover; transition: .3s all;  
+    &:hover { background-size: 60%; background: #4943CD url("../img/blocks/pattern-hover-modal.png") no-repeat center;
+      .block43__title { color: #FFF; }
+      .block43__icon { opacity: 0; } }
+  }
+  
+  &__title { font-size: 15px; font-weight: 500; line-height: 18px; color: #252B39; text-transform: uppercase; }
+  &__icon { transition: .3s all ease-in-out; margin-bottom: 40px; align-self: flex-end; flex-shrink: 0; width: 50px; height: 50px; border-radius: 15%; background: #D64356 url('../../img/contour-only/white/shield.svg') no-repeat center;  background-size: 32px; }
+}

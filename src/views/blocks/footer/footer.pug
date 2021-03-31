@@ -1,0 +1,76 @@
+footer.footer
+  .footer__line
+    .footer__container.container
+      .footer__item
+        a.footer__phone(href="tel:+97145594559") +971 4 559 4559
+        .footer__phone-rf-box
+          a.footer__phone-rf(href="tel:+7800767723") 8 800 767 723
+          p.footer__phone-rf-signature Бесплатный для <br> звонков из России
+      .footer__item
+        .footer__titles
+          p.footer__title Tameem House Building, Floor 25
+          p.footer__subtitle Barsha Heights (Tecom) Dubai, United<br> Arab Emirates
+      .footer__item
+        - socials_class = ' footer__socials';
+        include ../socials/socials
+        - socials_class = '';
+
+  .footer__line
+    .footer__container.container
+      .footer__item.footer__item_visible-lg
+        <a class="footer__logo-href" href="{$_modx->config.site_url}">
+        svg.footer__logo(xmlns='http://www.w3.org/2000/svg')
+          use(xlink:href='#logo_footer')
+        </a>
+      .footer__item.footer__item_width2.footer__item_visible-lg
+        ul.footer__directions
+          li.footer__direction
+            svg.footer__direction-svg(xmlns='http://www.w3.org/2000/svg' width="52" height="30")
+              use(xlink:href='#directions1')
+            .footer__direction-text Management<br> Consulting
+          li.footer__direction
+            svg.footer__direction-svg(xmlns='http://www.w3.org/2000/svg' width="30" height="40")
+              use(xlink:href='#directions2')
+            .footer__direction-text BUSINESS<br> CENTER
+          li.footer__direction
+            svg.footer__direction-svg(xmlns='http://www.w3.org/2000/svg' width="21" height="21")
+              use(xlink:href='#directions3')
+            .footer__direction-text Business<br> School
+          li.footer__direction
+            svg.footer__direction-svg(xmlns='http://www.w3.org/2000/svg' width="39" height="30")
+              use(xlink:href='#directions4')
+            .footer__direction-text SORP<br> INVESTMENT
+          li.footer__direction
+            svg.footer__direction-svg(xmlns='http://www.w3.org/2000/svg' width="25" height="40")
+              use(xlink:href='#directions5')
+            .footer__direction-text General<br> Trading
+  .footer__line
+    .footer__container.container
+      .footer__item.footer__item_copyrights
+        label.footer__btn.btn.btn_h45.btn_radius5.btn_font-s14.btn_max-content(for="modal2" data-reason='Остались вопросы?' data-title="Остались вопросы?") Остались вопросы?
+        .footer__copyrights
+          .footer__copyright © 2004-2020 SORP Group
+          .footer__rights Все права защищены
+          .footer__rights Политика конфиденциальности
+      ul.footer__item.footer__item_visible-lg
+        li.footer__anchor-box
+          a.footer__anchor(href="/biznes-v-oae/") Открытие бизнеса в ОАЭ
+        li.footer__anchor-box
+          a.footer__anchor(href="/business-support/") Поддержка бизнеса в ОАЭ
+        li.footer__anchor-box
+          a.footer__anchor(href="/tax-adviser/") Международное налоговое планирование
+        li.footer__anchor-box
+          a.footer__anchor(href="/license/") Лицензирование бизнеса в ОАЭ
+      ul.footer__item.footer__item_visible-lg
+        li.footer__anchor-box
+          a.footer__anchor(href="/registratsiya-kompanii/") Регистрация компаний
+        li.footer__anchor-box
+          a.footer__anchor(href="/business-center/") Бизнес-центр в Дубае
+        li.footer__anchor-box
+          a.footer__anchor(href="/international-business/") Оптимизация международного бизнеса
+        label.footer__anchor(for="modal1" data-reason="Центр бизнес-экспертизы") Центр бизнес-экспертизы
+
+.line
+  .line__item
+  .line__item
+  .line__item

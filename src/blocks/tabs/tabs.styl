@@ -1,0 +1,9 @@
+.tabs__head { display: flex; justify-content: space-between; margin-bottom: 40px; padding-bottom: 15px; overflow-x: scroll; }
+.tab { margin-right: 40px; flex-shrink: 0; height: 30px; font-size: 14px; font-weight: 500; line-height: 16px; color: rgba(57, 56, 85, 0.6); cursor: pointer; z-index: 3; text-transform: uppercase; user-select: none;
+    &.tab_active { color: #D64356; border-bottom: 2px solid #D64356; padding-bottom: 0; } }
+.tab__content { display: none; 
+    &.tab_active { display: block; } }
+
+@media (min-width: screen-md-min) {
+    .tab { margin-right: 65px; }
+    .tabs__head { overflow-x: hidden; margin-right: 0; padding-bottom: 10px; } }

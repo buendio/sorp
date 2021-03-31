@@ -1,0 +1,47 @@
+.block1 {
+  margin: -10px; display: flex; flex-wrap: wrap;
+
+  &__item { width: 100%; margin: 10px; }
+  &__head { position: relative; color: #fff; padding: 25px 55px 25px 25px; display: block; transition: .3s; }
+
+  &__item_load-pattern &__head { background: url('../img/blocks/block-red-pattern.svg') #d64356 top right/contain no-repeat; }
+  &__item_load-pattern:hover &__head, &__item_load-pattern &__head_active { background: url('../img/blocks/pattern-hover.svg') #9e3589 center right/contain no-repeat; }
+  &__head-content { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+  &__head-title { font-size: 24px; line-height: 32px; font-weight: 500; margin-bottom: 50px; padding-right: 30px; }
+  &__head-text { font-size: 15px; line-height: 24px; font-weight: 300; }
+
+  &__head-icon-box { position: absolute; top: 0; right: 0; width: 50px; height: 50px; background-color: #0000001a; display: flex; align-items: center; justify-content: center; transition: .3s; }
+  &__head-icon { max-width: 24px; max-height: 24px; }
+  &__item_load-pattern:hover &__head-icon-box, &__head_active &__head-icon-box { opacity: 0; }
+
+  &__content { color: #7D879B; padding: 20px; font-size: 16px; line-height: 26px; font-weight: 300; background: #fff; border: 1px solid #dddddd; display: flex; flex-direction: column; justify-content: space-between; }
+  &__content-text p, &__content-text ul { margin: 0 0 25px; font-weight: 400; }
+
+  &_no-description .block1__head { min-height: 220px; }
+  &_no-description .block1__head-content { justify-content: flex-end; }
+  &_no-description .block1__head-title { font-size: 22px; line-height: 28px; font-weight: 700; margin-bottom: 0; }
+
+  &_modal &__item_load-pattern &__head-icon-box { fill: #fff; }
+  &_modal &__item_load-pattern:hover &__head, &_modal &__item_load-pattern &__head_active { background: url('../img/blocks/pattern-hover-modal.png') #9e3589 100%/contain no-repeat; }
+}
+
+
+@media(min-width: screen-xs-min) {
+  .block1 {
+    &_width4 &__item { width: calc(50% - 20px); }
+  }
+}
+
+@media(min-width: screen-md-min) {
+  .block1 {
+    &__item { width: calc(33.33% - 20px); }
+    &__head { padding: 30px; }
+    &__head-text { font-size: 18px; line-height: 24px; }
+    &__head-icon { width: 50px; height: 50px; }
+
+    &_min &__head { padding: 25px 55px 25px 25px; }
+    &_width4 &__item { width: calc(25% - 20px); }
+
+    &_modal &__head:hover, &_modal &__head_active { background-position: 125%; }
+  }
+}

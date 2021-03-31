@@ -1,0 +1,1015 @@
+extends ../../../layouts/default_landing
+
+block variables
+  - page = "doing_it";
+  - burgerHide = true
+  - footerOld = true
+
+block content
+  style
+    |.header {
+    | border-bottom: none;
+    |}
+  section.bg.bg_first-screen
+    .container.bg.bg_remove-sm-min.bg_right-side.lazy(data-bg="/dist/img/pages/doing_it/first-screen.svg")
+      .first-screen.first-screen_no-logo
+        .first-screen__box
+          .first-screen__content
+            h1.first-screen__title
+              +lang(
+              'Дуинг IT-бизнес в ОАЭ',
+              'Doing Technology and Innovative'
+              )
+              br.hide-tn.show-md-min
+              +lang(
+              '',
+              'Business in the UAE'
+              )
+            p.first-screen__text
+              +lang(
+              'Эмираты во всем мире признаны надежным и перспективным рынком ',
+              'An interactive consultation and Q & A discussion on how to conduct and evolve '
+              )
+              br.hide-tn.show-md-min
+              +lang(
+              'реализации инноваций и технологий. Мы расскажем, как создать и ',
+              'a successful high-tech and innovative business in the UAE. SORP will suggest '
+              )
+              br.hide-tn.show-md-min
+              +lang(
+              'развить успешный бизнес с учетом возможностей и особенностей ',
+              'practical applications to explore the unique opportunities and features of the '
+              )
+              br.hide-tn.show-md-min
+              +lang(
+              'законодательства ОАЭ, не упустив перспектив и не допуская просчетов.',
+              'UAE legislative environment within a global IT business practice.'
+              )
+
+            .first-screen__workshop-wrap
+              label.first-screen__btn.btn.btn_radius5.btn_hover-red.btn_h55(for="modal2")
+                +lang(
+                'Зарегистрироваться',
+                'Sign up for FREE'
+                )
+              .first-screen__workshop-start
+                img.first-screen__workshop-icon.lazy(data-src="/dist/img/blocks/first-screen/clocks.svg", alt="")
+                p.first-screen__workshop-text
+                  +lang(
+                  'Начало интерактива: ',
+                  'Q&A starts: '
+                  )
+                  span
+                    +lang(
+                    '10 декабря в 18:00 ч',
+                    '10 December at 18:00'
+                    )
+  section.bg.bg_first-screen
+    .first-screen-statistics
+      .container
+        .first-screen-statistics__box.first-screen-statistics_column
+          .first-screen-statistics__item
+            p.first-screen-statistics__number
+              +lang(
+              '3 часа',
+              '3 hours'
+              )
+            p.first-screen-statistics__text
+              +lang(
+              'продолжительность семинара',
+              'duration of the training course'
+              )
+          .first-screen-statistics__item
+            p.first-screen-statistics__number
+              +lang(
+              '5 курсов',
+              '5 courses'
+              )
+            p.first-screen-statistics__text
+              +lang(
+              'в одной программе',
+              'in one program'
+              )
+          .first-screen-statistics__item
+            p.first-screen-statistics__number
+              +lang(
+              '25 кейсов',
+              '25 cases'
+              )
+            p.first-screen-statistics__text
+              +lang(
+              'из бизнес-практики',
+              'proven business solutions'
+              )
+          .first-screen-statistics__item
+            p.first-screen-statistics__number
+              +lang(
+              '15 лет',
+              '15 years'
+              )
+            p.first-screen-statistics__text
+              +lang(
+              'опыта на рынке ОАЭ',
+              'of business experience'
+              )
+  section.bg.bg_wave
+    .container
+      .r60_adaptive
+      h2.title
+        +lang(
+        'Кому будет интересен интерактив',
+        'Who Should Attend'
+        )
+      .r30_adaptive
+      p.description
+        +lang(
+        'Арабские Эмираты – страна уникальных возможностей для бизнеса с особой поддержкой высоких технологий, инноваций и перспективных разработок в IT-сфере на уровне государства. Команда SORP предоставит Вам свое видение перспектив \n' +
+        'и емкости рынка, особенностей законодательства, нюансов открытия IT-бизнеса и получения лицензии, а также поможет разобраться в юридических аспектах ведения деятельности в ОАЭ и привести Ваш бизнес к финансовому успеху.',
+        'The UAE is a country of unique business opportunities in high-tech, innovations and IT-development, supported by Government vision and programs for years ahead. SORP Group will enlighten you with a general approach to the IT sector, provide you with tips on market perspectives and target audience,  clarify the issues of licensing of IT business in the UAE, give professional advice on boosting revenue and  businesses support, advise on preferential tax treatment and obtaining investments.'
+        )
+      .r50_adaptive
+      .block41
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Владельцы <br class="hide-tn show-sm-min"> IT-бизнеса',
+              'Owners of <br class="hide-tn show-sm-min"> IT-business'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/person-lifesaver.svg", alt="")
+          .block41__desc
+            +lang(
+            'В поисках решений для оптимизации и расширения своего бизнеса с территории ОАЭ',
+            'Looking for solutions to optimize and <br class="hide-tn show-sm-min"> \n' +
+            'expand their business in the UAE'
+            )
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Менеджмент <br class="hide-tn show-sm-min">IT-корпораций',
+              'Management <br class="hide-tn show-sm-min">of IT-corporations'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/tie.svg", alt="")
+          .block41__desc
+            +lang(
+            'Желающие получить новые возможности ведения IT-бизнеса с территории Арабских Эмиратов',
+            'Those who want to get new opportunities<br> \n' +
+            'to conduct IT business in the UAE'
+            )
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Венчурные <br class="hide-tn show-sm-min"> инвесторы',
+              'Venture <br class="hide-tn show-sm-min">investors'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/coins.svg", alt="")
+          .block41__desc
+            +lang(
+            'Желающие прибыльно инвестировать свой капитал в IT-проекты и стартапы <br class="hide-tn show-sm-min">в ОАЭ',
+            'Those who want to invest their capital profitably in IT projects and startups'
+            )
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Провайдеры <br class="hide-tn show-sm-min">IT-услуг',
+              'Providers of <br class="hide-tn show-sm-min">IT - services'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/shopping-cart.svg", alt="")
+          .block41__desc
+            +lang(
+            'В поисках выгодных индивидуальных решений для развития и расширения собственных IT-предприятий',
+            'Looking for profitable individual solutions for the development and expansion of their IT enterprises'
+            )
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Поставщики <br class="hide-tn show-sm-min">IT-оборудования',
+              'Suppliers of <br class="hide-tn show-sm-min">IT - equipment'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/save-the-world.svg", alt="")
+          .block41__desc
+            +lang(
+            'Желающие выйти на новые рынки сбыта, расширить мировое присутствие, открыв бизнес в ОАЭ\n',
+            'Those who want to enter new markets, expand their global presence by opening a business in the UAE'
+            )
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Создатели <br class="hide-tn show-sm-min">IT-стартапов',
+              'Founders of <br class="hide-tn show-sm-min">IT startups'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/growth.svg", alt="")
+          .block41__desc
+            +lang(
+            'Желающие успешно реализовать и масштабировать IT-проект в ОАЭ с максимальной выгодой',
+            'Those who want to implement and expand a successful IT project in the UAE with maximum benefit'
+            )
+      .r60_adaptive
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text
+          +lang(
+          'Узнайте о возможностях для Вашего бизнеса в сфере инноваций \n' +
+          'и информационных технологий на территории ОАЭ ',
+          'Learn about the benefits of doing IT and Innovative business in the UAE with a personal consultation'
+          )
+        label.feedback-block__btn(for="modal2")
+          + lang(
+          'Записаться на семинар',
+          'Ask an expert'
+          )
+    .r30
+    .r5
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title
+        +lang(
+        'Что Вы узнаете из нашей интерактивной консультации',
+        'What You Will Find Out'
+        )
+      .r50_adaptive
+      .block57
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/social-growth.svg", alt="")
+          .block57__title
+            +lang(
+            'Как развивался один из самых быстрорастущих \n' +
+            'и крупнейших рынков мира',
+            'The development of \n' +
+            'one of the fastest emerging \n' +
+            'markets in the world'
+            )
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/hand-graph.svg", alt="")
+          .block57__title
+            +lang(
+            'Все особенности местного законодательства и нюансы регулирования IT-рынка ОАЭ',
+            'All features of local legislation and nuances of regulations of the IT market in the UAE'
+            )
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/todolist.svg", alt="")
+          .block57__title
+            +lang(
+            'Как лицензировать бизнес, защитить интеллектуальную собственность в ОАЭ',
+            'How to license your business and protect Intellectual Property in the UAE'
+            )
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/save-the-world.svg", alt="")
+          .block57__title
+            +lang(
+            'Тонкости ведения IT-бизнеса \n' +
+            'различных направлений в ОАЭ. Методологии и анализ.',
+            'All the details of doing IT-business in various fields. Methodologies and analysis'
+            )
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/graph-tax.svg", alt="")
+          .block57__title
+            +lang(
+            'Налоговое планирование \n' +
+            'и возможности оптимизации международного бизнеса',
+            'Tax planning and opportunities of international business optimization '
+            )
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/golf.svg", alt="")
+          .block57__title
+            +lang(
+            'Как не допускать ошибок\n' +
+            'при ведении IT-деятельности в ОАЭ. Примеры и факты.',
+            'How to avoid mistakes when runnng an IT business in the UAE. Real cases and facts'
+            )
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title
+        +lang(
+        'В результате интерактива Вы получите:',
+        'Opportunities for Attendees'
+        )
+      .r50_adaptive
+      .block58
+        .block58__row
+          .block58__item.block58__item_image.lazy(data-bg="/dist/img/blocks/block58/1.jpg")
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/three-people.svg", alt="")
+            .block58__text-content
+              .block58__title
+                +lang(
+                'Полезные знания',
+                'Valuable knowledge'
+                )
+              .block58__description
+                +lang(
+                'Уникальные знания от экспертов-практиков \n' +
+                'всего лишь за 3 часа станут прочной основой \n' +
+                'для построения Вашего IT-бизнеса в ОАЭ.',
+                'Unique knowledge from business experts in just 3 hours will delivcer a solid foundation for bringing<br> \n' +
+                'your IT and high-tech business into the UAE.'
+                )
+        .block58__row.block58__row_reverse
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/hand-graph.svg", alt="")
+            .block58__text-content
+              .block58__title
+                +lang(
+                'Новые перспективы',
+                'Emerging prospects'
+                )
+              .block58__description
+                +lang(
+                'На семинаре мы поделимся с Вами успешными кейсами и расскажем о всех возможностях выхода на рынок ОАЭ, ответим на Ваши вопросы',
+                'We will give you examples of successful business cases and tell you about all the opportunities to enter the UAE market. Then we will answer your questions'
+                )
+          .block58__item.block58__item_image.lazy(data-bg="/dist/img/blocks/block58/2.jpg")
+        .block58__row
+          .block58__item.block58__item_image.lazy(data-bg="/dist/img/blocks/block58/3.jpg")
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/growth.svg", alt="")
+            .block58__text-content
+              .block58__title
+                +lang(
+                'Новый бизнес',
+                'New business'
+                )
+              .block58__description
+                +lang(
+                'После нашего семинара Вы сможете сразу \n' +
+                'же начать запуск Вашего бизнеса, получив \n' +
+                'все необходимые компетенции.',
+                'Enter the new market being fully prepared and equipped with a proper understanding of how to \n' +
+                'do business in the UAE instantly after the seminar'
+                )
+
+      .r50_adaptive
+      label.btn.btn_white.btn_space-between.btn_center(for="modal2")
+        +lang(
+        'Отправить заявку на участие',
+        'Sign up for a Q&A session'
+        )
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title
+        +lang(
+        'Программа интерактивной консультации в формате Q&A:',
+        'Q&A Interactive Session Agenda'
+        )
+      .r50_adaptive
+      .block35.block35_width3.block35_workshop
+        .block35__item
+          .block35__head
+            h3.block35__title
+              +lang(
+              'История развития \n' +
+              'и перспективы в Арабских Эмиратах',
+              'Introduction to the history of the UAE <br class="hide-tn show-sm-min">\n' +
+              'and the market trends '
+              )
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 1
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+            p.block35__description-duration
+              +lang(
+              '30 минут',
+              '30 minutes'
+              )
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item
+                  +lang(
+                  'История, становление и \n' +
+                  'темпы развития ОАЭ',
+                  'History, formation and pace of development of the UAE'
+                  )
+                li.list__item
+                  +lang(
+                  'Текущая ситуация на рынке и государственные инициативы',
+                  'Current market situation and government initiatives in IT and techs'
+                  )
+                li.list__item
+                  +lang(
+                  'Основной портрет потребителя \n' +
+                  'и точки роста',
+                  'The main portrait of the consumer \n' +
+                  'and growth points'
+                  )
+        .block35__item
+          .block35__head
+            h3.block35__title
+              +lang(
+              'Законодательство\n' +
+              'и регулирование IT-бизнеса',
+              'Legislation and IT business regulations <br class="hide-tn show-sm-min">\n' +
+              'in the UAE'
+              )
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 2
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+            p.block35__description-duration
+              +lang(
+              '30 минут',
+              '30 minutes'
+              )
+          .r20
+          .r1.r_bg-e3
+          .block35__main.block35__main_wave-ltr
+            .block35__content
+              ul.list
+                li.list__item
+                  +lang(
+                  'Принципы регулирования предпринимательской деятельности',
+                  'Regulatory rules and entrepreneurial activity'
+                  )
+                li.list__item
+                  +lang(
+                  'Налогообложение, принципы управления, судебная система',
+                  'Taxation, management and judicial system'
+                  )
+                li.list__item
+                  +lang(
+                  'Ведомства, контролирующие IT-сферу в ОАЭ',
+                  'Authorities that control and regulate  IT business in the UAE'
+                  )
+        .block35__item
+          .block35__head
+            h3.block35__title
+              +lang(
+              'Особенности регистрации и лицензирования',
+              'Features of setup and licensing your business in the UAE'
+              )
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 3
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+            p.block35__description-duration
+              +lang(
+              '25 минут',
+              '25 minutes'
+              )
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item
+                  +lang(
+                  'Типы юридических лиц, доступные для регистрации в ОАЭ',
+                  'Types of legal entities available for incorporation in the UAE'
+                  )
+                li.list__item
+                  +lang(
+                  'Получение разрешений и лицензирование бизнеса в ОАЭ',
+                  'Obtaining business approvals and licensing in the UAE'
+                  )
+                li.list__item
+                  +lang(
+                  'Регистрация интеллектуальной собственности в ОАЭ',
+                  'Intellectual property registration in <br class="hide-tn show-sm-min">\n' +
+                  'the UAE'
+                  )
+
+        .block35__item
+          .block35__head
+            h3.block35__title
+              +lang(
+              'Особенности ведения IT-бизнеса в разных секторах экономики',
+              'Peculiarities of doing IT business in the UAE in various fields'
+              )
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 4
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+            p.block35__description-duration
+              +lang(
+              '40 минут',
+              '40 minutes'
+              )
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item
+                  +lang(
+                  'Как организовать торговлю\n' +
+                  'в сфере IT-бизнеса',
+                  'How to set up a trading IT business in the UAE'
+                  )
+                li.list__item
+                  +lang(
+                  'Как организовать услуги и сервис \n' +
+                  'в сфере IT-бизнеса',
+                  'How to set up a service IT business in the UAE'
+                  )
+                li.list__item
+                  +lang(
+                  'Как организовать производство в сфере IT - бизнеса',
+                  'How to set up a manufacturing IT business in the UAE'
+                  )
+        .block35__item
+          .block35__head
+            h3.block35__title
+              +lang(
+              'Оптимизация <br class="hide-tn show-sm-min">\n' +
+              'международной <br class="hide-tn show-sm-min">\n' +
+              'деятельности',
+              'International <br class="hide-tn show-sm-min">\n' +
+              'business <br class="hide-tn show-sm-min">\n' +
+              'optimization'
+              )
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 5
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+            p.block35__description-duration
+              +lang(
+              '25 минут',
+              '25 minutes'
+              )
+          .r20
+          .r1.r_bg-e3
+          .block35__main.block35__main_wave-ltr
+            .block35__content
+              ul.list
+                li.list__item
+                  +lang(
+                  'Международный бизнес под флагом ОАЭ',
+                  'Doing international business under the UAE flag of convenience'
+                  )
+                li.list__item
+                  +lang(
+                  'Инструменты международного налогвого планирования',
+                  'Tax planning tools for international business optimization'
+                  )
+                li.list__item
+                  +lang(
+                  'Налоговое резидентство и защита от обмена налоговой информацией ',
+                  'Tax residency and protection from automatic exchange of tax information'
+                  )
+        .block35__item
+          .block35__head
+            h3.block35__title
+              +lang(
+              'Практические бизнес-кейсы. Разбор побед и поражений',
+              'Practical business cases. Analysis of <br class="hide-tn show-sm-min">\n' +
+              'wins and losses'
+              )
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 6
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg")
+            p.block35__description-duration
+              +lang(
+              '30 минут',
+              '30 minutes'
+              )
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item
+                  +lang(
+                  'Ошибки, которые совершают инвесторы',
+                  'Typical errors and mistakes that business investors make'
+                  )
+                li.list__item
+                  +lang(
+                  'Примеры успешных кейсов построения бизнеса в ОАЭ',
+                  'Examples of successful cases of starting a business in the UAE'
+                  )
+                li.list__item
+                  +lang(
+                  'Ответы на интересующие \n' +
+                  'вопросы участников',
+                  'Q & A session'
+                  )
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section
+    .r60_adaptive
+    .container
+      .about-company
+        .about-company__left
+          .borderline.borderline_quote.borderline_EA
+            .about-company__content
+              p.about-company__text(style="font-style: normal;")
+                +lang(
+                'Интерактивная консультация в формате Q&A позволит не только получить общие данные о юрисдикции, в которой Вы планируете начать дело, но и узнать полную информацию об особенностях законодательства, инкорпорации, сопровождения бизнеса на практических знаниях и кейсах от наших спикеров.\n' +
+                '\n <br><br>' +
+                'Кроме того, участники смогут получить экспертный опыт \n <br><br>' +
+                'и практические советы, что на все 100% поготовит Вас к самостоятельному ведению перспективного и доходного IT-бизнеса в ОАЭ.',
+                'The interactive Q&A consultancy will allow you not only to get general information about the jurisdiction in which you plan to start a business, but also to learn the peculiarities of the specifics of legislation, incorporation and business support, based on practical knowledge and cases from our speakers.\n' +
+                '\n <br><br>' +
+                'In addition, participants will be able to get professionally experienced practical advice, which will give you a 100% reliable foundation for independent management of a prospective and lucrative high-tech and innovative <br><br> \n' +
+                'business in the UAE.'
+                )
+            .borderline__quote.borderline__quote_top.lazy(data-bg="/dist/img/blocks/borderline/quotes-EA.svg")
+            .borderline__quote.borderline__quote_bottom.lazy(data-bg="/dist/img/blocks/borderline/quotes-EA.svg")
+
+        .about-company__right
+          .about-company__img-box.about-company__img-box_gray
+            //-.about-company__play
+                .about-company__play-icon
+            //-.about-company__duration 2:20
+            img.about-company__img.lazy(src="/dist/img/blocks/mask.png" data-src="/dist/img/pages/doing_it/3N8A52911.jpg", alt="4-х дневная программа")
+    .r60_adaptive
+
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text
+          +lang(
+          'Получите экспертный анализ возможных перспектив развития Вашего IT-бизнеса в ОАЭ от профессионалов SORP Group',
+          'Get a bespoke analysis on the prospects for your IT and HighTech business in the UAE with SORP expert support.'
+          )
+        label.feedback-block__btn(for="modal2")
+          +lang(
+          'Записаться на интерактив',
+          'Ask an expert'
+          )
+    .r30
+    .r5
+
+  section#about-teachers.bg.bg_fa.bg_right-side.bg_right-side-top.bg_remove-sm-min.lazy(data-bg="/dist/img/blocks/arc-lines.svg")
+    .container
+      .r60_adaptive
+      h2.title
+        +lang(
+        'Докладчики интерактивной консультации:',
+        'About the Interactive Q&A Session Speakers'
+        )
+      .r50_adaptive
+      .experts-about.experts-about_width2
+        .experts-about__item
+          | {if $_modx->config.cultureKey == 'ru'}
+          | <img class="experts-about__image lazy" data-src="/dist/img/blocks/experts/about/sergey.png" alt="Сергей Сорп">
+          | {else}
+          | <img class="experts-about__image lazy" data-src="/dist/img/blocks/experts/about/perlin.png" alt="Maxim Perlin">
+          | {/if}
+
+          h3.experts-about__name
+            +lang(
+            'Сергей Сорп',
+            'Maxim Perlin'
+            )
+          p.experts-about__position-title
+            +lang(
+            'управляющий партнер SORP GRoup',
+            'Director, SORP Business school'
+            )
+          p.experts-about__description
+            +lang(
+            'Предприниматель, добившийся выдающихся успехов в бизнесе, владелец ведущей консалтинговой Группы ОАЭ. Антикризисный аналитик, бизнес-консультант, бизнес-тренер.\n' +
+            '\n <br><br>' +
+            'Уже в 18 лет создал первое успешное предприятие. За свою карьеру прошел путь от малого предпринимателя, до советника по экономике государственной отрасли, получил степень Доктора экономики Российского экономического университета имени Плеханова. Управлял коллективом в 3000 сотрудников с ежегодными бюджетами до 200 млн долларов. \n' +
+            '\n <br><br>' +
+            'Сфера его профессионального интереса – анализ проблем ведения бизнеса с особым акцентом на построении финансовых, маркетинговых и управленческих стратегий, обеспечивающих рост и масштабирование. \n' +
+            '\n <br><br>' +
+            'Частный инвестор, эксперт по выводу бизнеса из кризиса,  международному налоговому планированию и построению стартапов. \n' +
+            '\n <br><br>' +
+            '\n <br><br>',
+            'An entrepreneur and investor with more than 20 years of experience in investment banking. A graduate of Lubin School of Business, Pace University, New York.\n' +
+            '\n <br><br>' +
+            'Having received his MBA degree in Finance, Maxim worked in a number of investment   banks and financial institutions as an equity trader and corporate finance advisor in Russia and the UAE. \n' +
+            '\n <br><br>' +
+            'He has structured a number of M&A deals and managed investment portfolios of USD $100M+ proprietary and for his large clientele. Investor and mentor of several IT and e-commerce startups. Experienced public speaker and  director  of SORP Business School, also responsible for educational programs. \n' +
+            '\n <br><br>' +
+            'His areas of interest and focus are venture capital, financial applications, and blockchain. Working independently, he is representing a number of Russian, European and Israeli companies in the UAE, providing effective networking and communication and arranging signings of commercial contracts and further advising and support.\n'
+            )
+        .experts-about__item
+          img.experts-about__image.lazy(data-src="/dist/img/blocks/experts/about/elena.png" alt="Elena Tselishcheva")
+          .experts-about__name
+            +lang(
+            'Елена Целищева',
+            'Elena Tselishcheva'
+            )
+          .experts-about__position-title
+            +lang(
+            'Упраляющий партнер Sorp group',
+            'Managing Partner, Sorp'
+            )
+          .experts-about__description
+            +lang(
+            'Елена Целищева – практикующий юрист по корпоративному праву, ведущий бизнес-консультант, мастер-наставник с опытом ведения и построения международного бизнеса более 20 лет.\n' +
+            '\n <br><br>' +
+            'Свою карьеру начинала с создания агентства по юридической экспертизе и маркетинговым исследованиям. Позже проект \n' +
+            'был успешно продан крупному российскому банку, после чего продолжила свою карьеру в качестве владельца европейского Bankers Trust с операционной деятельностью в 5 юрисдикциях \n' +
+            'и компании по управлению проектами, специализирующейся в  20 секторах экономики. \n' +
+            '\n <br><br>' +
+            'Разработала собственную методологию наставничества на  стыке организационной бизнес-психологии, стратегии развития лидерства и локализации лучших мировых трендов. \n' +
+            '\n <br><br>' +
+            'Идеолог стремительной акселерации и масштабирования бизнеса в ОАЭ.',
+            'Managing partner of SORP Group  and practicing business and corporate lawyer. Elena has built her expertise in establishing and managing international business over a 20-year career.\n' +
+            '\n <br><br>' +
+            ' She is a highly experienced corporate consultant across wide range of industries and fields; a business mentor and coach for more than 15 years of practice in the UAE.\n' +
+            '\n <br><br>' +
+            'From setting up her own due diligence and marketing research agency, Elena grew her 1st enterprise and successfully sold it. She then owned the European Bankers Trust, operating in 5 jurisdictions (Russia, Cyprus, Austria, Switzerland, UAE) and managed a project management company with expertise in 25 economy sectors.\n' +
+            '\n <br><br>' +
+            'Her spheres of interests in setting up holdings and trust structures and  international business optimization. She developed the successful mentoring methodology and practices combines business psychology with leadership development strategy using global best practices and trends in localization. Now she is an acknowledged exponent of business scaling and rapid acceleration in the UAE.'
+            )
+
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section.bg.bg_f9
+    .container
+      .r60_adaptive
+      .modal.modal_block
+        label.modal__close
+        .modal__content
+          .modal__left.form-block
+            h2.modal__title.modal__title_right
+              +lang(
+              'Приглашаем на интерактивную консультацию в формате Q&A',
+              'Sign up for a Q&A session or submit an enquiry'
+              )
+            .modal__text-block
+              div(style="display: flex;")
+                img.modal__text-icon.lazy(data-src="/dist/img/blocks/duration-clock.svg" alt="")
+                p.modal__text.modal__text_bold
+                  +lang(
+                  '10 декабря в 18:00',
+                  '10 December at 18:00'
+                  )
+              p.modal__text
+                +lang(
+                'Осталось: ',
+                'Remaining: '
+                )
+                span.modal__text_bold
+                  +lang(
+                  '15 мест',
+                  '15 places'
+                  )
+            .r60_adaptive
+
+            | {if $_modx->config.cultureKey == 'ru'}
+            | {set $redirect = 476}
+            | {else}
+            | {set $redirect = 489}
+            | {/if}
+
+            | {'!FormIt' | snippet : [
+            |      'hooks'=>'amo, FormItSaveForm, email, redirect',
+            |      'emailSubject'=>'Заявка с сайта SORP',
+            |      'emailTo'=>'yudin-1337@yandex.ru, letters@sorp.ae',
+            |      'emailTpl' => 'response_modal.tpl',
+            |      'validate'=>'phone:required,name:blank,firstname:blank,lastname:blank',
+            |      'fieldNames'=>'fio==Имя,phone==Телефон,page==Страница',
+            |      'redirectTo' => $redirect,
+            | ]}
+
+            <form class="modal__form" method="post">
+            input.callOrderReason(type='hidden' name='reason' value='')
+            <input class="page" type='hidden' name='pageurl' value='{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}'>
+            <input type="hidden" name="pagetitle" value='{$_modx->resource['pagetitle']}'>
+            <input type="hidden" name="pageid" value="{$_modx->resource.id}" />
+
+            input.site-message(type='text' name='name' value='')
+            input.site-message(type='text' name='firstname' value='')
+            input.site-message(type='text' name='lastname' value='')
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Ваше имя',
+                'Name:'
+                )
+              input.form-block__input(type='text' name='fio' value='' required)
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Телефон',
+                'Telephone:'
+                )
+              input.form-block__input(type='tel' name='phone' value='' required)
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Электронная почта',
+                'E-mail:'
+                )
+              input.form-block__input(type='email' name='email' value='')
+            .form-block__item
+              button.btn.btn_radius5.btn_w100.btn_hover-red(type='submit')
+                +lang(
+                'Отправить заявку',
+                'Apply for a Q&A session'
+                )
+            //-.form-block__confid Поля, отмеченные символом * обязательны для заполнения
+            </form>
+
+          .modal__right.modal__background.lazy(data-bg="/dist/img/pages/doing_it/form.svg")
+            style
+              | .modal__right {
+              |    background-position: center 70% !important;
+              | }
+            .modal__title.modal__title_right
+              +lang(
+              'Участие бесплатно',
+              'FREE attendance'
+              )
+            .r30
+            .r10
+            .r5
+            .modal__text
+
+
+      .r60_adaptive
+    .r1.r_bg-e3
+  section
+    .container.bg.lazy(data-bg="/dist/img/blocks/red-lightning.png")
+      .r60_adaptive
+      h2.title
+        +lang(
+        'Как проходят наши мероприятия',
+        'About our event'
+        )
+      .r60_adaptive
+      .block41.block41_column-direction.block41_accent-red
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Получение знаний от практиков <br class="hide-tn show-sm-min">\n' +
+              'ведения бизнеса в ОАЭ',
+              'Consultancy from experienced <br class="hide-tn show-sm-min"> business lecturers'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/verified-person.svg", alt="")
+          .block41__desc
+            +lang(
+            'Вы не просто будете слушать доклады спикеров, но сможете активно участвовать \n' +
+            'в процессе, задавая свои вопросы',
+            'You will not just listen to the speakers "lectures, but also receive answers to your personal questions"'
+            )
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Кофе-брейки и обмен опытом <br class="hide-tn show-sm-min">\n' +
+              'в непринужденной обстановке',
+              'Coffee breaks and exchanging <br class="hide-tn show-sm-min"> experience \n' +
+              'with other participants'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/three-people.svg", alt="")
+          .block41__desc
+            +lang(
+            'Вы сможете продолжить дискуссию во время кофе-брейка как с коллегами из SORP, так и с другими участниками семинара',
+            'You will be able to continue the discussion during the coffee break with SORP, as well <br class="hide-tn show-sm-min">\n' +
+            'as with other participants of the session'
+            )
+        .block41__item
+          .block41__head
+            .block41__title
+              +lang(
+              'Личное общение с экспертами <br class="hide-tn show-sm-min"> и получение консультаций',
+              'Communication with <br class="hide-tn show-sm-min"> speakers and short personal consultations'
+              )
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/communication.svg", alt="")
+          .block41__desc
+            +lang(
+            'Вы получите возможность дополнительной бесплатной консультации экспертов SORP, если у Вас останутся вопросы',
+            'You will get an additional free consultation with SORP experts if you have questions or any additional enquiries'
+            )
+      .r50_adaptive
+      style
+        | .image-block { background-repeat: no-repeat; height: 270px; background-size: cover; background-position-y: center; border-radius: 2px; }
+      .image-block.lazy(data-bg="/dist/img/pages/doing_in_dubai_offline/about-company/people-photo.jpg" alt="")
+      .r60_adaptive
+
+    .container
+      h2.title
+        +lang(
+        'Место проведения интерактива:',
+        'Where will the interactive consultancy take place'
+        )
+      .r50_adaptive
+      .block36
+        .block36__item
+          svg.block36__icon(width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M40 17C40 30.604 25 48 25 48C25 48 10 30.928 10 17C10 8.715 16.715 2 25 2C33.284 2 40 8.715 40 17Z' stroke='#D3D3D3' stroke-width='1.7647' stroke-miterlimit='10' stroke-linejoin='round')
+            path(d='M25 24C28.3137 24 31 21.3137 31 18C31 14.6863 28.3137 12 25 12C21.6863 12 19 14.6863 19 18C19 21.3137 21.6863 24 25 24Z' stroke='#D3D3D3' stroke-width='1.7647' stroke-miterlimit='10' stroke-linejoin='round')
+          .block36__content
+            .block36__title
+              +lang(
+              'Barsha Heights',
+              'Barsha Heights'
+              )
+              span
+                +lang(
+                '(TECOM)',
+                '(TECOM)'
+                )
+            .block36__description
+              +lang(
+              'Tameem House Building Dubai',
+              'Tameem House Building Dubai'
+              )
+        .block36__item
+          svg.block36__icon(width='49' height='50' viewBox='0 0 49 50' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M47.4576 46.75H43.8326V32.25C45.2996 31.9505 46.6031 31.1171 47.4905 29.9111C48.3779 28.7052 48.7859 27.2128 48.6354 25.7231C48.4849 24.2335 47.7867 22.8528 46.676 21.8487C45.5654 20.8446 44.1215 20.2887 42.6243 20.2887C41.1271 20.2887 39.6832 20.8446 38.5726 21.8487C37.462 22.8528 36.7637 24.2335 36.6132 25.7231C36.4628 27.2128 36.8707 28.7052 37.7581 29.9111C38.6455 31.1171 39.949 31.9505 41.416 32.25V46.75H31.7493V2.04164C31.7615 1.77511 31.6852 1.51203 31.5321 1.29345C31.3791 1.07487 31.1581 0.913073 30.9035 0.833308C30.6581 0.759743 30.396 0.764431 30.1535 0.846721C29.9109 0.92901 29.7001 1.08481 29.5501 1.29247C27.7289 3.95092 25.4354 6.25264 22.7835 8.08331C19.6324 9.01009 16.3922 9.60143 13.1168 9.84748C11.563 10.0759 10.145 10.8611 9.12698 12.057C8.10892 13.2529 7.56009 14.7779 7.58264 16.3483V17.75H3.95764C2.99623 17.75 2.0742 18.1319 1.39438 18.8117C0.71456 19.4915 0.332642 20.4136 0.332642 21.375V47.9583C0.332642 48.2788 0.459948 48.5861 0.686554 48.8127C0.913161 49.0393 1.2205 49.1666 1.54097 49.1666H47.4576C47.7781 49.1666 48.0855 49.0393 48.3121 48.8127C48.5387 48.5861 48.666 48.2788 48.666 47.9583C48.666 47.6378 48.5387 47.3305 48.3121 47.1039C48.0855 46.8773 47.7781 46.75 47.4576 46.75ZM38.9993 26.2083C38.9993 25.4914 39.2119 24.7905 39.6102 24.1944C40.0086 23.5982 40.5747 23.1336 41.2371 22.8592C41.8995 22.5849 42.6283 22.5131 43.3315 22.653C44.0347 22.7928 44.6806 23.1381 45.1876 23.645C45.6945 24.152 46.0398 24.7979 46.1797 25.5011C46.3195 26.2043 46.2477 26.9332 45.9734 27.5955C45.699 28.2579 45.2344 28.8241 44.6383 29.2224C44.0421 29.6207 43.3413 29.8333 42.6243 29.8333C41.6629 29.8333 40.7409 29.4514 40.0611 28.7716C39.3812 28.0918 38.9993 27.1697 38.9993 26.2083ZM9.99931 46.75V39.5H14.8326V46.75H9.99931ZM17.2493 46.75V38.2916C17.2493 37.9712 17.122 37.6638 16.8954 37.4372C16.6688 37.2106 16.3614 37.0833 16.041 37.0833H8.79098C8.47051 37.0833 8.16316 37.2106 7.93655 37.4372C7.70995 37.6638 7.58264 37.9712 7.58264 38.2916V46.75H2.74931V21.375C2.74931 21.0545 2.87661 20.7472 3.10322 20.5206C3.32983 20.2939 3.63717 20.1666 3.95764 20.1666H20.8743C21.1948 20.1666 21.5021 20.2939 21.7287 20.5206C21.9553 20.7472 22.0826 21.0545 22.0826 21.375V46.75H17.2493ZM24.4993 46.75V21.375C24.4993 20.4136 24.1174 19.4915 23.4376 18.8117C22.7578 18.1319 21.8357 17.75 20.8743 17.75H9.99931V16.3483C9.99209 15.3694 10.3452 14.4221 10.9914 13.6867C11.6376 12.9514 12.5318 12.4794 13.5035 12.3608C16.9906 12.1655 20.4403 11.5405 23.7743 10.5C25.9162 9.25511 27.8024 7.61497 29.3326 5.66664V46.75H24.4993Z' fill='#D3D3D3')
+            path(d='M16.041 27.4166H8.79097C8.4705 27.4166 8.16316 27.5439 7.93655 27.7705C7.70995 27.9971 7.58264 28.3045 7.58264 28.625C7.58264 28.9454 7.70995 29.2528 7.93655 29.4794C8.16316 29.706 8.4705 29.8333 8.79097 29.8333H16.041C16.3614 29.8333 16.6688 29.706 16.8954 29.4794C17.122 29.2528 17.2493 28.9454 17.2493 28.625C17.2493 28.3045 17.122 27.9971 16.8954 27.7705C16.6688 27.5439 16.3614 27.4166 16.041 27.4166Z' fill='#D3D3D3')
+          .block36__content
+            .block36__title
+              +lang(
+              'Бизнес-центр SORP ',
+              'SORP Business Center'
+              )
+            .block36__description
+              +lang(
+              'Место проведения',
+              'Prime business location'
+              )
+
+
+        .block36__item
+          svg.block36__icon(width='48' height='50' viewBox='0 0 48 50' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M30.0873 13C30.0873 13.552 29.667 14 29.147 14H17.8637C17.3447 14 16.9234 13.552 16.9234 13V11C16.9234 10.448 17.3447 10 17.8637 10H29.147C29.667 10 30.0873 10.448 30.0873 11V13Z' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10')
+            path(d='M7.12294 49L12.5474 44.166' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M39.8878 49L34.4633 44.166' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M26.3572 4H20.8002M15.9747 4H14.1026C10.9884 4 8.46095 6.56 8.46095 9.714V38.286C8.46095 41.44 10.9884 44 14.1026 44H32.9081C36.0223 44 38.5498 41.44 38.5498 38.286V9.714C38.5498 6.56 36.0223 4 32.9081 4H31.0915H15.9747Z' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M28.6769 6C29.9751 6 31.0276 4.88071 31.0276 3.5C31.0276 2.11929 29.9751 1 28.6769 1C27.3786 1 26.3262 2.11929 26.3262 3.5C26.3262 4.88071 27.3786 6 28.6769 6Z' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M18.3338 6C19.6321 6 20.6845 4.88071 20.6845 3.5C20.6845 2.11929 19.6321 1 18.3338 1C17.0356 1 15.9832 2.11929 15.9832 3.5C15.9832 4.88071 17.0356 6 18.3338 6Z' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M12.2221 15.833C12.2221 14.821 13.0645 14 14.1026 14H32.9081C33.9462 14 34.7887 14.821 34.7887 15.833V24.166C34.7887 25.178 33.9462 26 32.9081 26H14.1026C13.0645 26 12.2221 25.178 12.2221 24.166V15.833Z' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M15.0429 39C16.6008 39 17.8637 37.6569 17.8637 36C17.8637 34.3431 16.6008 33 15.0429 33C13.485 33 12.2221 34.3431 12.2221 36C12.2221 37.6569 13.485 39 15.0429 39Z' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round')
+            path(d='M31.9678 39C33.5257 39 34.7887 37.6569 34.7887 36C34.7887 34.3431 33.5257 33 31.9678 33C30.4099 33 29.147 34.3431 29.147 36C29.147 37.6569 30.4099 39 31.9678 39Z' stroke='#D3D3D3' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round')
+          .block36__content
+            .block36__title
+              +lang(
+              'Метро Dubai Internet City',
+              'Metro Dubai Internet City'
+              )
+            .block36__description
+              +lang(
+              '5 минут от метро',
+              '5 minutes from'
+              )
+
+      .r50_adaptive
+      label.btn.btn_white.btn_space-between.btn_center(for="modal2")
+        +lang(
+        'Записаться на семинар',
+        'Sign up for a Q&A session'
+        )
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+    .r1.r_bg-e3
+    .r60_adaptive
+    .container
+      h2.title
+        +lang(
+        'Услуги SORP Group для Вас:',
+        'Activities of SORP Group'
+        )
+      .r50_adaptive
+      .slider-departments.slider-departments_static
+        .slider-departments__item
+          img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_it/4cases.png" alt="SORP Business School")
+        .slider-departments__item
+          img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_it/1.png" alt="Keinan")
+        .slider-departments__item
+          img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_it/2mentoring.png" alt="Keinan")
+        .slider-departments__item
+          img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_it/3analysis.png" alt="Keinan")
+    .r60_adaptive

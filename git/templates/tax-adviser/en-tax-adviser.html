@@ -1,0 +1,526 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+    	<path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+    	<path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+    <symbol id="btn__icon" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.291748 10.7884L1.27464 11.6392L1.76608 11.2126L7.82088 5.98838L1.76608 0.764161L1.27464 0.337599L0.291748 1.18838L0.783192 1.6126L5.85239 5.98838L0.783192 10.3642L0.291748 10.7884ZM5.84968 10.7884L6.83256 11.6392L7.324 11.2126L13.3788 5.98838L7.324 0.764161L6.83256 0.337599L5.84968 1.18838L6.34112 1.6126L11.4103 5.98838L6.34112 10.3642L5.84968 10.7884Z" />
+    </symbol>
+</svg>
+
+<style> 
+  .block1__item:hover .block1__head { background-color: #[[*link_attributes]]; }
+  .block1__content { padding: 20px 19px; } .list2__item { color: black; }
+  .block1__btn { font-size: 16px; }
+  @media (min-width: 992px) { .block1__head { padding: 30px 27px; } .block14__item { padding-bottom: 50px; } }
+  @media (min-width: 800px) { .block-snake__text_gray { padding-right: 50px; } }
+
+  /* удалить ниже при переносе на боевую */
+  .block47__item { flex-direction: column; } .block47__icon-wrap { margin-bottom: 20px; width: 50px; }
+  @media(min-width: 770px) { .block47__item { flex-direction: row; } .block47__icon-wrap { margin-right: 20px; margin-bottom: 0; } }
+</style>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]];">
+        <div class="first-screen">
+            <div class="first-screen__box">
+                <div class="first-screen__logo-box first-screen__logo-box_new">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">International‌ ‌tax‌ ‌planning‌ ‌tools‌</h1>
+                    <p class="first-screen__text">
+                      Optimizing and reducing your tax burden, capital movement modeling, and safeguarding business <br class="hide-sm-min">and personal accounts from exchange of tax information.
+                    </p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Ask for more details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">The global trend toward strengthening controls over businesses leaves fewer legal methods of tax burden minimization, fund flow optimization and settlement distribution. However, legislation within the United Arab Emirates provides entrepreneurs with a unique set of tools to shield themselves from the automatic exchange <br class="hide-sm-min"> of financial accounting information required by the Common Reporting Standard (CRS).</div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <div class="r40 hide-sm-min"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock1" class="bg-F9">
+    <div class="container_bem">
+        <div class="r50_adaptive"></div>
+        <h2 class="title">Put SORP Group’s effective international tax planning tools to work for you</h2>
+        <div class="r40"></div>
+        
+        <div class="block1 z-idx3">
+            <div class="block1__item">
+                <a class="block1__head" href="/en/tax-residency-in-uae/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Help with achieving UAE Tax Resident status</div>
+                        <div class="block1__head-text">A UAE tax domicile certificate means declared income is taxed at UAE rates (0%) and avoids double taxation in other jurisdictions.</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <ul class="list2">
+                      <li class="list2__item">UAE legislation provides unique opportunities to use tax minimization schemes absolutely legally</li>
+                      <li class="list2__item">Benefits of relevant international agreements and treaties still apply</li>
+                      <li class="list2__item">Full confidentiality of beneficiaries and shareholders is guaranteed by law</li>
+                    </ul>
+                    <div class="r30"></div>
+                    <a href="/en/tax-residency-in-uae/" class="block1__btn btn btn_white btn_border2" data-name="Help with achieving UAE Tax Resident status">
+                      Learn more
+                        <svg class="btn__icon-svg btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item">
+                <a class="block1__head" href="/en/consolidation/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Business and Asset Consolidation</div>
+                        <div class="block1__head-text">
+                          UAE companies can merge global assets and finances within a single business structure to optimize methods of payments and taxation.
+                        </div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <ul class="list2">
+                      <li class="list2__item">An opportunity to take advantages of offsets within a consolidated business structure</li>
+                      <li class="list2__item">Transfer profits within the group for the purpose of applying a 0% tax rate</li>
+                      <li class="list2__item">Audit Report on Consolidated Financial Statements</li>
+                    </ul>
+                    <div class="r30"></div>
+                    <a href="/en/consolidation/" class="block1__btn btn btn_white btn_border2" data-name="Business and Asset Consolidation">
+                      Learn more
+                        <svg class="btn__icon-svg btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item">
+                <a class="block1__head" href="/en/kyc/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Maintaining <br class="hide-sm-min">Bank Secrecy</div>
+                        <div class="block1__head-text">
+                          A set of measures to ensure the protection of bank secrecy where international tax information exchange might otherwise occur.
+                        </div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <ul class="list2">
+                      <li class="list2__item">The owner of accounts of controlled businesses in the UAE and abroad can manage them independently</li>
+                      <li class="list2__item">Protection against automatic exchange of financial information</li>
+                      <li class="list2__item">UAE residents enjoy the advantages of confidential banking transactions</li>
+                    </ul>
+                    <div class="r30"></div>
+                    <a href="/en/kyc/" class="block1__btn btn btn_white btn_border2" data-name="Maintaining Bank Secrecy">
+                        Learn more
+                        <svg class="btn__icon-svg btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item">
+                <a class="block1__head" href="/en/sorp-business-center/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Confirming <br class="hide-sm-min">Economic Substance</div>
+                        <div class="block1__head-text">
+                          Proving that the tax jurisdiction, decision making and control center for the business is the UAE by meeting various regulatory criteria
+                        </div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <ul class="list2">
+                      <li class="list2__item">Avoid additional taxes in the country <br class="hide-sm-min">of international business operations</li>
+                      <li class="list2__item">Use all the benefits of UAE legislation to enhance your business model</li>
+                      <li class="list2__item">Take advantage of operating totally legal tax optimization schemes</li>
+                    </ul>
+                    <div class="r30"></div>
+                    <a href="/en/sorp-business-center/" class="block1__btn btn btn_white btn_border2" data-name="Confirming Economic Substance">
+                        Learn more
+                        <svg class="btn__icon-svg btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item">
+                <a class="block1__head" href="/en/holding-company-in-uae/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Forming holdings and business structures</div>
+                        <div class="block1__head-text">
+                          Favorable legal mechanisms to organize business operations of dependent business structures<br class="hide-sm-min"> very effectively
+                        </div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <ul class="list2">
+                      <li class="list2__item">Minimize tax payments and maximize your profits</li>
+                      <li class="list2__item">Simplify the management system by combining activities</li>
+                      <li class="list2__item">Repatriate your capital freely by setting a single transaction center in the UAE</li>
+                    </ul>
+                    <div class="r30"></div>
+                    <a href="/en/holding-company-in-uae/" class="block1__btn btn btn_white btn_border2">
+                        Learn more
+                        <svg class="btn__icon-svg btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item">
+                <a class="block1__head" href="/en/trust/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Creating an <br class="hide-sm-min">Arab Trust</div>
+                        <div class="block1__head-text">
+                          Trusts that have very useful benefits for many scenarios with guaranteed protection of both assets and personal information
+                        </div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <ul class="list2">
+                      <li class="list2__item">Optimize your tax burden: income and dividends are not taxed</li>
+                      <li class="list2__item">Register assets and property to the Trust without the need to declare them</li>
+                      <li class="list2__item">UAE law prohibits disclosure of details to non-governmental third parties </li>
+                    </ul>
+                    <div class="r30"></div>
+                    <a href="/en/trust/" class="block1__btn btn btn_white btn_border2">
+                        Learn more
+                        <svg class="btn__icon-svg btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Get unique solutions and schemes for international tax planning from the <br class="hide-sm-min">leading consultants in the UAE</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Get a solution today</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section id="scrollBlock2" class="bg-FF bg_wave-center z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Advantages of UAE legislation for conducting international business</h2>
+
+        <div class="block-snake block-snake_line-right">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/tax-graph.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+    
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Tax Benefits</div>
+                    No basic taxes (corporate, personal income, dividends). Only 5% VAT is applied for a number of internal operations.
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/data-analysis.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+    
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Financial freedoms</div>
+                    Freedom to deposit and withdraw funds; absense of currency control; simplified KYC procedures for all of transactions in local currency. 
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/bank-building.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Personal rights protection</div>
+                    The Emirates shield the rights of investors by providing equal business opportunities as for foreign and local entrepreneurs.
+                </div>
+            </div>
+        </div>
+        <div class="block-snake">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/shield.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Data protection</div>
+                    Because registers of shareholders cannot be publicly disclosed by law,<br class="hide-sm-min"> it is perfect legal to employ tools to maintain total confidentiality.
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/verified-person-circle.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Prestige and validity</div>
+                    Despite their tax-free nature, the UAE jurisdictions are not offshore and are not included in any "black” or “grey”<br class="hide-sm-min"> list of the OECD and FATF.
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/coins-revert-currency.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Protection of investments</div>
+                    The state guarantees investment protection at international level by applying treaties between the UAE<br class="hide-sm-min"> and a number of countries.                    
+                </div>
+            </div>
+        </div>
+
+        <div class="r50_adaptive"></div>
+        <a href="#" class="btn btn_center btn_border2 btn_white btn_space-between z-idx3" onclick="toggleModal('form01');">
+            Set up a consultation
+            <svg class="btn__icon-svg btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+              <use href="#btn__icon-modal"></use>
+            </svg>
+        </a>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<section id="scrollBlock3" class="bg-F9 z-idx3">
+    <div class="r1 r_bg-gray"></div>
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Success factors for tax planning schemes centered in the UAE</h2>
+        <div class="r30_adaptive"></div>
+        <div class="description">When planning tax optimization through Emirati companies, it is important to analyze the factors and opportunities that impact the success and stability of schemes being considered:</div>
+        <div class="r50_adaptive"></div>
+        <div class="block47 block47_width2">
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/person-percentage.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">
+                    <div class="block47__title">Obtain UAE tax resident status</div>
+                    <div class="r20"></div>                    
+                    <div class="block47__desc">Obtained on a non-investment basis, for shareholders, directors and others.</div>
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/building.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">
+                    <div class="block47__title">Comply with international requirements</div>
+                    <div class="r20"></div>                    
+                    <div class="block47__desc">Specifically those requiring a company’s management and control to be located in the place of incorporation.</div>
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/diploma.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">
+                    <div class="block47__title">Confirm Economic Substance in the UAE</div>
+                    <div class="r20"></div>
+                    <div class="block47__desc">In order to avoid additional taxes in the jurisdiction the place of business operations.</div>
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/partners-2.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">
+                    <div class="block47__title">Appoint nominee shareholders</div>
+                    <div class="r20"></div>
+                    <div class="block47__desc">To conceal the beneficiaries and confirm that the entire business structure is unaffiliated.</div>
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/growth-isometric.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">
+                    <div class="block47__title">Choose an effective international strategy</div>
+                    <div class="r20"></div>
+                    <div class="block47__desc">For applying treaties on the avoidance of double taxation between the UAE and other countries.</div>
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/graph-abstract.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">
+                    <div class="block47__title">Follow the trend of deoffshorization</div>
+                    <div class="r20"></div>
+                    <div class="block47__desc">Make sure that any contractors registered in ‘tax havens’ have been excluded from regular business operations.</div>
+                </div>                
+            </div>
+        </div>
+        <div class="r50_adaptive"></div>
+        <div class="block5">
+            <img src="/git/img/contour-only/black-and-red/shield.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__content">
+                <div class="block5__text">
+                  You can easily circumvent the requirements of various countries’ legislation for controlled foreign companies by using the legal opportunities offered by the UAE, and by applying trust instruments and nominee services. SORP Group experts guarantee to choose only the best solutions for you based on legal advantages for shielding beneficiaries’ data.
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock4" class="z-idx3 bg-FF">
+    <div class="container_bem">
+        <div class="r40"></div>
+        <h2 class="title">SORP solutions for successful international planning based on UAE legislation</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block14">
+            <div class="block14__item">
+                <div class="block14__title">
+                  Bespoke business<br class="hide-sm-min"> model preparation
+                </div>
+                <div class="block14__text">Which will be an ideal tool for optimizing taxation, maintaining confidentiality of beheficiaries, creating secure structures and entering international markets</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Tax planning and consulting</div>
+                <div class="block14__text">
+                  We analyze legal methods of international tax planning based <br class="hide-sm-min">on successful cases and offer optimal solutions for your to do business tax-free.
+                </div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Methodologies and business analysis</div>
+                <div class="block14__text">
+                  We will conduct a detailed audit <br class="hide-sm-min">of current contracts and business schemes as well as eliminate the risks of non-compliance with the legislation, and adjust strategy
+                </div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Business registration and licensing</div>
+                <div class="block14__text">
+                    We will choose the jurisdiction <br class="hide-sm-min">for incorporation as well as right <br class="hide-sm-min">legal form of the company, get <br class="hide-sm-min">approvals, and pass “turnkey” licensing procedures
+                </div>
+            </div>
+            <div class="block14__item">
+              <div class="block14__title">Opening bank accounts</div>
+              <div class="block14__text">
+                We guide you through bank KYC compliance with your choice of the leading UAE banks. Our know-how gets  things  done quickly with top quality support.
+              </div>
+          </div>
+            <div class="block14__item">
+                <div class="block14__title">SORP nominee services</div>
+                <div class="block14__text">
+                  We will provide nominee directors and shareholders with restricted rights as allowed by legislation to exclude transfer pricing and also <br class="hide-sm-min">to conceal actual beneficiaries.
+                </div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Business <br class="hide-sm-min">Accomodation</div>
+                <div class="block14__text">
+                  SORP business center provides excellent solutions for renting fully equipped office spaces to suit all requirements and for passing all licensing procedures.
+                </div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Outsourced business processes</div>
+                <div class="block14__text">
+                  It makes sense to use SORP’s expert professional administrative, immigration, accounting and tax competencies, saving the cost of employing highly paid personnel.
+                </div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Legal <br class="hide-sm-min">support</div>
+                <div class="block14__text">
+                  SORP Group’s corporate lawyers, and our strategic partnerships with the best lawyers in the UAE and around the world, provide superb legal support for your business.
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Learn about the opportunities of legal tax optimization with SORP Group experts</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Learn more</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section class="bg-F9" id="scrollBlock5">
+  <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP’s long experience makes your success in optimizing international business from the UAE</h2>
+    <div id="vslideouter" class="slider_02 text_slider">
+			<div class="slide-elem tslider-item-new flex_column first">
+				<div class="back"></div>
+				<div class="tslider-item__number">Confidentiality and protection</div>
+				<div class="tslider-item__text">Confidential legal solutions for tax optimization, concealment of beneficiaries, and protection against automatic data exchange according to the CRS standard.</div>
+      </div>
+			<div class="text_slider__inner">
+				<div class="slide-elem tslider-item-new flex_column second">
+					<div class="back"></div>
+					<div class="tslider-item__number">Individual Approach</div>
+					<div class="tslider-item__text wow fadeInUp">We will provide professional expert advice, as well as choose optimal solutions with a team of international lawyers and tax consultants.</div>
+				</div>
+				<div class="slide-elem tslider-item-new flex_column third">
+					<div class="back"></div>
+					<div class="tslider-item__number">Integrated  Solutions</div>
+					<div class="tslider-item__text">Registration of the company on a turn-key basis, including the analysis of your needs and selection of the organizational and legal form of the legal entity.</div>
+				</div>
+        <div class="slide-elem tslider-item-new flex_column">
+					<div class="back"></div>
+					<div class="tslider-item__number ta-center">15 Years in UAE Market</div>
+					<div class="tslider-item__text">Expert knowledge and  experience in conducting professional consultations, and comprehensive support of companies in various sectors of the economy.</div>
+        </div>
+        <div class="slide-elem tslider-item-new flex_column">
+          <div class="back"></div>
+          <div class="tslider-item__number ta-center">Banking Support</div>
+          <div class="tslider-item__text">Assistance in opening bank accounts, choosing a bank suitable your purpose, support during the KYC procedure (“Know Your Customer”).</div>
+        </div>
+        <div class="tns-controls">
+			  	<div class="button" onclick="slideup()"></div>
+			  	<div class="button" onclick="slidedown()"></div>
+			  </div>
+			</div>
+		</div>
+	</div>
+  <div class="r1 r_bg-gray"></div>
+</section>
+
+<section class="bg-F9" id="scrollBlock6">
+    <div class="container_bem">
+      <div class="r60_adaptive"></div>
+      <div class="registration">
+        <div class="registration__info">
+          <div class="registration__title">Minimize your taxes<br class="hide-sm-min"> through the UAE <br class="hide-sm-min">business sructure</div>
+          <div class="r20"></div>          
+            Leave a request and get detailed advice on the use of tax planning tools from the UAE
+            <br><br>
+            SORP Group  experts will help you build optimal tax schemes and ways to distribute capital within the group
+            <br><br>
+            Take the first step towards getting the maximum income!
+          <div class="r20"></div>
+        </div>
+        <div class="registration__form-block">
+            <div class="registration__title">Get a consultation</div>
+            <div class="r10"></div>
+            {$_modx->getChunk('form4_new')}
+        </div>
+      </div>
+      <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+{/block}
+{include 'footer_new'}

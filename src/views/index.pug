@@ -1,0 +1,862 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+  - const title = "Главная"
+  - svgmorph = true;
+  - logo_main = true;
+
+
+block content
+  | {block 'content'}
+
+  main
+    section
+      .home-slider-tmp#home-slider-tmp.bg.bg_triangle
+        .container
+          .flex.flex_width3.flex_align-items-center
+            .flex__item.flex__item_align-self-start
+              .home-slider-animation
+                svg(height='0', width='0', x='0px', y='0px', viewBox='9 80 800 400')
+                  style(type='text/css').
+                    .st0 {
+                      fill: #1D1D1D;
+                      stroke: #000000;
+                      stroke-miterlimit: 10;
+                    }
+
+                    .st1 {
+                      fill: #CCCCCC;
+                    }
+                  path#check_mark(d='M44.55 118.3 61.18 103.21 90.77 132.79 152.41 71.15 168.63 86.93 90.91 164.65 44.55 118.3z')
+                  path#diagram(d='M70.2092684,148.280485 L70.2092684,103.250733 L93.5027824,103.250733 L93.5027824,148.280485 L97.9888016,148.280485 L97.9888016,85.881967 L119.81122,85.881967 L119.81122,148.280485 L124.562365,148.280485 L124.562365,57 L146,57 L146,152.945915 C96.6443382,153.018028 71.380761,153.018028 70.2092684,152.945915 C69.7050955,152.91488 70.2794816,152.618235 70.2092684,152.037836 C70.1473125,151.525695 70.1473125,150.273245 70.2092684,148.280485 Z')
+                  path#triangle(d='M84.81 78.95 84.81 143.52 141.93 111.24 141.93 111.24 84.81 78.95z')
+                  path#figur_L(d='M80.67 69.02 80.67 137.89 149.54 137.89 149.54 115.56 102.35 115.56 102.35 69.02 80.67 69.02z')
+                  path#figur_horiz(d='M218.92 98.9 106.59 98.9 106.6 123.58 218.91 123.58 218.92 98.9z')
+                  path#mountain(d='M10.02 133.74 70.02 133.74 109.02 82.74 148.02 133.74 208.02 133.74 208.02 109.74 160.52 109.74 109.02 43.74 57.52 109.74 10.02 109.74 10.02 133.74z')
+                  path#zigzag(d='M65.38 154.93 95.39 124.93 134.7 124.93 170.38 88.93 152.38 70.93 123.07 100.93 83.13 100.85 47.66 136.3 65.38 154.93z')
+                  circle#circle(cx='110', cy='110', r='35')
+                  rect#circle_center(width='112.5', height='24.5', rx='0', ry='0', x='50.5', y='99')
+                  path#frameUp_center(d='M1.91 0.24 1.91 73.24 23.91 73.24 23.91 24.24 193.91 24.24 193.91 73.24 217.91 73.24 217.91 0.24 9.91 0.24z')
+                  path#frameDown_center(d='M193.91 194.24 23.91 194.24 23.91 145.24 0.91 145.24 0.91 218.24 217.91 218.24 217.91 145.24 193.91 145.24 193.91 184.24z')
+
+                svg#clips(viewBox='9 80 800 400', height='0', width='0')
+                  style(type='text/css').
+                    .st1 {
+                      fill: #fff;
+                    }
+                  defs
+                    clippath#svgPath(transform='scale(2)')
+                      path#frameUp(d='M9.91 10.24 9.91 73.24 33.91 73.24 33.91 34.24 183.91 34.24 183.91 73.24 207.91 73.24 207.91 10.24 9.91 10.24z')
+                      path#animateSvg(d='M10.02 133.74 70.02 133.74 109.02 82.74 148.02 133.74 208.02 133.74 208.02 109.74 160.52 109.74 109.02 43.74 57.52 109.74 10.02 109.74 10.02 133.74z')
+                      path#frameDown(d='M183.91 184.24 33.91 184.24 33.91 145.24 9.91 145.24 9.91 208.24 207.91 208.24 207.91 145.24 183.91 145.24 183.91 184.24z')
+                .home-slider-animation__block
+            .flex__item.flex__item_width2
+              .home-slider-tmp__carousel.owl-carousel
+                .home-slider-tmp__item(data-anim-name='diagram', data-dot='Платформа')
+                  h1.title.title_color-black.title_font-w500 Платформа
+                  p.home-slider-tmp__text.
+                    SORP Group создала уникальную платформу для бизнеса на базе значимых подразделений Группы, прошедших лицензирование
+                    и имеющих аккредитацию и поддержку ряда международных и локальных ведомств.
+                  label.btn.btn_h50.btn_font-s15.btn_radius5.btn_hover-red.home-slider-tmp__button.js-modal(for="modal2" data-reason='Заказать консультацию' data-title="Заказать консультацию") Заказать консультацию
+
+                .home-slider-tmp__item(data-anim-name='mountain', data-dot='Статус платформы')
+                  h3.title.title_color-black.title_font-w500 Статус платформы
+                  p.home-slider-tmp__text.
+                    Бизнес-платформа признана международными и локальными ведомствами, является официальным партнером Дубайского
+                    Экономического Департамента и 45 свободно-экономических зон ОАЭ
+                  label.btn.btn_h50.btn_font-s15.btn_radius5.btn_hover-red.home-slider-tmp__button.js-modal(for="modal2" data-reason='Заказать консультацию' data-title="Заказать консультацию") Заказать консультацию
+
+                .home-slider-tmp__item(data-anim-name='figur_horiz', data-dot='SORP Group')
+                  h3.title.title_color-black.title_font-w500 SORP Group
+                  p.home-slider-tmp__text.
+                    SORP GROUP - ведущая консалтинговая группа в Арабских Эмиратах, которая оказывает предпринимателям всего мира уникальные
+                    услуги, опираясь на возможности законодательства ОАЭ и 15 лет экспертизы в организации и развитии бизнеса
+                  label.btn.btn_h50.btn_font-s15.btn_radius5.btn_hover-red.home-slider-tmp__button.js-modal(for="modal2" data-reason='Заказать обратный звонок' data-title="Заказать обратный звонок") Заказать обратный звонок
+
+                .home-slider-tmp__item(data-anim-name='circle', data-dot='Локация и активы')
+                  h3.title.title_color-black.title_font-w500 Локация и активы
+                  p.home-slider-tmp__text.
+                    SORP Group - не виртуальное пространство. Мы владеем бизнес-центром в престижном районе Дубая площадью 5000 кв.м., в нашем
+                    штате 54 эксперта и мы обладаем большим инвестиционным потенциалом.
+                  label.btn.btn_h50.btn_font-s15.btn_radius5.btn_hover-red.home-slider-tmp__button.js-modal(for="modal2" data-reason='Заказать консультацию' data-title="Заказать консультацию") Заказать консультацию
+
+                .home-slider-tmp__item(data-anim-name='figur_L', data-dot='Вектор развития')
+                  h3.title.title_color-black.title_font-w500 Вектор развития
+                  p.home-slider-tmp__text.
+                    Являясь носителями колоссального опыта и практики, мы трансформировались в школу бизнеса, бизнес-акселератор, площадку
+                    для обмена опытом и нетворкинга, центр бизнес-экспертизы и методологии
+                  label.btn.btn_h50.btn_font-s15.btn_radius5.btn_hover-red.home-slider-tmp__button.js-modal(for="modal2" data-reason='Заказать консультацию' data-title="Заказать консультацию") Заказать консультацию
+
+                .home-slider-tmp__item(data-anim-name='check_mark', data-dot='Миссия')
+                  h3.title.title_color-black.title_font-w500 Наша миссия
+                  p.home-slider-tmp__text.
+                    Мы заинтересованы в успехе наших клиентов и работаем на результат. Бизнес получает доступ к услугам профессиональных
+                    управленцев, налоговых консультантов, бухгалтеров, юристов и PRO по принципу аутсорсинга услуг
+                  label.btn.btn_h50.btn_font-s15.btn_radius5.btn_hover-red.home-slider-tmp__button.js-modal(for="modal2" data-reason='Заказать консультацию' data-title="Заказать консультацию") Заказать консультацию
+
+                .home-slider-tmp__item(data-anim-name='zigzag', data-dot='Решения')
+                  h3.title.title_color-black.title_font-w500 Решения SORP
+                  p.home-slider-tmp__text.
+                    Понимая потребности клиентов, мы разработали уникальные решения, открывающие возможности для международной
+                    деятельности, выхода на рынок ОАЭ, релокации бизнеса, инкорпорации юридических лиц в ОАЭ, оптимизации налогов
+                  label.btn.btn_h50.btn_font-s15.btn_radius5.btn_hover-red.home-slider-tmp__button.js-modal(for="modal2" data-reason='Заказать консультацию' data-title="Заказать консультацию") Заказать консультацию
+
+      .show-md-min.hide-tn
+        .flex.flex_width2.flex_no-gutters
+          .flex__item
+            a.btn.btn_w100.btn_dark.btn_h45.btn_font-s14.anchor(href="#about-company") О платформе SORP Group
+          .flex__item
+            label.btn.btn_w100.btn_h45.btn_font-s14.btn_hover-red.js-modal(for="modal2" data-reason='Отправить заявку' data-title="Отправить заявку") ОТПРАВИТЬ ЗАЯВКУ
+              svg.btn__icon-svg.btn__icon-svg-right.btn__icon-svg-opacity5(xmlns='http://www.w3.org/2000/svg', width='36', height='36', viewBox='0 0 128 128')
+                use(xlink:href='#btn__icon-modal')
+
+    section.container
+      .r30.show-tn.hide-md-min
+      .home-slider-mobile.bg.bg_triangle
+        .home-slider-mobile__owl.owl-carousel
+          .home-slider-mobile__item
+            h3.home-slider-mobile__head
+              .home-slider-mobile__title Платформа SORP Group
+              img.home-slider-mobile__svg(src="./dist/img/blocks/home-slider-mobile/1.svg" alt="SORP SORP")
+            p.home-slider-mobile__text.
+              SORP Group создала уникальную платформу для бизнеса на базе значимых подразделений Группы, прошедших лицензирование и имеющих аккредитацию и поддержку ряда международных и локальных ведомств.
+
+          .home-slider-mobile__item
+            .home-slider-mobile__head
+              h3.home-slider-mobile__title Статус платформы
+              img.home-slider-mobile__svg(src="./dist/img/blocks/home-slider-mobile/2.svg" alt="SORP SORP")
+            p.home-slider-mobile__text.
+              Бизнес-платформа признана международными и локальными ведомствами, является официальным партнером Дубайского Экономического Департамента и 45 свободно-экономических зон ОАЭ
+
+          .home-slider-mobile__item
+            .home-slider-mobile__head
+              h3.home-slider-mobile__title SORP Group
+              img.home-slider-mobile__svg(src="./dist/img/blocks/home-slider-mobile/3.svg" alt="SORP SORP")
+            p.home-slider-mobile__text.
+              SORP GROUP - ведущая консалтинговая группа в Арабских Эмиратах, которая оказывает предпринимателям всего мира уникальные услуги, опираясь на возможности законодательства ОАЭ и 15 лет экспертизы в организации и развитии бизнеса
+
+          .home-slider-mobile__item
+            .home-slider-mobile__head
+              h3.home-slider-mobile__title Локация и активы
+              img.home-slider-mobile__svg(src="./dist/img/blocks/home-slider-mobile/4.svg" alt="SORP SORP")
+            p.home-slider-mobile__text.
+              SORP Group - не виртуальное пространство. Мы владеем бизнес-центром в престижном районе Дубая площадью 5000 кв.м., в нашем штате 54 эксперта и мы обладаем большим инвестиционным потенциалом.
+
+          .home-slider-mobile__item
+            .home-slider-mobile__head
+              h3.home-slider-mobile__title Вектор развития
+              img.home-slider-mobile__svg(src="./dist/img/blocks/home-slider-mobile/5.svg" alt="SORP SORP")
+            p.home-slider-mobile__text.
+              Являясь носителями колоссального опыта и практики, мы трансформировались в школу бизнеса, бизнес-акселератор, площадку для обмена опытом и нетворкинга, центр бизнес-экспертизы и методологии
+
+          .home-slider-mobile__item
+            .home-slider-mobile__head
+              h3.home-slider-mobile__title Наша миссия
+              img.home-slider-mobile__svg(src="./dist/img/blocks/home-slider-mobile/6.svg" alt="SORP SORP")
+            p.home-slider-mobile__text.
+              Мы заинтересованы в успехе наших клиентов и работаем на результат. Бизнес получает доступ к услугам профессиональных управленцев, налоговых консультантов, бухгалтеров, юристов и PRO по принципу аутсорсинга услуг
+
+          .home-slider-mobile__item
+            h3.home-slider-mobile__head
+              .home-slider-mobile__title Решения SORP
+              img.home-slider-mobile__svg(src="./dist/img/blocks/home-slider-mobile/1.svg" alt="SORP SORP")
+            p.home-slider-mobile__text.
+              Понимая потребности клиентов, мы разработали уникальные решения, открывающие возможности для международной деятельности, выхода на рынок ОАЭ, релокации бизнеса, инкорпорации юридических лиц в ОАЭ, оптимизации налогов
+
+        .home-slider-mobile__dots.dots
+
+      .r40.show-tn.hide-md-min
+      .show-tn.hide-md-min
+        label.btn.btn_h45.btn_radius5.home-slider-tmp__button.btn_center.js-modal(for="modal2" data-reason='Заказать консультацию' data-title="Заказать консультацию") Заказать консультацию
+
+
+    section.container.bg.bg_ff.bg_z-index
+      .r60_adaptive
+      h2.title SORP — это 55 решений
+        span.title__color-dark  для вашего бизнеса на территории ОАЭ и всего мира
+      .r50_adaptive
+      .block23
+        ul.block23__navigate
+          li.block23__btn.block23__btn_active(data-btn="1") Создание бизнеса в ОАЭ
+          li.block23__btn(data-btn="2") Бизнес под флагом ОАЭ
+          li.block23__btn(data-btn="3") Регистрация бизнеса в ОАЭ
+          li.block23__btn(data-btn="4") Поддержка бизнеса в ОАЭ
+          li.block23__btn(data-btn="5") Бизнес-центр в Дубае
+          li.block23__btn(data-btn="6") Лицензирование бизнеса
+
+        .block23__item-box
+          .block23__item-tab.block23__item-tab_active(data-tab="1")
+            a.block23__item(href="/biznes-v-oae/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/1.svg")
+              h3.block23__title Какой бизнес открыть в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/uae-business-setup/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/2.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как начать бизнес в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/uae-market/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/3.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как выйти на рынок ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/investment/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/4.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как инвестировать в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/license/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/5.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как лицензировать бизнес в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="")
+              img.block23__img(src="./dist/img/pages/index/block23_main/6.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как купить бизнес в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/business-services/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/7.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как организовать бизнес в сфере услуг и сервиса
+              .block23__item-shadow
+            a.block23__item(href="/manufacturing/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/8.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как открыть производство в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/trade-hub/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/9.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как начать торговлю в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/import-trade/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/10.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как импортировать в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/product-certification/")
+              img.block23__img(src="./dist/img/pages/index/block23_main/11.svg" alt="Какой бизнес открыть в ОАЭ")
+              h3.block23__title Как сертифицировать продукцию в ОАЭ
+              .block23__item-shadow
+
+          .block23__item-tab(data-tab="2")
+            a.block23__item(href="/trading-opportunities/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/12.svg")
+              h3.block23__title Международная торговля из ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/investment/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/13.svg")
+              h3.block23__title Инвестиции под флагом ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/export-trading/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/14.svg")
+              h3.block23__title Как вести экспорт и реэкспорт из ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/tax-adviser/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/15.svg")
+              h3.block23__title Инструменты Международного налогового планирования
+              .block23__item-shadow
+            a.block23__item(href="/tax-residency-in-uae/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/16.svg")
+              h3.block23__title Статус налогового резидента ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/consolidation/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/17.svg")
+              h3.block23__title Консолидация бизнеса и активов
+              .block23__item-shadow
+            a.block23__item(href="/kyc/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/18.svg")
+              h3.block23__title Сохранность банковской тайны
+              .block23__item-shadow
+            a.block23__item(href="/holding-company-in-uae/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/19.svg")
+              h3.block23__title Построение холдингов и структур
+              .block23__item-shadow
+            a.block23__item(href="/sorp-business-center/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/20.svg")
+              h3.block23__title Подтверждение центра управления и контроля и Economic substance
+              .block23__item-shadow
+            a.block23__item(href="/international-business/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/21.svg")
+              h3.block23__title Оптимизация международного бизнеса из ОАЭ
+              .block23__item-shadow
+
+          .block23__item-tab(data-tab="3")
+            a.block23__item(href="/registratsiya-kompanii/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/22.svg")
+              h3.block23__title Инкорпорация компаний в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/local-company-in-uae/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/23.svg")
+              h3.block23__title Регистрация локальных компаний
+              .block23__item-shadow
+            a.block23__item(href="/freezone-company-in-uae/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/24.svg")
+              h3.block23__title Регистрация фризон компаний
+              .block23__item-shadow
+            a.block23__item(href="/buy-company/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/25.svg")
+              h3.block23__title Продажа и покупка юридических лиц
+              .block23__item-shadow
+            a.block23__item(href="/uae-offshore/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/26.svg")
+              h3.block23__title Регистрация оффшорных компаний
+              .block23__item-shadow
+            a.block23__item(href="/holding-company-in-uae/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/27.svg")
+              h3.block23__title Построение холдингов и структур
+              .block23__item-shadow
+            a.block23__item(href="/trust/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/28.svg")
+              h3.block23__title Создание арабского траста
+              .block23__item-shadow
+            a.block23__item(href="/bank-account/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/29.svg")
+              h3.block23__title Открытие банковских счетов в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/business-management/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/30.svg")
+              h3.block23__title Номинальный сервис и управление бизнесом
+              .block23__item-shadow
+            a.block23__item(href="/tax-adviser/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/31.svg")
+              h3.block23__title Инструменты Международного налогового планирования
+              .block23__item-shadow
+
+          .block23__item-tab(data-tab="4")
+            a.block23__item(href="/business-support/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/32.svg")
+              h3.block23__title Сопровождение бизнеса
+              .block23__item-shadow
+            a.block23__item(href="/legal-support/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/33.svg")
+              h3.block23__title Правовая поддержка бизнеса
+              .block23__item-shadow
+            a.block23__item(href="/bank-account/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/34.svg")
+              h3.block23__title Поддержка банковского обслуживания
+              .block23__item-shadow
+            a.block23__item(href="/license-renewal/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/35.svg")
+              h3.block23__title Сопровождение в продлении лицензий
+              .block23__item-shadow
+            a.block23__item(href="/trade-and-logistic/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/36.svg")
+              h3.block23__title Решения по торговле и логистике
+              .block23__item-shadow
+            a.block23__item(href="/taxes-and-accounting/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/37.svg")
+              h3.block23__title Налоги и бухгалтерия в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/business-management/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/38.svg")
+              h3.block23__title Решения по управлению бизнесом и номинальному сервису
+              .block23__item-shadow
+            a.block23__item(href="/documents-legalization/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/39.svg")
+              h3.block23__title Легализация документов в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/immigration-services/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/40.svg")
+              h3.block23__title Иммиграция и релокация бизнеса в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/business-center/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/41.svg")
+              h3.block23__title Размещение бизнеса в ОАЭ
+              .block23__item-shadow
+
+          .block23__item-tab(data-tab="5")
+            a.block23__item(href="/office-rent-dubai/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/42.svg")
+              h3.block23__title Офисы для размещения бизнеса
+              .block23__item-shadow
+            a.block23__item(href="/coworking-dubai/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/43.svg")
+              h3.block23__title Аренда рабочих мест в коворкинге
+              .block23__item-shadow
+            a.block23__item(href="/sustainability-office-dubai/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/44.svg")
+              h3.block23__title Аренда SUSTAINABILITY SPACES
+              .block23__item-shadow
+            a.block23__item(href="/virtual-office-dubai/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/45.svg")
+              h3.block23__title Виртуальный (удалённый) офис
+              .block23__item-shadow
+            a.block23__item(href="/meeting-room-dubai/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/46.svg")
+              h3.block23__title Аренда переговорных и конференц-зала
+              .block23__item-shadow
+            a.block23__item(href="/conference-room/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/47.svg")
+              h3.block23__title Аудитории для тренингов и обучения
+              .block23__item-shadow
+            a.block23__item(href="/business-support/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/48.svg")
+              h3.block23__title Консалтинговая поддержка арендаторам
+              .block23__item-shadow
+            a.block23__item(href="/sorp-business-center/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/49.svg")
+              h3.block23__title Подтверждение центра управления и контроля и Economic substance
+              .block23__item-shadow
+
+          .block23__item-tab(data-tab="6")
+            a.block23__item(href="/trading-license/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/50.svg")
+              h3.block23__title Лицензирование торгового бизнеса в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/professional-license/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/51.svg")
+              h3.block23__title Лицензирование профессиональной деятельности в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/construction-license/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/52.svg")
+              h3.block23__title Лицензирование строительного бизнеса в ОАЭ
+              .block23__item-shadow
+            a.block23__item(href="/international-license/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/53.svg")
+              h3.block23__title Получение особых лицензий
+              .block23__item-shadow
+            a.block23__item(href="/tourism-license/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/54.svg")
+              h3.block23__title Лицензирование туристического бизнеса
+              .block23__item-shadow
+            a.block23__item(href="/educational-license/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/55.svg")
+              h3.block23__title Лицензирование в сфере образования
+              .block23__item-shadow
+            a.block23__item(href="/real-estate-license/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/56.svg")
+              h3.block23__title Лицензирование в сфере недвижимости
+              .block23__item-shadow
+            a.block23__item(href="/investment-license/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/57.svg")
+              h3.block23__title Лицензирование инвестиционной деятельности
+              .block23__item-shadow
+            a.block23__item(href="/inzhiniringovaya/")
+              .block23__img.lazy(data-bg="./dist/img/pages/index/block23_main/58.svg")
+              h3.block23__title Лицензирование инженерной и инжиниринговой деятельности
+              .block23__item-shadow
+
+      .r60_adaptive
+
+    section.bg.bg_fa.bg_z-index
+      .r1.r_bg-e5
+      .r60_adaptive
+      .container
+        h2.title Решения SORP Group
+          span.title__color-dark  открывают возможности и перспективы:
+        .r50_adaptive
+        .r50_adaptive.show-md-min.hide-tn
+        .r30.show-lg-min.hide-tn
+
+        .block21
+          .block21__item
+            h3.block21__title Выйти на рынок и вести<br> бизнес в ОАЭ
+            p.block21__text От адаптации бизнес-стратегии до запуска локального проекта «под ключ»
+
+            label.block21__btn.btn.btn_h35.btn_font-s14.btn_space-between.btn_radius5.js-modal(for="modal1" data-reason="Выйти на рынок и вести бизнес в ОАЭ")
+              svg.block21__icon-svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg', width='36', height='36', viewBox='0 0 128 128')
+                use(xlink:href='#btn__icon-modal')
+              .modal.modal_none
+                .modal__title.modal__title_right Выйти на рынок и вести бизнес в ОАЭ
+                .modal__text
+                  p.modal__text-p Самая престижная и комфортная юрисдикция для запуска любого вида бизнеса. Отсутствие налогов,  безопасность и конфиденциальность данных.
+                  p.modal__text-p Как эксперты в деловых и юридических аспектах ОАЭ мы дали старт десяткам успешных проектов и решили различные задачи для наших клиентов.
+                ul.modal__points.bg.bg_triangle
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Анализ действующих стратегий и выбор успешной бизнес-модели
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Регистрация компаний, лицензирование и размещение бизнеса
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Получение резидентства, разрешений на торговлю или оказание услуг
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Сопровождение бизнеса: аутсорсинг, открытие счетов, налоговый консалтинг
+            .block21__icon.lazy(data-bg="./dist/img/pages/index/block23/block23_1.png")
+
+          .block21__item
+            h3.block21__title Релокация бизнеса<br> в ОАЭ и иммиграция
+            p.block21__text Комплексные решения по иммиграции бизнеса и физических лиц
+            label.block21__btn.btn.btn_h35.btn_font-s14.btn_space-between.btn_radius5.js-modal(for="modal1" data-reason="Выйти на рынок и вести бизнес в ОАЭ")
+              svg.block21__icon-svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg', width='36', height='36', viewBox='0 0 128 128')
+                use(xlink:href='#btn__icon-modal')
+              .modal.modal_none
+                .modal__title.modal__title_right Релокация бизнеса в ОАЭ и иммиграция
+                .modal__text
+                  p.modal__text-p Ваша цель – обустроить новую жизнь и развивать свое дело в одной из наиболее благоприятных стран с точки зрения климата, качества жизни, бизнес-возможностей
+                  p.modal__text-p Мы возьмем на себя вопросы подготовки и реализаци переезда семьи и бизнеса. Успешные кейсы клиентов и сотрудников SORP – подтверждение нашей экспертизы.
+                ul.modal__points.bg.bg_triangle
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Подготовка пакета документов, регистрация юридического лица, открытие счета в банке
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Помощь с процедурами иммиграции, решение вопросов с госорганами, документооборот
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Организация найма на месте или релокация сотрудников компании из-за рубежа
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Услуги по управлению бизнесом, аутсорсинг, налоговый консалтинг, продление лицензий
+            .block21__icon.lazy(data-bg="./dist/img/pages/index/block23/block23_2.png")
+
+          .block21__item
+            h3.block21__title Инкорпорация<br> юридических лиц в ОАЭ
+            p.block21__text Ведение бизнеса без налогов и границ, выгодно и свободно
+            label.block21__btn.btn.btn_h35.btn_font-s14.btn_space-between.btn_radius5.js-modal(for="modal1" data-reason="Выйти на рынок и вести бизнес в ОАЭ")
+              svg.block21__icon-svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg', width='36', height='36', viewBox='0 0 128 128')
+                use(xlink:href='#btn__icon-modal')
+              .modal.modal_none
+                .modal__title.modal__title_right Инкорпорация юридических лиц
+                .modal__text
+                  p.modal__text-p Вы хотите вести успешную деятельность без налогов в ОАЭ или за рубежом, дать импульс развитию бизнеса и защитить информацию о владельцах компании.
+                  p.modal__text-p Все возможно с поддержкой профессионалов, отлично знающих особенности создания бизнеса в ОАЭ, в том числе для поддержки международной активности.
+                ul.modal__points.bg.bg_triangle
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Регистрация локальных, фризон и офшорных компаний, создание холдингов и трастов
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Подготовка бизнес-модели, лицензирование нового бизнеса или покупка готового юрлица
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Престижный адрес для бизнеса в Дубае для лицензирования и размещения бизнеса
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Налоговый консалтинг, открытие счетов в банках, аутсорсинг, правовая поддержка
+            .block21__icon.lazy(data-bg="./dist/img/pages/index/block23/block23_4.png")
+          .block21__item
+            h3.block21__title Вести международную<br> деятельность
+            p.block21__text Престиж, стабильность и свободное движение капитала без налогов
+            label.block21__btn.btn.btn_h35.btn_font-s14.btn_space-between.btn_radius5.js-modal(for="modal1" data-reason="Выйти на рынок и вести бизнес в ОАЭ")
+              svg.block21__icon-svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg', width='36', height='36', viewBox='0 0 128 128')
+                use(xlink:href='#btn__icon-modal')
+              .modal.modal_none
+                .modal__title.modal__title_right Вести международную деятельность из ОАЭ
+                .modal__text
+                  p.modal__text-p Вы можете повысить эффективность своего бизнеса, где бы он ни располагался, используя преимущества законодательства последнего легального “офшора”.
+                  p.modal__text-p Мы предложим индивидуальное решение Ваших задач как в сфере торговли и сервиса, так и инвестирования, разработаем и реализуем весь комплекс мероприятий.
+                ul.modal__points.bg.bg_triangle
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Аудит международного бизнеса, регистрация компании с защитой данных о бенефициарах
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Оптимизация движения активов и капиталов, трансфертное ценообразование
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Организация процессов для защиты от авто-маческого обмена налоговой информацией
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Инструменты международного налогового планирования, создание центра расчетов
+            .block21__icon.lazy(data-bg="./dist/img/pages/index/block23/block23_3.png")
+          .block21__item
+            h3.block21__title Оптимизировать<br> налоговое бремя
+            p.block21__text Эффективные инструменты международного налогового планирования
+            label.block21__btn.btn.btn_h35.btn_font-s14.btn_space-between.btn_radius5.js-modal(for="modal1" data-reason="Выйти на рынок и вести бизнес в ОАЭ")
+              svg.block21__icon-svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg', width='36', height='36', viewBox='0 0 128 128')
+                use(xlink:href='#btn__icon-modal')
+              .modal.modal_none
+                .modal__title.modal__title_right Оптимизировать налоги для бизнеса
+                .modal__text
+                  p.modal__text-p Вам необходимо минимизировать налоговую нагрузку на бизнес, используя преимущества юрисдикции ОАЭ, и предупредить обмен налоговыми данными по CRS.
+                  p.modal__text-p Опытная команда международных налоговых юристов SORP использует возможности законодательства ОАЭ для легального сокращения налоговых отчислений.
+                ul.modal__points.bg.bg_triangle
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Анализ структуры всех налоговых выплат за рубежом с учетом возможностей законов ОАЭ
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Разработка бизнес-модели для модификации бизнеса с организацией холдингов и структур
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Защита от автоматического обмена налоговой информацией по стандартам CRS
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Абонентская поддержка по любым вопросам международного налогового планирования
+            .block21__icon.lazy(data-bg="./dist/img/pages/index/block23/block23_5.png")
+          .block21__item
+            h3.block21__title
+              | Размещение бизнеса и<br> поддержка в ОАЭ
+            p.block21__text
+              | Экономия затрат на сопровождение бизнеса и аренде
+            label.block21__btn.btn.btn_h35.btn_font-s14.btn_space-between.btn_radius5.js-modal(for="modal1" data-reason="Выйти на рынок и вести бизнес в ОАЭ")
+              svg.block21__icon-svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg', width='36', height='36', viewBox='0 0 128 128')
+                use(xlink:href='#btn__icon-modal')
+              .modal.modal_none
+                .modal__title.modal__title_right Размещение бизнеса и поддержка в ОАЭ
+                .modal__text
+                  p.modal__text-p Мы предлагаем отремонтированные и оборудованные офисные пространства в современном бизнес-центре SORP в Дубае, район Barsha Heights, Tameem House Bld.
+                  p.modal__text-p Услуги многфункционального аутсорсингового центра: 54 эксперта в режиме 24/7 будут заниматься полным сопровождением Вашего бизнеса на территории ОАЭ.
+                ul.modal__points.bg.bg_triangle
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Офисы для бизнеса любого масштаба. Зона коворкинга, переговорные, виртуальный офис
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Регистрация компаний, продление лицензий, банковские проверки и процедуры KYC
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Взаимодействие с госорганами, оформление разрешений, резидентских виз
+                  li.modal__point
+                    .modal__point-icon
+                    .modal__point-text Аутсорсинг юридических, административных, налоговых и бухгалтерских услуг
+            .block21__icon.lazy(data-bg="./dist/img/pages/index/block23/block23_6.png")
+      .r60_adaptive
+
+    section.bg.bg_red.bg_z-index
+      .r30
+      .r5
+      .container
+        .feedback-block
+          h3.feedback-block__text Узнайте о преимуществах организации бизнеса в ОАЭ, заказав бесплатную консультацию специалиста
+          label.feedback-block__btn.js-modal(for="modal2" data-reason='Получить консультацию') Получить консультацию
+      .r30
+      .r5
+
+    section.bg.bg_f9.bg_z-index
+      .r60_adaptive
+      .container
+        h2.title.title_color-dark Платформа SORP
+        .r30_adaptive
+        p.description.
+          Ведущая консалтинговая группа ОАЭ, которая более 15 лет предоставляет полный спектр консалтинговых услуг и решает задачи,
+          возникающие в процессе организации бизнеса. У нас безупречная репутация, щирокие возможности и активы. Мы стали базой для
+          роста тысяч международных и локальных проектов.
+        .r50_adaptive
+        .flex.flex_width4
+          .flex__item.flex__item_width2
+            .block22.block22_width1
+              a.block22__item(href="/business-center/")
+                .block22__content
+                  h3.block22__title Бизнес-центр <br class="show-md-min hide-tn"> 5000&nbsp;
+                    span.m2.m2_font-bold м
+                  .block22__text
+                    p.block22__text-p.
+                      Современный бизнес центр в Дубаи для локальных (mainland and free zone) международных компаний для размещения персонала и регистрации бизнеса: переговорные комнаты, конференц-зал, а также аудитории для тренингов и ивентов.
+                    p.block22__text-p.
+                      Это возможность незамедлительно приступить к работе и пользоваться инфраструктурой и атрибутами крупного бизнеса  при небольших затратах на аренду
+                .block22__footer.block22__footer_border
+                  .block22__footer-item
+                    p.block22__footer-number 40
+                    p.block22__footer-text офисов с Ejari
+                  .block22__footer-item
+                    p.block22__footer-number 420
+                    p.block22__footer-text sustainability spaces
+                  .block22__footer-item
+                    p.block22__footer-number 180
+                    p.block22__footer-text мест коворкинга
+                .modal.modal_none
+                  .modal__title.modal__title_right Бизнес-центр SORP в Дубае
+                  .modal__text
+                    p.modal__text-p Вы хотите решить задачи регистрации, размещения и функционирования компании, следуя рациональному подходу бизнеса “плачу только за то, чем пользуюсь”.
+                    p.modal__text-p Мы предлагаем отремонтированные и оборудованные офисные пространства в современном бизнес-центре SORP в Дубае, район Barsha Heights, Tameem House Bld.
+                  ul.modal__points.bg.bg_triangle
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Престижный бизнес-адрес в Дубае с удобной логистикой и отсутствием пробок в часы-пик
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Офисы различных размеров, переговорные, виртуальный офис, смарт-офисы, ко-воркинг
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Зоны для тренингов, нетворкинга и отдыха, услуги ресепшн и копирования, common area
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Все, что нужно для регистрации, лицензирова- ния компании и прохождения проверок банка
+
+          .flex__item
+            .block22.block22_width1
+              a.block22__item(href="/business-school/")
+                .block22__content
+                  h3.block22__title Бизнес школа
+                  .block22__text
+                    p.block22__text-p.
+                      SORP — образовательная платформа нового поколения, объединяющая академические знания, бизнес-компетенции, уникальный нетворкинг,
+                      встречи инвесторов и владельцев бизнеса.
+                .block22__footer.block22__footer_first
+                  .block22__footer-item
+                    p.block22__footer-number 34
+                    p.block22__footer-text курса
+                .modal.modal_none
+                  .modal__title.modal__title_right Бизнес-школа SORP: новый уровень знаний
+                  .modal__text
+                    p.modal__text-p Вы планируете или уже имеете бизнес в ОАЭ и хотите улучшить свои знания, получить практические навыки для коморфтной работы в странах Ближнего Востока.
+                    p.modal__text-p Мы предлагаем образовательную платформу нового поколения, объединяющую академические знания,  бизнес-компетенции и общение с практиками бизнеса.
+                  ul.modal__points.bg.bg_triangle
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text 34 курса от признанных экспертов в областях права, экономики, финансов, маркетинга и HR
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Теория и практические кейсы для применения полученных знаний уже в процессе обучения
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Конференции и нетворкинг: поиск деловых партнеров, клиентов, общение в бизнес-среде
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Сертификат об окончании курса, консультации по бизнесу для выпускников, наставничество
+
+          .flex__item
+            .block22.block22_width1
+              label.block22__item(for="modal2")
+                .block22__content
+                  h3.block22__title Doing Business in Dubai
+                  .block22__text
+                    p.block22__text-p.
+                      Тренинг Doing Business In Dubai, который посвящен основам ведения бизнеса в Объединенных Арабских Эмиратах и перспективам
+                      оптимизации международного бизнеса с опорой на ОАЭ.
+                .block22__footer.block22__footer_first
+                  .block22__footer-item
+                    p.block22__footer-number 6
+                    p.block22__footer-text ноября 2020
+          .flex__item
+            .block22.block22_width1
+              label.block22__item(for="modal2" data-reason="Центр экспертиз и методологий")
+                .block22__content
+                  h3.block22__title Центр экспертиз и<br class="show-md-min hide-tn"> методологий
+                  .block22__text
+                    p.block22__text-p.
+                      Ведение бизнеса в ОАЭ и выход на международный рынок требует глубокого понимания устоявшихся в стране бизнес-традиций и
+                      особенностей местного законодательства — мы делимся 15 летним опытом успешной работы.
+                .block22__footer.block22__footer_first
+                  .block22__footer-item
+                    p.block22__footer-number 25
+                    p.block22__footer-text стратегических направлений
+          .flex__item.flex__item_width2
+            .block22.block22_width1
+              label.block22__item.js-modal(for="modal2" data-reason="Мультифункциональный аутсорсинговый центр")
+                .block22__content
+                  h3.block22__title Мультифункциональный аутсорсинговый центр
+                  .block22__text
+                    p.block22__text-p.
+                      Мультифункциональный центр оказывает широкий спектр аутсорсинговых услуг, необходимых на этапе создания и ведения бизнеса в ОАЭ,
+                      а также на международном рынке. Наши эксперты 24/7 готовы оказать помощь предпринимателям от операционной деятельности до решения
+                      стратегических задач.
+                    p.block22__text-p.
+                      Вы сможет отказаться от услуг дорогостоящих специалистов, получив выгодные аутсорсиноговые решения по сопровождению вашего бизнеса
+                      и сконцентрироваться только на его развитии.
+                .block22__footer.block22__footer_border
+                  .block22__footer-item
+                    .block22__footer-number 54
+                    .block22__footer-text эксперта в штате
+                  .block22__footer-item.block22__footer-item_width2
+                    p.block22__footer-signature В числе которых: менеджеры, аналитики, маркетологи, IT-специалисты и специалисты юридического отдела
+                .modal.modal_none
+                  .modal__title.modal__title_right Организация бизнеса в ОАЭ
+                  .modal__text
+                    p.modal__text-p Вам нужна надежная информация о возможностях для себя и своего дела в ОАЭ, или Вы уже приняли решение и ищете профессионалов для реализации задуманного.
+                    p.modal__text-p SORP Group более 15 лет оказывает услуги по запуску и развитию успешного бизнеса в ОАЭ, проводит меропри- ятия для достижения безубыточности компании.
+                  ul.modal__points.bg.bg_triangle
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Исследование перспектив конкретного вида деятельности и подготовка бизнес-модели
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Регистрация и лицензирование компании, размещение бизнеса, номинальный сервис
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Открытие банковского счета, прохождение проверок, пролонгация лицензий
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Представление интересов в госорганах ОАЭ, налоговый консалтинг, поддержка бизнеса
+          .flex__item
+            .block22.block22_width1
+              label.block22__item.js-modal(for="modal2" data-reason="Бизнес-акселератор")
+                .block22__content
+                  h3.block22__title Бизнес-акселератор
+                  .block22__text
+                    p.block22__text-p.
+                      Бизнес-планы прошедшие экспертизу смогут получить до 70% финансирования. Утвержденные проекты будут направлены профессиональным
+                      инвесторам, с которыми мы находимся в постоянной коммуникации
+                .block22__footer.block22__footer_first
+                  .block22__footer-item
+                    .block22__footer-number-box
+                      .block22__footer-number-box-title до
+                      .block22__footer-number 70%
+                    p.block22__footer-text экономии на<br> развитии<br> проекта
+                .modal.modal_none
+                  .modal__title.modal__title_right Бизнес-акселератор SORP
+                  .modal__text
+                    p.modal__text-p Направьте SORP свой бизнес-план на оценку, узнайте о перспективах роста, получите полноценную поддержку и подготовку к выводу на системные инвестиции.
+                    p.modal__text-p У нас есть все необходимое для эффективного запуска и развития стартапов в лучшей юрисдикции мира без налогов и с привлекательной рыночной конъюнктурой
+                  ul.modal__points.bg.bg_triangle
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Оценка стартапа, рекомендации по развитию, разработка дорожной карты
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Начальная финансовая поддержка, регистра- ция бизнеса в ОАЭ, релокация из-за рубежа
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Обучение 360° по всем релевантным аспектам бизнеса от авторитетных бизнес-школ
+                    li.modal__point
+                      .modal__point-icon
+                      .modal__point-text Поддержка участия в стартап-шоу, выведение на получение дальнейшего финансирования
+      .r60_adaptive
+
+    include blocks/about-company/RU_about-company
+
+    section.container.bg.bg_ff.bg_z-index
+      .r60_adaptive
+      .slider-number.lazy(data-bg="./dist/img/blocks/slider-number/bg.svg")
+        .slider-number__box
+          .slider-number__box-logo
+            img.slider-number__logo.lazy(src="./dist/img/blocks/mask.png" data-src='./dist/img/blocks/slider-number/sorp_statistic.svg', alt='Ваши надежные партнеры в долгосрочной работе на территории ОАЭ')
+          .slider-number__carousel.owl-carousel
+            .slider-number__item
+              h3.slider-number__number.counterAnimate.animated 54
+              p.slider-number__text эксперта<br> в офисе
+            .slider-number__item
+              h3.slider-number__number 4657
+              p.slider-number__text проведенных<br> консультаций
+            .slider-number__item
+              h3.slider-number__number 7
+              p.slider-number__text юридических<br> лиц
+            .slider-number__item
+              h3.slider-number__number 94%
+              p.slider-number__text CSI индекс удовлетворенности<br> потребителей
+            .slider-number__item
+              h3.slider-number__number 15
+              p.slider-number__text лет опыта<br> в ОАЭ
+            .slider-number__item
+              h3.slider-number__number 1589
+              p.slider-number__text зарегистрированных<br> юр лиц
+            .slider-number__item
+              h3.slider-number__number 10
+              p.slider-number__text государственных<br> аккредитаций
+            .slider-number__item
+              h3.slider-number__number 4000
+              p.slider-number__text + гостей посетили<br> бизнес-центр в прошлом году
+            .slider-number__item
+              h3.slider-number__number 5000
+              p.slider-number__text м2<br> офисных<br> пространств
+            .slider-number__item
+              h3.slider-number__number 503
+              p.slider-number__text компаний<br> в управлении
+            .slider-number__item
+              h3.slider-number__number 725
+              p.slider-number__text проведенных<br> экспертиз
+            .slider-number__item
+              h3.slider-number__number 9 NPS
+              p.slider-number__text индекс<br> лояльности<br> потребителя
+
+        .r60_adaptive
+        .r20
+
+        .flex.flex_no-gutters.flex_justify-content-end
+          .arrow
+            .slider-number__prev.arrow__item.arrow__item_prev
+              svg.arrow__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#arrow_right')
+            .slider-number__next.arrow__item.arrow__item_next
+              svg.arrow__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#arrow_right')
+
+      .r60_adaptive
+      .r60_adaptive
+
+    include blocks/slider-departments/RU_slider-departaments
+
+    #map
+
+    | {/block}
+
+
+

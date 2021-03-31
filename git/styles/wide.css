@@ -1,0 +1,21 @@
+@media (min-width: 1460px) {
+    .first-screen__title { font-size: 52px; line-height: 70px; }
+    .first-screen { width: 960px; } }
+
+@media (min-width: 1460px) {
+    .block-frames { width: 1130px; }
+    .block-frames__wrapper:before { right: -163px; } }
+
+@media (min-width: 1460px) {
+    .block1__head-title { font-weight: 700; font-size: 26px; line-height: 30px; } }
+
+@media (min-width: 1460px) {
+    .block18__text { padding-right: 32px; } }
+
+@media (min-width: 1460px) { .block41__item { width: 41%; } }
+
+@media (min-width: 1460px) {
+    .container_bem {
+        max-width: 1330px;
+    }
+}

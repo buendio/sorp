@@ -1,0 +1,19 @@
+<div class="registration__thanks">
+    <div class="registration__header form4goal">
+        [[++cultureKey:is=`ru`:then=`Спасибо за заявку!`]]
+        [[++cultureKey:is=`en`:then=`Thanks for the application!`]]
+    </div>
+    <div class="registration__text">
+        [[++cultureKey:is=`ru`:then=`Наш менеджер скоро свяжется с вами.`]]
+        [[++cultureKey:is=`en`:then=`Our manager will contact you shortly.`]]
+    </div>
+</div>
+
+{$_modx->runSnippet('!AjaxForm', [
+'snippet' => 'FormIt',
+'emailTpl' => 'form4_new_tpl',
+'form' => 'form_4_new',
+'hooks' => 'recaptchav2,amo',
+'emailTo' => 'letters@sorp.ae',
+'validate' => 'form_4_name:required,form_4_phone:required:minLength=^4^:isNumber,g-recaptcha-response:required'
+])}

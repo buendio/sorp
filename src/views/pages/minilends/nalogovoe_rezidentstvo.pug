@@ -1,0 +1,130 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "nalogovoe_rezidentstvo"
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      style
+        |.first-screen {
+        |  background-position: 100% 25%;
+        |}
+
+      .first-screen.lazy(data-bg="/dist/img/minilends/blocks/first-screen/nalogovoe_rezidentstvo.svg")
+        h1.first-screen__title
+          +lang(
+          'Налоговое резидентство в&nbsp;Арабских Эмиратах',
+          'Tax Residency in&nbsp;the&nbsp;United Arab Emirates'
+          )
+        p.first-screen__text
+          +lang(
+          'Станьте резидентом престижной безналоговой страны и&nbsp;извлекайте максимальную прибыль при&nbsp;ведении деятельности во&nbsp;всём мире',
+          'Get a unique opportunity to be&nbsp;a&nbsp;resident of&nbsp;a&nbsp;prestigious tax-free country and&nbsp;enjoy maximum profit when doing business all over the&nbsp;world'
+          )
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Get more details'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/pages/nalogovoe_rezidentstvo/block-frames.svg")
+            p.block-frames__text
+              +lang(
+              'Арабские Эмираты предоставляют зарубежным бизнесменам возможность получения статуса налогового резидента страны.',
+              'The United Arab Emirates provides foreign business people with the&nbsp;opportunity to&nbsp;obtain the&nbsp;status of a tax resident of the&nbsp;country.'
+              )
+          .block-frames__signature-box
+            .block-frames__signature-icon.lazy(data-bg="/dist/img/minilends/blocks/block1/note.svg")
+            p.block-frames__signature-text
+              +lang(
+              'Ведите бизнес из&nbsp;низконалоговой юрисдикции, исключив налоговые последствия, применяя договора об&nbsp;избежании двойного налогообложения, и&nbsp;для&nbsp;защиты от&nbsp;обмена налоговой информацией по&nbsp;стандарту CRS.',
+              'Run your business from a&nbsp;protected low-tax jurisdiction with the&nbsp;benefit of&nbsp;eliminating all tax burdens, applying treaties that avoid double taxation, and&nbsp;shielding from&nbsp;tax information exchange under CRS arrangements.'
+              )
+        .r20
+        .r1.r_bg-e3
+      .r20
+      .r5
+
+    section
+      .container
+        h2.title
+          +lang(
+          'Налоговое резидентство ОАЭ обеспечивает:',
+          'UAE tax residency provides you with&nbsp;unique opportinities:'
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/confid.svg")
+            p.block1__text
+              +lang(
+              'Конфиденциальность сведений о&nbsp;ваших иностранных счетах, активах и&nbsp;компаниях',
+              'Confidentiality of&nbsp;information about your foreign accounts, assets, and&nbsp;companies'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/service.svg")
+            p.block1__text
+              +lang(
+              'Отсутствие корпоративных налогов и&nbsp;налогов на&nbsp;доходы физических лиц',
+              '0% corporate and&nbsp;personal income taxes build a&nbsp;better bottom line'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/percent.svg")
+            p.block1__text
+              +lang(
+              'Вывод процентов, дивидендов, роялти по&nbsp;льготной налоговой ставке',
+              'Withdrawal of&nbsp;interest, dividends, and&nbsp;royalties at a&nbsp;preferential tax rate'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/human.svg")
+            p.block1__text
+              +lang(
+              'Подтверждение центра управления, контроля бизнеса и&nbsp;экономического присутствия (economic substanse) в&nbsp;ОАЭ',
+              'Confirmation of&nbsp;UAE as&nbsp;the&nbsp;center of&nbsp;vital buisness interests and&nbsp;management as&nbsp;well as&nbsp;economic substance (ESR)'
+              )
+        .r20
+        .r5
+
+    section
+      .quote
+        .quote__icon.lazy(data-bg="/dist/img/minilends/blocks/quote/quote.svg")
+        p.quote__text
+          +lang(
+          'Специалисты SORP Group помогут выстроить оптимальные налоговые схемы и&nbsp;подтвердить статус налогового резидента ОАЭ',
+          'SORP Group specialists will help you form optimal tax schemes and&nbsp;confirm your status as&nbsp;a&nbsp;tax resident (domicile) in&nbsp;the&nbsp;UAE'
+          )
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        h2.title.title_center
+          +lang(
+          'Налоговое резидентство Арабских Эмиратов',
+          'Tax residency in&nbsp;the&nbsp;United Arab Emirates'
+          )
+        .r20
+        .r5
+        p.description.description_center
+          +lang(
+          'Для оформления налогового резиденства не&nbsp;требуется проживать в&nbsp;ОАЭ на&nbsp;постоянной основе более 183 дней',
+          'You do not need to&nbsp;live in&nbsp;the&nbsp;UAE permanently for&nbsp;more than 183 days to&nbsp;apply for tax residency'
+          )
+        .r20
+        .r5
+        include ../../blocks/minilends/form/form
+      .r30
+      .r5
+
+    include ../../blocks/minilends/pnumber/pnumber

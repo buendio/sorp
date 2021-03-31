@@ -1,0 +1,643 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.1196 27.1335C16.8904 27.1335 16.6805 27.0013 16.5822 26.7926L11.576 16.1526L1.1548 11.3626C0.936898 11.2625 0.800633 11.041 0.809242 10.8012C0.818149 10.5613 0.970445 10.3505 1.19518 10.2668L25.9284 1.03191C26.1449 0.951456 26.3892 1.00341 26.5534 1.1661C26.7181 1.32878 26.7727 1.57252 26.6944 1.79013L17.678 26.7416C17.5966 26.9675 17.387 27.1216 17.1472 27.1329C17.1377 27.1332 17.1285 27.1335 17.1196 27.1335ZM2.94793 10.8798L12.2686 15.1643C12.396 15.2228 12.4984 15.3244 12.5581 15.4508L17.0474 24.9921L25.1414 2.59347L2.94793 10.8798Z"></path>
+        <path d="M12.021 16.2972C11.869 16.2972 11.7173 16.2393 11.6012 16.1233C11.3694 15.8917 11.3694 15.5156 11.6012 15.2837L25.7162 1.16848C25.948 0.936618 26.3239 0.936618 26.5557 1.16848C26.7876 1.40034 26.7876 1.77618 26.5557 2.00804L12.4408 16.1233C12.3247 16.2393 12.173 16.2972 12.021 16.2972Z"></path>
+    </symbol>
+    <symbol id="btn__icon" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.291748 10.7884L1.27464 11.6392L1.76608 11.2126L7.82088 5.98838L1.76608 0.764161L1.27464 0.337599L0.291748 1.18838L0.783192 1.6126L5.85239 5.98838L0.783192 10.3642L0.291748 10.7884ZM5.84968 10.7884L6.83256 11.6392L7.324 11.2126L13.3788 5.98838L7.324 0.764161L6.83256 0.337599L5.84968 1.18838L6.34112 1.6126L11.4103 5.98838L6.34112 10.3642L5.84968 10.7884Z"></path>
+    </symbol>
+    <symbol id="bl11-percentage" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00226 7.90503C5.00226 6.35815 5.50031 5.09253 6.49641 4.10815C7.4925 3.11206 8.79914 2.61401 10.4163 2.61401C12.057 2.61401 13.3695 3.11206 14.3538 4.10815C15.3499 5.09253 15.848 6.38745 15.848 7.99292V9.25854C15.848 10.7937 15.3499 12.0535 14.3538 13.0378C13.3695 14.0222 12.0687 14.5144 10.4515 14.5144C8.86945 14.5144 7.56281 14.0339 6.53156 13.073C5.51203 12.1003 5.00226 10.7937 5.00226 9.15308V7.90503ZM7.99055 9.25854C7.99055 10.0671 8.2132 10.7234 8.65851 11.2273C9.11555 11.7195 9.7132 11.9656 10.4515 11.9656C11.178 11.9656 11.764 11.7195 12.2093 11.2273C12.6546 10.7234 12.8773 10.0437 12.8773 9.18823V7.90503C12.8773 7.09644 12.6487 6.44019 12.1917 5.93628C11.7464 5.43237 11.1546 5.18042 10.4163 5.18042C9.67805 5.18042 9.08625 5.43823 8.64094 5.95386C8.20734 6.45776 7.99055 7.12573 7.99055 7.95776V9.25854ZM17.307 22.3015C17.307 20.7312 17.8167 19.4597 18.8362 18.4871C19.8558 17.5144 21.1566 17.0281 22.7386 17.0281C24.3323 17.0281 25.6331 17.5144 26.6409 18.4871C27.6605 19.4597 28.1702 20.7722 28.1702 22.4246V23.6726C28.1702 25.196 27.678 26.4558 26.6937 27.4519C25.721 28.4363 24.4144 28.9285 22.7737 28.9285C21.1331 28.9285 19.8089 28.4421 18.8011 27.4695C17.805 26.4851 17.307 25.1902 17.307 23.5847V22.3015ZM20.2952 23.6726C20.2952 24.4695 20.5237 25.1257 20.9808 25.6414C21.4495 26.1453 22.0472 26.3972 22.7737 26.3972C23.5237 26.3972 24.1097 26.157 24.5316 25.6765C24.9652 25.1843 25.182 24.4988 25.182 23.6199V22.3015C25.182 21.4812 24.9534 20.825 24.4964 20.3328C24.0394 19.8406 23.4534 19.5945 22.7386 19.5945C22.012 19.5945 21.4202 19.8406 20.9632 20.3328C20.5179 20.825 20.2952 21.5046 20.2952 22.3718V23.6726ZM11.3304 26.6609L9.13312 25.3953L21.6312 5.39136L23.8284 6.65698L11.3304 26.6609Z" />        
+    </symbol>
+</svg>
+<style>
+    .block1 .block1__item:hover .block1__head { background-color: #[[*link_attributes]]; }
+    @media (min-width: 770px) { .block5 { padding: 45px 40px; } }
+</style>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+            <div class="first-screen__box">
+                <div class="first-screen__logo-box first-screen__logo-box_new">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">Business Support in the UAE</h1>
+                    <p class="first-screen__text">The key to success of your business in the UAE is engaging the high-quality outsourcing<br class="hide-sm-min"> services provided by SORP Group’s specialists</p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">It is smart business to outsource legal, administration, accounting and tax matters to local UAE experts. It drastically cuts expenditure on highly-paid employees and office accommodation. It protects you by putting<br class="hide-sm-min"> local business knowledge at your fingertips seamlessly. SORP has been providing highest-quality expertise <br class="hide-sm-min">to UAE businesses for over 15 years in a highly professional and cost-effective manner.</div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <div class="r30 hide-sm-min"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock1" class="bg bg-F9">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">SORP Group offers bundled solutions <br class="hide-sm-min">for your business in the UAE</h2>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block1">
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01')">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Legal <br class="hide-sm-min">support</div>
+                        <div class="block1__head-text">
+                          Preparation and professional assessment of all documents, interaction with UAE authorities, due diligence where needed
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">Doing business in a foreign country requires a good knowledge of local practices and legislation to enable <br class="hide-sm-min">sound decision-making.</p>
+                      <p class="block1__content-text-p">SORP’s experienced lawyers will resolve any law-related issues for your business through legal procedures, consulting and verifying contracts, and representing you with UAE regulatory authorities.</p>
+                    </div>
+                    <a href="#" onclick="toggleModal('form01')" class="block1__btn btn btn_white btn_border1">
+                        Find out more 
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01')">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Opening and operating<br class="hide-sm-min"> bank accounts</div>
+                        <div class="block1__head-text">
+                          Comprehensive client support for the processes involved in opening or maintaining corporate accounts as working settlement tools
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">A business bank account is a vital necessity but banks don’t make it easy. You need to understand and comply with their procedures for new customers.</p>
+                      <p class="block1__content-text-p">SORP Group has long-standing working relationships with major UAE banks and familiarity with their compliance as well as with KYC procedures to help ensure <br class="hide-sm-min">a successful application.</p>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1" onclick="toggleModal('form01')">
+                        Find out more
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01')">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Management of <br class="hide-sm-min">business processes</div>
+                        <div class="block1__head-text">
+                          Administrative support, operations management, reviews, oversight and crisis control provided to your company in the UAE
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">Management and fine-tuning of your business processes by local experts delivers a solid foundation on which <br class="hide-sm-min">to grow your UAE business.</p>
+                      <p class="block1__content-text-p">SORP Group’s expertise will help you <br class="hide-sm-min">to set up your business from scratch, implement operations management, <br class="hide-sm-min">and respond capably to any internal <br class="hide-sm-min">and external business risks.</p>                        
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1" onclick="toggleModal('form01')">
+                        Find out more
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/en/license-renewal/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">License <br class="hide-sm-min">renewal</div>
+                        <div class="block1__head-text">
+                          Professional assistance in license renewal procedures and fulfilling<br class="hide-sm-min"> all the requirements of the UAE governmental authorities
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">Every business in the UAE obtains one or more licenses to operate a certain type of activities within the country and these must be renewed annually.</p>
+                      <p class="block1__content-text-p">SORP’s specialists have built up deep knowledge about all renewal procedures and the processes specific to regulatory governmental authorities to provide fast and cost-effective solutions.</p>
+                    </div>
+                    <a href="/en/license-renewal/" class="block1__btn btn btn_white btn_border1">
+                        Find out more
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/en/documents-legalization/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Legalization <br class="hide-sm-min">of documents</div>
+                        <div class="block1__head-text">
+                          Business support for the process of legalization of any documents issued either in the Emirates or in another country
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">The multi-stage business document legalization procedure in the UAE often requires significant time, effort and expense.</p>
+                      <p class="block1__content-text-p">SORP Group’s international network <br class="hide-sm-min">of agents and well-established relations with the Emirates’ authorities enable it to perform document legalization quickly and properly.</p>
+                    </div>
+                    <a href="/en/documents-legalization/" class="block1__btn btn btn_white btn_border1">
+                        Find out more
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/en/taxes-and-accounting/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Taxes and <br class="hide-sm-min">accounting</div>
+                        <div class="block1__head-text">
+                          Registration with the Federal Tax Authority, provision of audit and accounting services, preparation and timely filing of tax returns
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">A crucial task for any business in the <br class="hide-sm-min">UAE is to arrange knowledgeable and professional book-keeping, as well as<br class="hide-sm-min"> tax accounting, and financial reporting. </p>
+                      <p class="block1__content-text-p">SORP’s experts provide businesses<br class="hide-sm-min"> with high-quality accounting services<br class="hide-sm-min"> and assure fulfillment of the regulatory requirements related to timely financial reporting, preparation and filing.</p>
+                    </div>
+                    <a href="/en/taxes-and-accounting/" class="block1__btn btn btn_white btn_border1">
+                        Find out more
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/en/trade-and-logistic/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Trade and logistics solutions</div>
+                        <div class="block1__head-text">
+                          Market study, developing road maps, obtaining import permits, customs clearance, transport<br class="hide-sm-min"> and storage of goods.
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">To efficiently carry out trade operations <br class="hide-sm-min">in this country, you need to understand <br class="hide-sm-min">the ins and outs of authorizations, also permissions and how the system works.</p>
+                      <p class="block1__content-text-p">SORP Group offers a complete bundle <br class="hide-sm-min">of trade and logistics solutions related <br class="hide-sm-min">to obtaining licenses and permits, import/export arrangements, storage <br class="hide-sm-min">and transport of goods and more.</p>
+                    </div>
+                    <a href="/en/trade-and-logistic/" class="block1__btn btn btn_white btn_border1" onclick="toggleModal('form01')">
+                        Find out more
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/en/product-certification/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Product <br class="hide-sm-min">certification</div>
+                        <div class="block1__head-text">
+                          Confirmation that all relevant <br class="hide-sm-min">UAE standards are met, as well as certification and labelling of goods to be imported
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">Many products and raw materials must undergo mandatory certification by the relevant authorities before being allowed into the UAE.</p>
+                      <p class="block1__content-text-p">Businesses can take advantage of<br class="hide-sm-min"> SORP’s knowledge of the processes and legislation to ensure their supply lines <br class="hide-sm-min">run smoothly, thus avoiding potentially<br class="hide-sm-min"> costly delays, shortages and hassle.</p>
+                    </div>
+                    <a href="/en/product-certification/" class="block1__btn btn btn_white btn_border1">
+                        Find out more
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/en/business-nominee-services/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Nominee <br class="hide-sm-min">services</div>
+                        <div class="block1__head-text">
+                          Nominee director or shareholder services provided to enable efficient configuration of your business
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                      <p class="block1__content-text-p">Nominee services are widely used in <br class="hide-sm-min">the UAE, are in full compliance with the legislation and represent a business tradition of Emirates’ companies. </p>
+                      <p class="block1__content-text-p">SORP  provides nominee services <br class="hide-sm-min">in order to obtain licenses, confirm economic substance in the UAE and <br class="hide-sm-min">fulfil a number of other special roles <br class="hide-sm-min">for your business.</p>
+                    </div>
+                    <a href="/en/business-nominee-services/" class="block1__btn btn btn_white btn_border1">
+                        Find out more
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-F9">
+            <img src="/git/img/contour-only/black-and-red/growth.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__text">
+              Business process outsourcing support provided by SORP Group’s specialists can become a crucial factor for confirmation of your economic substance in the UAE, which is a fundamental requirement of doing international business here.
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Choose a bundled service comprising legal, consulting, accounting and administrative support for your business</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Request information</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section id="scrollBlock2" class="z-idx3 bg-FA">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">SORP Group has two units that provide you<br class="hide-sm-min"> with comprehensive business support</h2>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block35 block35_width2">
+            <div class="block35__item z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Center of <br class="hide-sm-min">business expertise</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/percentage-papers.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>
+
+                <div class="block35__description block35__description_column">
+                    <div class="block35__description-text">
+                      Expertise on tap centered around strategic planning and business analysis
+                    </div>
+                    <div class="block35__discount">
+                        <span class="block35__discount-value">25</span>
+                        <div class="block35__discount-text">strategic areas</div> 
+                    </div>
+                </div>
+                <div class="r20"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r50_adaptive"></div>
+                <div class="block35__content">                    
+                    <div class="block22 block22_min">
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/partners-2.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Minimizing the need for highly-paid staff by engaging SORP’s knowledgeable and very experienced specialists in the field of business planning and analysis</div>
+                            </div>
+                        </div>
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/data-analysis.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Validating business plans, evaluating and tweaking strategy, developing financial policies and honing them to suit a UAE setting</div>
+                            </div>
+                        </div>
+        
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/graph-screen.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Analyzing proposed business models in-depth to highlight potential strengths and weaknesses as regards local customs, laws and business environment specifics</div>
+                            </div>
+                        </div>            
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/person-lifebelt.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">In-depth evaluation and advice surrounding tax risks, developing tax optimization strategies on the basis of tax planning tools to mitigate a tax burden</div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/coins-revert.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Developing mechanisms and methods to deliver reliable protection against automatic exchange of tax information internationally under CRS</div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/tie.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Assessing and verifying legal and financial documents to ensure full compliance with UAE legislation in all relevant matters</div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="r50_adaptive"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r40"></div>
+                <a href="#" class="btn btn_white btn_w100 z-idx3 btn_space-between" onclick="toggleModal('form01');">
+                  Get a solution today
+                    <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                      <use href="#btn__icon-modal"></use>
+                    </svg>
+                </a>                
+            </div>
+            <div class="block35__item z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Multifunction <br class="hide-sm-min">outsourcing center</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/tie.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>
+
+                <div class="block35__description block35__description_column">
+                    <div class="block35__description-text">
+                      An array of support services for many operations management tasks and roles
+                    </div>
+                    <div class="block35__discount">
+                        <span class="block35__discount-value">54</span>
+                        <div class="block35__discount-text">in-house experts</div> 
+                    </div>
+                </div>
+                <div class="r20"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r50_adaptive"></div>
+                <div class="block35__content">
+                    <div class="block22 block22_min">
+                        <div class="block22__item">          
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/diploma.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            
+                            <div class="block22__text">
+                                <div class="block22__description">Annual license renewals, professional assistance in the areas of law, immigration, administration, and business process management</div>
+                            </div>
+                        </div>
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/case-tie.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Audit control and crisis-management of your business, support in opening and maintaining corporate accounts,<br class="hide-sm-min"> and getting through the bank compliance procedures</div>
+                            </div>
+                        </div>
+        
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/person.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Recruiting local UAE personnel as needed in order to obtain the required licenses, building a sales force, legalization of documents</div>
+                            </div>
+                        </div>            
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/todolist.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Confirmation of business management and control center <br class="hide-sm-min">at the company’s registered address in order to comply with economic substance requirements</div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/edit-doc.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Preparing formal financial reports under IFRS, and all the company’s documents, in order to submit them to the auditors</div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/doc.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Trade mark registration, obtaining permits from the UAE Ministry of Economy and professional assistance in all the document preparation and execution procedures</div>
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>
+                <div class="r50_adaptive"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r40"></div>
+                <a href="#" class="btn btn_white btn_w100 z-idx3 btn_space-between" onclick="toggleModal('form01');">
+                  Get a solution today
+                    <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                      <use href="#btn__icon-modal"></use>
+                    </svg>
+                </a>                
+            </div>   
+        </div>
+        
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-FF">
+            <img src="/git/img/contour-only/black-and-red/girl.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__text">
+              Although the UAE is a very favorable jurisdiction for doing business, with excellent transparency of the law, like every country it has its own quirks and peculiarities in the legal and commercial framework.  It is often difficult to understand them on your own and that presents risk. SORP Group will provide your business in the UAE with comprehensive support across all aspects based on our intimate knowledge of the country’s business customs and legislation.
+            </div>            
+        </div>    
+        <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock3" class="bg-F9">
+    <div class="container_bem">
+        <div class="r50_adaptive"></div>
+        <h2 class="title">Crisis-management solutions for subscribers</h2>
+        <div class="r50_adaptive"></div>
+
+        <div class="block11-new block11-new_white block11-new_dark-hover z-idx3">
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">                    
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">30% discount</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                          Registration <br class="hide-sm-min">of legal entities
+                        </div>
+                        <div class="block11-new__desc">
+                          Incorporation of local companies, holdings and other structures to run <br class="hide-sm-min">a business in the UAE
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">       
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">30% discount</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                          Office spaces in SORP’s Business Center 
+                        </div>
+                        <div class="block11-new__desc">
+                          Free-of-charge rent of offices, work stations in co-working and virtual office options 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">       
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">30% discount</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>                       
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                          Local sponsor or agent’s services
+                        </div>
+                        <div class="block11-new__desc">
+                          Provided to obtain and renew local licenses (DED) and solve many special business requirements
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Get an individual evaluation of your business prospects in the UAE</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Inquire now</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section class="bg-F9" id="scrollBlock4">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP provides professional support to your business to meet all requirements of UAE law</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">Personal Approach</div>
+					<div class="tslider-item__text fadeInUp">Confidential legal solutions for tax optimization, concealment of beneficiaries, and protection against automatic data exchange according to the CRS standard</div>
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+						<div class="back"></div>
+						<div class="tslider-item__number">Integrated Solutions</div>
+						<div class="tslider-item__text wow fadeInUp">Registration of the company on a turn-key basis, including the analysis of your needs and selection of the organizational and legal form of the legal entity</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">15 Years in UAE Market</div>
+						<div class="tslider-item__text">Expert knowledge and 15 years' experience in conducting professional consultations, opening, and comprehensive support of companies in various sectors of the economy</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Banking Support</div>
+						<div class="tslider-item__text">Assistance in opening bank accounts, choosing a bank suitable your purpose, support during the KYC procedure (“Know Your Customer”)</div>
+					</div>
+
+          <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Examination of documentation</div>
+						<div class="tslider-item__text">Checking your company's concept for strategic and legal errors. SORP Group strategic partnerships with the best lawyers in the UAE and around the world will provide prompt legal support for your business</div>
+					</div>
+					
+				<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number" style="text-align: center;">Confidentiality and Protection</div>
+						<div class="tslider-item__text">We will ensure the confidentiality of Your data and take appropriate measures to comply with current legislation, as well as solutions on corporate, tax and judicial law and economic substance requirements</div>
+					</div>
+				<div class="tns-controls">
+					<div class="button" onclick="slideup()"></div>
+					<div class="button" onclick="slidedown()"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section class="bg-F9" id="scrollBlock5">
+    <div class="container_bem">
+      <div class="r60_adaptive"></div>
+      <div class="registration">
+        <div class="registration__info">
+          <div class="registration__title">Get a consultation<br class="hide-sm-min"> with a SORP expert</div>
+          <div class="r40"></div>
+          Submit a request and get a free consultation with one of our experts about support for your business.
+          <br><br>
+          SORP Group’s specialists help you choose the best fit for you from our bundles of business support services and provide answers to all your questions about doing business in the UAE.
+          <br><br>
+          Give your UAE business the best chance for growth and success.
+        </div>
+        <div class="registration__form-block">
+            <div class="registration__title">Request a consultation</div>
+            <div class="r20"></div>
+            {$_modx->getChunk('form4_new')}
+        </div>
+      </div>
+      <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+{/block}
+{include 'footer_new'}

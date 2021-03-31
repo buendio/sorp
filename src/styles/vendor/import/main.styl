@@ -1,0 +1,39 @@
+@import '../../base/fonts.styl';
+  
+body {
+  font-family: 'Roboto', serif;
+  margin: 77px 0 0;
+  padding: 0;
+  background: #fff;
+  color: #1b1b1b;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@media(min-width: screen-md-min) {
+  body {
+    margin-top: 0;
+  }
+}
+
+*, ::after, ::before
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+h1, h2, h3, h4, h5, h6, p, ul, li
+  margin 0
+  padding 0
+
+ul
+  list-style none
+
+.site-message
+  position absolute
+  left -10000px
+
+*
+  outline none
+
+label[for="modal1"], label[for="modal2"], label[for="modal3"] {
+  cursor pointer
+}

@@ -1,0 +1,138 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "pochemu_mezhdunarodnyj_biznes_vybiraet_oae"
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      style
+        | .first-screen {
+        |  background-position: center 41%;
+        | }
+
+      .first-screen.lazy(data-bg="/dist/img/minilends/blocks/first-screen/building.svg")
+        h1.first-screen__title
+          +lang(
+          'Почему международный бизнес выбирает Арабские Эмираты?',
+          'What are the reasons for<br> international business to<br> choose the UAE?'
+          )
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Find out more'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          style
+            | .block-frames__box {
+            |  background-position: 100%;
+            | }
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/blocks/block-frames/confid.svg")
+            p.block-frames__text
+              +lang(
+              'Законодательство Эмиратов уникально: оно даёт иностранному бизнесу во&nbsp;всем равные права и&nbsp;возможности',
+              'The legislation of the UAE is&nbsp;unique: it gives foreign enterpreneurs equal rights and&nbsp;opportunities  '
+              )
+        .r20
+        .r5
+
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/diagrams.svg")
+            p.block1__text
+              +lang(
+              'Отсутствие основных корпоративных налогов, налогов на прибыль и&nbsp;доходы физических лиц, дивиденды и&nbsp;роялти',
+              'Absence of major corporate taxes, taxes on&nbsp;personal income, on&nbsp;dividends and royalties'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/percent2.svg")
+            p.block1__text
+              +lang(
+              'Возможность применять договора об&nbsp;избежании двойного налогообложения, подписанные ОАЭ с&nbsp;более 70 странами',
+              'Ability to apply double taxation treaties signed by&nbsp;the&nbsp;UAE with more than 70 countries'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/bank.svg")
+            p.block1__text
+              +lang(
+              'Свободный ввод, вывод и&nbsp;перемещение капитала без валютного контроля',
+              'Free deposit, withdrawal and transfer of capital with no&nbsp;foreign exchange control'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/confid.svg")
+            p.block1__text
+              +lang(
+              'Законное использование инструментов сокрытия бенефициаров',
+              'The legitimate use of&nbsp;unique tools for&nbsp;concealment of beneficiaries'
+              )
+          .r30
+          .r1.r_bg-e3
+          .r20
+
+    section
+      .container
+        h2.title
+          +lang(
+          'Зарегистрировав компанию в&nbsp;ОАЭ, вы откроете для&nbsp;себя следующие возможности:',
+          'By registering a&nbsp;company in&nbsp;the&nbsp;UAE, you will discover the&nbsp;following opportunities:'
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/1.svg")
+            p.block1__text
+              +lang(
+              'Выход на рынок ОАЭ — быстро растущий рынок, таможенное и налоговое пространство стран Персидского Залива.',
+              'Enter the&nbsp;UAE market — a&nbsp;rapidly growing market, single customs and tax area for the&nbsp;6 countries of&nbsp;the&nbsp;GCC.'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/2.svg")
+            p.block1__text
+              +lang(
+              'Вести международный бизнес под&nbsp;флагом ОАЭ — инвестиции, торговлю, услуги и сервисы, расчётно-кассовые центры.',
+              'Conduct international business under the&nbsp;UAE ‘flag of convenience’ - investment, trade, services and after-sale maintenance, cash and settlement centers.'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/3.svg")
+            p.block1__text
+              +lang(
+              'Оптимизировать бизнес во всем мире через консолидацию бизнеса и&nbsp;активов, защиту от&nbsp;автоматического обмена налоговой информацией, анонимное владение зарубежными активами.',
+              'Optimize operations worldwide through business and asset consolidation, tools for protection from automatic exchange of tax information, and anonymous ownership of&nbsp;foreign assets.'
+              )
+        .r20
+        .r5
+
+    section
+      .quote
+        .quote__icon.lazy(data-bg="/dist/img/minilends/blocks/quote/quote.svg")
+        p.quote__text
+          +lang(
+          'Регистрируйте компанию в ОАЭ - юрисдикции, которая не только гарантирует сохранность ваших активов и данных, но и&nbsp;позволит вести бизнес без налогов',
+          'Register a&nbsp;company in&nbsp;the&nbsp;UAE - a&nbsp;jurisdiction that not only shields the safety of&nbsp;your assets and data, but also allows to&nbsp;run business without taxes'
+          )
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        h1.title.title_center
+          +lang(
+          'Повысьте эффективность вашего бизнеса с&nbsp;опорой на&nbsp;законодательство ОАЭ',
+          'Improve the efficiency<br> of&nbsp;your business based<br> on&nbsp;the&nbsp;UAE legislation'
+          )
+        .r20
+        include ../../blocks/minilends/form/form
+      .r30
+      .r5
+
+    include ../../blocks/minilends/pnumber/pnumber

@@ -1,0 +1,54 @@
+| {if $_modx->config.cultureKey == 'ru'}
+| {set $redirect = 476}
+| {else}
+| {set $redirect = 489}
+| {/if}
+
+| {'!FormIt' | snippet : [
+|      'hooks'=>'amo, FormItSaveForm, email, redirect',
+|      'emailSubject'=>'Заявка с сайта SORP',
+|      'emailTo'=>'yudin-1337@yandex.ru, letters@sorp.ae',
+|      'emailTpl' => 'response_modal.tpl',
+|      'validate'=>'phone:required,name:blank,firstname:blank,lastname:blank',
+|      'fieldNames'=>'fio==Имя,phone==Телефон,page==Страница',
+|      'redirectTo' => $redirect,
+| ]}
+
+<form class="form" method="post">
+input.callOrderReason(type='hidden' name='reason' value='Миниленд - форма внизу страницы')
+<input class="page" type='hidden' name='pageurl' value='{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}'>
+<input type="hidden" name="pagetitle" value='{$_modx->resource['pagetitle']}'>
+<input type="hidden" name="pageid" value="{$_modx->resource.id}" />
+
+input.site-message(type='text' name='name' value='')
+input.site-message(type='text' name='firstname' value='')
+input.site-message(type='text' name='lastname' value='')
+.form-block
+  .form-block__item
+    label.form-block__label
+      +lang(
+      'Ваше имя',
+      'Name:'
+      )
+    input.form-block__input(type='text' name='fio' value='' required)
+  .form-block__item
+    label.form-block__label
+      +lang(
+      'Телефон',
+      'Telephone:'
+      )
+    input.form-block__input(type='tel' name='phone' value='' required)
+  .form-block__item
+    label.form-block__label
+      +lang(
+      'Электронная почта',
+      'E-mail:'
+      )
+    input.form-block__input(type='email' name='email' value='')
+  .form-block__item
+    button.btn.btn_radius5.btn_w100.btn_hover-red.btn_font-s18.btn_h55(type='submit')
+      +lang(
+      'Оставить заявку',
+      'Request information'
+      )
+</form>

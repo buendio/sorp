@@ -1,0 +1,21 @@
+.block54 { display: flex; flex-wrap: wrap; justify-content: space-between; 
+    &__item { border-bottom: 4px solid #3C38B8; background-color: #FFF; font-size: 15px; width: calc(100% - 20px); transition: .3s all ease-in-out; }
+    &__head { padding: 40px;
+        &-title { font-size: 15px; font-weight: 500; line-height: 20px; color: #8a919c; } }
+
+    &__content { display: flex;  flex-direction: column; justify-content: space-between; padding: 40px; }
+    &__title { font-size: 22px; line-height: 26px; font-weight: 500; margin-bottom: 15px; } 
+    &__description { font-size: 15px; font-weight: 300; line-height: 21px; color: #474747; }
+    &__icon { width: 25px; height: 25px;
+        &-wrap { width: 60px; height: 60px; flex: none; border-radius: 50%; margin-bottom: 30px; display: flex; align-items: center; justify-content: center; background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(21, 21, 21, 0.01) 100%); }
+    }
+    &-slider .slick-slide { margin: 0 10px; }
+}
+
+@media (min-width: screen-sm-max) {
+    .block54 {
+        &__title { font-size: 27px; line-height: 36px; }
+        &__content { flex-direction: row; }
+        &__icon { width: 40px; height: 40px;
+            &-wrap { margin: 0 30px 0 0; width: 90px; height: 90px; } 
+        } } }

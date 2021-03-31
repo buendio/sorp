@@ -1,0 +1,705 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+    	<path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+    	<path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+    <symbol id="btn__icon" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.291748 10.7884L1.27464 11.6392L1.76608 11.2126L7.82088 5.98838L1.76608 0.764161L1.27464 0.337599L0.291748 1.18838L0.783192 1.6126L5.85239 5.98838L0.783192 10.3642L0.291748 10.7884ZM5.84968 10.7884L6.83256 11.6392L7.324 11.2126L13.3788 5.98838L7.324 0.764161L6.83256 0.337599L5.84968 1.18838L6.34112 1.6126L11.4103 5.98838L6.34112 10.3642L5.84968 10.7884Z" />
+    </symbol>
+    <symbol id="block5" viewBox="0 0 81 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40.5 98C40.3158 98 40.1317 97.9719 39.9617 97.9157C16.064 90.8042 0 69.3856 0 44.6221V13.3515C0 12.3255 0.835782 11.4963 1.86988 11.4963C7.22455 11.4963 11.5876 7.16765 11.5876 1.85516C11.5876 0.829198 12.4234 0 13.4575 0H67.5283C68.5766 0 69.4124 0.829198 69.4124 1.85516C69.4124 7.16765 73.7755 11.4963 79.1301 11.4963C80.1642 11.4963 81 12.3255 81 13.3515V44.6221C81 69.3856 64.936 90.7902 41.0383 97.9157C40.8683 97.9719 40.6842 98 40.5 98ZM15.1999 3.76653C14.3499 9.58497 9.66107 14.2369 3.79643 15.0802L3.75394 44.6221C3.75394 67.4743 18.5147 87.3891 40.4858 94.1773C62.4853 87.3891 77.2602 67.4743 77.2602 44.6221V15.1364C71.3389 14.251 66.6501 9.59902 65.8143 3.76653L15.2141 3.72437L15.1999 3.76653Z" fill="black"/>
+        <path d="M40.5 62.3585C30.9523 62.3585 23.1752 54.6427 23.1752 45.1702C23.1752 35.6977 30.9523 27.9819 40.5 27.9819C50.0477 27.9819 57.8248 35.6977 57.8248 45.1702C57.8248 54.6427 50.0619 62.3585 40.5 62.3585ZM40.5 31.6922C33.0205 31.6922 26.9292 37.7355 26.9292 45.1561C26.9292 52.5768 33.0205 58.6201 40.5 58.6201C47.9795 58.6201 54.0708 52.5768 54.0708 45.1561C54.0708 37.7355 47.9937 31.6922 40.5 31.6922Z" fill="#D64356"/>
+        <path d="M38.5735 52.7736C38.0777 52.7736 37.596 52.5768 37.2419 52.2255L33.3746 48.3887C32.638 47.6579 32.638 46.4773 33.3746 45.7605C33.7288 45.4092 34.1962 45.2124 34.7062 45.2124C35.2162 45.2124 35.6836 45.4092 36.0378 45.7605L38.531 48.2341L46.9029 40.0124C47.2571 39.661 47.7246 39.4642 48.2345 39.4642C48.7303 39.4642 49.212 39.661 49.5661 40.0124C50.3027 40.7432 50.3027 41.9237 49.5661 42.6405L39.905 52.2255C39.5367 52.5768 39.0693 52.7736 38.5735 52.7736Z" fill="#D64356"/>
+    </symbol>
+</svg>
+[[*id:is=`1`:then=``:else=` 
+    <style>
+        .header, .nav, .bg_article, .block1__head_active, .block1__head:hover, .block7__item:hover, .block12__item:hover, .block8__item:hover, .block9__item:hover {
+            background-color: #[[*link_attributes]] !important;
+        }
+        .block7__item:hover {
+            border-bottom: 5px solid #[[*link_attributes]] !important;
+        }
+    </style>
+`]]
+
+<style>
+    :root {
+        --header-bg-color: [[*headercolor:is=``:then=`#[[*link_attributes]] `:else=`#[[*headercolor]]`]] !important
+}
+</style>
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+                <div class="first-screen__box">
+                    <div class="first-screen__logo-box first-screen__logo-box_new">
+                        <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                    </div>
+                    <div class="first-screen__content first-screen__content_new">
+                        <h1 class="first-screen__title">How to buy an existing company <br class="hide-sm-min">or shelf company in the UAE</h1>
+                        <p class="first-screen__text">SORP Group’s specialists know what sources to trust when you need the advantages of<br class="hide-sm-min"> an existing company or a shelf company when starting a business, and the commercial<br class="hide-sm-min"> tests to apply to avoid making costly mistakes.</p>
+                        <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Request information</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <!--         block-frames             -->
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">
+                There are specific advantages under UAE law to starting a business using an existing company rather than incorporating from scratch. A company must be actively trading for at least two years to enable growth by taking advantage of opportunities that are not available to newly incorporated startups.  Important factors such as obtaining bank loans, receiving all United Arab Emirates tax benefits, participating in major contracts and tenders from governmental agencies. Proof of solvency and profitable trading history is required. Buying the right existing company delivers those requirements at once. Shelf companies are ideal building blocks for forming structures.
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <div class="r60 hide-sm-min"></div>
+    </div>
+</section>
+
+<!--             возможности || goals             -->
+
+<section id="scrollBlock1" class="bg-FF z-idx3 bg_wave">
+        <div class="container_bem">
+        <h2 class="title">Buying an existing company meets these important objectives:</h2>
+        <div class="r30_adaptive"></div>
+        <p class="description">
+            Local (mainland registered) companies enjoy the maximum levels of support provided by the UAE government. They are effectively a special tool for doing business in the domestic UAE market and abroad. This approach to business structures and organization is unique to the UAE and its laws, and has no parallels in other countries.
+        </p>
+        <div class="r50_adaptive"></div>
+        <div class="block41">
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Prestige and reputation</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/three-people-2.svg" alt="" loading="lazy">
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">                
+                    Confirms a company’s standing and reliability to clients, suppliers, trading partners and also financial institutions.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Trading history</div>
+                    <div class="block41__icon-wrap">                    
+                        <img src="/git/img/contour-only/white/briefcase.svg" alt="" class="block41__icon" loading="lazy">
+                    </div>
+                </div>
+                <div class="block41__desc">                
+                    Bestows credibility when dealing with lenders and suppliers who see a history of accounts receivable, check payments and transactions.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Tendering</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/girl.svg" alt="" class="block41__icon" loading="lazy">
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Enables participation in tenders, both in local and international markets, and to act also as guarantor providing surety.
+                </div>
+            </div>
+            
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Creditworthiness</div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/bank-building.svg" alt="" class="block41__icon" loading="lazy">
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Apply for and obtain financial products such as loans and/or leasing from UAE banks and financial institutions 
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Residency status</div>
+                    <div class="block41__icon-wrap">                    
+                        <img src="/git/img/contour-only/white/verified-person.svg" alt="" class="block41__icon" loading="lazy">                  
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Obtain a UAE tax domicile certificate, achieve protection from automatic exchange of tax information (CRS).
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Asset consolidation</div>
+                    <div class="block41__icon-wrap">                    
+                        <img src="/git/img/contour-only/white/document-tall.svg" alt="" class="block41__icon" loading="lazy">                
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Benefit from having a full set of accounts<br class="hide-sm-min"> and provide favorable auditor’s report for <br class="hide-sm-min">previous financial periods.
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 bg-E3"></div>
+    </section> 
+
+<!--         ФОС          -->
+<div class="bg bg_red">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Discover the benefits of buying an existing or shelf UAE company</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Get a consultation</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--             Варианты || types         Здесь нет описания    -->
+<style> .block9__item:hover { background-color: #[[*link_attributes]] !important; }.block9__item { cursor:pointer;padding: 33px 23px!important; }</style>
+<section id="scrollBlock2" class="bg-FA">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">SORP Group offers companies for purchase that are verified legally and financially</h2>
+        <div class="r50_adaptive"></div>
+            <div class="block9">
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Mainland Registered Trading Company </div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">LLC-Limited Liability Company</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than 
+                                    <span class="block9__time-desc_important">2 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Registered office, ESR compliance and <br class="hide-sm-min">provision of a local sponsor with 51%<br class="hide-sm-min"> 
+                        share ownership as required by law.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Marketing Management Licensed Company</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Sole Establishment (sole proprietorship)</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                   More than
+                                    <span class="block9__time-desc_important">2 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Registered office, provision of a local<br class="hide-sm-min"> 
+                        agent and nominee director (optional).<br class="hide-sm-min"> 
+                        100% ownership for a new shareholder.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">IT Services<br class="hide-sm-min"> Licensed Company</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Sole Establishment (sole proprietorship)</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">3 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Registered office, provision of a local<br class="hide-sm-min"> 
+                        agent and nominee director (optional).<br class="hide-sm-min"> 
+                        100% ownership for a new shareholder.
+                    </div>
+                </div>
+                
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Event Management Licensed Company</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Sole Establishment (sole proprietorship)</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">2 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Registered office, provision of a local<br class="hide-sm-min"> 
+                        agent and nominee director (optional).<br class="hide-sm-min"> 
+                        100% ownership for a new shareholder.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">General Trading Licensed Company</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">LLC-Limited Liability Company</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">1 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                       Registered office, ESR compliance and provision of a local sponsor with 51%<br class="hide-sm-min"> 
+                        share ownership as required by law.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Investment Activities Licensed Company</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">LLC-Limited Liability Company</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">1 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Registered office, ESR compliance and<br class="hide-sm-min"> provision of a local sponsor with 51%<br class="hide-sm-min"> 
+                        share ownership as required by law.
+                    </div>
+                </div>
+                
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Free Zone Registered Trading Company</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">FZE – Free Zone Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">2 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Flexi office, 100% ownership, provision of a nominee director and management decision center confirmation service (optional).
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Free Zone Registered Consulting Company</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">FZE - Free Zone Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">2 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Flexi office, 100% ownership, provision of a nominee director and management decision center confirmation service (optional).
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Free Zone Registered Logistics Company</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">FZE - Free Zone Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">3 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Flexi office, 100% ownership, provision of a nominee director and management decision center confirmation service (optional).
+                    </div>
+                </div>
+                
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Structure for International Business and Transactions</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company" style="margin-right: 0;">Free Zone Company Registered by IBC with 100% ownership</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">2 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Two legal entities, registered address,<br class="hide-sm-min"> provision of a nominee director (optional). 100% ownership.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Structure for International Investment Business</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company" style="margin-right: 0;">Free Zone Company Registered by IBC with 100% ownership</div>
+                            
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">1 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Two legal entities, registered address,<br class="hide-sm-min"> provision of a nominee director (optional). 100% ownership.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Offshore Company (International Business Company)</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company" style="margin-right: 0;">IBC - International Business Company</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">2 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Two legal entities, registered address,<br class="hide-sm-min"> provision of a nominee director (optional). 100% ownership.
+                    </div>
+                </div>
+                
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Investment and Financing Company (Beneficiary Concealment Service)</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Local Company Registered by Two UAE Legal Entities</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">2 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">Nominee local shareholder and FZ company<br class="hide-sm-min"> to be re-registered on a client’s name</div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Petroleum Products International Trade (Beneficiary Concealment Service)</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Local Company Registered by Two UAE Legal Entities</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">3 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Nominee local shareholder and FZ company<br class="hide-sm-min"> to be re-registered on a client’s name
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">General Trade<br class="hide-sm-min"> Licensed Structure (Beneficiary Concealment Service)</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Local Company Registered by Two UAE Legal Entities</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    More than
+                                    <span class="block9__time-desc_important">3 y. old</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Includes</div>
+                    <div class="block9__desc">
+                        Nominee local shareholder and FZ company<br class="hide-sm-min"> to be re-registered on a client’s name
+                    </div>
+                </div>
+            </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<!--         ФОС          -->
+<div class="bg bg_red">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Choose a shelf company and SORP Group specialists will re-register it in your name as soon as possible</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Talk with a specialst today</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--             Шаги || steps             -->
+<style>
+     @media (min-width: 992px) { #scrollBlock3 .block5 { padding-right: 22px; } } 
+</style>
+<section id="scrollBlock3" class="bg-FA z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title header-2_dark-blue">Stages of acquiring an existing company with SORP Group experts</h2>
+        <div class="r30"></div>
+        <div class="block-snake block-snake_line-right">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__img">
+                    <img src="/git/img/contour-only/white/doc3.svg" alt="">
+                </div>    
+
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Preliminary business analysis</div>
+                    We assess your planned business<br class="hide-sm-min"> activities and identify the right type<br class="hide-sm-min"> 
+                    of company for you.
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__img">
+                    <img src="/git/img/contour-only/white/key.svg" alt="">
+                </div>    
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Assess a suitable existing company</div>
+                    We search for suitable companies, find<br class="hide-sm-min"> 
+                    the target, check its legal and financial documents and any outstanding debts.
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                    <div class="block-snake__img">
+                        <img src="/git/img/contour-only/white/handshake.svg" alt="">
+                    </div>
+                    <div class="block-snake__text block-snake__text_gray">
+                        <div class="block-snake__text-header">Transfer ownership</div>
+                        We prepare all documents for the <br class="hide-sm-min">re-registration or change of name <br class="hide-sm-min">process, appoint a nominee.
+                    </div>
+                </div>
+        </div>
+        
+        <div class="block-snake">
+            <div class="block-snake__item fadeInUp">
+                    <div class="block-snake__img">
+                        <img src="/git/img/contour-only/white/world.svg" alt="">
+                    </div>
+                    <div class="block-snake__text block-snake__text_gray">
+                        <div class="block-snake__text-header">
+                            Immigration procedures
+                        </div>
+                            We obtain permits from the UAE’s<br class="hide-sm-min"> immigration departments as well<br class="hide-sm-min"> 
+                            as resident visas for owners and<br class="hide-sm-min"> employees.
+                    </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__img">
+                    <img src="/git/img/contour-only/white/card.svg" alt="">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                        <div class="block-snake__text-header">
+                            Open a bank account 
+                        </div>
+                        We select a banking solution, form a<br class="hide-sm-min"> package of documents at the bank’s<br class="hide-sm-min"> request, including your company's<br class="hide-sm-min"> business profile.
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__img">
+                    <img src="/git/img/contour-only/white/portfel.svg" alt="">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Prepare an auditor’s report</div>
+                    We prepare consolidated financial<br class="hide-sm-min"> statements.  If necessary,  we will<br class="hide-sm-min"> 
+                    register a tax residency certificate<br class="hide-sm-min"> 
+                    for your company.
+                </div>
+            </div>
+        </div>
+        
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-FA">
+            <svg class="block5__icon block5__icon_big">
+                <use xlink:href="#block5"></use>
+            </svg>
+            <div class="block5__text">
+                SORP Group prioritizes detailed verification of potential existing companies prior to a purchase decision. Our lawyers gather and collate all available shareholder details, check for any debt obligations and ensure that licenses are present and valid. Avoiding potential risks requires understanding the subtleties of local legislation. This is very important.  SORP Group has been a recognized expert in business consulting in the UAE for over 15 years. Our experts select only proven and guaranteed solutions on your behalf.
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<!--         ФОС          -->
+<div class="bg bg_red">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Choose an existing or shelf company and SORP Group specialists will<br class="hide-sm-min"> re-register it in your name as soon as possible.</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Get started today</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!-- Почему SORP - Slider -->
+<section class="bg-F9" id="why_sorp">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP provides a full range of services for registration and business management</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">Integrated Approach</div>
+					<div class="tslider-item__text fadeInUp">The company offers a comprehensive solution for businesses and shareholders: from registering companies to obtaining the status of a tax resident of the country</div>
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+						<div class="back"></div>
+						<div class="tslider-item__number">Individual approach</div>
+						<div class="tslider-item__text wow fadeInUp">Selecting the best solution for your tasks and budget.</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">15 years of successful work</div>
+						<div class="tslider-item__text">We have helped thousands of clients build, acquire and develop businesses in the UAE.</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Security and anonymity</div>
+						<div class="tslider-item__text">We will ensure the security of your investments and take measures to ensure the legal purity of transactions and confidentiality.</div>
+					</div>
+
+                    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">Professional specialization</div>
+						<div class="tslider-item__text">We have expertise in all areas of business in the UAE, as well as tools to solve issues of increased complexity.</div>
+					</div>
+					
+				    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">Local nominee service</div>
+						<div class="tslider-item__text">We provide reliable local partners and agents, whose presence is required by law to process the transfer of ownership rights.</div>
+					</div>
+				    <div class="tns-controls">
+					    <div class="button" onclick="slideup()"></div>
+					    <div class="button" onclick="slidedown()"></div>
+				    </div>
+			    </div>
+		</div>
+	</div>
+</section>
+
+        <!-- ФОРМА НИЗ -->
+    <section class="bg-F9" id="scrollBlock6">
+    <div class="r1 bg-E3"></div>     
+        <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="registration">
+            <div class="registration__info">
+            <div class="registration__title">Get a fully checked and verified company</div>
+            <div class="r20"></div>
+                Submit a request and get advice on selecting a<br class="hide-sm-min"> UAE-based existing or shelf company from our <br class="hide-sm-min">specialist.
+                <br><br>
+                SORP Group experts will select the best option based on your needs and provide you with comprehensive support.
+                <br><br>
+                Today you can take the first step towards meeting <br class="hide-sm-min">your business needs.
+            </div>
+            <div class="registration__form-block">
+                <div class="registration__title">Buy a UAE company</div>
+                <div class="r10"></div>
+                {$_modx->getChunk('form4_new')}
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+        </div>
+        <div class="r1 bg-E3"></div>
+    </section> 
+
+{/block}
+{include 'footer'}

@@ -1,0 +1,145 @@
+extends ../../../layouts/default_minilinds
+
+block variables
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - minilends_gitex = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      style
+        | .first-screen {
+        |  background-position: center 37%;
+        | }
+        | .first-screen__title {
+        |  margin-bottom: 150px;
+        | }
+      .first-screen.lazy(data-bg="/dist/img/minilends/blocks/first-screen/registraciya_s_dejstvuyushchim_schetom.svg")
+        h1.first-screen__title
+          +lang(
+          'Дуинг IT-бизнес в ОАЭ',
+          'Doing technology  and<br> innovation  business in UAE'
+          )
+        p.first-screen__text
+          +lang(
+          'Бесплатная интерактивная консультация в формате Q&A для посетителей и участников выставки GITEX 2020',
+          'Free interactive Q&A consultation for visitors and participants of GITEX 2020 exhibition'
+          )
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Apply for FREE'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          style
+            | .block-frames__box {
+            |  background-position: 100%;
+            |  padding-right: 28px;
+            | }
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/pages/registraciya_s_dejstvuyushchim_schetom/block-frames.svg")
+            p.block-frames__text
+              +lang(
+              'СИнтерактивная консультация в формате Q&A проводится экспертами группы компаний SORP с<br>\n' +
+              '15-летним опытом вывода<br>\n' +
+              'IT-компаний на рынок ОАЭ',
+              'Interactive Q&A consultation is held by the SORP Group experts having 15 years experience of introducing IT-companies to the UAE market'
+              )
+        .r20
+
+    section
+      .container
+        h2.title
+          +lang(
+          'На консультации рассмотрим следующие вопросы:',
+          'Here are the topics for the seminar: '
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/1.svg")
+            p.block1__text
+              +lang(
+              'Перспективы развития ОАЭ<br> до&nbsp;2030 года',
+              'The UAE prospectives of development till 2030'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/2.svg")
+            p.block1__text
+              +lang(
+              'Особенности законодательства Объединенных Арабских Эмиратов',
+              'Legislation percularities of the United Arab Emirates.'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/3.svg")
+            p.block1__text
+              +lang(
+              'Стратегия выхода на рынок:<br> выбор формы и места регистрации, лицензирование бизнеса, иммиграционные вопросы',
+              'A strategy of entering the market:<br> type of legal entity and place of incorporation, business licensing, immigration issues'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/4.svg")
+            p.block1__text
+              +lang(
+              'Получение разрешений на&nbsp;ведение деятельности, регистрация прав на&nbsp;интеллектуальную собственность, сертификация продукции \n' +
+              'в&nbsp;государственных органах ОАЭ',
+              'Receiving governement approvals to&nbsp;conduct business in&nbsp;the&nbsp;UAE, IP rights registration and&nbsp;protection, products’ certification with the&nbsp;authorities of&nbsp;the&nbsp;UAE'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/5.svg")
+            p.block1__text
+              +lang(
+              'Стоимость открытия и&nbsp;ведения бизнеса в&nbsp;ОАЭ',
+              'Cost of&nbsp;business incorporation and&nbsp;business conduction in&nbsp;the&nbsp;UAE'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/6.svg")
+            p.block1__text
+              +lang(
+              'Инструменты оптимизации международного бизнеса и&nbsp;налогового планирования на&nbsp;базе законодательства ОАЭ',
+              'Tax planning and international business optimisation tools based on the UAE laws and practices'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/7.svg")
+            p.block1__text
+              +lang(
+              'Эффективный нетворкинг',
+              'Effective networking'
+              )
+        .r20
+        .r5
+
+    section
+      .quote
+        .quote__icon.lazy(data-bg="/dist/img/minilends/blocks/quote/quote.svg")
+        p.quote__text
+          +lang(
+          'Эксперты SORP Group подберут оптимальное решение по&nbsp;организации вашей деятельности в&nbsp;ОАЭ и&nbsp;окажут комплексную поддержку - от&nbsp;оценки бизнес-идеи \n' +
+          'до&nbsp;оформления и&nbsp;сопровождения компании.',
+          'SORP Group experts will choose the most effective solution for your business in the UAE. SORP  will provide full consulting support - from evaluation of a business idea to a set of incorporation and administrative services for your business in the UAE'
+          )
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        p.description.description_center
+          +lang(
+          'Зарегистрируйтесь на&nbsp;интерактивную консультацию в&nbsp;формате Q&A в&nbsp;Дубае и&nbsp;получите за&nbsp;1 день максимум полезной и&nbsp;прикладной информации для&nbsp;успешного открытия бизнеса в&nbsp;ОАЭ',
+          'Check in&nbsp;for a&nbsp;free 1 day interactive Q&A consultation in&nbsp;Dubai and&nbsp;get maximum of&nbsp;useful practical information on&nbsp;how to set up a&nbsp;successful business in&nbsp;the&nbsp;UAE'
+          )
+        .r20
+        .r10
+        include ../../../blocks/minilends/form/form
+      .r30
+      .r5
+
+    include ../../../blocks/minilends/pnumber/pnumber

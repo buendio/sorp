@@ -1,0 +1,464 @@
+extends ../layouts/default_landing
+
+block variables
+  - const title = "doing_in_dubai_online";
+  - page = "doing_in_dubai_online";
+  - burgerHide = true
+  - footerOld = true
+
+block content
+  style
+    | @media (min-width: 576px) { .first-screen__btn { max-width: 254px; } }    
+    | .image-block { background-repeat: no-repeat; height: 270px; background-size: cover; background-position-y: center; border-radius: 2px; } 
+  section.bg.bg_first-screen
+    .container.bg.bg_right-side.bg_remove-sm-min.lazy(data-bg="/dist/img/blocks/first-screen/venture-capital.svg")
+      .first-screen.first-screen_no-logo
+        .first-screen__box
+          .first-screen__content
+            h1.first-screen__title Doing business in Dubai – 
+              br.hide-tn.show-md-min 
+              | Motivation online Course
+            p.first-screen__text The UAE economy provides a stable business environment for all types of 
+              br.hide-tn.show-md-min 
+              |  entrepreneurs. Explore how to save on taxes, get benefits of a modern banking, 
+              br.hide-tn.show-md-min 
+              | make lucrative investments and enhance your business internationally
+            .first-screen__workshop-wrap
+              label.first-screen__btn.btn.btn_radius5.btn_hover-red.btn_h55(for="modal2") Register for an online seminar
+              .first-screen__workshop-start
+                img.first-screen__workshop-icon.lazy(data-src="/dist/img/blocks/first-screen/clocks.svg", alt="")
+                p.first-screen__workshop-text workshop start: 
+                  span 7 december at 18:00
+  section.bg.bg_first-screen
+    .first-screen-statistics
+      .container
+        .first-screen-statistics__box.first-screen-statistics_column
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 3 hours
+            p.first-screen-statistics__text duration of the training course
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 5 courses
+            p.first-screen-statistics__text in one program
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 25 cases
+            p.first-screen-statistics__text proven business solutions
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 15 years
+            p.first-screen-statistics__text of business experience
+  section.bg.bg_wave
+    .container
+      .r60_adaptive
+      h2.title Who Should Attend?
+      .r30_adaptive
+      p.description Vusinessmen and entrepreneurs interested in exploring unique business opportunities in the UAE. If you are looking to optimize your <br class="hide-tn show-sm-min">taxes, set up your business, invest into a real estate market or attract investments into IT project -- get the best knwoledge from the<br class="hide-tn show-sm-min"> best business practicioners in the UAE.  Get  professional advice on boosting revenue and support businesses long-term with<br class="hide-tn show-sm-min"> industry know-how, reliable partners and a sound business networking.
+      .r50_adaptive
+      .block41
+        .block41__item
+          .block41__head
+            .block41__title Business owners and shareholders
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/person-lifesaver.svg", alt="")
+          .block41__desc For ready made solutions for increasing <br class="hide-tn show-sm-min">profits and saving capital
+        .block41__item
+          .block41__head
+            .block41__title Heads of <br class="hide-tn show-sm-min">corporates
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/tie.svg", alt="")
+          .block41__desc For profitable investments and setting up operational units in the UAE 
+        .block41__item
+          .block41__head
+            .block41__title Private <br class="hide-tn show-sm-min">investors
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/coins.svg", alt="")
+          .block41__desc  For extending networking and investment <br class="hide-tn show-sm-min">solutions
+        .block41__item
+          .block41__head
+            .block41__title Small and medium business owners
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/shopping-cart.svg", alt="")
+          .block41__desc For tailor-made business <br class="hide-tn show-sm-min">solutions
+        .block41__item
+          .block41__head
+            .block41__title International<br class="hide-tn show-sm-min"> companies
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/save-the-world.svg", alt="")
+          .block41__desc For exploring business ownership <br class="hide-tn show-sm-min">and tax optimization schemes
+        .block41__item
+          .block41__head
+            .block41__title Startups and new<br class="hide-tn show-sm-min"> businesses
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/growth.svg", alt="")
+          .block41__desc For relocation possibilities, business acceleration, arranging investments and networking
+      .r60_adaptive
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Learn about the benefits of doing business in the UAE with a personalised consultation 
+        label.feedback-block__btn(for="modal2") Call a consultant
+    .r30
+    .r5
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title What will you learn?
+      .r50_adaptive
+      .block57
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/social-growth.svg", alt="")
+          .block57__title The peculiarities of the UAE, main market features and target audiences
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/hand-graph.svg", alt="")
+          .block57__title The main advantages and perspectives of business conduction in the UAE
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/todolist.svg", alt="")
+          .block57__title First stages and common<br class="hide-tn show-sm-min"> mistakes of business <br class="hide-tn show-sm-min">setup in the UAE
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/save-the-world.svg", alt="")
+          .block57__title The possibilities for entering<br class="hide-tn show-sm-min"> the UAE market as an<br class="hide-tn show-sm-min"> international business
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/graph-tax.svg", alt="")
+          .block57__title Tax planning tools for<br class="hide-tn show-sm-min"> international business<br class="hide-tn show-sm-min"> optimization
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/golf.svg", alt="")
+          .block57__title You will learn how to save<br class="hide-tn show-sm-min"> money on registration and<br class="hide-tn show-sm-min"> licensing of a business
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Opportunities for students
+      .r50_adaptive
+      .block58
+        .block58__row
+          .block58__item.block58__item_play-button.block58__item_image.lazy(data-bg="/dist/img/pages/doing_in_dubai_online/block58/1.jpg")
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/building.svg", alt="")
+            .block58__text-content
+              .block58__title Networking
+              .block58__description Know how to deal with<br class="hide-tn show-sm-min"> local community
+        .block58__row.block58__row_reverse
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/hand-graph.svg", alt="")
+            .block58__text-content
+              .block58__title Business Cases
+              .block58__description  Enter the new market being fully prepared and<br class="hide-tn show-sm-min"> equipped with proper understanding in how to do<br class="hide-tn show-sm-min"> business in the UAE
+          .block58__item.block58__item_play-button.block58__item_image.lazy(data-bg="/dist/img/pages/doing_in_dubai_online/block58/2.jpg")
+        .block58__row
+          .block58__item.block58__item_play-button.block58__item_image.lazy(data-bg="/dist/img/pages/doing_in_dubai_online/block58/3.jpg")
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/diploma.svg", alt="")
+            .block58__text-content
+              .block58__title Legal possibilities
+              .block58__description Start planning and business setup with tax and<br class="hide-tn show-sm-min"> financial benefits of the UAE
+      
+      .r50_adaptive
+      label.btn.btn_white.btn_space-between.btn_center(for="modal2") Sign up for a seminar
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Workshop program
+      .r50_adaptive
+      .block35.block35_width3.block35_workshop
+        .block35__item
+          .block35__head
+            h3.block35__title Introduction to the new economy of the UAE <br class="hide-tn show-sm-min">and Dubai in particular
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 1
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 20 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item The history of the emerging economy<br class="hide-tn show-sm-min"> in Dubai
+                li.list__item The peculiarities of the Emirates, main<br class="hide-tn show-sm-min"> market features and target audiences
+                li.list__item Geolocation and development plans<br class="hide-tn show-sm-min"> of the UAE<br><br>
+        .block35__item
+          .block35__head
+            h3.block35__title Business perspectives <br class="hide-tn show-sm-min">in the UAE <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 2
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 45 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main.block35__main_wave-ltr 
+            .block35__content
+              ul.list
+                li.list__item The main advantages of business <br class="hide-tn show-sm-min">conduction in the UAE and main<br class="hide-tn show-sm-min"> features of the local jurisdiction
+                li.list__item The main areas of interest for investors<br class="hide-tn show-sm-min"> in the UAE
+                li.list__item The possibilities of growing a business<br class="hide-tn show-sm-min"> in the UAE
+        .block35__item
+          .block35__head
+            h3.block35__title First stages of business <br class="hide-tn show-sm-min">setup in the UAE <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 3
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 45 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item Main aspects of business setup in the <br class="hide-tn show-sm-min">UAE
+                li.list__item Main features of licensing and <br class="hide-tn show-sm-min">certification in the UAE
+                li.list__item Common mistakes of investors when <br class="hide-tn show-sm-min">setting up a business in the UAE<br><br>
+      
+        .block35__item
+          .block35__head
+            h3.block35__title Introduction to the new economy of the UAE<br class="hide-tn show-sm-min"> and Dubai in particular
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 4
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 30 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item Top 5 business segments for<br class="hide-tn show-sm-min"> considering entry to the local market
+                li.list__item Developing strategies, confirming<br class="hide-tn show-sm-min"> hypotheses and optimal<br class="hide-tn show-sm-min"> business-model
+                li.list__item Company setup in the UAE for<br class="hide-tn show-sm-min"> conducting international business<br><br>
+        .block35__item
+          .block35__head
+            h3.block35__title The UAE<br> legislation <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 5
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 30 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main.block35__main_wave-ltr 
+            .block35__content              
+              ul.list
+                li.list__item Provision for conducting a business at international markets and the<br class="hide-tn show-sm-min"> optimization of international business
+                li.list__item Business incorporation in the UAE with<br class="hide-tn show-sm-min"> the purpose of entering global markets
+                li.list__item Tax planning tools for international<br class="hide-tn show-sm-min"> business optimization
+        .block35__item
+          .block35__head
+            h3.block35__title About SORP Group <br class="hide-tn show-sm-min">of Companies <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 6
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 10 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item Unique complex solutions for your<br class="hide-tn show-sm-min"> business
+      .r60_adaptive
+    .r1.r_bg-e3
+  section
+    .r60_adaptive
+    .container
+      .about-company
+        .about-company__left
+          .borderline.borderline_quote.borderline_EA
+            .about-company__content
+              p.about-company__text(style="font-style: normal;") Мы подготовили 4-х дневную программу. Она позволит не только дополнить и расширить модуль студентов на базе прослушивания профильных курсов по бизнесу в ОАЭ, но и обеспечит возможность нетворкинга. 
+                br
+                br
+                | Кроме того, Ваши студенты смогут получить практическую информацию и обменяться опытом при посещении различных объектов Дубая, а также комфортно провести свободное время и принять участие в культурно-деловых экскурсиях.
+            .borderline__quote.borderline__quote_top.lazy(data-bg="/dist/img/blocks/borderline/quotes-EA.svg")
+            .borderline__quote.borderline__quote_bottom.lazy(data-bg="/dist/img/blocks/borderline/quotes-EA.svg")
+
+        .about-company__right
+          .about-company__img-box.about-company__img-box_gray
+            //-.about-company__play
+              .about-company__play-icon
+            .about-company__duration 2:20
+            picture            
+              source(type="image/jpeg", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/about-video.jpg, /dist/img/pages/doing_in_dubai_offline/about-company/about-video_2x.jpg 2x")
+              img.about-company__img.lazy(src="/dist/img/blocks/mask.png" data-src="/dist/img/pages/doing_in_dubai_offline/about-company/about-video.jpg", alt="4-х дневная программа")
+    .r60_adaptive
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Get a bespoke analysis on the prospects for your business in the UAE.
+        label.feedback-block__btn(for="modal2") Call a consultant
+    .r30
+    .r5
+  section.bg.bg_fa.bg_right-side.bg_right-side-top.bg_remove-sm-min.lazy(data-bg="/dist/img/blocks/arc-lines.svg")
+    .container
+      .r60_adaptive
+      h2.title About the workshop teachers
+      .r50_adaptive
+      .experts-about.experts-about_width3
+        .experts-about__item
+          img.experts-about__image.lazy(data-src="/dist/img/blocks/experts/about/perlin.png" alt="Maxim Perlin")
+          h3.experts-about__name Maxim Perlin
+          p.experts-about__position-title Director, SORP Business school
+          p.experts-about__description Entrepreneur, expert and leading trainer in Startup,<br class="hide-tn show-sm-min"> Admarket, Module Bank, Rostec, Beeline, GVA,<br class="hide-tn show-sm-min"> Rostelecom. Mentor of several startups, Director of <br class="hide-tn show-sm-min">a marketing course in Netology.
+        .experts-about__item
+          img.experts-about__image.lazy(data-src="/dist/img/blocks/experts/about/keinan.png" alt="Yoel Keinan")
+          h3.experts-about__name Yoel Keinan
+          p.experts-about__position-title Owner of Keinan Law Office
+          p.experts-about__description Advocate Yoel Keinan is a highly experienced <br class="hide-tn show-sm-min">corporate and commercial lawyer since 2002. 
+            br
+            br
+            | Advocate Keinan is the owner of Keinan Law<br class="hide-tn show-sm-min"> offices, that represents international and <br class="hide-tn show-sm-min">domestic high-tech companies, entrepreneurs<br class="hide-tn show-sm-min"> and investors in all stages and across wide<br class="hide-tn show-sm-min"> range of industries and fields, including<br class="hide-tn show-sm-min"> software, hardware, information technologies,<br class="hide-tn show-sm-min"> service providers, importers and exporters and <br class="hide-tn show-sm-min"> more, as well as hedge funds and venture capital<br class="hide-tn show-sm-min"> funds.
+        .experts-about__item
+          img.experts-about__image.lazy(data-src="/dist/img/blocks/experts/about/elena.png" alt="Elena Tselishcheva")
+          .experts-about__name Elena Tselishcheva
+          .experts-about__position-title Managing Partner, Sorp
+          .experts-about__description Managing partner of SORP Group and practicing<br class="hide-tn show-sm-min"> corporate lawyer, Elena has built her<br class="hide-tn show-sm-min"> expertise in building and managing international<br class="hide-tn show-sm-min"> business over a 20-year career.
+            br
+            br
+            | She is a highly experienced corporate consultant<br class="hide-tn show-sm-min"> across wide range of industries and fields; a business<br class="hide-tn show-sm-min"> mentor and coach for more than 15 years of practice in<br class="hide-tn show-sm-min"> the UAE.
+            br
+            br
+            | From setting up her own due diligence and marketing<br class="hide-tn show-sm-min"> research agency, Elena grew her 1st enterprise and<br class="hide-tn show-sm-min"> successfully sold it. She then owned the European<br class="hide-tn show-sm-min"> Bankers Trust, operating in 5 jurisdictions (Russia,<br class="hide-tn show-sm-min"> Cyprus, Austria, Switzerland, UAE) and managed a<br class="hide-tn show-sm-min"> project management company with expertise in 25<br class="hide-tn show-sm-min"> economy sectors.            
+            br
+            br
+            | Her spheres of interests in setting up holdings and trust<br class="hide-tn show-sm-min"> structures and  international business optimization. She<br class="hide-tn show-sm-min"> developed the successful mentoring methodology and<br class="hide-tn show-sm-min"> practices combines business psychology with<br class="hide-tn show-sm-min"> leadership development strategy using global best<br class="hide-tn show-sm-min"> practices and trends in localization. Now she is an<br class="hide-tn show-sm-min"> acknowledged exponent of business scaling and rapid<br class="hide-tn show-sm-min"> acceleration in the UAE.
+
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_f9
+    .container
+      .r60_adaptive
+      .modal.modal_block
+        label.modal__close
+        .modal__content
+          .modal__left.form-block
+            h2.modal__title.modal__title_right Sign up for a course or get a free consultation
+            .modal__text-block 
+              div(style="display: flex;")
+                img.modal__text-icon.lazy(data-src="/dist/img/blocks/duration-clock.svg" alt="")
+                p.modal__text.modal__text_bold 7 december at 18:00 
+              p.modal__text Remaining: 
+                span.modal__text_bold 15 places             
+            .r60_adaptive
+            <form class="modal__form" method="post">
+            input.callOrderReason(type='hidden' name='reason' value='')
+            <input class="page" type='hidden' name='pageurl' value='{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}'>
+            <input type="hidden" name="pagetitle" value='{$_modx->resource['pagetitle']}'>
+            <input type="hidden" name="pageid" value="{$_modx->resource.id}" />
+
+            input.site-message(type='text' name='name' value='')
+            input.site-message(type='text' name='firstname' value='')
+            input.site-message(type='text' name='lastname' value='')
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Ваше имя',
+                'Name:'
+                )
+              input.form-block__input(type='text' name='fio' value='' required)
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Телефон',
+                'Telephone:'
+                )
+              input.form-block__input(type='tel' name='phone' value='' required)
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Электронная почта',
+                'E-mail:'
+                )
+              input.form-block__input(type='email' name='email' value='')
+            .form-block__item
+              button.btn.btn_radius5.btn_w100.btn_hover-red(type='submit')
+                +lang(
+                'Оставить заявку',
+                'Apply for a course'
+                )
+            //-.form-block__confid Поля, отмеченные символом * обязательны для заполнения
+            </form>
+          .modal__right.modal__background.lazy(data-bg="/dist/img/pages/doing_in_dubai_offline/about-company/rocket.svg")
+            .modal__title.modal__title_right Cost of education
+            .r30
+            h3.title.title_color-black.title_font-w400.title_font-s38 $500
+            .r10
+            .r5
+            .modal__text
+              p.modal__text-p 3 hours duration of the training course
+            
+      .r60_adaptive 
+    .r1.r_bg-e3
+  section
+    .container.bg.bg_lightning
+      .r60_adaptive
+      h2.title About our event
+      .r60_adaptive
+      .block41.block41_column-direction.block41_accent-red
+        .block41__item
+          .block41__head
+            .block41__title Seminar from experienced <br class="hide-tn show-sm-min">speakers and practicioners
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/verified-person.svg", alt="")
+          .block41__desc You will get the real knowlledge and expertise<br class="hide-tn show-sm-min"> from trusted and experienced practicioners <br class="hide-tn show-sm-min">having its business in the UAE for 15 years
+        .block41__item
+          .block41__head
+            .block41__title Web-seminars with a modern<br class="hide-tn show-sm-min"> platform at SORP Business Center 
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/girl.svg", alt="")
+          .block41__desc Modern and cutting edge educational platform<br class="hide-tn show-sm-min"> at SORP Business Center prenmises in Dubai
+        .block41__item
+          .block41__head
+            .block41__title Communication with speakers<br class="hide-tn show-sm-min"> and short consultations
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/communication.svg", alt="")
+          .block41__desc Live Q&A sessions with an Israeli professional<br class="hide-tn show-sm-min"> along with support from SORP’s local team of <br class="hide-tn show-sm-min">experts
+      .r50_adaptive 
+      .image-block.lazy(data-bg="/dist/img/pages/doing_in_dubai_offline/about-company/people-photo.jpg" alt="")
+      .r60_adaptive
+      label.btn.btn_white.btn_space-between.btn_center(for="modal2") Sign up for a online seminar
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive 
+    .r1.r_bg-e3
+    .r60_adaptive
+    .container
+      h2.title Event partners
+      .r50_adaptive
+      .slider-departments.slider-departments_static
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/1.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/1.png" alt="SORP Business School")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/2.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/2.png" alt="Keinan")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/3.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/3.png" alt="Dubai Knowledge")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/4.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/4.png" alt="Dubai Economy")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/5.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/5.png" alt="SORP Business Center")
+    .r60_adaptive  
+  #map

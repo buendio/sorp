@@ -1,0 +1,44 @@
+.experts-about { display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: -40px;
+  &__image { margin-bottom: 30px; }
+  &__item { width: 100%; margin-bottom: 40px; }
+  &__name { color: #000; font-size: 24px; font-weight: 500; line-height: 32px; }
+  &__position-title { color: #9DA6BA; font-size: 14px; font-weight: 700; line-height: 19px; text-transform: uppercase; margin: 10px 0 15px; }
+  &__description { font-size: 14px; font-weight: 300; line-height: 24px; }
+  &__sub-title { color: #9DA6BA; font-size: 14px; font-weight: 700; line-height: 19px; text-transform: uppercase; }
+  &__showcase { display: flex; justify-content: space-between; flex-wrap: wrap;     
+    &-item { width: 100%; } }
+  &__experience { display: flex; align-items: center; margin-bottom: 20px; 
+    &-num { font-size: 52px; line-height: 40px; min-width: 100px; font-weight: 400; color: #D64356; margin-right: 16px; }
+    &-desc { font-size: 15px; font-weight: 400; line-height: 20px; } }
+  
+  &_one-item { margin-bottom: 0; flex-wrap: wrap; 
+    .experts-about { 
+      &__position-title { margin: 14px 0; }
+      &__showcase-logos { display: flex; flex-direction: column; }
+      &__showcase-logo { margin-right: 25px; margin-top: 20px; }
+      &__image { width: 100px; height: 100px; margin-bottom: 0; margin-bottom: 25px; } } }
+}
+
+@media (min-width: screen-sm-min) {
+  .experts-about {
+    &__position-title { margin: 15px 0 30px; }
+    &_width2 &__item { width: 40%; }
+    &_width3 &__item { width: calc(50% - 20px); }
+    &__description_big { font-size: 16px; }
+
+    &__showcase { flex-wrap: wrap; align-items: flex-end; &-item { width: calc(33.33% - 20px); } &-num { min-width: unset; }}
+    &__experience-num { font-size: 64px; line-height: 96px; }
+    &_one-item { flex-wrap: nowrap; 
+      .experts-about { 
+        &__image { width: 125px; height: 125px; margin-right: 55px; margin-bottom: 0; } 
+        &__description { font-size: 16px; }
+        &__showcase-logos  { display: block; }
+        &__showcase-logo { margin-right: 70px; }
+        &__position-title { margin: 14px 0; }
+      } } 
+  } }
+
+@media (min-width: screen-md-min) {
+  .experts-about { 
+    &_width3 &__item { width: calc(33.33% - 20px); }
+  } }

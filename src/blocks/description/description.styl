@@ -1,0 +1,17 @@
+.description {
+  color: #7D879C; font-size: 16px; line-height: 1.6;
+  &_dark { color: #3f3f3f; font-weight: 400; }
+  &_font-w500 { font-weight: 500; }
+  &_font-w300 { font-weight: 300; }
+  
+  &__item { margin-bottom: 15px; }
+  &__item:last-child { margin-bottom: 0; }
+}
+
+@media(min-width: screen-sm-min) {
+  .description {
+    font-size: 18px;
+    &_center { text-align: center; }
+    &_font-s16 { font-size: 16px; }
+  }
+}

@@ -1,0 +1,120 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "otkroem_vashemu_biznesu_vse_vozmozhnosti_oae"
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      .first-screen.lazy(data-bg="/dist/img/minilends/blocks/first-screen/otkroem_vashemu_biznesu_vse_vozmozhnosti_oae.svg")
+        h1.first-screen__title
+          +lang(
+          'Откроем вашему бизнесу все возможности ОАЭ',
+          'Enjoy the unique opportunities of&nbsp;doing business in&nbsp;the&nbsp;UAE'
+          )
+        p.first-screen__text
+          +lang(
+          'SORP GROUP - бизнес-акселератор, работающий при поддержке Дубайского Экономического Департамента (DED)',
+          'SORP GROUP is a&nbsp;business accelerator supported by the&nbsp;Dubai Economic Department (DED)'
+          )
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Get more details'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/blocks/block-frames/blazer.svg")
+            p.block-frames__text
+              +lang(
+              'Проверим бизнес-идею, адаптируем стратегию, зарегистрируем компанию, предоставим уникальные инструменты законодательства ОАЭ для&nbsp;бизнеса внутри страны и&nbsp;за&nbsp;рубежом.',
+              'We devise your business idea, adapt strategy,  incorporate a&nbsp;legal entity and&nbsp;develop your corporate model based on&nbsp;the&nbsp;opportunities of&nbsp;the&nbsp;Emirates legislation for&nbsp;doing business within the&nbsp;country and abroad'
+              )
+          .block-frames__signature-box
+            .block-frames__signature-icon.lazy(data-bg="/dist/img/minilends/blocks/block1/note.svg")
+            p.block-frames__signature-text
+              +lang(
+              'Престиж страны, отсутствие налогов и&nbsp;бюрократии, свободный вывод капитала обеспечат ваш успех и&nbsp;процветание.',
+              'Your success and&nbsp;prosperity are ensured by the&nbsp;prestigiuos jurisdiction which ensures absense of&nbsp;taxes and bureaucracy and&nbsp;free funds withdrawal.'
+              )
+
+        .r20
+        .r1.r_bg-e3
+
+      .r20
+      .r5
+
+    section
+      .container
+        h2.title
+          +lang(
+          'Получите решения по актуальным вопросам:',
+          'Get expert solutions to  emerging issues:'
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/al-arab.svg")
+            p.block1__text
+              +lang(
+              'Выхода на&nbsp;рынок Объединенных Арабских Эмиратов',
+              'How to enter the&nbsp;UAE market'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/international.svg")
+            p.block1__text
+              +lang(
+              'Ведения международного бизнеса под&nbsp;флагом ОАЭ',
+              'How to&nbsp;operate worldwide from the&nbsp;UAE'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/diagrams2.svg")
+            p.block1__text
+              +lang(
+              'Оптимизации налогов за&nbsp;счет присутствия компании в&nbsp;ОАЭ',
+              'How to&nbsp;optimize tax burden through the&nbsp;UAE company incorporation'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/structure.svg")
+            p.block1__text
+              +lang(
+              'Создания расчётного центра для&nbsp;свободного перемещения средств',
+              'How to form a&nbsp;single cash and settlement center for free funds withdrawal or&nbsp;deposit'
+              )
+        .r20
+        .r5
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        h2.title.title_center
+          +lang(
+          'Начните бизнес уже&nbsp;сегодня',
+          'Start you business today'
+          )
+        .r20
+        .r5
+        p.description.description_center
+          +lang(
+          'Эксперты SORP Group подберут оптимальное решение по&nbsp;организации вашей деятельности в&nbsp;ОАЭ и&nbsp;окажут ' +
+          'комплексную поддержку - от&nbsp;оценки бизнес-идеи до&nbsp;оформления и&nbsp;сопровождения компании.',
+          'SORP Group experts will choose the&nbsp;best solution for&nbsp;organizing your business in&nbsp;the&nbsp;UAE and provide integrated approach:\n' +
+          'from evaluating a&nbsp;business idea to&nbsp;formation<br> and&nbsp;business support'
+          )
+        .r20
+        .r5
+        include ../../blocks/minilends/form/form
+      .r30
+      .r5
+
+    include ../../blocks/minilends/pnumber/pnumber

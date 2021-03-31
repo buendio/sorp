@@ -1,0 +1,141 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "konsalting_dlya_startapov"
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - minilends_gitex = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      .first-screen.lazy(data-bg="/dist/img/minilends/blocks/first-screen/konsalting_dlya_startapov.svg")
+        h1.first-screen__title
+          +lang(
+          'Консалтинг для стартапов<br>и&nbsp;IT-компаний по выходу<br>на&nbsp;рынок ОАЭ',
+          'Get the most of the UAE<br>for&nbsp;your technology business'
+          )
+
+        p.first-screen__text
+          +lang(
+          'Для посетителей и участников <br> выставки GITEX 2020',
+          'Business Consulting<br>for GITEX 2020 Exhibitors'
+          )
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Leave a request'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          style
+            | .block-frames__box {
+            |  background-position: 100%;
+            | }
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/blocks/block-frames/confid.svg")
+            p.block-frames__text
+              +lang(
+              'SORP GROUP - это многолетний опыт вывода на рынок Ближнего Востока всех видов IT бизнеса из&nbsp;РФ и&nbsp;стран СНГ',
+              'We devise your business idea, adapt strategy,  incorporate a legal entity and develop your corporate model based on the opportunities of the Emirates legislation for&nbsp;doing business within the&nbsp;country and abroad'
+              )
+        .r20
+        .r1.r_bg-e3
+
+      .r20
+      .r5
+
+    section
+      .container
+        h2.title
+          +lang(
+          'Получите решения по актуальным вопросам:',
+          'Get expert solutions to emerging issues:'
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/diagrams.svg")
+            p.block1__text
+              +lang(
+              'Выхода на рынок Арабских Эмиратов, конкурентной среды и&nbsp;оценки рисков',
+              'How enter the UAE market'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/percent2.svg")
+            p.block1__text
+              +lang(
+              'Регистрации и лицензирования вашей IT-компании в&nbsp;ОАЭ',
+              'How incorporate innovation and technology company in UAE'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/bank.svg")
+            p.block1__text
+              +lang(
+              'Ведения международного бизнеса под&nbsp;флагом ОАЭ',
+              'How to operate worldwide from the UAE'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/swap.svg")
+            p.block1__text
+              +lang(
+              'Оптимизации налогов за счет присутствия компании в&nbsp;ОАЭ',
+              'How to optimize tax burden through the&nbsp;UAE company incorporation'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/confid.svg")
+            p.block1__text
+              +lang(
+              'Открытия банковских счетов с&nbsp;защитой от&nbsp;обмена налоговой информацией',
+              'Opening bank accounts with protection against exchange of tax information'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/document-tall.svg")
+            p.block1__text
+              +lang(
+              'Получения статуса налогового резиденства для учредителя и&nbsp;сотрудников компании',
+              'How to obtain tax resident status for the&nbsp;founder and employees of&nbsp;the&nbsp;company'
+              )
+        .r20
+        .r5
+
+    section
+      .quote
+        .quote__icon.lazy(data-bg="/dist/img/minilends/blocks/quote/quote.svg")
+        p.quote__text
+          +lang(
+          'Регистрируйте компанию в самой дружелюбной к&nbsp;IT-среде стране и&nbsp;используйте все возможности для&nbsp;её развития',
+          'Register your company in&nbsp;the&nbsp;most innovation friendly country and take every opportunity to develop it'
+          )
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        h2.title.title_center
+          +lang(
+          'Начни бизнес уже сегодня',
+          'Start your business today'
+          )
+        .r20
+        .r5
+        p.description.description_center
+          +lang(
+          'Эксперты SORP Group подберут оптимальное решение по&nbsp;организации вашей деятельности в&nbsp;ОАЭ и&nbsp;окажут комплексную поддержку - \n' +
+          'от&nbsp;оценки бизнес-идеи до&nbsp;оформления и&nbsp;сопровождения компании.',
+          'SORP Group experts will choose the&nbsp;best solution for organizing your business in the&nbsp;UAE and provide integrated approach:\n' +
+          'from evaluating a business idea to formation and business support'
+          )
+        .r20
+        .r5
+        include ../../blocks/minilends/form/form
+      .r30
+      .r5
+
+    include ../../blocks/minilends/pnumber/pnumber

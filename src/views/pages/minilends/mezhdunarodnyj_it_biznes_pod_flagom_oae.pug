@@ -1,0 +1,135 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "mezhdunarodnyj_it_biznes_pod_flagom_oae"
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - minilends_gitex = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      style
+        | .first-screen {
+        |  background-position: center 41%;
+        | }
+
+      .first-screen.lazy(data-bg="/dist/img/minilends/blocks/first-screen/registraciya_s_dejstvuyushchim_schetom.svg")
+        h1.first-screen__title
+          +lang(
+          'Международный IT-бизнес<br>под&nbsp;флагом ОАЭ',
+          'Bring your innovation<br>business to the UAE hub'
+          )
+        p.first-screen__text
+          +lang(
+          'Низконалоговая юрисдикция для&nbsp;ведения бизнеса из&nbsp;любой точки мира ',
+          'Low-tax jurisdiction for doing business<br>from anywhere in the world '
+          )
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Get more details'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          style
+            | .block-frames__box {
+            |  background-position: 100%;
+            | }
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/pages/registraciya_s_dejstvuyushchim_schetom/block-frames.svg")
+            p.block-frames__text
+              +lang(
+              'Инкорпорируй оншорную компанию в&nbsp;ОАЭ и&nbsp;получи возможность вести бизнес <br> без налогов во всём мире',
+              'Incorporate an onshore company in the&nbsp;UAE and get the&nbsp;opportunity to do business without taxes all over the world'
+              )
+          .block-frames__signature-box
+            .block-frames__signature-icon.lazy(data-bg="/dist/img/minilends/blocks/block1/note.svg")
+            p.block-frames__signature-text
+              +lang(
+              'Мы оказываем полное сопровождение в&nbsp;создании и ведении бизнеса на территории ОАЭ и за рубежом',
+              'We provide full support in setting up and running a business in the&nbsp;UAE and abroad'
+              )
+        .r20
+        .r1.r_bg-e3
+
+      .r20
+      .r5
+
+    section
+      .container
+        h2.title
+          +lang(
+          'Особенности регистрации',
+          'Features of incorporation'
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/1.svg")
+            p.block1__text
+              +lang(
+              'Регистрация оншорной компании возможна на&nbsp;локальной земле (форма собственности LLC, SE, CС) и&nbsp;на&nbsp;территории одной из&nbsp;СЭЗ ОАЭ (форма собственности FZE и FZC).',
+              'Onshore company formation is possible while registering a legal Mainland entity (in the&nbsp;form of incorporation of LLC, SE, CС) and in the territory of Free Trade Zones (in the form of incorporation of FZE or FZC).'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/2.svg")
+            p.block1__text
+              +lang(
+              'Все оншорные компании проходят процедуру лицензирования. Это самый эффективный инструмент построения холдингов и&nbsp;структур.',
+              'All onshore companies are subject to licensing procedures. This is the&nbsp;most effective tool for building holdings and other business structures.'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/3.svg")
+            p.block1__text
+              +lang(
+              'Свободное перемещение капитала без&nbsp;валютного контроля. Выполнение расчётов в&nbsp;любой валюте без&nbsp;обязательной конвертации.',
+              'Free movement of capital without currency control. Make payments in any currency without obligatory conversion.'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/list/4.svg")
+            p.block1__text
+              +lang(
+              'Процедура банковской проверки KYC проводится по&nbsp;упрощённой схеме при&nbsp;расчётах с&nbsp;контрагентами ОАЭ в&nbsp;местной валюте (дирхам).',
+              'Simplified KYC Bank verification procedure for settlements with UAE businesses in local currency (Dirhams).'
+              )
+        .r20
+        .r5
+
+    section
+      .quote
+        .quote__icon.lazy(data-bg="/dist/img/minilends/blocks/quote/quote.svg")
+        p.quote__text
+          +lang(
+          'Ведите бизнес с&nbsp;возможностью построения расчётно-кассового центра в&nbsp;стране, которая всегда отстаивает интересы своих резидентов.',
+          'Run your business with the&nbsp;ability to form a cash and settlement center in a country that always protects the&nbsp;interests of its residents.'
+          )
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        p.description.description_center
+          +lang(
+          'С экспертами SORP уже сегодня вы&nbsp;сможете создать эффективный инструмент выхода на&nbsp;рынок ОАЭ и&nbsp;оптимизации бизнеса. ',
+          'With SORP Group expert help, you can create an effective tool for entering the&nbsp;UAE market and optimizing your business, starting today.'
+          )
+        .r10
+        .r5
+        h1.title.title_center
+          +lang(
+          'Начать регистрацию можно дистанционно',
+          'You can start incorporation of the&nbsp;company remotely from anywhere'
+          )
+        .r20
+        include ../../blocks/minilends/form/form
+      .r30
+      .r5
+
+    include ../../blocks/minilends/pnumber/pnumber

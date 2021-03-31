@@ -1,0 +1,493 @@
+extends ../../layouts/default_landing
+
+block variables
+  - const title = "registratsiya_kompanii";
+  - page = "registratsiya_kompanii";
+  - eng_version = true
+
+block content
+  main
+    section.bg.bg_first-screen.bg_clip-path
+      .container
+        .first-screen
+          .first-screen__box
+            .first-screen__logo-box
+              .first-screen__logo(data-bg="/git/img/blocks/logo-inner.gif")
+            .first-screen__content
+              h1.first-screen__title Регистрация компаний в ОАЭ
+              p.first-screen__text.
+                Решение для выхода на рынок ОАЭ, международного бизнеса без границ, инструмент международного налогового планирования
+              .flex.flex_no-gutters.flex_no-margin-md
+                .flex__item
+                  label.first-screen__btn.btn.btn_radius5.btn_h55.btn_w100.btn_hover-red.btn_border-radius-left(for="modal1") Оставить заявку
+                .flex__item
+                  button.btn.btn_eng-version.btn_radius5.btn_h55.btn_w100.btn_border-radius-right(type="button")
+                    .btn__eng-version-text О платформе
+                    .btn__eng-version-signature ENG Version
+
+    section
+      .r60_adaptive
+      // КРАСНАЯ РАМКА
+      .container
+        .block-frames
+          .block-frames__border
+          p.block-frames__wrapper.
+            Компания в ОАЭ – это высокодоходный инструмент, позволяющий решать разнообразные бизнес-задачи. Регистрация локальных, фризон и офшорных компаний, а также создание международных холдингов и трастовых структур открывают путь к ведению бизнеса без
+            налогов, созданию расчётно-кассового центра, получения статуса налогового резидента
+            ОАЭ и широкому использованию инструментов международного налогового планирования.
+      .r60_adaptive
+      .r30.show-md-min.hide-tn
+
+    section.bg.bg_f9
+      .r1.r_bg-e3
+      .container
+        .r60_adaptive
+        h2.title Виды юридических лиц в ОАЭ
+        .r30_adaptive
+        p.description Существуют три основных типа компаний. Законодательство наделяет каждый из них разными возможностями развития бизнеса и определяет географию присутствия:
+        .r50_adaptive
+
+        .block1.block1_modal
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Локальная компания (Mainland)
+                p.block1__head-text
+                  | Неограниченные возможности ведения бизнеса в любой сфере в ОАЭ и за рубежом
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Банкротство бизнеса
+                p.block1__head-text
+                  | Ликвидация компании через суд по признаку финансовой несостоятельности
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Банкротство бизнеса
+                p.block1__head-text
+                  | Ликвидация компании через суд по признаку финансовой несостоятельности
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+    section.bg.bg_f9
+      .container
+        .r60_adaptive
+        h2.title Виды юридических лиц в ОАЭ
+        .r30_adaptive
+        p.description Существуют три основных типа компаний. Законодательство наделяет каждый из них разными возможностями развития бизнеса и определяет географию присутствия:
+        .r50_adaptive
+        .block1.block1_modal
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Локальная компания (Mainland)
+                p.block1__head-text
+                  | Неограниченные возможности ведения бизнеса в любой сфере в ОАЭ и за рубежом
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Банкротство бизнеса
+                p.block1__head-text
+                  | Ликвидация компании через суд по признаку финансовой несостоятельности
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Банкротство бизнеса
+                p.block1__head-text
+                  | Ликвидация компании через суд по признаку финансовой несостоятельности
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+    section.bg.bg_f9
+      .container
+        .r60_adaptive
+        h2.title Виды юридических лиц в ОАЭ
+        .r30_adaptive
+        p.description Существуют три основных типа компаний. Законодательство наделяет каждый из них разными возможностями развития бизнеса и определяет географию присутствия:
+        .r50_adaptive
+        .block1.block1_modal
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Локальная компания (Mainland)
+                p.block1__head-text
+                  | Неограниченные возможности ведения бизнеса в любой сфере в ОАЭ и за рубежом
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Банкротство бизнеса
+                p.block1__head-text
+                  | Ликвидация компании через суд по признаку финансовой несостоятельности
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+          label.block1__item(for="modal1")
+            .block1__head
+              .block1__head-content
+                h3.block1__head-title Банкротство бизнеса
+                p.block1__head-text
+                  | Ликвидация компании через суд по признаку финансовой несостоятельности
+              .block1__head-icon-box
+                svg.block1__head-icon(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+            .block1__content
+              .block1__content-text
+                p.
+                  В LLC необходимо привлечение  локального партнёра на 51% (возможно на номинальной основе с оформлением отказа
+                  от доли владения в суде Дубая).
+                p.
+                  В профессиональной компании (SE или CC) подписывается договор с локальным агентом. Не входит в состав акционеров.
+                p.
+                  Ведение свободной торговли,
+                  услуги и сервисы, открытие производства на внутреннем рынке и за рубежом.
+                p.
+                  Упрощены визовые процедуры акционерам и сотрудникам.
+                  Получение статуса налогового резидента и лояльность банков Арабских Эмиратов.
+              .block1__btn.btn.btn_white.btn_border2.btn_h50.btn_font-s18.btn_w100
+                | Подробнее
+                svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+                  use(xlink:href='#btn__icon-modal')
+
+        .r50_adaptive
+        .block5
+          <svg class="block5__icon" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M57.7198 28.0225H54.2216C53.7577 28.0225 53.3128 28.2067 52.9848 28.5348C52.6568 28.8628 52.4725 29.3077 52.4725 29.7715C52.4725 30.2354 52.6568 30.6803 52.9848 31.0083C53.3128 31.3364 53.7577 31.5206 54.2216 31.5206H57.7198C58.1836 31.5206 58.6285 31.3364 58.9565 31.0083C59.2846 30.6803 59.4688 30.2354 59.4688 29.7715C59.4688 29.3077 59.2846 28.8628 58.9565 28.5348C58.6285 28.2067 58.1836 28.0225 57.7198 28.0225Z" fill="#CC4051"/>
+          <path d="M64.7161 7.0335H58.4544L51.9478 0.561895C51.8203 0.33303 51.6247 0.149607 51.3881 0.0371697C51.1693 -0.0123899 50.9422 -0.0123899 50.7234 0.0371697H19.2399C19.0211 -0.0123899 18.794 -0.0123899 18.5753 0.0371697C18.357 0.111753 18.1634 0.24486 18.0156 0.421968L11.509 7.0335H5.24725C3.85559 7.0335 2.52093 7.58634 1.53688 8.57039C0.552834 9.55444 0 10.8891 0 12.2808V57.7569C0 59.1486 0.552834 60.4832 1.53688 61.4673C2.52093 62.4513 3.85559 63.0042 5.24725 63.0042H27.9853L33.5824 69.4058C33.7497 69.5928 33.9546 69.7423 34.1837 69.8447C34.4127 69.9471 34.6608 70 34.9117 70C35.1626 70 35.4107 69.9471 35.6397 69.8447C35.8688 69.7423 36.0737 69.5928 36.241 69.4058L41.978 63.0042H64.7161C66.1077 63.0042 67.4424 62.4513 68.4265 61.4673C69.4105 60.4832 69.9633 59.1486 69.9633 57.7569V12.2808C69.9633 10.8891 69.4105 9.55444 68.4265 8.57039C67.4424 7.58634 66.1077 7.0335 64.7161 7.0335ZM35.9961 21.0262H33.9672L28.72 15.7789L30.469 14.0298H39.4943L41.2434 15.7789L35.9961 21.0262ZM39.4943 10.5317H30.469L23.4727 3.53534H46.4906L39.4943 10.5317ZM42.7126 12.2808L50.7234 4.26995L55.2361 8.78259L47.2253 16.7934L42.7126 12.2808ZM19.2399 4.26995L27.2507 12.2808L22.7381 16.7934L14.7273 8.78259L19.2399 4.26995ZM5.24725 59.506C4.78336 59.506 4.33848 59.3217 4.01046 58.9937C3.68245 58.6657 3.49817 58.2208 3.49817 57.7569V12.2808C3.49817 11.8169 3.68245 11.372 4.01046 11.044C4.33848 10.7159 4.78336 10.5317 5.24725 10.5317H11.509L21.5137 20.5014C21.6708 20.6688 21.8604 20.8021 22.071 20.8933C22.2816 20.9845 22.5086 21.0315 22.7381 21.0315C22.9676 21.0315 23.1946 20.9845 23.4052 20.8933C23.6157 20.8021 23.8054 20.6688 23.9624 20.5014L26.2363 18.2626L31.2386 23.265L20.989 53.6991C20.8905 53.9878 20.8678 54.2971 20.9229 54.5972C20.978 54.8973 21.1092 55.1782 21.3038 55.4132L24.802 59.506H5.24725ZM34.9817 65.5928L24.6971 53.874L34.4919 24.5243H35.4714L45.2663 53.874L34.9817 65.5928ZM66.4652 57.7569C66.4652 58.2208 66.2809 58.6657 65.9529 58.9937C65.6249 59.3217 65.18 59.506 64.7161 59.506H44.9514L48.4496 55.4132C48.6443 55.1782 48.7755 54.8973 48.8306 54.5972C48.8857 54.2971 48.8629 53.9878 48.7644 53.6991L38.6198 23.265L43.7271 18.2626L46.0009 20.5014C46.1579 20.6688 46.3476 20.8021 46.5582 20.8933C46.7688 20.9845 46.9958 21.0315 47.2253 21.0315C47.4547 21.0315 47.6818 20.9845 47.8923 20.8933C48.1029 20.8021 48.2926 20.6688 48.4496 20.5014L58.4544 10.5317H64.7161C65.18 10.5317 65.6249 10.7159 65.9529 11.044C66.2809 11.372 66.4652 11.8169 66.4652 12.2808V57.7569Z" fill="black"/>
+          </svg>
+
+          .block5__text
+            p Вместе с консультантами SORP вы сможете пройти процедуру финансового оздоровления, чтобы найти возможность рассчитаться по долгам и, в зависимости от ваших целей, привести бизнес в порядок либо правильно завершить все дела
+            p Вместе с консультантами SORP вы сможете пройти процедуру финансового оздоровления, чтобы найти возможность рассчитаться по долгам и, в зависимости от ваших целей, привести бизнес в порядок либо правильно завершить все дела
+        .r60_adaptive
+
+    section.bg.bg_red
+      .r30
+      .r5
+      .container
+        .feedback-block
+          h3.feedback-block__text Узнайте о преимуществах организации бизнеса в ОАЭ, заказав бесплатную консультацию специалиста
+          label.feedback-block__btn(for="modal1") Получить консультацию
+      .r30
+      .r5
+
+    section
+      .container
+        .r60_adaptive
+        h2.title Какие преимущества получают владельцы компаний в ОАЭ
+        .r50_adaptive
+        .block-snake-box
+          .block-snake.block-snake_line-right
+            .block-snake__item
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/1.svg")
+              .block-snake__text.block-snake__text_gray
+                h3.block-snake__text-header 100% владение
+                p.block-snake__text-description Компания, открытая в СЭЗ, полностью принадлежит иностранному инвестору, без требований к наличию местного партнёра и агента
+            .block-snake__item
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/2.svg")
+              .block-snake__text.block-snake__text_gray
+                h3.block-snake__text-header Отраслевая специфика
+                p.block-snake__text-description СЭЗ ОАЭ имеют собственные направления лицензирования: промышленное, инвестиционно-финансовое, консалтинговое, торговое, логистическое, и т.д.
+            .block-snake__item
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/3.svg")
+              .block-snake__text.block-snake__text_gray
+                h3.block-snake__text-header Размещение бизнеса
+                p.block-snake__text-description Аренда и приобретение коммерческих, складских и промышленных помещений  разрешена  в пределах СЭЗ по месту регистрации
+          .block-snake.block-snake_line-left.block-snake_border-top-none
+            .block-snake__item
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/4.svg")
+              .block-snake__text.block-snake__text_gray
+                h3.block-snake__text-header Процедура регистрации
+                p.block-snake__text-description Процесс лицензирования Free Zone компании уникален в каждой СЭЗ и зависит от вида бизнес-активности
+            .block-snake__item
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/5.svg")
+              .block-snake__text.block-snake__text_gray
+                h3.block-snake__text-header Визовые ограничения
+                p.block-snake__text-description Количество виз, которые может получить компания, зависит от размера арендуемого помещения
+            .block-snake__item
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/6.svg")
+              .block-snake__text.block-snake__text_gray
+                .block-snake__text-header Продление лицензий
+                h3.r20.hide-sm-min
+                p.block-snake__text-description Ряд СЭЗ ОАЭ предъявляют требования к сдаче ежегодной финансовой отчетности и аудиту
+          .block-snake
+            .block-snake__item
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/4.svg")
+              .block-snake__text.block-snake__text_gray
+                h3.block-snake__text-header Процедура регистрации
+                p.block-snake__text-description Процесс лицензирования Free Zone компании уникален в каждой СЭЗ и зависит от вида бизнес-активности
+            .block-snake__item
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/5.svg")
+              .block-snake__text.block-snake__text_gray
+                h3.block-snake__text-header Визовые ограничения
+                p.block-snake__text-description Количество виз, которые может получить компания, зависит от размера арендуемого помещения
+            .block-snake__item.block-snake__item_bg-white
+              .block-snake__icon-box
+                .block-snake__icon.lazy(data-bg="./dist/img/pages/registratsiya_kompanii/6.svg")
+              .block-snake__text.block-snake__text_gray
+                .block-snake__text-header Продление лицензий
+                h3.r20.hide-sm-min
+                p.block-snake__text-description Ряд СЭЗ ОАЭ предъявляют требования к сдаче ежегодной финансовой отчетности и аудиту
+        .r50_adaptive
+        label.block1__btn.btn.btn_white.btn_h60.btn_center.btn_space-between(for="modal1") Получить консультацию
+          svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+            use(xlink:href='#btn__icon-modal')
+        .r60_adaptive
+
+    section.bg.bg_fa
+      .r1.r_bg-e3
+      .container
+        .r60_adaptive
+        h2.title Комплекс услуг SORP по инкорпорации и сопровождению
+        .r50_adaptive
+        .block7.block7_modal
+          .block7__item
+            .block7__icon
+              .block7__icon-img.lazy(data-bg='/assets/templates/main/img/vladit-icons/icon-official-1.svg')
+            h3.block7__title Девелоперская деятельность
+            p.block7__text
+              | Ведение полного цикла по созданию и реализации проектов в недвижимости (покупка, аренда земли, найм проектировщиков и генерального подрядчика, запуск строительства и продажа объекта, в том числе на стадии строительства).
+          .block7__item
+            .block7__icon
+              .block7__icon-img.lazy(data-bg='/assets/templates/main/img/vladit-icons/icon-official-1.svg')
+            h3.block7__title Деятельность агентства по недвижимости
+            p.block7__text
+              | Деятельность посредника – агента по сделкам купли-продажи недвижимости между собственниками и покупателями, а также сдача недвижимости в аренду третьим лицам.
+          .block7__item
+            .block7__icon
+              .block7__icon-img.lazy(data-bg='/assets/templates/main/img/vladit-icons/icon-official-1.svg')
+            h3.block7__title Профессиональное управление недвижимостью, принадлежащей третьему лицу
+            p.block7__text
+              | Деятельность посредника – агента по сделкам купли-продажи недвижимости между собственниками и покупателями, а также сдача недвижимости в аренду третьим лицам.
+        .r60_adaptive
+
+    section.bg.bg_red
+      .r30
+      .r5
+      .container
+        .feedback-block
+          h3.feedback-block__text Узнайте о преимуществах организации бизнеса в ОАЭ, заказав бесплатную консультацию специалиста
+          label.feedback-block__btn(for="modal1") Получить консультацию
+      .r30
+      .r5
+
+    section
+      .container
+        .r60_adaptive
+        h2.title SORP Group — ведущая консалтинговая группа в Арабских Эмиратах
+        .r30_adaptive
+        p.description Группа компаний SORP предоставляет комплексные решения в области становления и управления бизнесом на базе многолетней практики, понимании местного законодательства и государственной поддержки.
+        .r50_adaptive
+
+        .pnumber.bg.bg_triangle
+          .pnumber__item
+            .pnumber__number 15
+            .pnumber__title лет на рынке ОАЭ
+          .pnumber__item
+            .pnumber__number 54
+            .pnumber__title эксперта в штате
+          .pnumber__item
+            .pnumber__number 55
+            .pnumber__title решений для вашего бизнеса
+          .pnumber__item
+            .pnumber__number 503
+            .pnumber__title компании в управлении
+          .pnumber__item
+            .pnumber__number 5000
+            .pnumber__title М2 офисных пространств
+          .pnumber__item
+            .pnumber__number 15
+            .pnumber__title стратегических направлении
+        .r50_adaptive
+        label.block1__btn.btn.btn_white.btn_h60.btn_center.btn_space-between(for="modal1") Получить консультацию
+          svg.btn__icon-svg.btn__icon-svg-right(xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 128 128')
+            use(xlink:href='#btn__icon-modal')
+        .r60_adaptive
+      .r1.r_bg-e3
+
+    include ../../blocks/about-company/RU_about-company
+    include ../../blocks/slider-departments/RU_slider-departaments
+
+    section.bg.bg_red
+      .r30
+      .r5
+      .container
+        .feedback-block
+          h3.feedback-block__text Узнайте о преимуществах организации бизнеса в ОАЭ, заказав бесплатную консультацию специалиста
+          label.feedback-block__btn(for="modal1") Получить консультацию
+      .r30
+      .r5
+
+    include ../../blocks/form/form_footer
+
+    #map
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84142.93801242771!2d55.11920432886234!3d25.109796720172486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b5b5b3fffff%3A0xbe5aa9347ed5d5e1!2sSORP%20Business%20Centre!5e0!3m2!1sru!2sru!4v1580725392796!5m2!1sru!2sru', width='100%', height='450', frameborder='0', style='border:0;', allowfullscreen='')

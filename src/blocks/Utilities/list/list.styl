@@ -1,0 +1,8 @@
+.list { margin: 0; padding: 0; list-style: none; 
+  &__item { position: relative; line-height: 1.5; padding-left: 25px; margin-bottom: 15px; color: #252B39; font-weight: 300;
+    &:last-child { position: relative; margin-bottom: 0; }
+    &::before { position: absolute; left: 0; top: 8px; content: ''; width: 10px; height: 10px; background: #D64356;}    
+  }
+}
+
+@media(min-width: 768px) { .list__item { margin-bottom: 25px; } }

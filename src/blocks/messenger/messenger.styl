@@ -1,0 +1,34 @@
+//- margin-right для __icon
+margin-icon = 12px;
+
+.messenger {
+    display: flex; flex-wrap: wrap; width: 100%;
+
+    &__item { height: 100px; width: 100%; display: flex; align-items: center; justify-content: center; transition: .3s ease-in-out;
+        &:hover { opacity: 0.8; }
+        &_wapp { background-color: #25D366; }
+        &_telegram { background-color: #0087CB; }
+        &_viber { background-color: #7143B9; }
+        &_imsg { background-color: #0083FE; } }
+    
+    &__icon { width: 55px; height: 55px; margin-right: margin-icon; }
+    &__label { color: #FFF; font-size: 16px; font-weight: 500; line-height: 26px; }
+    &_adaptive-label { 
+      .messenger__label { display: none; }
+      .messenger__icon { margin-right: 0; } }
+    
+    &_width4 .messenger__item { width: 25%; }
+}
+
+@media (min-width: screen-tn-max) {
+  .messenger__item { width: 50%; } 
+}
+
+@media (min-width: screen-md-min) {
+  .messenger {
+    &__item { width: 25%; }
+    &_adaptive-label { 
+      .messenger__label { display: inline; }
+      .messenger__icon { margin-right: margin-icon; } }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="386px" height="386px" viewBox="0 0 386 386" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M108.470854,283.216839 L108.470854,189.873915 L160.88126,189.873915 L160.88126,283.216839 L170.974804,283.216839 L170.974804,153.869911 L220.075246,153.869911 L220.075246,283.216839 L230.765322,283.216839 L230.765322,94 L279,94 L279,292.887886 C167.949761,293.037371 111.106712,293.037371 108.470854,292.887886 C107.336465,292.823553 108.628834,292.208632 108.470854,291.005514 C108.331453,289.943888 108.331453,287.347663 108.470854,283.216839 Z" id="path-1"></path>
+        <filter x="-1.2%" y="-1.0%" width="102.3%" height="102.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="12" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path-2">
+            <use fill="#BB2D41" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+        </g>
+        <path d="M365,24 L365,128.768904 L320.226,128.768904 C319.146,108.401817 318.042,87.6884446 316.83,64.7958698 L67.978,64.7958698 L67.978,130.472464 L20,130.472464 L20,24 L365,24 Z M319.141389,322.338442 L319.141389,254.527536 L363.034188,254.527536 L363.034188,361 L21.965812,361 L21.965812,257.625282 L66.8308063,257.625282 L66.8308063,322.338442 L319.141389,322.338442 Z" id="Shape" fill="#BB2D41" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -1,0 +1,423 @@
+extends ../layouts/default_landing
+
+block variables
+  - const title = "doing_in_israel";
+  - page = "doing_in_israel";
+  - burgerHide = true
+  - footerOld = true
+
+block content
+  style
+    | @media (min-width: 576px) { .first-screen__btn { max-width: 254px; } }
+    | @media (min-width: 800px) { .experts-about_width2 .experts-about__item { padding-right: 80px; } }
+    | .image-block { background-repeat: no-repeat; height: 270px; background-size: cover; background-position-y: center; border-radius: 2px; } 
+  section.bg.bg_first-screen
+    .container.bg.bg_right-side.bg_remove-sm-min.lazy(data-bg="/dist/img/blocks/first-screen/doing_in_israel.svg")
+      .first-screen.first-screen_no-logo
+        .first-screen__box
+          .first-screen__content
+            h1.first-screen__title Doing business in Israel – 
+              br.hide-tn.show-md-min 
+              | Motivation online Course
+            p.first-screen__text Israel, often referred as a “Start up Nation”, being an effective platform for 
+              br.hide-tn.show-md-min 
+              | technical innovations, attracts businesses with  its highly skillful development 
+              br.hide-tn.show-md-min 
+              |  opportunities, venture investments possibilities and protection of IP rights.
+            .first-screen__workshop-wrap
+              label.first-screen__btn.btn.btn_radius5.btn_hover-red.btn_h55(for="modal2") Register for an online seminar
+              .first-screen__workshop-start
+                img.first-screen__workshop-icon.lazy(data-src="/dist/img/blocks/first-screen/clocks.svg", alt="")
+                p.first-screen__workshop-text workshop start: 
+                  span 7 december at 18:00
+  section.bg.bg_first-screen
+    .first-screen-statistics
+      .container
+        .first-screen-statistics__box.first-screen-statistics_column
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 3 hours
+            p.first-screen-statistics__text duration of the training course
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 5 courses
+            p.first-screen-statistics__text in one program
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 25 cases
+            p.first-screen-statistics__text proven business solutions
+          .first-screen-statistics__item
+            p.first-screen-statistics__number 15 years
+            p.first-screen-statistics__text of business experience
+  section.bg.bg_wave
+    .container
+      .r60_adaptive
+      h2.title Who is this course for?
+      .r30_adaptive
+      p.description Any UAE individual or entity willing to do business in Israel with reagrds to: (i) engaging service providers or work power from Israel<br class="hide-tn show-sm-min"> for development purposes,  (ii) choosing Israel as pilot for testing new products, (iii) Investing in an Israeli Company/IP (v) purchase<br class="hide-tn show-sm-min"> IP from an Israeli Company,  (iv) other type of business such as investment in real estate, public market.  
+      .r50_adaptive
+      .block41
+        .block41__item
+          .block41__head
+            .block41__title Business owners and shareholders
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/person-lifesaver.svg", alt="")
+          .block41__desc Know how to engage service providers from<br class="hide-tn show-sm-min"> Israel for development purposes and testing<br class="hide-tn show-sm-min"> of new products in Israel
+        .block41__item
+          .block41__head
+            .block41__title Leaders of <br class="hide-tn show-sm-min">corporates
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/tie.svg", alt="")
+          .block41__desc Receive a soficticated expertise from the<br class="hide-tn show-sm-min"> world’s best technology specialists an know<br class="hide-tn show-sm-min"> about other types of businesses in Israel
+        .block41__item
+          .block41__head
+            .block41__title For funds and private <br class="hide-tn show-sm-min">investors
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/coins.svg", alt="")
+          .block41__desc Know how to Invest in an Israeli Company/IP<br class="hide-tn show-sm-min"> (v) purchase IP from an Israeli Company (vi),<br class="hide-tn show-sm-min"> and other investment opportunities
+        .block41__item
+          .block41__head
+            .block41__title Small and medium<br class="hide-tn show-sm-min"> business owners
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/shopping-cart.svg", alt="")
+          .block41__desc Expand your networking by communication<br class="hide-tn show-sm-min"> with SMA from Israel through business<br class="hide-tn show-sm-min"> associations and social groups.
+        .block41__item
+          .block41__head
+            .block41__title For international<br class="hide-tn show-sm-min"> companies
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/save-the-world.svg", alt="")
+          .block41__desc Find out opportunities of international trading <br class="hide-tn show-sm-min">with Israel and other type of business such as <br class="hide-tn show-sm-min">investment in real estate, public market.  
+        .block41__item
+          .block41__head
+            .block41__title Startups and new<br class="hide-tn show-sm-min"> businesses
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/growth.svg", alt="")
+          .block41__desc Know how to open an Israeli subsidiary<br class="hide-tn show-sm-min"> that will be the holder of the IP and if possible,<br class="hide-tn show-sm-min"> receive grants from the Israeli Government
+      .r60_adaptive
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Learn about the benefits of doing business in the Israel with a personalised consultation from Israeli lawyer
+        label.feedback-block__btn(for="modal2") Call a consultant
+    .r30
+    .r5
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title What will you learn?
+      .r50_adaptive
+      .block57
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/social-growth.svg", alt="")
+          .block57__title The peculiarities of Israel, main market features and target <br class="hide-tn show-sm-min">audiences
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/hand-graph.svg", alt="")
+          .block57__title The main advantages and perspectives of business <br class="hide-tn show-sm-min">conduction in Israel
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/todolist.svg", alt="")
+          .block57__title First stages and common<br class="hide-tn show-sm-min"> mistakes of business <br class="hide-tn show-sm-min">setup in Israel
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/save-the-world.svg", alt="")
+          .block57__title The possibilities for entering<br class="hide-tn show-sm-min"> Israeli market as an<br class="hide-tn show-sm-min"> international business
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/graph-tax.svg", alt="")
+          .block57__title Legal tools for international<br class="hide-tn show-sm-min"> business optimization and <br class="hide-tn show-sm-min"> agreement protection
+        .block57__item
+          .block57__icon-wrap
+            img.block57__icon.lazy(data-src="/dist/img/contour-only/white/golf.svg", alt="")
+          .block57__title You will learn how to get the<br class="hide-tn show-sm-min"> best out of Israeli technological, <br class="hide-tn show-sm-min">financial and trading sectors.
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title All you want to know about Israel’s ecosystem
+      .r50_adaptive
+      .block58
+        .block58__row
+          .block58__item.block58__item_play-button.block58__item_image.lazy(data-bg="/dist/img/pages/doing_in_dubai_online/block58/1.jpg")
+          .block58__item
+            .block58__icon-wrap
+              img.block58__icon.lazy(data-src="/dist/img/contour-only/white/quotes.svg", alt="")
+            .block58__text-content
+              .block58__title Yoel Keinan (Keinan Law Office)
+              .block58__description Advocate Yoel Keinan has a Bachelor of Business (BA)<br class="hide-tn show-sm-min"> degree from the College of Management, Academic<br class="hide-tn show-sm-min"> Studies, and a Bachelor of Law (LLB) degree from the<br class="hide-tn show-sm-min"> College of Management,, Law School., Israel
+      .r50_adaptive
+      label.btn.btn_white.btn_space-between.btn_center.bg.bg_fa(for="modal2") Sign up for a seminar
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Workshop program
+      .r50_adaptive
+      .block35.block35_width3.block35_workshop
+        .block35__item
+          .block35__head
+            h3.block35__title Introduction of Israel.<br class="hide-tn show-sm-min">  Why Israel? <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 1
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 20 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item Startup Nation
+                li.list__item Creativity
+                li.list__item R&D
+                li.list__item Ecosystem
+        .block35__item
+          .block35__head
+            h3.block35__title Business perspectives <br class="hide-tn show-sm-min">in Israel <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 2
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 45 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main.block35__main_wave-ltr 
+            .block35__content
+              ul.list
+                li.list__item The main advantages of business <br class="hide-tn show-sm-min">conduction in the Israel and main<br class="hide-tn show-sm-min"> features of the local jurisdiction
+                li.list__item The main areas of interest for investors<br class="hide-tn show-sm-min"> in Israel
+                li.list__item The possibilities of growing a business<br class="hide-tn show-sm-min"> in Israel
+        .block35__item
+          .block35__head
+            h3.block35__title First stages of business <br class="hide-tn show-sm-min">setup in Israel <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 3
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 45 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item Main aspects of business setup in the<br class="hide-tn show-sm-min"> Israel
+                li.list__item Main features of business registration<br class="hide-tn show-sm-min"> and openning a branch
+                li.list__item Openning a bank account.<br class="hide-tn show-sm-min"> Recommended business structure
+        .block35__item
+          .block35__head
+            h3.block35__title Introduction to the<br class="hide-tn show-sm-min"> Israel economy, <br class="hide-tn show-sm-min">statistics per capita
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 4
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 30 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item Top 5 business segments for<br class="hide-tn show-sm-min"> considering entry to the local market
+                li.list__item Developing strategies, confirming<br class="hide-tn show-sm-min"> hypotheses and optimal<br class="hide-tn show-sm-min"> business-model
+                li.list__item IP rights protection
+        .block35__item
+          .block35__head
+            h3.block35__title The Israel<br> legislation <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 5
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 30 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main.block35__main_wave-ltr 
+            .block35__content              
+              ul.list
+                li.list__item Provision for conducting a business at<br class="hide-tn show-sm-min"> international markets and the<br class="hide-tn show-sm-min"> optimization of international business
+                li.list__item Business incorporation in Israel with<br class="hide-tn show-sm-min"> the purpose of effective R&D
+                li.list__item Invesment return and profit repatriation
+        .block35__item
+          .block35__head
+            h3.block35__title About SORP and Keinan<br class="hide-tn show-sm-min"> Law Office cooperation <br><br>
+            .block35__icon-wrap.block35__icon-wrap_circle
+              p.block35__icon-char 6
+          .block35__description_workshop
+            img.block35__description-image.lazy(data-src="/dist/img/blocks/block35/_workshop/duration-clock.svg" alt="")
+            p.block35__description-duration 10 minutes
+          .r20
+          .r1.r_bg-e3
+          .block35__main
+            .block35__content
+              ul.list
+                li.list__item Keinan Law Office specializes in<br class="hide-tn show-sm-min"> corporate and commercial law. 
+                  br
+                  br
+                  | KLO represents international and<br class="hide-tn show-sm-min"> domestic high-tech companies,<br class="hide-tn show-sm-min"> entrepreneurs and investors in all<br class="hide-tn show-sm-min"> stages and across wide range of<br class="hide-tn show-sm-min"> industries and fields in Israel
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Get a bespoke analysis on the prospects for your business in Israel.
+        label.feedback-block__btn(for="modal2") Call a consultant
+    .r30
+    .r5
+  section.bg.bg_fa.bg_right-side.bg_right-side-top.bg_remove-sm-min.lazy(data-bg="/dist/img/blocks/arc-lines.svg")
+    .container
+      .r60_adaptive
+      h2.title About the workshop speakers
+      .r50_adaptive
+      .experts-about.experts-about_width2
+        .experts-about__item
+          img.experts-about__image.lazy(data-src="/dist/img/blocks/experts/about/elena.png" alt="Elena Tselishcheva")
+          .experts-about__name Elena Tselishcheva
+          .experts-about__position-title Managing Partner, Sorp
+          .experts-about__description.experts-about__description_big Managing partner of SORP Group  and practicing business and corporate lawyer. Elena has built her expertise in establishing and managing international business over a 20-year career.
+            br
+            br
+            | She is a highly experienced corporate consultant across wide range of industries and fields; a business mentor and coach for more than 15 years of practice in the UAE.
+            br
+            br
+            | From setting up her own due diligence and marketing research agency, Elena grew her 1st enterprise and successfully sold it. She then owned the European Bankers Trust, operating in 5 jurisdictions (Russia, Cyprus, Austria, Switzerland, UAE) and managed a project management company with expertise in 25 economy sectors.
+            br
+            br
+            | Her spheres of interests in setting up holdings and trust structures and  international business optimization. She developed the successful mentoring methodology and practices combines business psychology with leadership development strategy using global best practices and trends in localization. Now she is an acknowledged exponent of business scaling and rapid acceleration in the UAE.
+        .experts-about__item
+          img.experts-about__image.lazy(data-src="/dist/img/blocks/experts/about/keinan.png" alt="Yoel Keinan")
+          h3.experts-about__name Yoel Keinan
+          p.experts-about__position-title Owner of Keinan Law Office
+          p.experts-about__description.experts-about__description_big Advocate Yoel Keinan is a highly experienced corporate and commercial lawyer since 2002. 
+            br
+            br
+            | Advocate Keinan is the owner of Keinan Law offices, that represents international and domestic high-tech companies, entrepreneurs and investors in all stages and across wide range of industries and fields, including software, hardware, information technologies, service providers, importers and exporters and more, as well as hedge funds and venture capital funds.
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_f9
+    .container
+      .r60_adaptive
+      .modal.modal_block
+        label.modal__close
+        .modal__content
+          .modal__left.form-block
+            h2.modal__title.modal__title_right Sign up for a course or get a free consultation
+            .modal__text-block 
+              div(style="display: flex;")
+                img.modal__text-icon.lazy(data-src="/dist/img/blocks/duration-clock.svg" alt="")
+                p.modal__text.modal__text_bold 7 december at 18:00 
+              p.modal__text Remaining: 
+                span.modal__text_bold 15 places             
+            .r60_adaptive
+            <form class="modal__form" method="post">
+            input.callOrderReason(type='hidden' name='reason' value='')
+            <input class="page" type='hidden' name='pageurl' value='{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}'>
+            <input type="hidden" name="pagetitle" value='{$_modx->resource['pagetitle']}'>
+            <input type="hidden" name="pageid" value="{$_modx->resource.id}" />
+
+            input.site-message(type='text' name='name' value='')
+            input.site-message(type='text' name='firstname' value='')
+            input.site-message(type='text' name='lastname' value='')
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Ваше имя',
+                'Name:'
+                )
+              input.form-block__input(type='text' name='fio' value='' required)
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Телефон',
+                'Telephone:'
+                )
+              input.form-block__input(type='tel' name='phone' value='' required)
+            .form-block__item
+              label.form-block__label
+                +lang(
+                'Электронная почта',
+                'E-mail:'
+                )
+              input.form-block__input(type='email' name='email' value='')
+            .form-block__item
+              button.btn.btn_radius5.btn_w100.btn_hover-red(type='submit')
+                +lang(
+                'Оставить заявку',
+                'Apply for a course'
+                )
+            //-.form-block__confid Поля, отмеченные символом * обязательны для заполнения
+            </form>
+
+          .modal__right.modal__background.lazy(data-bg="/dist/img/pages/doing_in_dubai_offline/about-company/rocket.svg")
+            .modal__title.modal__title_right Cost of education
+            .r30
+            h3.title.title_color-black.title_font-w400.title_font-s38 $100
+            .r10
+            .r5
+            .modal__text
+              p.modal__text-p 3 hours duration of the training course
+            
+      .r60_adaptive 
+    .r1.r_bg-e3
+  section
+    .container.bg.bg_lightning
+      .r60_adaptive
+      h2.title About our event
+      .r60_adaptive
+      .block41.block41_column-direction.block41_accent-red
+        .block41__item
+          .block41__head
+            .block41__title Seminar from experienced <br class="hide-tn show-sm-min">speakers and practicioners
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/verified-person.svg", alt="")
+          .block41__desc You will get the real knowlledge and expertise<br class="hide-tn show-sm-min"> from trusted and experienced practicioners <br class="hide-tn show-sm-min">having its business in the UAE for 15 years
+        .block41__item
+          .block41__head
+            .block41__title Web-seminars with a modern<br class="hide-tn show-sm-min"> platform at SORP Business Center 
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/girl.svg", alt="")
+          .block41__desc Modern and cutting edge educational platform<br class="hide-tn show-sm-min"> at SORP Business Center prenmises in Dubai
+        .block41__item
+          .block41__head
+            .block41__title Communication with speakers<br class="hide-tn show-sm-min"> and short consultations
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/communication.svg", alt="")
+          .block41__desc Live Q&A sessions with an Israeli professional<br class="hide-tn show-sm-min"> along with support from SORP’s local team of <br class="hide-tn show-sm-min">experts
+      .r50_adaptive 
+      .image-block.lazy(data-bg="/dist/img/pages/doing_in_dubai_offline/about-company/people-photo.jpg" alt="")
+      .r60_adaptive
+      label.btn.btn_white.btn_space-between.btn_center(for="modal2") Sign up for a online seminar
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive 
+    .r1.r_bg-e3
+    .r60_adaptive
+    .container
+      h2.title Event partners
+      .r50_adaptive
+      .slider-departments.slider-departments_static
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/1.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/1.png" alt="SORP Business School")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/2.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/2.png" alt="Keinan")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/3.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/3.png" alt="Dubai Knowledge")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/4.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/4.png" alt="Dubai Economy")
+        .slider-departments__item
+          picture
+            source(type="image/webp", data-srcset="/dist/img/pages/doing_in_dubai_offline/about-company/5.webp")
+            img.slider-departments__image.lazy(data-src="/dist/img/pages/doing_in_dubai_offline/about-company/5.png" alt="SORP Business Center")
+    .r60_adaptive  
+  #map

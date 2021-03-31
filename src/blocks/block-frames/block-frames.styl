@@ -1,0 +1,31 @@
+.block-frames {
+  position: relative;  color: #262c3a; width: 100%; margin: 0 auto; padding: 20px 40px 20px 0; line-height: 32px; font-weight: 400; overflow: hidden; background: #fff;
+
+  &__border { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; border: 11px solid #d64356; }
+  &__wrapper { position: relative; z-index: 2; width: calc(100% + 25px); padding: 20px 0; font-size: 16px; line-height: 1.25; background: #fff; }
+  &_small { padding: 30px; font-size: 17px; line-height: 1.45; font-weight: 400; }
+  &_before-gray::before { background: #f9f9f9; }
+}
+
+@media (min-width: screen-xs-min) {
+  .block-frames {
+    padding: 40px 80px 40px 0;
+  }
+}
+
+@media (min-width: screen-md-min) {
+  .block-frames {
+    width: 85%; overflow: visible;
+
+    &__wrapper { width: calc(100% + 85px); font-size: 18px; line-height: 1.5; margin-left: -80px; }
+    &__wrapper:before { content: ' '; position: absolute; top: 50%; transform: translateY(-50%); right: -155px; width: 130px; height: 84px; border: 37px solid #fff; border-right: 0; border-left: 0; background: #d64356; }
+    &:after { content: ''; position: absolute; bottom: -40px; left: 40px; z-index: -11; width: 100%; height: calc(57% - 20px); border: 1px solid #d64356; }
+    &:before { content: ''; position: absolute; bottom: -20px; left: 20px; width: 100%; height: calc(65% - 20px); background-color: #fff; }
+  }
+}
+
+@media (min-width: screen-lg-min) {
+  .block-frames {
+    width: 87%;
+  }
+}

@@ -1,0 +1,12 @@
+.block35 {
+  &__discount { display: flex; justify-content: space-between; align-items: center; font-size: 18px; font-weight: 400; line-height: 21px; }
+  &__discount-value { font-size: 60px; line-height: 70px; color: #D64356; font-weight: 300; }
+
+  /*     модификатор для скидки в столбик */
+  &__description_column { flex-direction: column; }
+  &__description_column .block35__discount { display: flex; align-items: center; }
+  &__description_column .block35__discount-value { margin-right: 20px;}
+  &__description_column .block35__description-text { width: 100%; }
+}
+
+@media(min-width: screen-xs-min) { .block35__discount { display: block; } }

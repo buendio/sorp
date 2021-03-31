@@ -1,0 +1,16 @@
+.header {
+  border-bottom: none; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  &_landing &__anchors { display: none; }
+  &_landing &__nav { height: auto; display: block; }
+  .html_nav-scroll &_landing &__nav { display: block; }
+
+}
+
+@media (min-width: screen-md-min) {
+  .header {
+    &_landing { position: fixed; }
+    &_landing &__anchors { display: flex; }
+    &_landing &__anchors-item { color: #FFFFFF; margin: 0 10px; font-size: 16px; line-height: 1.35; font-weight: 300; }
+    .html_nav-scroll &__nav { position: static; animation-name: none; display: block; }
+  }
+}

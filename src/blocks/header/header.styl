@@ -1,0 +1,48 @@
+.header {
+  position: fixed; top: 0; left: 0; z-index: 50; width: 100%; padding: 21px 0; background: #fff; border-bottom: 1px solid #E3EAEE; transition: .3s;
+
+  &__container { max-width: 1750px; margin: 0 auto; padding: 0 15px; display: flex; align-items: center; justify-content: space-between; }
+  &__logo-box { display: flex; align-items: center; }
+  &__logo { width: 102px; height: 22px; }
+
+  &__right-item { display: none; }
+  &__icon-box { width: 24px; height: 24px; margin-right: 7px; border-radius: 5px; background: #524DD2; display: flex; }
+  &__icon { width: 12px; height: 12px; margin: auto; }
+  &__text { color: #fff; font-size: 15px; line-height: 18px; font-weight: 500; transition: .3s; }
+  &__right-item:hover &__text { color: #e2e2e2; }
+
+  &__language { color: #fff; width: 35px; height: 35px; margin-left: 10px; font-size: 14px; font-weight: 500; border-radius: 25px; background: #524DD2; text-decoration: none; text-transform: uppercase; display: flex; flex: none; order: 1; transition: .3s; }
+  &__language-item { margin: auto; }
+  &__right { display: flex; align-items: center; }
+  &__right &__btn { display: none; }
+  &__mobile-btn { width: 35px; height: 35px; margin-left: 10px; border-radius: 50%; background: #D64356; display: flex; flex: none; order: 2; }
+  &__mobile-phone-icon { fill: #fff; width: 19px; height: 19px; margin: auto; }
+
+  &__language:hover { background: #D64356; }
+  &__nav { margin-left: 20px; order: 3; }
+
+  .html_nav-hidden-open & { display: none; }
+}
+
+@media(min-width: screen-sm-min) {
+  .header {
+    &__right &__mobile-btn { display: none; }
+    &__right &__btn { margin-left: 45px; white-space: nowrap; display: flex; }
+    &__right-item { margin-left: 20px; text-decoration: none; display: flex; flex: none; align-items: center; }
+  }
+}
+
+@media (min-width: screen-md-min) {
+  .header {
+    position: relative;
+
+    &__nav { display: none; }
+    &__right-item { margin-left: 35px; }
+  }
+}
+
+@media(min-width: screen-lg-min) {
+  .header {
+    &__right &__btn { padding-left: 27px; padding-right: 27px; }
+  }
+}

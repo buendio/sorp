@@ -1,0 +1,108 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "menu_services"
+  - page = "menu_services"
+  - logo_main = true
+  - minilends = true
+  - minilends_services = true
+  - burgerHide = true
+
+block content
+  svg(width='0', height='0', style='position:absolute; display: none;')
+    symbol#services_arrow(viewBox='0 0 10 14' fill='none' xmlns='http://www.w3.org/2000/svg')
+      path(d='M1.26379 0L0 1.12893L6.57181 7L0 12.8705L1.26379 14L9.1 7L1.26379 0Z' fill='white')
+
+  main
+    section.container
+      .r20
+      .services
+        <a class="services__title-box" href="{$_modx->makeUrl($_modx->resource.parent)}">
+          .services__title-icon
+            svg(viewBox='0 0 13 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M11.1946 0L13 1.61275L3.6117 10L13 18.3865L11.1946 20L1.90735e-06 10L11.1946 0Z' fill='#D64356')
+          .services__title
+            +lang(
+            'Услуги группы компаний SORP',
+            'SORP Group business solutions'
+            )
+
+        </a>
+        .services__item-box {$_modx->resource.menuminilends}
+
+        //-.services__item-box
+          a.services__item.lazy(href="/uae-business-setup/" data-bg="/dist/img/minilends/blocks/services/1.svg")
+            .services__item-title Как начать бизнес в ОАЭ
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/uae-market/" data-bg="/dist/img/minilends/blocks/services/2.svg")
+            .services__item-title Как выйти на рынок ОАЭ
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/license/" data-bg="/dist/img/minilends/blocks/services/3.svg")
+            .services__item-title Как лицензировать бизнес в ОАЭ
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/tax-adviser/" data-bg="/dist/img/minilends/blocks/services/4.svg")
+            .services__item-title Международное налоговое планирование
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/holding-company-in-uae/" data-bg="/dist/img/minilends/blocks/services/5.svg")
+            .services__item-title Построение холдингов и структур
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/business-support/" data-bg="/dist/img/minilends/blocks/services/6.svg")
+            .services__item-title Сопровождение бизнеса в ОАЭ
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/immigration-services/" data-bg="/dist/img/minilends/blocks/services/7.svg")
+            .services__item-title Иммиграция и релокация бизнеса в ОАЭ
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/taxes-and-accounting/" data-bg="/dist/img/minilends/blocks/services/8.svg")
+            .services__item-title Налоги и бухгалтерия в ОАЭ
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/kyc/" data-bg="/dist/img/minilends/blocks/services/9.svg")
+            .services__item-title Сохранность банковской тайны
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+          a.services__item.lazy(href="/#solution" data-bg="/dist/img/minilends/blocks/services/10.svg")
+            .services__item-title Посмотреть все услуги компании
+            .services__item-icon-box
+              svg.services__item-icon(xmlns='http://www.w3.org/2000/svg')
+                use(xlink:href='#services_arrow')
+      .r20
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        h2.title.title_center
+          +lang(
+          'Начните бизнес уже сегодня',
+          'Start you business today'
+          )
+
+        .r10
+        .r5
+        p.description.description_center
+          +lang(
+          'Эксперты SORP Group подберут оптимальное решение по организации вашей деятельности в ОАЭ и окажут комплексную поддержку - \n' +
+          'от оценки бизнес-идеи до оформления и сопровождения компании.',
+          'SORP Group experts will choose the best solution for organizing your business in the UAE and provide integrated approach:\n' +
+          'from evaluating a business idea to formation and business support'
+          )
+        .r20
+        include ../../blocks/minilends/form/form
+      .r20

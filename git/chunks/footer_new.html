@@ -1,0 +1,105 @@
+<div class="content-lines">
+    <div class="content-line"></div>
+    <div class="content-line"></div>
+    <div class="content-line"></div>
+</div>
+
+<footer>
+    [[*parent:is=`237`:or:is=`290`:then=``:else=`[[!$pre_footer_articles]]`]]
+    
+    <div class="footer__map">
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84142.93801242771!2d55.11920432886234!3d25.109796720172486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b5b5b3fffff%3A0xbe5aa9347ed5d5e1!2sSORP%20Business%20Centre!5e0!3m2!1sru!2sru!4v1580725392796!5m2!1sru!2sru"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+        </iframe>
+    </div>
+
+    <div class="container_bem" id="contactsFooter">
+        <div class="footer__main-content">
+            <div class="footer__company">
+                <div class="footer__company-title">
+                    [[++cultureKey:is=`ru`:then=`Группа компаний SORP`]]
+                    [[++cultureKey:is=`en`:then=`SORP Group`]]
+                </div>
+                <div class="footer__links">
+                    <div class="footer__links-row">
+                        <div class="footer__link">SORP Management Consulting</div>
+                        <div class="footer__link">SORP Business Center</div>
+                        <div class="footer__link">SORP Business School</div>
+                    </div>
+                    <div class="footer__links-row">
+                        <div class="footer__link">SORP Investment</div>
+                        <div class="footer__link">SORP Accounting</div>
+                        <div class="footer__link">SORP General Trading</div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <img class="footer__logo" src="/git/img/blocks/footer/logo-footer.svg" alt="SORP" class="footer__logo" loading="lazy">
+                    <p class="footer__copyright-item">
+                        © 2004-2020 SORP. 
+                        [[++cultureKey:is=`ru`:then=`Все права защищены.`]]
+                        [[++cultureKey:is=`en`:then=`All rights reserved.`]]
+                    </p>
+                    <div class="footer__copyright-item hide-md-min">
+                        [[++cultureKey:is=`ru`:then=`Политика конфиденциальности SORP Group`]]
+                        [[++cultureKey:is=`en`:then=`SORP Group privacy policy`]]
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__contacts">
+                <p class="footer__contacts-label">SORP Business Centre</p>
+                <p class="footer__contacts-location">
+                    Tameem House Building, Floor 25
+                    <br><br>
+                    Barsha Heights (Tecom)
+                    <br><br>
+                    Dubai, United Arab Emirates
+                </p>
+                
+                <a href="mailto:info@sorp.ae" class="footer__contacts-link">info@sorp.ae</a>
+                [[++cultureKey:is=`ru`:then=`<a href="tel:+97145594559" class="footer__contacts-link">+971 4 559 4559</a>`]]
+                [[++cultureKey:is=`en`:then=`<a href="tel:+97145594559" class="footer__contacts-link">+971 4 559 4594</a>`]]
+                
+            </div>
+        </div>
+    </div>
+
+
+    [[++cultureKey:is=`en`:then=`
+        <style>
+            .cookie-guard__button {
+                margin-right: 10px !important;
+            }
+        </style>
+    `]]
+    
+    
+    <div class="cookie-guard">
+        <div class="container">
+            <div class="cookie-guard__i">
+                <div>
+                    [[++cultureKey:is=`ru`:then=`Мы используем cookie. Продолжая использовать этот сайт, вы соглашаетесь
+                    с использованием cookie файлов.`]]
+                    [[++cultureKey:is=`en`:then=`This site uses cookies. By continuing to browse this site you agree to
+                    the use of cookies.`]]
+                </div>
+                <div class="cookie-guard__button" onclick="closeCookieLaw()">
+                    [[++cultureKey:is=`ru`:then=`Принять`]]
+                    [[++cultureKey:is=`en`:then=`Accept`]]
+                </div>
+                <a class="cookie-guard__link" href="/privacy-policy-of-sorp-management-consulting/">
+                    [[++cultureKey:is=`ru`:then=`Политика`]]
+                    [[++cultureKey:is=`en`:then=`Policy`]]
+                </a>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{$_modx->getChunk('modals')}
+{$_modx->getChunk('footer_scripts')}
+
+</body>
+</html>

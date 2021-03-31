@@ -1,0 +1,560 @@
+extends ../layouts/default
+
+block variables
+  - const title = "online_business";
+  - page = "online_business";
+
+block content
+  section.bg_first-screen
+    .container
+      .first-screen
+        .first-screen__box
+          .first-screen__logo-box
+            .first-screen__logo(data-bg="/dist/img/blocks/logo-inner.gif")
+          .first-screen__content
+            h1.first-screen__title Открой онлайн-бизнес в ОАЭ:<br class="hide-tn show-sm-min"> решения и перспективы
+            p.first-screen__text
+              | Эмираты во всём мире признаны надежной и перспективной площадкой для <br class="hide-tn show-sm-min"> создания онлайн - бизнеса любого масштаба: от открытия интернет-магазина, <br class="hide-tn show-sm-min"> таргетированного на рынок Дубая, до маркетплейса международного уровня. 
+            label.first-screen__btn.btn.btn_radius5.btn_hover-red.btn_h55(for="modal1") Оставить заявку
+  section
+    .r60_adaptive
+    .container
+      .block-frames
+        .block-frames__border
+        p.block-frames__wrapper Законодательство Арабских Эмиратов создало все условия организации успешного онлайн-бизнеса:
+          br.hide-tn.show-sm-min
+          | защита инвесторов,  фактическая безналоговость, развитая IT-инфраструктура, ультра-современные 
+          br.hide-tn.show-sm-min
+          | логистические решения, платежеспособность населения, - факторы, способствующие стремительному 
+          br.hide-tn.show-sm-min
+          | росту интернет услуг и ритейла. SORP обеспечит прохождение всех лицензионных процедур, а также
+          br.hide-tn.show-sm-min
+          | полное сопровождение вашего онлайн - бизнеса в ОАЭ.
+    .r40
+    
+  section.bg.bg_wave
+    .container
+      .r60_adaptive
+      h2.title Виды деятельности для онлайн-бизнеса в<br class="hide-tn show-sm-min"> Арабских Эмиратах
+      .r50_adaptive
+      .block41
+        .block41__item
+          .block41__head
+            .block41__title Интернет <br class="hide-tn show-sm-min"> магазины 
+            .block41__icon-wrap
+              .block41__icon.lazy(data-src="/dist/img/contour-only/white/shopping-cart.svg")
+          .block41__desc Реализация товаров через онлайн - <br class="hide-tn show-sm-min">площадки оптом и в розницу, упаковка <br class="hide-tn show-sm-min">и координация со службами доставки <br class="hide-tn show-sm-min">и логистики
+        .block41__item
+          .block41__head
+            .block41__title Маркетплейсы <br class="hide-tn show-sm-min"> и агрегаторы
+            .block41__icon-wrap
+              .block41__icon.lazy(data-src="/dist/img/contour-only/white/display.svg")
+          .block41__desc Торговые площадки и каталоги, которые <br class="hide-tn show-sm-min">объединяют предложения продавцов и <br class="hide-tn show-sm-min">связывают их с аудиторией покупателей<br class="hide-tn show-sm-min"> онлайн
+        .block41__item
+          .block41__head
+            .block41__title Сервисы <br class="hide-tn show-sm-min"> бронирования
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/customer-service.svg")
+          .block41__desc Платформы для заказа аиабилетов,<br class="hide-tn show-sm-min"> трансферов, вариантов проживания, <br class="hide-tn show-sm-min">билетов на мероприятия или записи <br class="hide-tn show-sm-min">к специалистам
+        .block41__item
+          .block41__head
+            .block41__title Образование <br class="hide-tn show-sm-min"> и тренинги
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/graduate-hat.svg")
+          .block41__desc Услуги репетиторов, консультации по <br class="hide-tn show-sm-min">разным сферам деятельности, бизнес- <br class="hide-tn show-sm-min">курсы, проведение онлайн семинаров <br class="hide-tn show-sm-min">и конференций
+        .block41__item
+          .block41__head
+            .block41__title Платёжные <br class="hide-tn show-sm-min"> агенты
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/parcel.svg")
+          .block41__desc Деятельность Payment Service Provider <br class="hide-tn show-sm-min">(PSP) - приём и проведению платежей<br class="hide-tn show-sm-min"> за третьи лица с помощью эквайринга<br class="hide-tn show-sm-min"> и онлайн переводов
+        .block41__item
+          .block41__head
+            .block41__title Облачные <br class="hide-tn show-sm-min"> сервисы
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/megaphone.svg")
+          .block41__desc Решения на базе Cloud технологий: SaaS <br class="hide-tn show-sm-min">- облачное ПО, PaaS - вычислительные <br class="hide-tn show-sm-min">платформы, IaaS - хранение данных или <br class="hide-tn show-sm-min">удаленные сервера
+      .r50_adaptive
+      
+      .block5
+        svg.block5__icon(viewBox="0 0 80 80", xmlns="http://www.w3.org/2000/svg")      
+          path(d="M76.25 8.75001H65C64.8358 8.74945 64.6731 8.78142 64.5214 8.84407C64.3696 8.90672 64.2318 8.99882 64.1158 9.11504C63.9998 9.23126 63.908 9.3693 63.8457 9.52119C63.7833 9.67309 63.7517 9.83582 63.7526 10H63.75V13.75H56.25V11.25H53.75V51.25H51.25C50.9712 51.25 50.7005 51.3432 50.4807 51.5148C50.261 51.6863 50.1049 51.9264 50.0373 52.1968L49.375 54.8461L48.7127 52.1968C48.6451 51.9264 48.489 51.6863 48.2693 51.5148C48.0495 51.3432 47.7788 51.25 47.5 51.25V36.25C47.7788 36.25 48.0495 36.1568 48.2693 35.9853C48.489 35.8137 48.6451 35.5737 48.7127 35.3032L49.9627 30.3032C49.9643 30.297 49.9648 30.2905 49.9663 30.2843C49.9732 30.2544 49.9788 30.2241 49.9835 30.1934C49.9859 30.1782 49.9887 30.163 49.9905 30.1478C49.9939 30.1187 49.9956 30.089 49.997 30.0593C49.9978 30.0432 49.9993 30.0271 49.9994 30.011C49.9995 30.0073 50 30.0037 50 30V22.5001C50 22.2755 49.9395 22.0551 49.8249 21.862C49.7103 21.6688 49.5457 21.5102 49.3486 21.4026L28.7236 10.1526C28.54 10.0524 28.3342 9.99993 28.125 9.99993C27.9158 9.99993 27.71 10.0524 27.5264 10.1526L6.9014 21.4026C6.70426 21.5102 6.53974 21.6688 6.42512 21.862C6.3105 22.0551 6.25001 22.2755 6.25 22.5001V30C6.25 30.0038 6.25053 30.0073 6.25056 30.0111C6.2507 30.0271 6.25222 30.043 6.25297 30.059C6.25437 30.0888 6.25606 30.1185 6.25951 30.1478C6.26132 30.1631 6.26408 30.1782 6.26646 30.1934C6.27123 30.2241 6.27675 30.2544 6.28371 30.2843C6.28518 30.2905 6.28574 30.2969 6.28731 30.3032L7.53731 35.3032C7.60492 35.5737 7.761 35.8137 7.98073 35.9853C8.20046 36.1568 8.47123 36.25 8.75 36.25V51.25C8.47123 51.25 8.20046 51.3432 7.98073 51.5148C7.761 51.6863 7.60493 51.9264 7.53731 52.1968L6.52401 56.25H3.75C3.41848 56.25 3.10054 56.3817 2.86612 56.6161C2.6317 56.8506 2.5 57.1685 2.5 57.5V70C2.5 70.3315 2.6317 70.6495 2.86612 70.8839C3.10054 71.1183 3.41848 71.25 3.75 71.25H67.5C67.8315 71.25 68.1495 71.1183 68.3839 70.8839C68.6183 70.6495 68.75 70.3315 68.75 70V63.75C68.75 63.4185 68.6183 63.1006 68.3839 62.8661C68.1495 62.6317 67.8315 62.5 67.5 62.5H63.75V57.5C63.75 57.1685 63.6183 56.8506 63.3839 56.6161C63.1495 56.3817 62.8315 56.25 62.5 56.25H60.976L59.9627 52.1968C59.8951 51.9264 59.739 51.6863 59.5193 51.5148C59.2995 51.3432 59.0288 51.25 58.75 51.25H56.25V31.25H68.75C69.0815 31.25 69.3995 31.1183 69.6339 30.8839C69.8683 30.6495 70 30.3315 70 30V26.25H76.25C76.5815 26.25 76.8995 26.1183 77.1339 25.8839C77.3683 25.6495 77.5 25.3315 77.5 25V10C77.5 9.66849 77.3683 9.35055 77.1339 9.11613C76.8995 8.88171 76.5815 8.75001 76.25 8.75001ZM34.726 56.25L33.7127 52.1968C33.6451 51.9264 33.489 51.6863 33.2693 51.5148C33.0495 51.3432 32.7788 51.25 32.5 51.25V36.25C32.7788 36.25 33.0495 36.1568 33.2693 35.9853C33.489 35.8137 33.6451 35.5737 33.7127 35.3032L34.726 31.25H36.524L37.5373 35.3032C37.6049 35.5737 37.761 35.8137 37.9807 35.9853C38.2005 36.1568 38.4712 36.25 38.75 36.25V51.25C38.4712 51.25 38.2005 51.3432 37.9807 51.5148C37.761 51.6863 37.6049 51.9264 37.5373 52.1968L36.524 56.25H34.726ZM19.726 56.25L18.7127 52.1968C18.6451 51.9264 18.489 51.6863 18.2693 51.5148C18.0495 51.3432 17.7788 51.25 17.5 51.25V36.25C17.7788 36.25 18.0495 36.1568 18.2693 35.9853C18.489 35.8137 18.6451 35.5737 18.7127 35.3032L19.726 31.25H21.524L22.5373 35.3032C22.6049 35.5737 22.761 35.8137 22.9807 35.9853C23.2005 36.1568 23.4712 36.25 23.75 36.25V51.25C23.4712 51.25 23.2005 51.3432 22.9807 51.5148C22.761 51.6863 22.6049 51.9264 22.5373 52.1968L21.524 56.25H19.726ZM9.72595 33.75L9.10095 31.25H17.149L16.524 33.75H9.72595ZM47.5 28.75H8.75V23.75H47.5V28.75ZM46.524 33.75H39.726L39.101 31.25H47.149L46.524 33.75ZM30 51.25H26.25V36.25H30V51.25ZM31.524 33.75H24.726L24.101 31.25H32.149L31.524 33.75ZM24.726 53.75H31.524L32.149 56.25H24.101L24.726 53.75ZM39.726 53.75H46.524L47.149 56.25H39.101L39.726 53.75ZM45 51.25H41.25V36.25H45V51.25ZM28.125 12.6738L43.8479 21.25H12.4021L28.125 12.6738ZM11.25 36.25H15V51.25H11.25V36.25ZM9.72595 53.75H16.524L17.149 56.25H9.10095L9.72595 53.75ZM66.25 68.75H5V65H66.25V68.75ZM61.25 62.5H5V58.75H61.25V62.5ZM58.399 56.25H51.601L52.226 53.75H57.774L58.399 56.25ZM75 11.25V16.25H70V15C70 14.7296 69.9119 14.4666 69.7489 14.2508L69.75 14.25L67.5 11.25H75ZM67.5 16.25V21.25H56.25V16.25H67.5ZM56.25 28.75V23.75H67.5V28.75H56.25ZM70 23.75V18.75H75V23.75H70Z" fill="black")
+          rect(x="56.2486" y="21.2485" width="11.243" height="2.53146" fill="#D64356")
+          rect(x="5.00031" y="62.428" width="56.2442" height="2.53146" fill="#D64356")
+        p.block5__text
+          | Согласно законодательству ОАЭ зарегистрировать компанию можно в одной из Свободных 
+          br.hide-tn.show-sm-min
+          | Экономических Зон (СЭЗ), расположенных в различных эмиратах страны или на локальной 
+          br.hide-tn.show-sm-min
+          | (местной) территории. Выбор юрисдикции определяется стратегией вашего бизнеса и целевой 
+          br.hide-tn.show-sm-min
+          | аудиторией, на которую вы таргетируетесь. Инкорпорация Mainland компании дает 
+          br.hide-tn.show-sm-min
+          | возможности ведения бизнеса без границ, тогда как Free Zone ограничивается деятельностью 
+          br.hide-tn.show-sm-min
+          | на территории зоны или зарубежом.
+      .r50_adaptive
+
+      label.btn.btn_white.btn_space-between.btn_center(for="modal1")
+        | Получить консультацию
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+
+    .r1.r_bg-e3
+
+  section.bg_f9
+    .container
+      .r60_adaptive
+      h2.title Юрисдикция инкорпорации онлайн бизнеса 
+        br.hide-tn.show-sm-min
+        | в ОАЭ
+      .r50_adaptive
+      .block35.block35__width2
+        .block35__item.block35__item_wave-rtl
+          .block35__head
+            .block35__title Mainland регистрация
+            .block35__icon-wrap
+              img.block35__icon.lazy(data-src="/dist/img/contour-only/white/patheon-flag.svg")
+          .r1.r_bg-e3
+          .block35__content
+            .r30
+            ul.list
+              .list__item Неограниченные возможности ведения бизнеса в любой <br class="hide-tn show-sm-min">сфере в ОАЭ и за рубежом.
+              .list__item Форма собственности определяется видом деятельности.
+              .list__item В LLC необходимо привлечение  локального партнёра на<br class="hide-tn show-sm-min"> 51% (возможно на номинальной основе с оформлением <br class="hide-tn show-sm-min">отказа от доли владения в суде Дубая).
+              .list__item В профессиональной компании (Sole Establishment, SE)<br class="hide-tn show-sm-min"> подписывается договор с локальным агентом. Не входит <br class="hide-tn show-sm-min"> в состав акционеров.
+              .list__item Упрощено прохождение визовых процедур акционерам и<br class="hide-tn show-sm-min"> сотрудникам. Получение статуса налогового резидента и<br class="hide-tn show-sm-min"> лояльность банков Арабских Эмиратов.
+        .block35__item.block35__item_wave-ltr
+          .block35__head
+            .block35__title Free Zone регистрация
+            .block35__icon-wrap
+              img.block35__icon.lazy(data-src="/dist/img/contour-only/white/graph.svg")
+          .r1.r_bg-e3
+          .block35__content
+            .r30
+            ul.list
+              .list__item Оншорное юридическое лицо с возможностью работы на<br class="hide-tn show-sm-min"> международных рынках
+              .list__item Free Zone Establishment (FZE) или Free Zone Company (FZC)
+              .list__item 100% иностранного владения для ведения международных<br class="hide-tn show-sm-min"> операций, при этом есть ряд ограничений по деятельности<br class="hide-tn show-sm-min"> на рынке Арабских Эмиратов.
+              .list__item Свободная международная деятельность или только на<br class="hide-tn show-sm-min"> территории Свободной Экономической Зоны по месту <br class="hide-tn show-sm-min">инкорпорации.
+              .list__item Оформление резидентских виз акционерам и работникам.<br class="hide-tn show-sm-min"> Необходимость подтверждать экономическое присутствие<br class="hide-tn show-sm-min"> (economic substance)
+      .r60_adaptive
+
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Свяжитесь с нами и подберите лицензию, полностью отвечающую потребностям вашего бизнеса
+        label.feedback-block__btn(for="modal1") Заказать звонок
+    .r30
+    .r5
+
+  section.bg_f9
+    .container
+      .r60_adaptive
+      h2.title Доступные лицензии для ведения онлайн 
+        br.hide-tn.show-sm-min
+        | бизнеса в ОАЭ
+      .r30_adaptive
+      p.description Для любого бизнеса в Объединенных Арабских Эмиратах обязательна процедура лицензирования. Ваша лицензия 
+        br.hide-tn.show-sm-min
+        | в ОАЭ — это «визитная карточка» для банков и контрагентов всего мира, а для государства — форма контроля за
+        br.hide-tn.show-sm-min
+        | деятельностью вашей компании.
+      .r50_adaptive
+      .block24.block24_big.block24_width2
+        .block24__item
+          .block24__img.lazy(data-bg="/dist/img/full-color/cube.svg")
+          .block24__content
+            h3.block24__title Интернет портал
+            p.block24__text Уникальное решение для маркетплейсов, <br class="hide-tn show-sm-min">онлайн-издательств, сайтов-агрегаторов, <br class="hide-tn show-sm-min">афиш или платформ для бронирования
+        .block24__item
+          .block24__img.lazy(data-bg="/dist/img/full-color/shop-basket.svg")
+          .block24__content
+            h3.block24__title Торговая лицензия
+            p.block24__text Выдается на каждую отдельную группу товаров, ряд<br class="hide-tn show-sm-min"> торговых бизнес-активностей возможно объединить <br class="hide-tn show-sm-min">в генеральной торговой лицензии
+        .block24__item
+          .block24__img.lazy(data-bg="/dist/img/full-color/consulting.svg")
+          .block24__content
+            h3.block24__title Консалтинговая лицензия
+            p.block24__text Позволит предоставлять консультационные услуги<br class="hide-tn show-sm-min"> по всем специализированным направлениям через <br class="hide-tn show-sm-min">интернет
+        .block24__item
+          .block24__img.lazy(data-bg="/dist/img/full-color/graduate-hat.svg")
+          .block24__content
+            h3.block24__title Лицензия в сфере образования
+            p.block24__text Необходима для проведения тренингов, семинаров,<br class="hide-tn show-sm-min"> образовательных мероприятий онлайн, а также для<br class="hide-tn show-sm-min"> услуг репетиторов и коучей
+        .block24__item
+          .block24__img.lazy(data-bg="/dist/img/full-color/chains.svg")
+          .block24__content
+            h3.block24__title IT - лицензия
+            p.block24__text Решение для оказания сервисов и услуг в сфере IT<br class="hide-tn show-sm-min"> онлайн: разработка и внедрение облачного ПО или<br class="hide-tn show-sm-min"> мобильных приложений, дизайн сайтов
+        .block24__item
+            .block24__img.lazy(data-bg="/dist/img/full-color/social-media.svg")
+            .block24__content
+              h3.block24__title Лицензия SMM
+              p.block24__text Уникальная бизнес-активность для продвижения<br class="hide-tn show-sm-min"> товаров и услуг в социальных сетях, коммьюнити <br class="hide-tn show-sm-min">и блогах
+        .block24__item
+            .block24__img.lazy(data-bg="/dist/img/full-color/target.svg")
+            .block24__content
+              h3.block24__title Payment Services Provider
+              p.block24__text Лицензия, которая необходима для деятельности по <br class="hide-tn show-sm-min">приёму и проведению платежей от третьих лиц, в том <br class="hide-tn show-sm-min">числе мобильных или через терминалы оплаты
+        .block24__item
+            .block24__img.lazy(data-bg="/dist/img/full-color/chart-donut.svg")
+            .block24__content
+              h3.block24__title Удаленные сервисные центры
+              p.block24__text Комплекс бизнес - активностей, которые объединяют услуги<br class="hide-tn show-sm-min"> коллцентров, датацентров, бэк-офисов, онлайн <br class="hide-tn show-sm-min">помощников
+      
+      .r50_adaptive
+      .block5
+        img.block5__icon.lazy(data-src="/dist/img/contour-only/black-and-red/girl.svg")
+        p.block5__text Пользуясь лояльной политикой государства, отсутствием основных корпоративных налогов
+          br.hide-tn.show-sm-min
+          | и налогов на доходы физических лиц, зарубежные инвесторы могут создать высокодоходный
+          br.hide-tn.show-sm-min
+          | бизнес, связанный с ведением онлайн-деятельности. Специалисты SORP изучат интересующие 
+          br.hide-tn.show-sm-min
+          | вас направления рынка, окажут помощь на всех этапах инкорпорации и получении необходимых <br class="hide-tn show-sm-min"> согласований.
+      .r60_adaptive
+    .r1.r_bg-e3
+
+    .container
+      .r60_adaptive
+      h2.title Экспертные решения SORP для ведения 
+        br.hide-tn.show-sm-min
+        | онлайн деятельности в ОАЭ
+      .r60_adaptive
+      .block7.block7_modal.block7_white
+          .block7__item(for="")
+            .block7__icon
+              img.block7__icon-img.lazy(data-src='/dist/img/contour-only/gray/graph-screen.svg')
+            .block7__title Подготовка бизнес- <br class="hide-tn show-sm-min">модели
+            .block7__text
+              | Подберем подходящую 
+              br.hide-tn.show-sm-min
+              | лицензию и определим 
+              br.hide-tn.show-sm-min
+              | тип юридического лица 
+          .block7__item(for="")
+            .block7__icon
+              img.block7__icon-img.lazy(data-src='/dist/img/contour-only/gray/doc.svg')
+            .block7__title Регистрация <br class="hide-tn show-sm-min">бизнеса
+            .block7__text
+              | Быстрая инкорпорация за 
+              br.hide-tn.show-sm-min
+              | счет тесного сотрудничества 
+              br.hide-tn.show-sm-min
+              | с лицензирующими органами 
+          .block7__item(for="")
+            .block7__icon
+              img.block7__icon-img.lazy(data-src='/dist/img/contour-only/gray/human-network.svg')
+            .block7__title Аутсорсинг основных <br class="hide-tn show-sm-min">бизнес-процессов
+            .block7__text
+              | Административная, налоговая, бухгалтерская и юридическая <br class="hide-tn show-sm-min">поддержка от SORP Group
+          .block7__item(for="")
+            .block7__icon
+              img.block7__icon-img.lazy(data-src='/dist/img/contour-only/gray/office.svg')
+            .block7__title Дубайский адрес 
+              br.hide-tn.show-sm-min
+              | ведения бизнеса
+            .block7__text
+              | Аренда в собственном БЦ SORP <br class="hide-tn show-sm-min">для размещения и прохождения процедур<br class="hide-tn show-sm-min"> лицензирования
+          .block7__item(for="")
+            .block7__icon
+              img.block7__icon-img.lazy(data-src='/dist/img/contour-only/gray/wallet.svg')
+            .block7__title Открытие банковских <br class="hide-tn show-sm-min">счетов
+            .block7__text
+              | Тесное сотрудничество с
+              br.hide-tn.show-sm-min
+              | банками ОАЭ, содействие 
+              br.hide-tn.show-sm-min
+              | в прохождении KYC
+          .block7__item(for="")
+            .block7__icon
+              img.block7__icon-img.lazy(data-src='/dist/img/contour-only/gray/tie.svg')
+            .block7__title Локальный партнёр 
+              br.hide-tn.show-sm-min
+              | или агент
+            .block7__text
+              | Номинальный сервис от SORP <br class="hide-tn show-sm-min">Investment LLC с оформлением <br class="hide-tn show-sm-min">отказа от прав в суде г. Дубая
+      .r60_adaptive
+
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Получите индивидуальный анализ перспектив для вашего бизнеса <br class="hide-tn show-sm-min"> на территории ОАЭ
+        label.feedback-block__btn(for="modal1") Связаться со специалистом
+    .r30
+    .r5
+
+  section
+    .container
+      .r60_adaptive
+      h2.title Факторы успеха онлайн бизнеса в ОАЭ
+      .r40
+      p.description При наличии лицензии ОАЭ вы можете вести деятельность не только на внутреннем рынке Эмиратов, но и расширить 
+        br.hide-tn.show-sm-min
+        | масштабы бизнеса на территорию стран Персидского залива (ССАГПЗ). Благодаря единой зоне свободной торговли и 
+        br.hide-tn.show-sm-min
+        | таможенному пространству (GAFTA (Greater Arab Free Trade Area)), страны-участники полностью освобождаются от 
+        br.hide-tn.show-sm-min
+        | таможенных пошлин, сборов и налогов.
+      .r40
+      .flex.flex_space-between
+        h3.flex__item.title.title_font-w300.title_font-s36.title_color-black ОАЭ — лидер роста<br> онлайн сектора
+        p.flex__item.description.description_font-w300 Объем онлайн-торговли за год
+      a.image-wrapper(href="/dist/img/pages/online_business/sales-volume.jpg" data-fancybox="gallery" data-caption="Объем онлайн-торговли за год")
+        img.lazy.flex__img(draggable="false", alt="Объем онлайн-торговли за год", data-src="/dist/img/pages/online_business/sales-volume.svg")
+      .r60_adaptive
+    .r1.r_bg-e3
+    //-22 место    
+    .container
+      .statistics      
+        .statistics__item.statistics__item_border        
+            h3.statistics__title.statistics__title_gradient $147,3 млрд
+            p.statistics__description Привлеченных властями ОАЭ иностранных 
+              br.hide-tn.show-sm-min
+              | инвестиций в 2019 году
+        .r1.r_bg-e3.hide-md-min.r_overgrow
+        .statistics__item        
+            h3.statistics__title.statistics__title_gradient 24 место
+            p.statistics__description В мировом рейтинге по уровню благосостояния на 
+              br.hide-tn.show-sm-min
+              | сегодняшний день
+    .r1.r_bg-e3      
+
+    //-средний чек покупки в интернете
+    .container
+      .r60_adaptive
+      .title.title_font-w300.title_font-s36.title_color-black Средний чек покупки<br> в интернете
+      .r30_adaptive
+      a.image-wrapper(href="/dist/img/pages/online_business/average-check.jpg" data-fancybox="gallery" data-caption="Средний чек покупки в интернете")
+        img.lazy.flex__img(draggable="false", alt="Средний чек покупки в интернете", data-src="/dist/img/pages/online_business/average-check.svg")
+      .r60_adaptive
+    .r1.r_bg-e3
+    
+    //-Рост объёма продаж
+    .container
+      .r60_adaptive
+      .flex.flex_space-between.flex_width2
+        .flex__item
+          .title.title_font-w300.title_font-s36.title_color-black Рост объёма продаж <br> интернет-магазинов в мире
+          .r40
+          .image-wrapper
+            img.lazy.flex__img(draggable="false", alt="График роста объёма продаж интернет-магазинов в мире", data-src="/dist/img/pages/online_business/sales-growth.svg")
+        .flex__item
+          .title.title_font-w300.title_font-s36.title_color-black Доля электронной коммерции в общей розничной торговле
+          .r40
+          .image-wrapper.flex.flex_align-items-center.flex_justify-content-center
+            img.lazy.flex__img_width2(draggable="false", alt="Диаграмма доли электронной коммерции в общей розничной торговле", data-src="/dist/img/pages/online_business/graph-circle.svg")
+      .r50
+      label.btn.btn_white.btn_space-between.btn_center(for="modal1")
+        | Получить консультацию
+        svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+          use(xlink:href='#btn__icon-modal')
+      .r60_adaptive
+    .r1.r_bg-e3
+      
+  section.bg_f9
+    .container 
+      .r60_adaptive
+      .title.title_font-w300.title_font-s36.title_color-black Дополнительные факторы 
+        br.hide-tn.show-sm-min
+        | для комфортного развития
+      .r50_adaptive
+      .block42
+        .block42__item
+          .block42__icon-wrap
+            img.block42__icon.lazy(data-src="/dist/img/contour-only/white/graph-screen.svg")
+          .block42__content
+            h3.block42__title Стратегии развития Dubai 10x 
+              br.hide-tn.show-sm-min
+              | и Smart Dubai
+            .block42__description
+              p Высокие темпы развития ОАЭ обеспечивают 
+                br.hide-tn.show-sm-min
+                | соответствие социально-экономической среды 
+                br.hide-tn.show-sm-min
+                | высочайшим цифровым стандартам.               
+              br
+              p К 2021 году планируется внедрить искусственный 
+                br.hide-tn.show-sm-min
+                | интеллект на уровне государственных структур 
+                br.hide-tn.show-sm-min
+                | и перевести все госучреждения на блокчейн, весь 
+                br.hide-tn.show-sm-min
+                | документооборот будет происходить только в 
+                br.hide-tn.show-sm-min
+                | формате смарт-контрактов.
+        .block42__item
+          .block42__icon-wrap
+            img.block42__icon.lazy(data-src="/dist/img/contour-only/white/shield.svg")
+          .block42__content
+            h3.block42__title Программы Digital Protection 
+              br.hide-tn.show-sm-min
+              | и Get Dubai Businesses Online
+            .block42__description
+              p Стратегии призваны обеспечить безопасность
+                br.hide-tn.show-sm-min
+                | электронных платежей и повысить доверие к 
+                br.hide-tn.show-sm-min
+                | интернет-магазинам. 
+              br
+              p Торгово - промышленная палата Дубая и Google 
+                br.hide-tn.show-sm-min
+                | объединили усилия, чтобы вывести ещё больше 
+                br.hide-tn.show-sm-min
+                | компаний в онлайн. Этому будет способствовать 
+                br.hide-tn.show-sm-min
+                | реализация новой программы в рамках Digital 
+                br.hide-tn.show-sm-min
+                | Protection «Get Dubai Businesses Online»
+        
+        .block42__item
+          .block42__icon-wrap
+            img.block42__icon.lazy(data-src="/dist/img/contour-only/white/organization-building.svg")
+          .block42__content
+            h3.block42__title Дубай — важнейшая платформа в 
+              br.hide-tn.show-sm-min
+              | сфере электронной торговли
+            .block42__description
+              p Совместный проект администрации СЭЗ DAFZA 
+                br.hide-tn.show-sm-min
+                | аэропорта Дубай и компании «Asset Management 
+                br.hide-tn.show-sm-min
+                | Group» Dubai CommerCity с финансированием 2,7 
+                br.hide-tn.show-sm-min
+                | млрд. дирхам (3,4 млрд долларов). 
+              br
+              p Проект направлен на продвижение Дубая как 
+                br.hide-tn.show-sm-min  
+                | важнейшей платформы в сфере электронной 
+                br.hide-tn.show-sm-min
+                | торговли
+        .block42__item
+          .block42__icon-wrap
+            img.block42__icon.lazy(data-src="/dist/img/contour-only/white/pass-money.svg")
+          .block42__content
+            h3.block42__title Оказание поддержки малому и 
+              br.hide-tn.show-sm-min
+              | среднему бизнесу
+            .block42__description
+              p ДЭД Абу-Даби в рамках внедрения стратегии 
+                br.hide-tn.show-sm-min
+                | развития бизнеса в эмирате, выделяет 50 млрд 
+                br.hide-tn.show-sm-min
+                | дирхам на оказание поддержки предприятиям 
+                br.hide-tn.show-sm-min
+                | малого и среднего бизнеса.
+              br
+              p Это будет способствовать завитию сектора SME, 
+                br.hide-tn.show-sm-min
+                | а также привлечению зарубежных инвестиций и 
+                br.hide-tn.show-sm-min
+                | увеличению числа рабочих мест.
+      .r50_adaptive
+      .block5
+        img.block5__icon.lazy(data-src="/dist/img/contour-only/black-and-red/girl.svg")
+        p.block5__text Компания в ОАЭ – это высокодоходный инструмент, позволяющий решать разнообразные 
+          br.hide-tn.show-sm-min
+          | бизнес-задачи. Регистрация локальных, фризон и офшорных компаний, а также создание 
+          br.hide-tn.show-sm-min
+          | международных холдингов и трастовых структур открывают путь к ведению бизнеса без 
+          br.hide-tn.show-sm-min
+          | налогов, созданию расчётно-кассового центра, получения статуса налогового резидента
+          br.hide-tn.show-sm-min
+          | ОАЭ и широкому использованию инструментов международного налогового планирования.
+      .r60_adaptive
+
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Получите индивидуальный анализ перспектив для вашего бизнеса 
+          br.hide-tn.show-sm-min
+          | на территории ОАЭ
+        label.feedback-block__btn(for="modal1") Связаться со специалистом
+    .r30
+    .r5
+  section.bg_f9
+    .container
+      .r60_adaptive
+      h2.title Многолетний опыт SORP – гарантия успеха 
+        br.hide-tn.show-sm-min
+        | Вашего онлайн-бизнеса в ОАЭ
+      .slider#vslideouter
+        .slide.first
+          .slide-shadow
+          h3.slide__item-title Уникальные бизнес-мероприятия
+          p.slide__item-description Установление деловых контактов, возможность презентовать свои услуги и участвовать и получать знания на тренинговых курсах SORP
+        .text_slider__inner
+          .slide.second
+            .slide-shadow
+            h3.slide__item-title Стратегические партнерства
+            p.slide__item-description Наработанный опыт сотрудничества с Департаментом образования помогает оперативно решать текущие вопросы
+          .slide.third
+            .slide-shadow
+            h3.slide__item-title Комплексные услуги
+            p.slide__item-description Комплексные решения для регистрации и сопровождения инвестиций
+          .slide
+            .slide-shadow
+            h3.slide__item-title 15 лет успешной работы
+            p.slide__item-description Мы помогли тысячам клиентов начать и развивать свой бизнес в ОАЭ
+          .slide-controls
+            .arrow.arrow_prev.arrow_vertical(onclick="window.slideup()")
+            .arrow.arrow_next.arrow_vertical(onclick="window.slidedown()")
+    .r1.r_bg-e3
+  section.bg_f9
+    .container
+      .r60_adaptive
+      .feedback-bigblock.feedback-bigblock_no-bg
+        .flex.flex_width2
+          .flex__item
+            .feedback-bigblock__info-box.borderline.borderline_red.borderline_border10.borderline_pattern-form
+              h3.feedback-bigblock__info-title Получите лицензию в 
+                br.hide-tn.show-sm-min
+                | сфере онлайн-бизнеса 
+                br.hide-tn.show-sm-min
+                | ОАЭ
+              .feedback-bigblock__info-text
+                p.feedback-bigblock__info-text-item Оставьте заявку и получите развернутую 
+                  br.hide-tn.show-sm-min
+                  | консультацию по оформлению лицензии в ОАЭ.
+                p.feedback-bigblock__info-text-item Специалисты SORP Group помогут выбрать 
+                  br.hide-tn.show-sm-min
+                  | подходящие виды деятельности и определить 
+                  br.hide-tn.show-sm-min
+                  | оптимальные место регистрации, а также тип 
+                  br.hide-tn.show-sm-min
+                  | юридического лица.
+                p.feedback-bigblock__info-text-item Сделайте первый шаг на пути к созданию вашего
+                  br.hide-tn.show-sm-min
+                  | бизнеса в ОАЭ!
+                br
+                br
+          .flex__item
+            .feedback-bigblock__form
+              h4.feedback-bigblock__form-title Подобрать лицензию
+              form.form-block
+                input.callOrderReason(type='hidden', name='reason')
+                input.page(type='hidden', name='page', value='[[~[[*id]]? &scheme=`full`]]')
+                input.site-message(type='text', name='name', value='')
+                input.site-message(type='text', name='firstname', value='')
+                input.site-message(type='text', name='lastname', value='')
+                .form-block__item
+                  label.form-block__label(for='fio3') Ваше имя
+                  input#fio3.form-block__input(type='text' name='fio3' value='')
+                .form-block__item
+                  label.form-block__label(for='phone3') Телефон
+                  input#phone3.form-block__input(type='text' name='phone3' value='' placeholder="+")
+                .form-block__item
+                  label.form-block__label(for='email3') Email
+                  input#email3.form-block__input(type='email' name='email3' value='' placeholder="")
+                .form-block__item
+                  input.btn.btn_radius5.btn_w100.btn_h70.btn_font-s20(type='submit' value='Получить решение') 
+      .r60_adaptive
+    .r1.r_bg-e3  

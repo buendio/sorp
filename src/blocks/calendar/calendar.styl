@@ -1,0 +1,47 @@
+arrowNext = url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAcCAYAAACH81QkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFvSURBVHgBpdVhToMwFAfwV0bi1y0aEhI0cIPtBnIET7B5A2+weQKPIJ4EbyA3gAxiDTph30YC1BYtQ4TR4vtA2pftx/81SwfwUz5OTBhZCnts8c6ZAHGjKJ7DiEIMQICW1Y5AisrcNgzNk0FoEvJ8JGFKFFU6EWKPLf5YIVAe665koupMrvQLh0B5204U4vdrYaQPApi4EU6WwkgNleUNXaa8R4A4QxDqakZxPCeF6tLl9PhBtDL02ZMwIgspfYihaR6a5Da0RgvxbiOc5FQiyt1f6uebwSTNRCpkC/q2oPHudTPRYBJeGGOzgDOXAJjtRMIIq+gteSCE3DVaaX5A1uA4vFj8NsAO3rJmqRDyPT9a8z0dKcjpObHzYvvBcbqAAjLb0vWA99B/gZOIKNCLyACdiCzwBxkDsFL5gl3YwC9sCaBO8uvGlwRYKW2ACl5x2C9EgQpR6JeaQJ7t6U/ZSkG22F9G+Pr54vv+FEbUF7ir62kaBrG1AAAAAElFTkSuQmCC');
+arrowPrev = url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAcCAYAAACH81QkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE/SURBVHgBpdVdToNAEAfw2e0m7WOTJk1IalJuYG8gJzHeQE/QegK9gb2BR8Aj9AbgR9wnrH2TpLjOaLCUbmGG/hNCdoFflo8ZADrk1WYL2qBr/oAPR9ubzR5oTkkBvGRejh1AWkAesZFjQBgEqeEALzZbInDpA2jcuhICVANA0RIAhVXxtZlVgcaV+IBtvonCMPysn3uAJMl62Bt833OBA4QA03cxzp5zAYpuBACe2oD/lfgABW45CUZXwIg6FaAYM3CPuN+7BQlA0aq3vcF99Z4vnt+zaxBET8bjFUJRFdJK3UlK/fftEGQgn+FTTneH1JwL7X0n1tppAf0Y62O6m3W3Z8FowUa6Qt7akUJHC1ACNfYTLtTalDgQq8e2QexG7YPKGhP9MuqQ+JdRJllj1ecudg6G9YYthhJcVTn+Ac3y6oxcmfMHAAAAAElFTkSuQmCC');
+
+.calendar { position: relative;
+  &__scrollable { overflow-x: scroll; -webkit-overflow-scrolling: touch; -ms-overflow-style: -ms-autohiding-scrollbar; &::-webkit-scrollbar { display: none; } }
+  &__line { height: 3px; margin: 40px 20px 0 20px; background: linear-gradient(90deg, #FF919F 0%, #FB78B7 55.21%, #4138FF 100%); }
+  &__arrow { cursor: pointer; position: absolute; top: 10px; height: 60px; width: 50px;
+    &_next { right: -24px; background: #FFF arrowNext no-repeat center; box-shadow: 30px -50px 20px 60px rgba(255,255,255,0.94); }
+    &_prev { display: none; left: -35px; background: #FFF arrowPrev no-repeat center; box-shadow: 30px 0px 30px 10px rgba(255,255,255,0.94); } }
+
+  &__items { display: flex; flex-wrap: nowrap; padding-top: 20px; transition: .3s all ease-in-out; min-height: 440px; }
+  &__item { width: 100%; min-width: 100%; position: relative; transition: .3s all ease-in-out;
+    &-date { color: #FF909F; position: absolute; top: -55px; padding-left: 20px; } 
+    &::before { content: ""; display: inline-block; width: 12px; height: 12px; background: #fff; border: 3px solid #FD86A9; border-radius: 50%; position: absolute; left: 20px; top: -27px; }
+    
+    //- точки c градиентом
+    &_start-purple { &.calendar__item::before { border-color: #e771bf; } .calendar__item-date { color: #e771bf; } }
+    &_purple { &.calendar__item::before { border-color: #BF63CE; } .calendar__item-date { color: #BF63CE; } }
+    &_purple-blue { &.calendar__item::before { border-color: #9455df; } .calendar__item-date { color: #9455df; } }
+    &_last-blue { &.calendar__item::before { border-color: #4138ff; } .calendar__item-date { color: #4138ff; } }
+  }
+  
+  &__btn { display: none; transition: .3s all ease-in-out; font-size: 15px; background-color: #4D62D2; border-radius: 5%; padding: 9px 19px; color: #fff; font-weight: bold; margin-bottom: 22px; }
+  &__event { padding: 20px 10px 0 20px; transition: .3s all ease-in-out;
+    &-name { font-size: 17px; font-weight: 400; line-height: 22px; color: #000; margin-bottom: 15px; }
+    &-bottom { display: flex; font-weight: 500; font-size: 14px; line-height: 21px; color: #888899; margin-bottom: 26px; }
+    &-time { margin-right: 10px; font-weight: 700; color: #FF909F; }
+    &:hover { background-color: #FFF; box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.07); transform: scale(1.01); border-radius: 5%; 
+      .calendar__btn { display: inline-block; transition: .3s all ease-in-out; } }
+  }
+  .hide { display: none; }
+}
+
+@media (min-width: screen-xs-min) {
+  .calendar {
+    &__item { width: 50%; min-width: 50%; }
+    &__arrow { 
+      &_next { right: -35px; }
+      &_prev { display: block; box-shadow: -42px 0 30px 40px rgba(255,255,255,0.94); } }
+  }
+}
+
+@media (min-width: screen-sm-min) {
+  .calendar {
+    &__item { width: 25%; min-width: 25%; }
+  }
+}

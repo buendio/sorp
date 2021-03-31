@@ -1,0 +1,147 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "konsaltingovyix_reshenij_dlya_vashego_biznesa"
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      .first-screen.lazy(data-bg="/dist/img/minilends/blocks/first-screen/55-reshenij.svg")
+        h1.first-screen__title
+          +lang(
+          '55 решений для&nbsp;вашего бизнеса в&nbsp;ОАЭ',
+          '55 business concepts for&nbsp;doing business in&nbsp;the&nbsp;UAE'
+          )
+
+        p.first-screen__text Получите все услуги в одном месте <br>
+          +lang(
+          'От консалтинговой компании №1 на&nbsp;рынке Арабских Эмиратов',
+          'Get all services in&nbsp;one place'
+          )
+          <br>
+          +lang(
+          '',
+          'with a '
+          )
+          span.first-screen__text-span
+            +lang(
+            '',
+            '30 discount%'
+            )
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Get more details'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/blocks/block-frames/blazer.svg")
+            p.block-frames__text
+              +lang(
+              'Получите профессиональную бизнес-поддержку признанных экспертов ведущей компании в&nbsp;ОАЭ — самой комфортной ' +
+              'для&nbsp;предпринимателей всего мира низконалоговой стране.',
+              'Get professional business support from&nbsp;recognized experts of&nbsp;a&nbsp;leading consulting company in&nbsp;the&nbsp;UAE — the most comfortable\n' +
+              'low-tax country for&nbsp;entrepreneurs all over the&nbsp;world.'
+              )
+          .block-frames__signature-box
+            .block-frames__signature-icon.lazy(data-bg="/dist/img/minilends/blocks/block1/note.svg")
+            p.block-frames__signature-text
+              +lang(
+              'Мы оказываем полное сопровождение в&nbsp;создании и&nbsp;ведении бизнеса на&nbsp;территории ОАЭ и&nbsp;за&nbsp;рубежом',
+              'We provide full support in&nbsp;setting up and&nbsp;running a&nbsp;business in&nbsp;the&nbsp;UAE and&nbsp;abroad'
+              )
+
+        .r20
+        .r1.r_bg-e3
+
+      .r20
+      .r5
+
+    section
+      .container
+        h2.title
+          +lang(
+          'Получите решения по&nbsp;актуальным вопросам:',
+          'Get expert solutions to&nbsp;emerging issues:'
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/al-arab.svg")
+            p.block1__text
+              +lang(
+              'Как выйти на&nbsp;рынок и&nbsp;вести бизнес в&nbsp;Арабских Эмиратах?',
+              'How to&nbsp;enter the&nbsp;market and&nbsp;do business in&nbsp;the&nbsp;UAE?'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/service.svg")
+            p.block1__text
+              +lang(
+              'Как осуществлять инвестиции под&nbsp;флагом ОАЭ во&nbsp;всем мире?',
+              'How to&nbsp;invest under the&nbsp;UAE flag of&nbsp;convenience internationally?'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/diagrams.svg")
+            p.block1__text
+              +lang(
+              'Как оптимизировать международные налоги за&nbsp;счет законодательства ОАЭ?',
+              'What are UAE legal mechanisms that&nbsp;optimize your International Business?'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/structure.svg")
+            p.block1__text
+              +lang(
+              'Как создавать холдинги и&nbsp;структуры, оптимизацию управления и&nbsp;свободу расчетов?',
+              'How to&nbsp;form holdings and&nbsp;consortuims, optimize management schemes and&nbsp;get financial freedom?'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/human.svg")
+            p.block1__text
+              +lang(
+              'Как применять легальные схемы сокрытия владения недвижимостью и&nbsp;активами?',
+              'How to&nbsp;use UAE lawful efficiencies to&nbsp;conceal ownership of&nbsp;real estate and&nbsp;assets?'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/swap.svg")
+            p.block1__text
+              +lang(
+              'Как защититься от&nbsp;автоматического обмена налоговой информацией?',
+              'How to&nbsp;shield from automatic exchange of&nbsp;accounting information (CRS)?'
+              )
+        .r20
+        .r5
+
+    section
+      .quote
+        .quote__icon.lazy(data-bg="/dist/img/minilends/blocks/quote/quote.svg")
+        p.quote__text
+          +lang(
+          'В&nbsp;своей работе мы опираемся на&nbsp;компетенции, опыт штатных специалистов, практику тесного сотрудничества с&nbsp;признанными экспертами и&nbsp;госорганами ОАЭ',
+          'While providing our services we use our deep knowledge, experience and&nbsp;close cooperation with experts and government bodies of&nbsp;the&nbsp;UAE'
+          )
+
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        h2.title.title_center
+          +lang(
+          'Повысьте эффективность вашего бизнеса с&nbsp;опорой на&nbsp;законодательство ОАЭ',
+          'Improve the&nbsp;efficiency of&nbsp;your business based on&nbsp;UAE legislation'
+          )
+        .r20
+        .r5
+        include ../../blocks/minilends/form/form
+      .r30
+      .r5
+
+    include ../../blocks/minilends/pnumber/pnumber

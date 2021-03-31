@@ -1,0 +1,1122 @@
+extends ../layouts/default
+
+block variables
+  - const title = "business_school";
+  - page = "business_school";
+
+block content
+  section.bg_first-screen.bg_right-side.lazy(data-bg="/dist/img/blocks/bg/red-book.svg")
+    .container
+      .first-screen.first-screen_no-logo
+        .first-screen__box
+          .first-screen__content
+            h1.first-screen__title Бизнес-школа SORP
+            p.first-screen__text SORP — образовательная платформа нового поколения, объединяющая 
+              br.hide-tn.show-md-min 
+              | академические знания, бизнес-компетенции, уникальный нетворкинг, встречи 
+              br.hide-tn.show-md-min 
+              | инвесторов и владельцев бизнеса
+  section.bg.bg_right-side.bg_right-side-auto-size.bg_remove-sm-min.lazy(data-bg="/dist/img/blocks/bg/graduate-hat-dotted.png")
+    .container
+      .flex.flex_space-between.flex_width2
+        .flex__item.border-right
+          .r60_adaptive
+          h2.title.title_font-w500.title_color-black.title_font-s32 Обучение поиску идей, расчета ее 
+            br.hide-tn.show-md-min 
+            | потенциала. Все для того, чтобы 
+            br.hide-tn.show-md-min 
+            | ваш бизнес стал успешным
+          .r20
+          .r5
+          p.description.description_font-s16.description_dark Обучающие мероприятия и образовательные программы от SORP 
+            br.hide-tn.show-md-min 
+            | School для бизнеса в ОАЭ и на международном рынке. Все для 
+            br.hide-tn.show-md-min 
+            | получения необходимых знаний для успешного развития. 
+            br.hide-tn.show-md-min 
+            | Конкретные кейсы в разных сферах и готовые инструкции.       
+          .r60_adaptive
+          .r10
+        .flex__item.flex__item_align-self-end.flex__item_width2
+          label.btn.btn_white.btn_radius5.btn_font-s18(for="modal1") Бесплатная консультация
+          .r60_adaptive
+          .r10
+    .r1.r_bg-e3
+
+  section
+    .container
+      .r60_adaptive      
+      .block41
+        .block41__item
+          .block41__head
+            .block41__title Актуальные <br class="hide-tn show-sm-min"> знания 
+            .block41__icon-wrap
+              .block41__icon.lazy(data-src="/dist/img/contour-only/white/lamp.svg")
+          .block41__desc Готовое инвестиционное решение для<br class="hide-tn show-sm-min"> аккумулирования капитала и получения <br class="hide-tn show-sm-min">прибыли
+        .block41__item
+          .block41__head
+            .block41__title Практические <br class="hide-tn show-sm-min">навыки
+            .block41__icon-wrap
+              .block41__icon.lazy(data-src="/dist/img/contour-only/white/person-lifesaver.svg")
+          .block41__desc Привлечение и размещение средств в<br class="hide-tn show-sm-min"> бизнес, активы, владение долями других <br class="hide-tn show-sm-min">юридических лиц
+        .block41__item
+          .block41__head
+            .block41__title Уникальный <br class="hide-tn show-sm-min">нетворкинг
+            .block41__icon-wrap
+              img.block41__icon.lazy(data-src="/dist/img/contour-only/white/three-people.svg")
+          .block41__desc Увеличьте прибыль при помощи<br class="hide-tn show-sm-min"> публичных выступлений, ведите <br class="hide-tn show-sm-min">переговоры и монетизируйте нетворкинг      
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Основные направления обучения
+      .r50_adaptive
+      .block35.block35_width4.block35_underscore.block35_red.block35_anchor
+        a.block35__item(href="#business-courses")
+          .block35__head
+            .block35__title Бизнес-курсы
+            .block35__icon-wrap
+              img.block35__icon.lazy(data-src="/dist/img/contour-only/white/social-growth.svg")
+          .block35__divider
+          .block35__content
+            .r30
+            p Курсы разработаны известными профессорами и <br class="hide-tn show-sm-min"> экспертами-практиками в разных областях права, экономики, <br class="hide-tn show-sm-min">финансов, маркетинга, HR. 
+            br
+            p Обучающие программы охватывают все направления,<br class="hide-tn show-sm-min"> связанные с особенностями ведения бизнеса, тонкостями <br class="hide-tn show-sm-min">законодательства, деловыми традициями ОАЭ. 
+        a.block35__item(href="#business-schools")
+          .block35__head
+            .block35__title Бизнес-школы
+            .block35__icon-wrap
+              img.block35__icon.lazy(data-src="/dist/img/contour-only/white/graduate-hat2.svg")
+          .block35__divider
+          .block35__content
+            .r30
+            p Курсы разработаны известными профессорами <br class="hide-tn show-sm-min">и экспертами-практиками в разных областях права, экономики,<br class="hide-tn show-sm-min"> финансов, маркетинга, HR. 
+            br
+            p Обучающие программы охватывают все направления,<br class="hide-tn show-sm-min"> связанные с особенностями ведения бизнеса, тонкостями<br class="hide-tn show-sm-min"> законодательства, деловыми традициями ОАЭ. 
+        a.block35__item(href="#business-missions")
+          .block35__head
+            .block35__title Бизнес-миссии
+            .block35__icon-wrap
+              img.block35__icon.lazy(data-src="/dist/img/contour-only/white/person-flag.svg")
+          .block35__divider
+          .block35__content
+            .r30
+            p Курсы разработаны известными профессорами и экспертами-практиками в разных областях права, экономики, финансов, маркетинга, HR. 
+            br
+            p Обучающие программы охватывают все направления, связанные с особенностями ведения бизнеса, тонкостями законодательства, деловыми традициями ОАЭ. 
+        a.block35__item(href="#business-mentoring")
+          .block35__head
+            .block35__title Бизнес-менторство
+            .block35__icon-wrap
+              img.block35__icon.lazy(data-src="/dist/img/contour-only/white/person-network.svg")
+          .block35__divider
+          .block35__content
+            .r30
+            p Курсы разработаны известными профессорами <br class="hide-tn show-sm-min">и экспертами-практиками в разных областях права, экономики,<br class="hide-tn show-sm-min"> финансов, маркетинга, HR. 
+            br
+            p Обучающие программы охватывают все направления,<br class="hide-tn show-sm-min"> связанные с особенностями ведения бизнеса, тонкостями<br class="hide-tn show-sm-min"> законодательства, деловыми традициями ОАЭ. 
+      .r60_adaptive
+
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Узнайте о преимуществах организации бизнеса в ОАЭ, заказав 
+          br.hide-tn.show-sm-min
+          | бесплатную консультацию специалиста
+        label.feedback-block__btn(for="modal4") Получить решение
+    .r30
+    .r5
+  section.bg_fa#business-courses
+    .container
+      .r60_adaptive
+      h2.title Бизнес-курсы
+      .r50_adaptive
+      .block43-slider
+        .block43__slide
+          .block43.block43_wave-ltr
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/tie.svg")
+              h3.block43__title Doing Business in Dubai <br class="tn-hide show-sm-min">for Business Owners
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/graph-screen.svg")
+              h3.block43__title The A to Z of Marketing<br class="tn-hide show-sm-min"> in the UAE
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/three-people.svg")
+              h3.block43__title Leadership and Human <br class="tn-hide show-sm-min">Resource Management
+        .block43__slide
+          .block43.block43_wave-ltr
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/shield.svg")
+              h3.block43__title Legal Basics for <br>Entrepreneurs
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/verified-person-circle.svg")
+              h3.block43__title Doing Business in Dubai <br>for Beginners
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/person-lifesaver.svg")
+              h3.block43__title Project <br>Management        
+        
+        .block43__slide
+          .block43.block43_wave-ltr
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/verified-person-circle.svg")
+              h3.block43__title Business Analysis and <br>Risk Management
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/accounting.svg")
+              h3.block43__title School of<br> Accounting
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/hand-stocks.svg")
+              h3.block43__title Active <br>Sales
+        .block43__slide
+          .block43.block43_wave-ltr
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/coins.svg")
+              h3.block43__title Finance Literacy for <br>Executives
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/person-lifesaver.svg")
+              h3.block43__title Project <br>Management
+            .block43__item(for="")
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/person-lifesaver.svg")
+              h3.block43__title Project <br>Management        
+        
+        .block43__slide
+          .block43.block43_wave-ltr
+            .block43__item
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/tie.svg")
+              h3.block43__title Doing Business in Dubai <br>for Business Owners
+            .block43__item
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/shield.svg")
+              .block43__title Legal Basics  <br>for Entrepreneurs
+            .block43__item
+              .block43__icon.lazy(data-bg="/dist/img/contour-only/white/verified-person-circle.svg")
+              h3.block43__title Business Analysis and <br>Risk Management  
+      .r50_adaptive
+      .block5
+        img.block5__icon.lazy(data-src="/dist/img/contour-only/black-and-red/report-people.svg")
+        p.block5__text Глобальная тенденция к усилению контроля над бизнесом оставляет меньше правовых методов
+          br.hide-tn.show-sm-min
+          |  минимизации налогового бремени, оптимизации денежных потоков и распределения средств по 
+          br.hide-tn.show-sm-min
+          | счетам. Однако, инкорпорация локальной компании предоставляет бизнесменам полноценный 
+          br.hide-tn.show-sm-min
+          | набор инструментов для решения таких задач, в том числе защиту от автоматического обмена 
+          br.hide-tn.show-sm-min
+          | налоговой информацией, данных по счетам и активам в соответствии со стандартами CRS.
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section#business-schools
+    .container
+      .r60_adaptive
+      h2.title Бизнес-школы
+      .r50_adaptive
+      .block35-slider
+        .block35.block35_width4.block35_description.block35_modal
+          .block35__item.bg.bg_fa
+            .block35__head
+              h3.block35__title Школа финансовой 
+                br.hide-tn.show-sm-min
+                | подготовки
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 2-х часовые занятия, 7 дней          
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития. 
+          .block35__item.bg.bg_fa
+            .block35__head
+              h3.block35__title Менеджмент и управление 
+                br.hide-tn.show-sm-min
+                | процессами
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 2-х часовые занятия, 7 дней          
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития.         
+        .block35.block35_width4.block35_description.block35_modal
+          .block35__item.bg.bg_fa
+            .block35__head
+              h3.block35__title Школа финансовой 
+                br.hide-tn.show-sm-min
+                | подготовки
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 2-х часовые занятия, 7 дней          
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития. 
+          .block35__item.bg.bg_fa
+            .block35__head
+              h3.block35__title Международное налоговое
+                br.hide-tn.show-sm-min
+                | планирование
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 2-х часовые занятия, 4 дня 
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития.         
+        .block35.block35_width4.block35_description.block35_modal
+          .block35__item.bg.bg_fa
+            .block35__head
+              h3.block35__title Школа финансовой 
+                br.hide-tn.show-sm-min
+                | подготовки
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 2-х часовые занятия, 7 дней          
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития. 
+          .block35__item.bg.bg_fa
+            .block35__head
+              h3.block35__title Международное налоговое
+                br.hide-tn.show-sm-min
+                | планирование
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 2-х часовые занятия, 4 дня 
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития. 
+      .r50_adaptive
+      .block5
+        img.block5__icon.lazy(data-src="/dist/img/contour-only/black-and-red/education-people.svg")
+        p.block5__text Глобальная тенденция к усилению контроля над бизнесом оставляет меньше правовых методов 
+          br.hide-tn.show-sm-min
+          | минимизации налогового бремени, оптимизации денежных потоков и распределения средств по 
+          br.hide-tn.show-sm-min
+          | счетам. Однако, инкорпорация локальной компании предоставляет бизнесменам полноценный 
+          br.hide-tn.show-sm-min
+          | набор инструментов для решения таких задач, в том числе защиту от автоматического обмена 
+          br.hide-tn.show-sm-min
+          | налоговой информацией, данных по счетам и активам в соответствии со стандартами CRS.
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section.bg_fa#business-missions
+    .container
+      .r60_adaptive
+      h2.title Бизнес-миссии
+      .r50_adaptive
+      .block35-slider
+        .block35.block35_width4.block35_description.block35_modal
+          .block35__item
+            .block35__head
+              h3.block35__title Семинар финансовой
+                br.hide-tn.show-sm-min
+                | подготовки
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 4-х часовые занятия      
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития. 
+          .block35__item
+            .block35__head
+              h3.block35__title Юридическое 
+                br.hide-tn.show-sm-min
+                | сопровождение
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 4-х часовые занятия
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития.         
+        .block35.block35_width4.block35_description.block35_modal
+          .block35__item
+            .block35__head
+              h3.block35__title Тренинг финансовой
+                br.hide-tn.show-sm-min
+                | подготовки
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 4-х часовые занятия       
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития. 
+          .block35__item
+            .block35__head
+              h3.block35__title Международное налоговое
+                br.hide-tn.show-sm-min
+                | планирование
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 4-х часовые занятия
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития.         
+        .block35.block35_width4.block35_description.block35_modal
+          .block35__item
+            .block35__head
+              h3.block35__title Школа финансовой 
+                br.hide-tn.show-sm-min
+                | подготовки
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 2-х часовые занятия, 7 дней          
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития. 
+          .block35__item
+            .block35__head
+              h3.block35__title Международное налоговое
+                br.hide-tn.show-sm-min
+                | планирование
+              .block35__icon-wrap
+                img.block35__icon.lazy(data-src="/dist/img/contour-only/white/verified-person-circle.svg", alt="SORP")
+            p.block35__sub-title 2-х часовые занятия, 4 дня 
+            .block35__content Разнообразный и богатый опыт постоянный количественный 
+              br.hide-tn.show-sm-min
+              | рост и сфера нашей активности способствует подготовки и 
+              br.hide-tn.show-sm-min
+              | реализации форм развития. 
+      .r50_adaptive
+      .block5
+        img.block5__icon.lazy(data-src="/dist/img/contour-only/black-and-red/analysis.svg")
+        p.block5__text Глобальная тенденция к усилению контроля над бизнесом оставляет меньше правовых методов 
+          br.hide-tn.show-sm-min
+          | минимизации налогового бремени, оптимизации денежных потоков и распределения средств по 
+          br.hide-tn.show-sm-min
+          | счетам. Однако, инкорпорация локальной компании предоставляет бизнесменам полноценный 
+          br.hide-tn.show-sm-min
+          | набор инструментов для решения таких задач, в том числе защиту от автоматического обмена 
+          br.hide-tn.show-sm-min
+          | налоговой информацией, данных по счетам и активам в соответствии со стандартами CRS.
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section#business-schools
+    .container
+      .r60_adaptive
+      h2.title Бизнес-менторство
+      .r50_adaptive
+      .experts-mentoring__slider
+        .experts-mentoring__slide
+          .experts-mentoring
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/mikhailov-alex90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Петров Алексей 
+                  br.hide-tn.show-sm-min    
+                  | Михайлович
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/antonina90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Александрова Мария 
+                  br.hide-tn.show-sm-min    
+                  | Викторовна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/alexandra90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Михайлова Александра 
+                  br.hide-tn.show-sm-min    
+                  | Ивановна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/antonina90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Александрова Мария 
+                  br.hide-tn.show-sm-min    
+                  | Викторовна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться      
+        .experts-mentoring__slide
+          .experts-mentoring
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/mikhailov-alex90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Петров Алексей 
+                  br.hide-tn.show-sm-min    
+                  | Михайлович
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/antonina90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Александрова Мария 
+                  br.hide-tn.show-sm-min    
+                  | Викторовна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/alexandra90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Михайлова Александра 
+                  br.hide-tn.show-sm-min    
+                  | Ивановна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/antonina90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Александрова Мария 
+                  br.hide-tn.show-sm-min    
+                  | Викторовна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+        .experts-mentoring__slide
+          .experts-mentoring
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/mikhailov-alex90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Петров Алексей 
+                  br.hide-tn.show-sm-min    
+                  | Михайлович
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/antonina90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Александрова Мария 
+                  br.hide-tn.show-sm-min    
+                  | Викторовна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/alexandra90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Михайлова Александра 
+                  br.hide-tn.show-sm-min    
+                  | Ивановна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+            .experts-mentoring__item
+              img.experts-mentoring__icon.lazy(data-src="/dist/img/blocks/experts/antonina90.png")
+              .experts-mentoring__content
+                h3.experts-mentoring__name Александрова Мария 
+                  br.hide-tn.show-sm-min    
+                  | Викторовна
+                p.experts-mentoring__description Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке соответствующий условий активизации.
+                label.experts-mentoring__btn(for="modal1") Записаться
+      .r50_adaptive
+      .block5
+        img.block5__icon.lazy(data-src="/dist/img/contour-only/black-and-red/team-three.svg")
+        p.block5__text Глобальная тенденция к усилению контроля над бизнесом оставляет меньше правовых методов 
+          br.hide-tn.show-sm-min
+          | минимизации налогового бремени, оптимизации денежных потоков и распределения средств по 
+          br.hide-tn.show-sm-min
+          | счетам. Однако, инкорпорация локальной компании предоставляет бизнесменам полноценный 
+          br.hide-tn.show-sm-min
+          | набор инструментов для решения таких задач, в том числе защиту от автоматического обмена 
+          br.hide-tn.show-sm-min
+          | налоговой информацией, данных по счетам и активам в соответствии со стандартами CRS.
+      .r60_adaptive
+    .r1.r_bg-e3
+  
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Не знаете какой вид обучения или тематика курсов вам подходит? 
+          br
+          |  Свяжитесь с нами и мы поможем с выбором.
+        label.feedback-block__btn(for="modal1") Подобрать цикл курсов
+    .r30
+    .r5
+  section
+    .container
+      .r60_adaptive
+      h2.title Календарь событий
+      .r50_adaptive      
+      .tabs#tabs
+        ul.tabs__head
+          li.tab.tab_active Ноябрь
+          li.tab Декабрь
+          li.tab Январь 2021
+        .tabs__content-wrap
+          .tab__content.tab_active
+            .calendar
+              .calendar__scrollable
+                .calendar__line
+                .calendar__items
+                  .calendar__item
+                    .calendar__item-date 2 ноября
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Как сделать успешный бизнес в Дубай, ОАЭ
+                        .calendar__event-bottom
+                          p.calendar__event-time 19:30 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Антикризисные решения для вашего бизнеса
+                        .calendar__event-bottom
+                          p.calendar__event-time 19:30 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                  .calendar__item
+                    .calendar__item-date 6 ноября
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Как зарегистрировать бизнес в ОАЭ с минимальными вложениями
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+
+                  .calendar__item
+                    .calendar__item-date 12 ноября
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Международное налоговое планирование в 2021 году
+                        .calendar__event-bottom
+                          p.calendar__event-time 14:15 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Активные продажи
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Исламский банкинг
+                        .calendar__event-bottom
+                          p.calendar__event-time 18:30 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                  .calendar__item.calendar__item_start-purple
+                    .calendar__item-date 14 ноября
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Как зарегистрировать бизнес в ОАЭ с минимальными вложениями
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться            
+                  .calendar__item.calendar__item_purple-blue
+                    .calendar__item-date 20 ноября
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Международное налоговое планирование в 2021 году
+                        .calendar__event-bottom
+                          p.calendar__event-time 14:15 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Активные продажи
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Исламский банкинг
+                        .calendar__event-bottom
+                          p.calendar__event-time 18:30 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+              .calendar__arrow.calendar__arrow_prev.hide
+              .calendar__arrow.calendar__arrow_next
+          .tab__content
+            .calendar
+              .calendar__scrollable
+                .calendar__line
+                .calendar__items
+                  .calendar__item
+                    .calendar__item-date 12 декабря
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Международное налоговое планирование в 2021 году
+                        .calendar__event-bottom
+                          p.calendar__event-time 14:15 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Активные продажи
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Исламский банкинг
+                        .calendar__event-bottom
+                          p.calendar__event-time 18:30 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                  .calendar__item.calendar
+                    .calendar__item-date 14 декабря
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Как зарегистрировать бизнес в ОАЭ с минимальными вложениями
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться            
+                  .calendar__item.calendar__item_start-purple
+                    .calendar__item-date 20 декабря
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Международное налоговое планирование в 2021 году
+                        .calendar__event-bottom
+                          p.calendar__event-time 14:15 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Активные продажи
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Исламский банкинг
+                        .calendar__event-bottom
+                          p.calendar__event-time 18:30 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+              .calendar__arrow.calendar__arrow_prev.hide
+              .calendar__arrow.calendar__arrow_next
+          .tab__content
+            .calendar
+              .calendar__scrollable
+                .calendar__line
+                .calendar__items
+                  .calendar__item
+                    .calendar__item-date 12 января
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Международное налоговое планирование в 2021 году
+                        .calendar__event-bottom
+                          p.calendar__event-time 14:15 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Активные продажи
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                      .calendar__event 
+                        h3.calendar__event-name Исламский банкинг
+                        .calendar__event-bottom
+                          p.calendar__event-time 18:30 
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+                  .calendar__item
+                    .calendar__item-date 14 января
+                    .calendar__item-events
+                      .calendar__event 
+                        h3.calendar__event-name Как зарегистрировать бизнес в ОАЭ с минимальными вложениями
+                        .calendar__event-bottom
+                          p.calendar__event-time 16:00
+                          p Бизнес-миссии
+                        label.calendar__btn(for="modal1") Записаться
+              .calendar__arrow.calendar__arrow_prev.hide
+              .calendar__arrow.calendar__arrow_next
+      .r60_adaptive
+    .r1.r_bg-e3
+  section.bg.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Прошедшие мероприятия
+      .r50_adaptive
+      .block56-slider
+        .block56-slider__slide
+          .block56
+            .block56__item.block56__item_width2.lazy(data-bg="/dist/img/blocks/block56/man-wide.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location Мастер-класс
+                  .block56__head-date 2 ноября
+                .block56__title Как сделать 
+                  br
+                  | успешный бизнес 
+                  br
+                  | в Дубай, ОАЭ
+                .block56__description Выбор надежной консалтинговой 
+                  br.hide-tn.show-sm-min
+                  | компании — это ключ к успеху 
+                  br.hide-tn.show-sm-min
+                  | становления и ведения Вашего бизнеса
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/woman.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/first.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна     
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/second.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/woman.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/woman.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна
+            .block56__item.block56__item_width2.lazy(data-bg="/dist/img/blocks/block56/man-wide.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location Мастер-класс
+                  .block56__head-date 2 ноября
+                .block56__title Как сделать 
+                  br
+                  | успешный бизнес 
+                  br
+                  | в Дубай, ОАЭ
+                .block56__description Выбор надежной консалтинговой 
+                  br.hide-tn.show-sm-min
+                  | компании — это ключ к успеху 
+                  br.hide-tn.show-sm-min
+                  | становления и ведения Вашего бизнеса
+        .block56-slider__slide
+          .block56
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/first.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна     
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/second.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/woman.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна            
+            .block56__item.block56__item_width2.lazy(data-bg="/dist/img/blocks/block56/man-wide.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location Мастер-класс
+                  .block56__head-date 2 ноября
+                .block56__title Как сделать 
+                  br
+                  | успешный бизнес 
+                  br
+                  | в Дубай, ОАЭ
+                .block56__description Выбор надежной консалтинговой 
+                  br.hide-tn.show-sm-min
+                  | компании — это ключ к успеху 
+                  br.hide-tn.show-sm-min
+                  | становления и ведения Вашего бизнеса
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/woman.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/woman.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна
+            .block56__item.block56__item_width2.lazy(data-bg="/dist/img/blocks/block56/man-wide.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location Мастер-класс
+                  .block56__head-date 2 ноября
+                .block56__title Как сделать 
+                  br
+                  | успешный бизнес 
+                  br
+                  | в Дубай, ОАЭ
+                .block56__description Выбор надежной консалтинговой 
+                  br.hide-tn.show-sm-min
+                  | компании — это ключ к успеху 
+                  br.hide-tn.show-sm-min
+                  | становления и ведения Вашего бизнеса
+        .block56-slider__slide
+          .block56  
+            .block56__item.block56__item_width2.lazy(data-bg="/dist/img/blocks/block56/man-wide.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location Мастер-класс
+                  .block56__head-date 2 ноября
+                .block56__title Как сделать 
+                  br
+                  | успешный бизнес 
+                  br
+                  | в Дубай, ОАЭ
+                .block56__description Выбор надежной консалтинговой 
+                  br.hide-tn.show-sm-min
+                  | компании — это ключ к успеху 
+                  br.hide-tn.show-sm-min
+                  | становления и ведения Вашего бизнеса
+            .block56__item.lazy(data-bg="/dist/img/blocks/block56/woman.jpg")
+              .block56__content
+                .block56__head
+                  .block56__head-location SORP Business 
+                    br.hide-tn.show-sm-min
+                    | School
+                  .block56__head-date 2 ноября
+                .block56__title Антикризисное 
+                  br.hide-tn.show-sm-min
+                  | управление в условиях 
+                  br.hide-tn.show-sm-min
+                  | локдауна
+      .r60_adaptive  
+    .r1.r_bg-e3
+  section.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Видеоматериалы
+      .r50_adaptive
+      .block17
+        .block17__item
+          .block17__video
+            p.block17__duration 2:20
+            img.block17__thumbnail.lazy(data-src="/dist/img/blocks/block17/thumbnails/website-photo.jpg", alt="")
+          .block17__info
+            h3.block17__title Что такое платформа<br class="hide-tn show-sm-min"> SORP Group?
+            p.block17__description Выбор надежной консалтинговой компании — это ключ к успеху становления и ведения Вашего бизнеса
+        .block17__item
+          .block17__video
+            p.block17__duration 1:54
+            img.block17__thumbnail.lazy(data-src="/dist/img/blocks/block17/thumbnails/office-photo.jpg", alt="")
+          .block17__info
+            h3.block17__title Комфортабельный<br class="hide-tn show-sm-min"> бизнес-центр в Дубае
+            p.block17__description Выбор надежной консалтинговой компании — это ключ к успеху становления и ведения Вашего бизнеса
+        .block17__item
+          .block17__video
+            p.block17__duration 1:20
+            img.block17__thumbnail.lazy(data-src="/dist/img/blocks/block17/thumbnails/presentation-photo.jpg", alt="")
+          .block17__info
+            h3.block17__title Бизнес-школа<br class="hide-tn show-sm-min"> SORP
+            p.block17__description SORP — образовательная платформа нового поколения, объединяющая академические знания, опыт и уникальный нетворкинг
+      .r60_adaptive
+    .r1.r_bg-e3
+
+  section.bg.bg_red
+    .r30
+    .r5
+    .container
+      .feedback-block
+        h3.feedback-block__text Узнайте о преимуществах организации бизнеса в ОАЭ, заказав 
+          br
+          | бесплатную консультацию специалиста
+        label.feedback-block__btn(for="modal1") Получить решение
+    .r30
+    .r5
+  section.bg_fa
+    .container
+      .r60_adaptive
+      h2.title Смотрите также
+      .r50_adaptive
+      .block17
+        .block17__item
+          .block17__image
+            img.block17__thumbnail.lazy(data-src="/dist/img/blocks/block17/thumbnails/thumbnail-accelerate.png", alt="")
+          .block17__info
+            h3.block17__title Бизнес-<br class="hide-tn show-sm-min"> акселлератор?
+            p.block17__description Выбор надежной консалтинговой 
+              br.hide-tn.show-sm-min
+              | компании — это ключ к успеху 
+              br.hide-tn.show-sm-min
+              | становления и ведения Вашего 
+              br.hide-tn.show-sm-min
+              | бизнеса
+        .block17__item
+          .block17__image
+            img.block17__thumbnail.lazy(data-src="/dist/img/blocks/block17/thumbnails/thumbnail-growth.png", alt="")
+          .block17__info
+            h3.block17__title Центр<br class="hide-tn show-sm-min"> бизнес-экспертизы
+            p.block17__description Выбор надежной консалтинговой 
+              br.hide-tn.show-sm-min
+              | компании — это ключ к успеху 
+              br.hide-tn.show-sm-min
+              | становления и ведения Вашего 
+              br.hide-tn.show-sm-min
+              | бизнеса
+        .block17__item
+          .block17__image
+            img.block17__thumbnail.lazy(data-src="/dist/img/blocks/block17/thumbnails/thumbnail-office.png", alt="")
+          .block17__info
+            h3.block17__title SORP бизнес-центр в<br class="hide-tn show-sm-min"> Дубае
+            p.block17__description БЦ для локальных (mainland and free 
+              br.hide-tn.show-sm-min
+              | zone) и международных компаний для 
+              br.hide-tn.show-sm-min
+              | размещения персонала и регистрации 
+              br.hide-tn.show-sm-min
+              | бизнеса
+      .r60_adaptive
+    .r1.r_bg-e3
+    
+  section.bg_f9
+      .r60_adaptive
+      .container
+        .feedback-bigblock.feedback-bigblock_no-bg
+          .flex.flex_width2
+            .flex__item
+              .feedback-bigblock__info-box.borderline.borderline_red.borderline_border10.borderline_pattern-form
+                h3.feedback-bigblock__info-title Примените новые 
+                  br.hide-tn.show-md-min 
+                  | возможности для 
+                  br.hide-tn.show-md-min 
+                  | старта и развития 
+                  br.hide-tn.show-md-min 
+                  | бизнеса в ОАЭ
+                .feedback-bigblock__info-text
+                  p.feedback-bigblock__info-text-item Оставьте заявку и получите бесплатную 
+                    br.hide-tn.show-md-min 
+                    | консультацию нашего специалиста в течении 20 
+                    br.hide-tn.show-md-min 
+                    | минут.
+                  p.feedback-bigblock__info-text-item Уже сегодня вы сможете сделать первый шаг на 
+                    br.hide-tn.show-md-min 
+                    | пути к созданию успешного бизнеса.
+                  br
+                  br
+
+            .flex__item
+              .feedback-bigblock__form
+                h4.feedback-bigblock__form-title Получить бесплатную <br class="hide-tn show-sm-min">консультацию
+
+                form.form-block
+                  input.callOrderReason(type='hidden', name='reason')
+                  input.page(type='hidden', name='page', value='[[~[[*id]]? &scheme=`full`]]')
+                  input.site-message(type='text', name='name', value='')
+                  input.site-message(type='text', name='firstname', value='')
+                  input.site-message(type='text', name='lastname', value='')
+                  .form-block__item
+                    label.form-block__label(for='fio3') Ваше имя
+                    input#fio3.form-block__input(type='text' name='fio3' value='')
+                  .form-block__item
+                    label.form-block__label(for='phone3') Телефон
+                    input#phone3.form-block__input(type='text' name='phone3' value='' placeholder="+")
+                  .form-block__item
+                    label.form-block__label(for='email3') Email
+                    input#email3.form-block__input(type='email' name='email3' value='' placeholder="")
+                  .form-block__item
+                    input.btn.btn_radius5.btn_w100.btn_h70.btn_font-s20(type='submit' value='Получить решение') 
+      .r60_adaptive
+  
+  //- модальное окно (нужно починить top: 8vh вместо 15vh)
+  input#modal4.modal__checkbox(type="checkbox")
+  label.bg_modal(for="modal4")
+  .modal
+    label.modal__close(for='modal4')
+    .block56_modal.lazy(data-bg="/dist/img/blocks/block56/modal/first-fullsize.png")
+      .block56__modal-content
+        .block56__modal-text-container
+          h2.block56__modal-title Регистрация бизнеса в Объединенных Арабских Эмиаратах
+          .r30
+          p.block56__modal-description Таким образом начало повседневной работы по формированию позиции требуют от нас анализа направлений прогрессивного развития. Разнообразный и богатый опыт постоянное 
+            br.hide-tn.show-md-min
+            | информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке форм развития. 
+          br
+          p.block56__modal-description Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. 
+          br
+          p.block56__modal-description Повседневная практика показывает, что консультация с широким 
+            br.hide-tn.show-md-min
+            | активом обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.
+    .modal-gallery
+      img.lazy.modal-gallery__item(data-src="/dist/img/blocks/Utilities/modal-gallery/1.jpg", alt="")
+      img.lazy.modal-gallery__item(data-src="/dist/img/blocks/Utilities/modal-gallery/2.jpg", alt="")
+      img.lazy.modal-gallery__item(data-src="/dist/img/blocks/Utilities/modal-gallery/3.jpg", alt="")
+      img.lazy.modal-gallery__item(data-src="/dist/img/blocks/Utilities/modal-gallery/4.jpg", alt="")
+      img.lazy.modal-gallery__item(data-src="/dist/img/blocks/Utilities/modal-gallery/5.jpg", alt="")
+      img.lazy.modal-gallery__item(data-src="/dist/img/blocks/Utilities/modal-gallery/6.jpg", alt="")

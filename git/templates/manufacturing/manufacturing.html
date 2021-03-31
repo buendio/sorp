@@ -1,0 +1,463 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.1196 27.1335C16.8904 27.1335 16.6805 27.0013 16.5822 26.7926L11.576 16.1526L1.1548 11.3626C0.936898 11.2625 0.800633 11.041 0.809242 10.8012C0.818149 10.5613 0.970445 10.3505 1.19518 10.2668L25.9284 1.03191C26.1449 0.951456 26.3892 1.00341 26.5534 1.1661C26.7181 1.32878 26.7727 1.57252 26.6944 1.79013L17.678 26.7416C17.5966 26.9675 17.387 27.1216 17.1472 27.1329C17.1377 27.1332 17.1285 27.1335 17.1196 27.1335ZM2.94793 10.8798L12.2686 15.1643C12.396 15.2228 12.4984 15.3244 12.5581 15.4508L17.0474 24.9921L25.1414 2.59347L2.94793 10.8798Z"></path>
+        <path d="M12.021 16.2972C11.869 16.2972 11.7173 16.2393 11.6012 16.1233C11.3694 15.8917 11.3694 15.5156 11.6012 15.2837L25.7162 1.16848C25.948 0.936618 26.3239 0.936618 26.5557 1.16848C26.7876 1.40034 26.7876 1.77618 26.5557 2.00804L12.4408 16.1233C12.3247 16.2393 12.173 16.2972 12.021 16.2972Z"></path>
+    </symbol>
+</svg>
+
+<style>
+    .block-snake__icon-wrap { background-color: #d64356; display: flex; align-items: center; justify-content: center; border-radius: 50%; width: 60px; height: 60px; min-width: 60px; min-height: 60px; margin-right: 30px; }
+    .block-snake__icone { width: 32px; height: 32px; }
+
+    @media (min-width: 770px) {
+        .block-snake__icon-wrap { width: 85px; height: 85px; margin-bottom: 35px; }
+        .block-snake__icone { width: 45px; height: 45px; } }
+</style>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+            <div class="first-screen__box">
+                <div class="first-screen__logo-box first-screen__logo-box_new">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">Организация производства в ОАЭ</h1>
+                    <p class="first-screen__text">Алгоритм успешного старта и релокации производства в Арабских Эмиратах с поддержкой экспертов. Воспользуйтесь государственной поддержкой производственного бизнеса в ОАЭ</p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--         block-frames             -->
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">ОАЭ — идеальная страна для открытия производства. Благодаря выгодному расположению, высокой покупательской способности и поддержке местных производителей, это направление бизнеса сегодня перспективно. Мы предлагаем полный комплекс услуг от регистрации до системной поддержки и ведения производственной деятельности на территории Арабских Эмиратов</div>
+        </div>
+        <div class="r60_adaptive"></div>        
+    </div>
+</section>
+
+<!--         Преимущества          -->
+<section id="scrollBlock1" class="z-idx3 bg-FF bg_wave">
+    <div class="container_bem">
+    <div class="r30"></div>
+    <h2 class="title">Какие преимущества Вы получаете, ведя производственный бизнес в ОАЭ</h2>
+    <div class="r50_adaptive"></div>
+    <div class="block18 block18_width3">
+        <div class="block18__item">
+            <div class="block18__icon-wrap">
+                <img src="/git/img/contour-only/black-and-red/goverment-house.svg" alt="" class="block18__icon" loading="lazy">
+            </div>                
+            <div class="block18__text">
+                <div class="block18__title">Лояльность государства</div>
+                <div class="block18__description">Местные производители <br class="hide-sm-min"> поддерживаются государством</div>
+            </div>
+        </div>
+        
+        <div class="block18__item">
+            <div class="block18__icon-wrap">
+                <img src="/git/img/contour-only/black-and-red/ship-docker.svg" alt="" class="block18__icon" loading="lazy">
+            </div>
+            <div class="block18__text">
+                <div class="block18__title">Торговый хаб</div>
+                <div class="block18__description">Важнейший торгово-логистический <br class="hide-sm-min">узел между Западом и Востоком</div>
+            </div>
+        </div>
+        
+        <div class="block18__item">            
+            <div class="block18__icon-wrap">
+                <img src="/git/img/contour-only/black-and-red/coins-slim-2-col.svg" alt="" class="block18__icon" loading="lazy">
+            </div>
+            <div class="block18__text">
+                <div class="block18__title">Репатриация капитала</div>
+                <div class="block18__description">Свободный возврат вложенного и <br class="hide-sm-min">заработанного капитала без налогов</div>
+            </div>
+        </div>
+        
+        <div class="block18__item">
+            <div class="block18__icon-wrap">                
+                <img src="/git/img/contour-only/black-and-red/partners.svg" alt="" class="block18__icon" loading="lazy">
+            </div>
+            <div class="block18__text">
+                <div class="block18__title">Простота найма</div>
+                <div class="block18__description">Возможность привлечь иностранный квалифицированный персонал</div>
+            </div>
+        </div>
+        
+        <div class="block18__item">
+            
+            <div class="block18__icon-wrap">
+                <img src="/git/img/contour-only/black-and-red/stock-building.svg" alt="" class="block18__icon" loading="lazy">
+            </div>
+            <div class="block18__text">
+                <div class="block18__title">Готовые площади</div>
+                <div class="block18__description">Доступность обустроенных индустриальных зон</div>
+            </div>
+        </div>
+        
+        <div class="block18__item">
+            <div class="block18__icon-wrap">
+                <img src="/git/img/contour-only/black-and-red/coins.svg" alt="" class="block18__icon" loading="lazy">
+            </div>
+            <div class="block18__text">
+                <div class="block18__title">Отсутствие пошлин</div>
+                <div class="block18__description">Импорт сырья не облагается <br class="hide-sm-min">таможенными пошлинами</div>
+            </div>
+        </div>
+        
+        <div class="block18__item">
+            <div class="block18__icon-wrap">
+                <img src="/git/img/contour-only/black-and-red/guy.svg" alt="" class="block18__icon" loading="lazy" style="width: 36px !important;">
+            </div>
+            <div class="block18__text">
+                <div class="block18__title">Рынки сбыта</div>
+                <div class="block18__description">Беспошлинная торговля со странами Персидского Залива</div>
+            </div>
+        </div>
+        
+        <div class="block18__item">
+            <div class="block18__icon-wrap">
+                <img src="/git/img/contour-only/black-and-red/buying-hand.svg" alt="" class="block18__icon" loading="lazy">
+            </div>
+            <div class="block18__text">
+                <div class="block18__title">Налоговые выгоды</div>
+                <div class="block18__description">Отсутствие подоходных и<br class="hide-sm-min"> корпоративных налогов</div>
+            </div>
+        </div>
+        
+        <div class="block18__item">
+            <div class="block18__icon-wrap">
+                <img src="/git/img/contour-only/black-and-red/percentage-finance.svg" alt="" class="block18__icon" loading="lazy">
+            </div>
+
+            <div class="block18__text">
+                <div class="block18__title">Инструменты финансирования</div>
+                <div class="block18__description">Доступные схемы кредитования и привлечения инвестиций</div>
+            </div>
+        </div>
+    </div>
+    <div class="r60_adaptive"></div>
+</div>
+</section>
+
+<!--         ФОС          -->
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Узнайте о преимуществах открытия и релокации Вашего производства в ОАЭ</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Получить консультацию</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--        Решения            -->
+<section id="scrollBlock2" class="bg-FF z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Решения SORP для ведения успешного производственного бизнеса в ОАЭ</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block14">
+            <div class="block14__item">
+                <div class="block14__title">Подготовка индивидуальной бизнес-модели</div>
+                <div class="block14__text">Основа для оптимального лицензирования и запуска производства, создания торговой сети, выхода на международный рынок</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Консалтинговое сопровождение бизнеса</div>
+                <div class="block14__text">Мы проведем анализ рынка, конкурентной среды, законодательства. Подберём площади для создания и размещения бизнеса</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Регистрация компании и лицензирование</div>
+                <div class="block14__text">Выбор места инкорпорации и организационно-правовой формы, получение разрешений, прохождение лицензионных процедур «под ключ»</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Открытие банковских <br class="hide-sm-min"> счетов</div>
+                <div class="block14__text">Сотрудничество с ведущими банками ОАЭ и понимание процедур их комплаенса - гарантия профессионального сопровождения</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Аутсорсинг основных <br class="hide-sm-min"> бизнес-процессов</div>
+                <div class="block14__text">Иммиграционная, правовая, налоговая, бухгалтерская и PRO поддержка от SORP — экономия затрат на содержание штата сотрудников</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Сопровождение импорта сырья и оборудования</div>
+                <div class="block14__text">Оперативно пройдем все этапы получения разрешения на ввоз, сертификации, таможенного оформления, логистические решения</div>
+            </div>            
+        </div>
+        <div class="r50_adaptive"></div>
+        <a href="#" class="btn btn_center btn_border2 btn_white btn_space-between" onclick="toggleModal('form01');">
+            Получить консультацию
+            <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+            <use href="#btn__icon-modal"></use>
+            </svg>
+        </a>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="r1 r_bg-gray"></div>
+
+<section id="scrollBlock3" class="bg-F9 z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Этапы организации производственного бизнеса в ОАЭ</h2>
+        <div class="r50_adaptive"></div>        
+        <div class="block6 block6_padding">
+            <div class="block6__item">
+                <div class="block6__icon">
+                    <img class="block6__icon-img" src="/git/img/contour-only/white/magnifier.svg" loading="lazy">
+                </div>
+                <div class="block6__text-container">
+                    <div class="block6__title">
+                        Выбор работающей бизнес-модели
+                    </div>
+                    <div class="block6__text">
+                        Необходимо определить перспективные для бизнеса рынки и территории и убедиться, что создаваемая компания сможет работать на них без каких-либо ограничений. Для реализации произведенных товаров на внутренний рынок ОАЭ требуется регистрация локальной компании
+                    </div>
+                    <div class="r20"></div>
+                </div>
+            </div>
+            <div class="block6__item">
+                <div class="block6__icon">                    
+                    <img class="block6__icon-img" src="/git/img/contour-only/white/doc.svg" loading="lazy">
+                </div>
+                <div class="block6__text-container">
+                    <div class="block6__title">
+                        Получение предварительного разрешения на регистрацию производства
+                    </div>
+                    <div class="block6__text">
+                        Изучение требований, которые предъявляются ведомствами к открытию производства. Подготовка проекта для Министерства Экономики, которое после утверждения выдает предварительное разрешение и формирует перечень необходимых согласований для регистрации производства
+                    </div>
+                    <div class="r20"></div>
+                </div>
+            </div>
+            <div class="block6__item">
+                <div class="block6__icon">
+                    <img class="block6__icon-img" src="/git/img/contour-only/white/todolist.svg" loading="lazy">
+                </div>
+                <div class="block6__text-container">
+                    <div class="block6__title">
+                        Получение дополнительных разрешений
+                    </div>
+                    <div class="block6__text">
+                        Получение согласований в соответствующих ведомствах, указанных в предварительном разрешении: Муниципалитете, Департаменте Гражданской Обороны, Департаменте строительства и других, соответствующих профилю производственной деятельности   
+                    </div>
+                    <div class="r20"></div>
+                </div>
+            </div>
+            
+            <div class="block6__item">
+                <div class="block6__icon">
+                    <img class="block6__icon-img" src="/git/img/contour-only/white/certificate.svg" loading="lazy">
+                </div>
+                <div class="block6__text-container">
+                    <div class="block6__title">
+                        Получение лицензии и регистрация компании
+                    </div>
+                    <div class="block6__text">
+                        После получения согласований в соответствующих ведомствах необходимо выполнить требования законодательства по регистрации выбранного типа юридического лица, зарегистрировав его по месту расположения создаваемого производства
+                    </div>
+                    <div class="r20"></div>
+                </div>
+            </div>
+            <div class="block6__item">
+                <div class="block6__icon">
+                    <img class="block6__icon-img" src="/git/img/contour-only/white/diploma.svg">                    
+                </div>
+                <div class="block6__text-container">
+                    <div class="block6__title">
+                        Сертификация продукции
+                    </div>
+                    <div class="block6__text">
+                        После запуска необходимо пройти процедуру сертификации, которая может включать лабораторные исследования на соответствие стандартам, экспертизу в Агентстве по Стандартизации и Метрологии (ESMA), регистрацию в Муниципалитете, Министерстве Здравоохранения, Департаменте Гражданской Обороны и других ведомствах
+                    </div>
+                    <div class="r20"></div>
+                </div>
+            </div>
+            <div class="block6__item">
+                <div class="block6__icon">
+                    <img class="block6__icon-img" src="/git/img/contour-only/white/network.svg" loading="lazy">
+                </div>
+                <div class="block6__text-container">
+                    <div class="block6__title">
+                        Оказание качественной поддержки компании
+                    </div>
+                    <div class="block6__text">
+                        Финальным этапом станет выбор сервисной компании, которая окажет качественное административное, юридическое и PRO сопровождение, бухгалтерский и налоговый учет, обеспечит поддержку при иммиграционных процедурах и регистрации иностранных сотрудников, открытии банковских счетов и т. д.
+                    </div>
+                    <div class="r20"></div>
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<!--         ФОС          -->
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Воспользуйтесь нашим экспертным мнением и получите индивидуальное предложение по открытию производства в ОАЭ</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Получить консультацию</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section id="scrollBlock4" class="bg-FF bg_wave-center z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Что нужно учитывать при размещении производства в ОАЭ?</h2>
+        <div class="r30"></div>
+        <div class="description">На локальном рынке Вы можете получить любую индустриальную лицензию. Бизнес не ограничен территориально, что позволяет найти оптимальный по цене вариант аренды, покупки земли или юнита. Свободные экономические зоны отличаются между собой специализацией, стоимостью обслуживания компании, процедурой получения лицензии и ставками арендной платы.</div>
+        <div class="r50_adaptive"></div>
+        <div class="block-snake block-snake_line-right">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/delivery-truck.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Требования к размещению</div>
+                    Площадь, технические условия, потребление и условия хранения
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/globe.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Сбыт продукции</div>
+                    Выбор юрисдикции для реализации <br class="hide-min-sm"> на внутренний или внешний рынки
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/ship-docker.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Поставки сырья</div>
+                    Импорт сырья из-за рубежа или приобретение на внутреннем рынке
+                </div>
+            </div>
+        </div>
+        <div class="block-snake">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/partners-2.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Количество работников</div>
+                    Квоты на приглашенных иностранных специалистов или рабочих с местного рынка труда
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/plane.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Пути экспорта готовой продукции</div>
+                    Логистическая доступность морских портов и аэропортов определяет <br class="hide-min-sm"> место открытия производства
+                </div>
+            </div>        
+        </div>
+        <div class="r50_adaptive"></div>
+        <a href="#" class="btn btn_center btn_border2 btn_white btn_space-between" onclick="toggleModal('form01');">
+            Получить консультацию
+            <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+            <use href="#btn__icon-modal"></use>
+            </svg>
+        </a>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="r1 r_bg-gray"></div>
+
+<!-- Почему SORP - Slider -->
+<section class="bg-F9" id="scrollBlock5">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">Многолетний опыт SORP – гарантия успеха Вашего  производства в ОАЭ</h2>
+            
+        <div id="vslideouter" class="slider_02 text_slider">
+            <div class="slide-elem tslider-item-new flex_column first">
+                <div class="back"></div>
+                <div class="tslider-item__number">Бизнес сет-ап</div>
+                <div class="tslider-item__text wow fadeInUp">Наличие собственных ресурсов Sorp Group гарантируют высокую скорость получения согласований и лицензирования</div>
+            </div>
+
+            <div class="slide-elem tslider-item-new flex_column second">
+                <div class="back"></div>
+                <div class="tslider-item__number">Статус эксперта</div>
+                <div class="tslider-item__text">Мы обладаем профессиональными знаниями в области организации производственного бизнеса, а также инструментами для решения вопросов повышенной сложности    </div>
+            </div>
+
+            <div class="text_slider__inner">                
+                <div class="slide-elem tslider-item-new flex_column third">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">Правовая поддержка</div>
+                    <div class="tslider-item__text">Корпоративные юристы SORP Group и стратегические партнёрства с лучшими адвокатами ОАЭ и всего мира обеспечат оперативное правовое сопровождение бизнеса</div>
+                </div>
+                                
+                <div class="slide-elem tslider-item-new flex_column">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">15 лет опыта на международной арене</div>
+                    <div class="tslider-item__text">В области регистрации, сопровождения компаний и решения бизнес-задач клиентов для организации прибыльного производства в ОАЭ</div>
+                </div>
+                
+                <div class="slide-elem tslider-item-new flex_column">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">Локальный номинальный сервис</div>
+                    <div class="tslider-item__text">Предоставляем надежных локальных партнеров, присутствие которых  является обязательным требованием законодательства при формировании локальных компаний</div>
+                </div>
+                
+                <div class="slide-elem tslider-item-new flex_column">
+                    <div class="back"></div>
+                    <div class="tslider-item__number">Партнёрская сеть логистических компаний</div>
+                    <div class="tslider-item__text">Налаженные контакты с крупнейшими перевозчиками и таможенными брокерами для комплексных решений по таможенному оформлению, транспортировке и хранению</div>
+                </div>
+                <div class="tns-controls">
+                    <div class="button" onclick="slideup()"></div>
+                    <div class="button" onclick="slidedown()"></div>
+                </div>
+            </div>
+        </div>    
+	</div>
+</section>
+
+<section class="bg-F9" id="scrollBlock6">
+    <div class="r1 r_bg-gray"></div>
+    <div class="container_bem">
+      <div class="r60_adaptive"></div>
+      <div class="registration">
+        <div class="registration__info">
+          <div class="registration__title">Откройте производственный бизнес в ОАЭ</div>
+          <div class="r20"></div>
+          Отправьте заявку и получите развернутую консультацию специалиста по перспективам открытия и релокации Вашего бизнеса в ОАЭ.
+          <br><br>
+          Сократите расходы на логистику и получите доступ к широким рынкам сбыта Азии, Африки и Европы.
+          <br><br>
+          Уже сегодня вы сможете сделать первый шаг на пути к организации производства товаров под престижной маркой Сделано в ОАЭ.
+        </div>
+        <div class="registration__form-block">
+            <div class="registration__title">Открыть производство</div>
+            <div class="r10"></div>
+            {$_modx->getChunk('form4_new')}
+        </div>
+      </div>
+      <div class="r60_adaptive"></div>
+    </div>
+</section>
+{/block}
+{include 'footer_new'}

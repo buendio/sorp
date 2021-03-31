@@ -1,0 +1,60 @@
+.about-company {
+  display: flex; flex-wrap: wrap;
+
+  &__content { margin-bottom: 20px; }
+  &__left, &__right { width: 100%; }
+  &__left { margin-bottom: 50px; }
+  &__title { color: #2B2F3B; font-size: 36px; line-height: 1.33; font-weight: 900; margin-bottom: 24px; }
+  &__text { color: #2d2d2d; font-style: italic; font-size: 15px; line-height: 1.62; font-weight: 300; }
+  &__text p { margin-bottom: 15px; }
+  &__text p:last-child { margin-bottom: 0; }
+  &__play { position: absolute; bottom: 0; left: 0; z-index: 3; cursor: pointer; width: 81px; height: 81px; background: #524DD2; }
+  &__play-icon { position: absolute; top: 30px; left: 30px; width: 19px; height: 21px;background: url("data:image/svg+xml,%3Csvg width='19' height='21' viewBox='0 0 20 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.7524 9.07438L3.64106 0.351548C3.29501 0.151673 2.90994 0.0526123 2.52356 0.0526123C2.1374 0.0526123 1.75233 0.151892 1.40671 0.351767C0.71482 0.750641 0.289429 1.48834 0.289429 2.28718V19.7348C0.289429 20.5334 0.714601 21.2707 1.40671 21.67C1.75233 21.8699 2.1374 21.9687 2.52356 21.9687C2.90994 21.9687 3.29501 21.8699 3.64106 21.67L18.7524 12.945C19.4435 12.5457 19.8691 11.8084 19.8691 11.0094C19.8691 10.211 19.4437 9.47369 18.7524 9.07438Z' fill='white'/%3E%3C/svg%3E%0A") center/auto no-repeat;  animation: pulse 2s ease-in-out 1s infinite; }
+  &__duration { position: absolute; bottom: 38px; right: 35px; z-index: 20; color: rgba(256, 256, 256, .8); font-size: 17px; font-weight: 500; line-height: 20px; }
+  &__info { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  &__author-box { width: 100%; margin-top: 20px; text-align: left; }
+  &__author { font-size: 18px; line-height: 24px; }
+  &__profess { color: #87849A; font-size: 14px; line-height: 1.7; }
+
+  &__img-box { position: relative; border: 9px solid #F1F6FB; display: block; }
+  &__img-box:after, &__img-box:before { content: ''; position: absolute; width: 90px; height: 90px; background: #CC4052; }
+  &__img-box:after { top: -9px; right: -9px; }
+  &__img-box:before { bottom: -9px; left: -9px; }
+  &__img { position: relative; z-index: 1; width: 100%;  object-fit: cover; }
+  &__img-box_gray { border-color: #EAEAEA;}
+}
+
+@media (min-width: screen-xs-min) {
+  .about-company {
+    &__img { height: 331px; }
+  }
+}
+
+@media (min-width: screen-sm-min) {
+  .about-company {
+    margin: 0 -10px;
+
+    &__left  { width: 50%; margin-bottom: 0; }
+    &__right { width: 50%; }
+    &__left, &__right { padding: 0 10px; }
+    &__text { font-size: 16px; }
+  }
+}
+
+@media (min-width: screen-md-min) {
+  .about-company {
+    &__author-box { width: auto; margin: 0 0 0 30px; }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

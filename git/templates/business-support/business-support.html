@@ -1,0 +1,642 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.1196 27.1335C16.8904 27.1335 16.6805 27.0013 16.5822 26.7926L11.576 16.1526L1.1548 11.3626C0.936898 11.2625 0.800633 11.041 0.809242 10.8012C0.818149 10.5613 0.970445 10.3505 1.19518 10.2668L25.9284 1.03191C26.1449 0.951456 26.3892 1.00341 26.5534 1.1661C26.7181 1.32878 26.7727 1.57252 26.6944 1.79013L17.678 26.7416C17.5966 26.9675 17.387 27.1216 17.1472 27.1329C17.1377 27.1332 17.1285 27.1335 17.1196 27.1335ZM2.94793 10.8798L12.2686 15.1643C12.396 15.2228 12.4984 15.3244 12.5581 15.4508L17.0474 24.9921L25.1414 2.59347L2.94793 10.8798Z"></path>
+        <path d="M12.021 16.2972C11.869 16.2972 11.7173 16.2393 11.6012 16.1233C11.3694 15.8917 11.3694 15.5156 11.6012 15.2837L25.7162 1.16848C25.948 0.936618 26.3239 0.936618 26.5557 1.16848C26.7876 1.40034 26.7876 1.77618 26.5557 2.00804L12.4408 16.1233C12.3247 16.2393 12.173 16.2972 12.021 16.2972Z"></path>
+    </symbol>
+    <symbol id="btn__icon" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.291748 10.7884L1.27464 11.6392L1.76608 11.2126L7.82088 5.98838L1.76608 0.764161L1.27464 0.337599L0.291748 1.18838L0.783192 1.6126L5.85239 5.98838L0.783192 10.3642L0.291748 10.7884ZM5.84968 10.7884L6.83256 11.6392L7.324 11.2126L13.3788 5.98838L7.324 0.764161L6.83256 0.337599L5.84968 1.18838L6.34112 1.6126L11.4103 5.98838L6.34112 10.3642L5.84968 10.7884Z"></path>
+    </symbol>
+    <symbol id="bl11-percentage" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00226 7.90503C5.00226 6.35815 5.50031 5.09253 6.49641 4.10815C7.4925 3.11206 8.79914 2.61401 10.4163 2.61401C12.057 2.61401 13.3695 3.11206 14.3538 4.10815C15.3499 5.09253 15.848 6.38745 15.848 7.99292V9.25854C15.848 10.7937 15.3499 12.0535 14.3538 13.0378C13.3695 14.0222 12.0687 14.5144 10.4515 14.5144C8.86945 14.5144 7.56281 14.0339 6.53156 13.073C5.51203 12.1003 5.00226 10.7937 5.00226 9.15308V7.90503ZM7.99055 9.25854C7.99055 10.0671 8.2132 10.7234 8.65851 11.2273C9.11555 11.7195 9.7132 11.9656 10.4515 11.9656C11.178 11.9656 11.764 11.7195 12.2093 11.2273C12.6546 10.7234 12.8773 10.0437 12.8773 9.18823V7.90503C12.8773 7.09644 12.6487 6.44019 12.1917 5.93628C11.7464 5.43237 11.1546 5.18042 10.4163 5.18042C9.67805 5.18042 9.08625 5.43823 8.64094 5.95386C8.20734 6.45776 7.99055 7.12573 7.99055 7.95776V9.25854ZM17.307 22.3015C17.307 20.7312 17.8167 19.4597 18.8362 18.4871C19.8558 17.5144 21.1566 17.0281 22.7386 17.0281C24.3323 17.0281 25.6331 17.5144 26.6409 18.4871C27.6605 19.4597 28.1702 20.7722 28.1702 22.4246V23.6726C28.1702 25.196 27.678 26.4558 26.6937 27.4519C25.721 28.4363 24.4144 28.9285 22.7737 28.9285C21.1331 28.9285 19.8089 28.4421 18.8011 27.4695C17.805 26.4851 17.307 25.1902 17.307 23.5847V22.3015ZM20.2952 23.6726C20.2952 24.4695 20.5237 25.1257 20.9808 25.6414C21.4495 26.1453 22.0472 26.3972 22.7737 26.3972C23.5237 26.3972 24.1097 26.157 24.5316 25.6765C24.9652 25.1843 25.182 24.4988 25.182 23.6199V22.3015C25.182 21.4812 24.9534 20.825 24.4964 20.3328C24.0394 19.8406 23.4534 19.5945 22.7386 19.5945C22.012 19.5945 21.4202 19.8406 20.9632 20.3328C20.5179 20.825 20.2952 21.5046 20.2952 22.3718V23.6726ZM11.3304 26.6609L9.13312 25.3953L21.6312 5.39136L23.8284 6.65698L11.3304 26.6609Z" />        
+    </symbol>
+</svg>
+<style>
+    .block1 .block1__item:hover .block1__head { background-color: #[[*link_attributes]]; }
+</style>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+            <div class="first-screen__box">
+                <div class="first-screen__logo-box first-screen__logo-box_new">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">Поддержка бизнеса в ОАЭ</h1>
+                    <p class="first-screen__text">Ключ к созданию успешного бизнеса в Арабских Эмиратах — это качественные<br class="hide-sm-min"> аутсорсинговые услуги от профессионалов SORP Group для Вашей компании</p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">Сотрудничество с SORP Group в составе высококвалифицированных специалистов по юридическому, административному, бухгалтерскому и налоговому сопровождению, готовых оказать качественную и оперативную поддержку Вашему бизнесу в рамках аутсорсинговых услуг, позволит Вам существенно сэкономить на содержании целого штата высокооплачиваемых сотрудников</div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <div class="r30 hide-sm-min"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock1" class="bg bg-F9">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">SORP Group предлагает комплексные решения для вашего бизнеса</h2>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block1">
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01')">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Юридическое <br class="hide-sm-min">сопровождение</div>
+                        <div class="block1__head-text">
+                            Оперативная подготовка и профэкспертиза документов, коммуникации с госорганами ОАЭ, проверка контрагентов
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Ведение бизнеса в незнакомой<br class="hide-sm-min"> стране требует знания местного законодательства для принятия верных бизнес-решений.</p>
+                        <p class="block1__content-text-p">Опытные юристы SORP решат любые правовые вопросы Вашего бизнеса в рамках юридических консультаций, проверки договоров, взаимодействия с регулирующими органами ОАЭ.</p>                                                
+                    </div>
+                    <a href="#" onclick="toggleModal('form01')" class="block1__btn btn btn_white btn_border1">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01')">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Открытие и ведение<br class="hide-sm-min"> банковских счетов</div>
+                        <div class="block1__head-text">
+                            Полная клиентская поддержка по открытию и сопровождению корпоративных счетов в банках Арабских Эмиратов
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Современные реалии ведения<br class="hide-sm-min"> бизнеса таковы, что открытие и сохранение расчетного счета <br class="hide-sm-min">является первостепенной задачей. </p>
+                        <p class="block1__content-text-p">Многолетнее сотрудничество SORP <br class="hide-sm-min">с банками ОАЭ, знание их требований комплаенса, процедур KYC обеспечат Вам получение надежного расчетного инструмента для Вашего бизнеса.</p>                                                
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1" onclick="toggleModal('form01')">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01')">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Менеджмент<br class="hide-sm-min"> бизнес-процессов</div>
+                        <div class="block1__head-text">
+                            Административная поддержка, операционное управление и ревизионный и антикризисный контроль Вашего бизнеса в ОАЭ
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Обеспечить значительный рост Вашего бизнеса может верная настройка и профессиональный менеджмент бизнес-процессов. </p>
+                        <p class="block1__content-text-p">Эксперты SORP Group помогут Вам выстроить бизнес с нуля, наладить <br class="hide-sm-min"> его четкое операционное управление <br class="hide-sm-min">и оперативно реагировать на любые внутренние и внешние бизнес-риски.</p>                                                
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1" onclick="toggleModal('form01')">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/license-renewal/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Продление <br class="hide-sm-min">лицензии</div>
+                        <div class="block1__head-text">
+                            Квалифицированная помощь <br class="hide-sm-min">в осуществлении процедуры продления и выполнении всех требований госорганов ОАЭ
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Своевременное ежегодное продление лицензии на ведение деятельности в ОАЭ является обязанностью Вашего бизнеса. </p>
+                        <p class="block1__content-text-p">Опыт наших специалистов, знание всех процедур продления и наличие собственной инфраструктуры SORP обеспечат Вам бюджетное решение данного вопроса.</p>
+                    </div>
+                    <a href="/license-renewal/" class="block1__btn btn btn_white btn_border1">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/documents-legalization/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Легализация <br class="hide-sm-min">документов</div>
+                        <div class="block1__head-text">
+                            Помощь бизнесу в консульской легализации любых документов, выданных как в Эмиратах, так и за рубежом
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Многоступенчатая процедура  легализации документов в ОАЭ зачастую требует значительных временных и денежных затрат. </p>
+                        <p class="block1__content-text-p">Тесное сотрудничество SORP Group <br class="hide-sm-min"> с госорганами Эмиратов и наличие международной агентсткой сети позволяет провести легализацию документов быстро и эффективно.</p>
+                    </div>
+                    <a href="/documents-legalization/" class="block1__btn btn btn_white btn_border1">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/taxes-and-accounting/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Налоги <br class="hide-sm-min">и бухгалтерский учёт</div>
+                        <div class="block1__head-text">
+                            Постановка на налоговый учет <br class="hide-sm-min">в FTA. Ведение  бухгалтерских операций, подготовка и подача налоговых деклараций, аудит
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Важной задачей для бизнеса в ОАЭ является получение надлежащего бухгалтерского сопровождения и подготовки корректной отчетности. </p>
+                        <p class="block1__content-text-p">Эксперты SORP обеспечат бизнесу качественное ведение бухучёта и выполнение требований государства по своевременной сдаче налоговой отчетности.</p>
+                    </div>
+                    <a href="/taxes-and-accounting/" class="block1__btn btn btn_white btn_border1" onclick="toggleModal('form01')">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/trade-and-logistic/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Торговые <br class="hide-sm-min">и логистические решения</div>
+                        <div class="block1__head-text">
+                            Анализ рынка, разработка маршрутных карт, получение разрешений на ввоз товаров, таможенная очистка и хранение
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Для успешного ведения торгового бизнеса в ОАЭ Вам потребуются знания для организации данного <br class="hide-sm-min">вида деятельности в стране. </p>
+                        <p class="block1__content-text-p">SORP Group предлагает полный цикл торгово-логистических решений:  получение лицензий, разрешений на ввоз, организация импорта/экспорта, хранение и транспортировка товаров.</p>
+                    </div>
+                    <a href="/trade-and-logistic/" class="block1__btn btn btn_white btn_border1">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/product-certification/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Сертификация <br class="hide-sm-min">продукции</div>
+                        <div class="block1__head-text">
+                            Подтверждение соответствия стандартам ОАЭ, сертификация и маркировка импортируемых товаров
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Ряд товаров требует прохождения обязательной сертификации, без<br class="hide-sm-min"> этого доступ на местный рынок для<br class="hide-sm-min"> Вашего бизнеса будет невозможен. </p>
+                        <p class="block1__content-text-p">Эксперты SORP с опытом и связями <br class="hide-sm-min">в государственных контролирующих органах, займутся формальностями, <br class="hide-sm-min">а Вы сэкономите ресурсы и время для выхода на рынок ОАЭ.</p>
+                    </div>
+                    <a href="/product-certification/" class="block1__btn btn btn_white btn_border1">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="/business-nominee-services/">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Номинальный <br class="hide-sm-min">сервис</div>
+                        <div class="block1__head-text">
+                            Услуги номинальных директоров или акционеров для реализации специальных функциональных бизнес-задач
+                        </div>
+                    </div>
+                    <div class="block1__head-icon"></div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <p class="block1__content-text-p">Номинальный сервис весьма широко используется в ОАЭ, не противоречит закону и является бизнес-традицией для локальных компаний. </p>
+                        <p class="block1__content-text-p">SORP Group предоставляет услуги номинального сервиса для получения лицензий, подтверждения Economic Substance в ОАЭ и решения других специальных задач Вашего бизнеса.</p>
+                    </div>
+                    <a href="/business-nominee-services/" class="block1__btn btn btn_white btn_border1">
+                        Подробнее
+                        <svg class="btn__icon-svg btn__icon-svg-small btn__icon-svg-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                            <use href="#btn__icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-F9">
+            <img src="/git/img/contour-only/black-and-red/growth.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__text">
+                Наличие аутсорсинговой поддержки бизнеса, обеспечиваемой специалистами SORP Group, <br class="hide-sm-min">станет существенным фактором для подтверждения наличия экономического присутствия <br class="hide-sm-min">(Economic Substance) в Арабских Эмиратах, которое является неотъемлемым требованием <br class="hide-sm-min">при ведении международного бизнеса в современных реалиях.
+            </div>            
+        </div>    
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Закажите комплексный пакет: правовая, консалтинговая, <br class="hide-sm-min">бухгалтерская и административная поддержка Вашего бизнеса</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Получить предложение</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section id="scrollBlock2" class="z-idx3 bg-FA">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Два подразделения SORP Group обеспечат полный сектр услуг по поддержке бизнеса</h2>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block35 block35_width2">
+            <div class="block35__item z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Центр <br class="hide-sm-min">бизнес-экспертизы</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/percentage-papers.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>
+
+                <div class="block35__description block35__description_column">
+                    <div class="block35__description-text">
+                        Комплекс мер по стратегическому планированию и анализу деятельности
+                    </div>
+                    <div class="block35__discount">
+                        <span class="block35__discount-value">25</span>
+                        <div class="block35__discount-text">стратегических направлений</div> 
+                    </div>
+                </div>
+                <div class="r20"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r50_adaptive"></div>
+                <div class="block35__content">                    
+                    <div class="block22 block22_min">
+                        <div class="block22__item">          
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/partners-2.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Вы сможете отказаться от услуг дорогостоящих специалистов, получив выгодные консалтинговые решения по сопровождению и анализу бизнеса</div>
+                            </div>
+                        </div>
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/data-analysis.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Подтверждение бизнес-гипотез, адаптация стратегии развития бизнеса в Эмиратах, разработка финансовой политики</div>
+                            </div>
+                        </div>
+        
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/graph-screen.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Подробный анализ, отображающий реальную картину Вашей бизнес-модели с учётом законодательства и бизнес-среды ОАЭ</div>
+                            </div>
+                        </div>            
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/person-lifebelt.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Консультации по налоговым рискам, разработка стратегии по оптимизации налоговой нагрузки и примению инструментов налогового планирования</div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/coins-revert.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Разработка способов и  методов надежной защиты от международного автоматического обмена налоговой информацией по стандарту CRS</div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/tie.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Проведение экспертизы юридических, финансовых документов в соответствии с законодательными требованиями ОАЭ</div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="r50_adaptive"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r40"></div>
+                <a href="#" class="btn btn_white btn_w100 z-idx3 btn_space-between" onclick="toggleModal('form01');">
+                    Выбрать решение
+                    <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                      <use href="#btn__icon-modal"></use>
+                    </svg>
+                </a>                
+            </div>
+            <div class="block35__item z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Многофункциональный аутсорсинговый центр</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/tie.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>
+
+                <div class="block35__description block35__description_column">
+                    <div class="block35__description-text">
+                        Комплекс мер по управлению и поддержке операционной деятельности компании
+                    </div>
+                    <div class="block35__discount">
+                        <span class="block35__discount-value">54</span>
+                        <div class="block35__discount-text">эксперта в штате</div> 
+                    </div>
+                </div>
+                <div class="r20"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r50_adaptive"></div>
+                <div class="block35__content">
+                    <div class="block22 block22_min">
+                        <div class="block22__item">          
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/diploma.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            
+                            <div class="block22__text">
+                                <div class="block22__description">Продление лицензий, иммиграционная, юридическая, административная профессиональная помощь, услуги по управлению бизнес-процессами</div>
+                            </div>
+                        </div>
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/case-tie.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Аудиторский контроль и антикризисное управление бизнесом, сопровождение при открытии счетов и прохождении процедур банковского комплаенса</div>
+                            </div>
+                        </div>
+        
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/person.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Подбор персонала, аккредитованного в ОАЭ, с целью получения необходимых лицензий, формирование отдела продаж «под ключ», легализация документов</div>
+                            </div>
+                        </div>            
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/todolist.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Подтверждение основных бизнес-процессов по месту регистрации юридического лица для выполнения всех требований по экономическому присутствию</div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/edit-doc.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Обеспечение правильной отчетности в соответствии с требованиями IFRS и подготовка документов компании к аудиторской проверке</div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/doc.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Регистрация торговой марки, получение разрешений от Министерства экономики и помощь в прохождении всех процедур по оформлению</div>
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>
+                <div class="r50_adaptive"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r40"></div>
+                <a href="#" class="btn btn_white btn_w100 z-idx3 btn_space-between" onclick="toggleModal('form01');">
+                    Выбрать решение
+                    <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                      <use href="#btn__icon-modal"></use>
+                    </svg>
+                </a>                
+            </div>   
+        </div>
+        
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-FF">
+            <img src="/git/img/contour-only/black-and-red/girl.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__text">
+                ОАЭ – юрисдикция с прозрачным законодательством и максимально благоприятной средой <br class="hide-sm-min"> для ведения бизнеса. Однако в правовом поле и деловой практике страны существуют свои тонкости и особенности, в которых бывает непросто разобраться самостоятельно. SORP Group может оказать всестороннюю поддержку Вашему бизнесу в ОАЭ с учетом всех требований местного законодательства
+            </div>            
+        </div>    
+        <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock3" class="bg-F9">
+    <div class="container_bem">
+        <div class="r50_adaptive"></div>
+        <h2 class="title">Антикризисные решения для владельцев пакетов абонентского обслуживания</h2>    
+        <div class="r50_adaptive"></div>
+
+        <div class="block11-new block11-new_white block11-new_dark-hover z-idx3">
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">                    
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">Скидка 30%</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                            Регистрация юридических лиц
+                        </div>
+                        <div class="block11-new__desc">
+                            Открытие локальных компаний, построение холдингов и структур для ведения бизнеса в ОАЭ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">       
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">Скидка 30%</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                            Размещение в SORP бизнес-центре
+                        </div>
+                        <div class="block11-new__desc">
+                            Бесплатная аренда офиса, рабочих мест в коворкинге и варианты виртуального офиса
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png">       
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">Скидка 30%</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>                       
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+                            Услуги локального спонсора или агента
+                        </div>
+                        <div class="block11-new__desc">
+                            Для получения и продления локальных лицензий (DED) и решения функциональных задач
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Получите индивидуальный анализ перспектив Вашего бизнеса на территории ОАЭ</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Получить консультацию</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section class="bg-F9" id="scrollBlock4">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP Group окажет поддержку Вашему бизнесу с учётом всех требований законодательства ОАЭ</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">Международные стандарты</div>
+					<div class="tslider-item__text fadeInUp">Конфиденциальные юридические решения для оптимизации налогообложения, сокрытия бенефициаров и защиты от автоматического обмена данными в соответствии со стандартом CRS</div>
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+						<div class="back"></div>
+						<div class="tslider-item__number">Персональный подход</div>
+						<div class="tslider-item__text wow fadeInUp">Конфиденциальные юридические решения для оптимизации налогообложения, сокрытия бенефициаров и защиты от автоматического обмена данными в соответствии со стандартом CRS</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">15 лет на рынке ОАЭ</div>
+						<div class="tslider-item__text">Экспертные знания и опыт проведения профессиональных консультаций, открытия и комплексного сопровождения компаний в различных отраслях экономики</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Банковская поддержка</div>
+						<div class="tslider-item__text">Помощь в открытии банковских счетов, выборе банка, подходящего для ваших целей, помощь в прохождении процедуры KYC (“Know Your Customer”)</div>
+					</div>
+
+                    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Экспертиза документации</div>
+						<div class="tslider-item__text">Проверка концепции вашей компании на предмет стратегических и юридических ошибок. Стратегическое партнерство с лучшими юристами ОАЭ и всего мира обеспечат оперативную правовую поддержку вашего бизнеса</div>
+					</div>
+					
+				<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number" style="text-align: center;">Конфиденциальность и безопасность</div>
+						<div class="tslider-item__text">Обеспечим конфиденциальность Ваших данных и примем меры по надлежащему исполнению действующего законодательства, предоставим решения по корпоративному, налоговому и судебному праву и экономическому присутствию в ОАЭ</div>
+					</div>
+				<div class="tns-controls">
+					<div class="button" onclick="slideup()"></div>
+					<div class="button" onclick="slidedown()"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section class="bg-F9" id="scrollBlock5">
+    <div class="container_bem">
+      <div class="r60_adaptive"></div>
+      <div class="registration">
+        <div class="registration__info">
+          <div class="registration__title">Получите бесплатную<br class="hide-sm-min"> консультацию <br class="hide-sm-min">эксперта</div>
+          <div class="r40"></div>
+            Обратитесь к специалистам SORP для выбора оптимального решения по комплексному сопровождению бизнеса в ОАЭ.
+            <br><br>
+            Наши эксперты помогут подобрать наилучший пакет предложений для Вашего бизнеса и окажут всестороннюю поддержку Вашей деятельности с территории Арабских Эмиратов.
+            <br><br>
+            Обеспечьте стремительный рост и успех Вашего бизнеса в ОАЭ.             
+        </div>
+        <div class="registration__form-block">
+            <div class="registration__title">Отправить заявку</div>
+            <div class="r20"></div>
+            {$_modx->getChunk('form4_new')}
+        </div>
+      </div>
+      <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+{/block}
+{include 'footer_new'}

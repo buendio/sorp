@@ -1,0 +1,8 @@
+.quote {
+  color: #252B39; font-style: italic; font-size: 18px; line-height: 1.56; font-weight: 300;
+
+  &:after, &:before { content: ''; position: relative; width: 12px; height: 12px; background: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.29688 11.6484L0.726562 10.3594C2.47656 8.28125 3.53906 6.14844 3.91406 3.96094L4.52344 0.46875H7.28906L6.75 3.89062C6.25 6.96875 4.76562 9.55469 2.29688 11.6484ZM7.85156 11.6719L6.07031 10.3359C7.71094 8.41406 8.74219 6.38281 9.16406 4.24219L9.82031 0.46875H12.6094L12 4.33594C11.4844 7.21094 10.1016 9.65625 7.85156 11.6719Z' fill='%23ABB1BF'/%3E%3C/svg%3E") no-repeat; display: inline-block; }
+  &:after { top: -8px; left: 5px; transform: rotate(180deg); }
+  &:before { top: 8px; left: -3px; margin-left: -14px;
+  }
+}

@@ -1,0 +1,16 @@
+.modal_block { 
+  &.modal { overflow: visible; position: relative; top: 0; display: block; visibility: visible; height: auto; transform: unset; box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.12); }
+  .modal__text-block { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; flex-direction: column-reverse; }
+  .modal__text-icon { width: 32px; height: 22px; margin-right: 12px; }
+  .modal__text { margin-bottom: 15px; }
+  .modal__background { background-repeat: no-repeat; background-position-y: 90px; }
+  .modal__close { display: none; }
+}
+
+@media (min-width: screen-xs-min) {
+  .modal_block .modal__text-block { flex-direction: row; }
+  .modal_block .modal__text { margin-bottom: 0; } }
+@media (min-width: screen-sm-min) {
+  .modal_block .modal__close { display: block; }
+  .modal_block { top: 0; }
+}

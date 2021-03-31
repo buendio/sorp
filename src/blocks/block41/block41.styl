@@ -1,0 +1,46 @@
+gradientBlue = linear-gradient(180deg, #4943CD 0%, rgba(73, 67, 205, 0.9) 100%);
+
+.block41 { margin-bottom: -50px; display:flex; justify-content: space-between; flex-wrap: wrap; 
+  &__item { margin-bottom: 50px; width: 100%; color: #252B39; }
+  &__head { display:flex; justify-content: space-between; margin-bottom: 30px; }
+  &__title { font-weight: 500; font-size: 24px; line-height: 28px; }
+  &__icon-wrap { width: 50px; height: 50px; margin-left: 15px; border-radius: 7px; display:flex; align-items:center; justify-content: center; flex-shrink: 0; background: gradientBlue; }
+  &__icon { width: 32px; height: 32px; }
+  &__desc { font-weight: 300; font-size: 16px; line-height: 24px; }
+  &_accent-red { .block41__icon-wrap { background: #D64356; } }
+}
+
+@media (min-width: screen-xs-min) { .block41__item { width: 47%; } }
+@media (min-width: screen-sm-min) { .block41__item { width: 31%; } }
+
+
+
+/* Пока оставлю так, когда появится необходимость переберу блок или удалю и сделаю заново
+.block41 {
+    &_modal { margin-bottom: 0; 
+        & .block41__head { position: relative; padding-bottom: 25px; margin-bottom: 25px; 
+            &:after { content:''; position: absolute; bottom:0; display:block; height: 1px; width:100%; background:linear-gradient(90deg, #DDD8D8 0%, rgba(221, 216, 216, 0) 100%); }
+        }
+        & .block41__icon-wrap { border:1px solid #4943CD; box-sizing: border-box; }
+    }
+    &_modal .block41__item { width: 100%; padding:30px 25px; margin-bottom: 20px; transition: 0.3s; }
+    &_modal .block41__item:hover { background: #4943CD; box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.05); color:#fff; 
+        & .block41__icon-wrap { border:1px solid #fff; }
+        & .block41__head:after { background: linear-gradient(90deg, #6B65F0 0%, rgba(107, 101, 240, 0) 100%); }
+    }
+}
+
+@media (min-width: 770px) { .block41_modal .block41__item { width: calc(33.333% - 13px); } }
+@media (min-width: 550px) { .block41_modal .block41__item { width: calc(50% - 10px); } }
+
+.block41.block41_blue-style, .block41.block41_red-style { margin-bottom: -20px; }
+.block41_blue-style .block41__item, .block41_red-style .block41__item  { margin-bottom: 20px; transition: 0.3s; padding: 30px 20px; background: white; } 
+.block41_blue-style .block41__item:hover { background-color: #4943CD; color: white; }
+.block41_blue-style .block41__item:hover .block41__icon-wrap { border: 1px solid white; }
+.block41_blue-style .block41__item:hover .r_bg-linear-gray { background: linear-gradient(90deg, #6B65F0 0%, rgba(107, 101, 240, 0) 100%); }
+.block41_blue-hover .block41__item .r_bg-linear-gray { opacity: 0; }
+.block41_blue-hover.block41_blue-style .block41__item { background: transparent; }
+.block41_blue-hover .block41__item:hover { background-color: #4943CD; }
+.block41_blue-hover .block41__item:hover .r_bg-linear-gray { opacity: 1; }
+@media(max-width: 770px) { .block41.block41_blue-style, .block41.block41_blue-style { margin-bottom: -40px; } .block41_blue-style .block41__item, .block41_blue-style .block41__item { margin-bottom: 40px; } }
+*/

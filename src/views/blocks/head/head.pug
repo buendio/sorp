@@ -1,0 +1,82 @@
+head
+  meta(charset='UTF-8')
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  meta(name='google-site-verification', content='c_7F3rng-DCM8LQad2qOndYc1gJ4sX7OczsRelLizMw')
+  meta(name='yandex-verification', content='8ebb70d240faaaca')
+
+  link(rel='apple-touch-icon', sizes='180x180', href='/assets/templates/main/img/apple-touch-icon.png')
+  link(rel="shortcut icon" href="/dist/img/favicons/favicon.ico" type="image/x-icon")
+  link(rel="icon" sizes="16x16" href="/dist/img/favicons/favicon-16x16.png" type="image/png")
+  link(rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png")
+  link(rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png")
+  link(rel="apple-touch-icon" href="/dist/img/favicons/apple-touch-icon.png")
+  link(rel="apple-touch-icon" sizes="57x57" href="/dist/img/favicons/apple-touch-icon-57x57.png")
+  link(rel="apple-touch-icon" sizes="60x60" href="/dist/img/favicons/apple-touch-icon-60x60.png")
+  link(rel="apple-touch-icon" sizes="72x72" href="/dist/img/favicons/apple-touch-icon-72x72.png")
+  link(rel="apple-touch-icon" sizes="76x76" href="/dist/img/favicons/apple-touch-icon-76x76.png")
+  link(rel="apple-touch-icon" sizes="114x114" href="/dist/img/favicons/apple-touch-icon-114x114.png")
+  link(rel="apple-touch-icon" sizes="120x120" href="/dist/img/favicons/apple-touch-icon-120x120.png")
+  link(rel="apple-touch-icon" sizes="144x144" href="/dist/img/favicons/apple-touch-icon-144x144.png")
+  link(rel="apple-touch-icon" sizes="152x152" href="/dist/img/favicons/apple-touch-icon-152x152.png")
+  link(rel="apple-touch-icon" sizes="167x167" href="/dist/img/favicons/apple-touch-icon-167x167.png")
+  link(rel="apple-touch-icon" sizes="180x180" href="/dist/img/favicons/apple-touch-icon-180x180.png")
+  link(rel="apple-touch-icon" sizes="1024x1024" href="/dist/img/favicons/apple-touch-icon-1024x1024.png")
+
+  | {if $parent == '137'}
+  | <title>{$_modx->resource['pagetitle']} - SORP</title>
+  | {else}
+  | {if $_modx->resource.stitle}
+  |   <title>{$_modx->resource.stitle}</title>
+  | {else}
+  |   <title>{$_modx->resource['pagetitle']}</title>
+  | {/if}
+  | {/if}
+
+  <meta name='Description', content='{$_modx->resource.sdesc}'>
+  <meta name='Keywords', content='{$_modx->resource.skeywords}'>
+
+  | {if $_modx->resource.id == '1' || $_modx->resource.id == '80' || $_modx->resource.id == '477'}
+  |   <link rel="canonical" href="{$_modx->config.site_url}">
+  | {else}
+  |   <link rel="canonical" href="{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}">
+  | {/if}
+
+  meta(property='og:locale', content='ru_RU')
+  meta(property='og:locale:alternate', content='en_US')
+  meta(property='og:type', content='article')
+
+  | {if $_modx->resource.stitle}
+  |   <meta property="og:title" content="{$_modx->resource.stitle}">
+  | {else}
+  |   <meta property="og:title" content="{$_modx->resource['pagetitle']}">
+  | {/if}
+
+  <meta property="og:url" content="{$_modx->config.site_url}{$_modx->makeUrl($_modx->resource.id)}">
+  meta(property='og:site_name', content='SORP')
+  meta(property='article:publisher', content='https://www.facebook.com/421320345307555')
+  meta(name='twitter:card', content='summary_large_image')
+
+  | {if $_modx->resource.stitle}
+  |   <meta name="twitter:title" content="{$_modx->resource.stitle}">
+  | {else}
+  |   <meta name="twitter:title" content="{$_modx->resource['pagetitle']}">
+  | {/if}
+
+  meta(name='twitter:site', content='@SORPGroupRU')
+  meta(name='twitter:creator', content='@SORPGroupRU')
+
+  if global.envVariable == "dev"
+    base(href="http://localhost:4000/")
+  else if global.envVariable == "web"
+    base(href="http://test1.sorp.ae/")
+  else
+    base(href="{$_modx->config.site_url}")
+
+  | {include 'file:css.tpl'}
+  | {include 'file:gtm.tpl'}
+
+  //- Если иногда не работает стили, в основном причина тому, что ниже, нужно удалить /dist/ и оставить только /styles/
+  if page
+    link(rel="stylesheet" href="/dist/styles/" + page + ".css")
+  else
+    link(rel="stylesheet" href="/dist/styles/main.css")

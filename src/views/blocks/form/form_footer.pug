@@ -1,0 +1,40 @@
+section.bg_f9
+  .r60_adaptive
+  .container
+    .feedback-bigblock.feedback-bigblock_no-bg
+      .feedback-bigblock__flex.flex.flex_width2
+        .feedback-bigblock__item.flex__item
+          .feedback-bigblock__info-box.borderline.borderline_red.borderline_border10.borderline_pattern-form
+            h3.feedback-bigblock__info-title Зарегистрируйте бизнес при поддержке профессионалов
+            .feedback-bigblock__info-text
+              p.feedback-bigblock__info-text-item Оставьте заявку и получите консультацию специалиста по возможностям инкорпорации
+              p.feedback-bigblock__info-text-item и ведения бизнеса в ОАЭ.
+              p.feedback-bigblock__info-text-item Эксперты SORP Group подберут оптимальное  решение по регистрации компании с учетом Ваших потребностей и окажут всестороннюю поддержку.
+              p.feedback-bigblock__info-text-item Уже сегодня вы сможете создать эффективный инструмент выхода на рынок ОАЭ и ведения и оптимизации международного бизнеса.
+
+            //-.borderline__quote.borderline__quote_top.borderline__quote_background-fa.lazy(data-bg="./dist/img/blocks/borderline/quotes.svg")
+            //-.borderline__quote.borderline__quote_bottom.borderline__quote_background-fa.lazy(data-bg="./dist/img/blocks/borderline/quotes.svg")
+
+        .feedback-bigblock__item.flex__item
+          .feedback-bigblock__form
+            h3.feedback-bigblock__form-title Зарегистрировать компанию
+
+            form.form-block
+              input.callOrderReason(type='hidden', name='reason')
+              input.page(type='hidden', name='page', value='[[~[[*id]]? &scheme=`full`]]')
+              input.site-message(type='text', name='name', value='')
+              input.site-message(type='text', name='firstname', value='')
+              input.site-message(type='text', name='lastname', value='')
+              .form-block__item
+                label.form-block__label(for='fio3') Ваше имя
+                input#fio3.form-block__input(type='text' name='fio3' value='')
+              .form-block__item
+                label.form-block__label(for='phone3') Телефон
+                input#phone3.form-block__input(type='text' name='phone3' value='')
+              .form-block__item
+                label.form-block__label(for='email3') Email
+                input#email3.form-block__input(type='email' name='email3' value='' placeholder="")
+              .form-block__item
+                input.btn.btn_radius5.btn_w100.btn_h70.btn_font-s20.btn_hover-red(type='submit' value='Получить решение')
+              //-p.form-block__confid Поля, отмеченные символом * обязательны для заполнения
+  .r60_adaptive

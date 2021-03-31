@@ -1,0 +1,601 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+    	<path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+    	<path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+</svg>
+
+<style>
+    .block7 .block7__item { justify-content: stretch; }
+		.block7 .block7__item:hover { background-color: #[[*link_attributes]]; }
+		.block47__item { background: transparent; }
+
+		#scrollBlock3.bg_wave-center { background-position-y: 340px; }
+		.block22_min .block22__icon { height: 10px; }
+		.block22_min .block22__icon-wrap { height: 20px; width: 20px; }
+
+		.block47_col .block47__item { flex-direction: column; }
+		.block47_col .block47__icon-wrap { width: 50px; margin-right: 0; margin-bottom: 20px; } 
+</style>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+            <div class="first-screen__content">
+                <div class="first-screen__logo-box">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">Налоги и бухгалтерия в <br class="hide-sm-min"> ОАЭ</h1>
+                    <p class="first-screen__text">
+                        Опыт экспертов SORP и их знания возможностей местного законодательства<br class="hide-sm-min"> обеспечат качественное ведение бухгалтерского и налогового учета и помогут<br class="hide-sm-min"> Вам минимизировать международные налоги.
+                    </p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">Специалисты SORP Group в сфере налогового и бухгалтерского учета предоставят Вашему бизнесу полное сопровождение в соответствии с требованиями законодательства ОАЭ. Наши эксперты обеспечат постановку на налоговый учёт, качественное ведение бухгалтерии, подготовку и сдачу налоговой отчетности, помогут в прохождении аудита и проведут анализ международных налогов <br class="hide-sm-min">по схемам расчётов и коммерческим операциям.</div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <div class="r60 hide-sm-min"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock1" class="bg-F9">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Специалисты SORP помогут Вам решить следующие задачи:</h2>
+        <div class="r50_adaptive"></div>
+
+        <div class="block7 block7_modal">
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/todolist.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Разработка <br class="hide-sm-min">политики учета НДС</div>
+										<div class="block7__text">Специалисты SORP в области бухгалтерии, налогов составят детальный план ведения учета, основываясь на деятельности компании, законодательстве и бизнес-практике ОАЭ.</div>
+										<div class="r20"></div>
+                </div>
+            </div>    
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/verified-person.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Постановка <br class="hide-sm-min">на налоговый учет</div>
+										<div class="block7__text">Регистрация в качестве НДС плательщика в FTA (Federal <br class="hide-sm-min">Tax Authority) ОАЭ, получение налогового номера и доступа<br class="hide-sm-min"> в личный кабинет на портале налогоплательщика.</div>
+										<div class="r20"></div>
+                </div>
+            </div>    
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/calculation-tax.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Ведение налогового и бухгалтерского учета</div>
+										<div class="block7__text">Учет хозяйственных операций, экономической деятельности, отслеживание изменений в налоговом законодательстве, подготовка и своевременная подача налоговой отчетности.</div>
+										<div class="r20"></div>
+                </div>
+            </div>
+            
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/calculator-tax.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Формирование <br class="hide-sm-min">налоговых групп</div>
+										<div class="block7__text">Оценка возможности создания или присоединения к налоговой группе в ОАЭ для проведения безналоговых платежей, сдачи объединенной отчётности по взаимозависимым компаниям.</div>
+										<div class="r20"></div>
+                </div>
+            </div>
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/tax-graph.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Консультации по оптимизации налогов</div>
+										<div class="block7__text">Проведение оценки на предмет снижения налоговой нагрузки<br class="hide-sm-min"> на аффилированный бизнес за рубежом путем учета расходов и обязательств, которые есть у компании в ОАЭ.</div>
+										<div class="r20"></div>
+                </div>
+            </div>
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/tie-briefcase.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Формирование аудиторской отчетности</div>
+										<div class="block7__text">С целью подтверждение факта наличия задолженности по поставкам прошлых лет, SORP Group поможет спроектировать консолидированный отчет для группы компаний.</div>
+										<div class="r20"></div>
+                </div>
+            </div>
+
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/girl.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Контроль хозяйственных операций</div>
+										<div class="block7__text">Опытные специалисты SORP предоставят Вашему бизнесу качественное бухгалтерское сопровождение, в том числе<br class="hide-sm-min"> с выполнением контрольных функций.</div>
+										<div class="r20"></div>
+                </div>
+            </div>
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/doc-stack.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Хранение<br class="hide-sm-min"> первичной документации</div>
+										<div class="block7__text">В рамках предоставления услуг по контрольно-ревизионному обслуживанию эксперты SORP обеспечат хранение первичных документов для их дальнейшего предоставления владельцам.</div>
+										<div class="r20"></div>
+                </div>
+            </div>
+            <div class="block7__item bg-FF z-idx3">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/tie.svg" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Подтверждение <br class="hide-sm-min"> Economic Substance</div>
+										<div class="block7__text">Доказательство факта ведения операционной деятельности по месту регистрации компании, наличия центра управления и налоговой принадлежности операций к ОАЭ.</div>
+										<div class="r20"></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Закажите профессиональную консультацию по вопросу <br class="hide-sm-min">ведения налогового и бухгалтерского учета Вашей компании</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Связаться со специалистом</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section id="scrollBlock2">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Ведение налоговой отчетности в ОАЭ</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block5 block5_no-border block5_message bg-F9 z-idx3">
+            <div class="block5__message-icon-wrap">
+                <img src="/git/img/contour-only/white/i-message.svg" alt="i" class="block5__message-icon" loading="lazy">
+            </div>
+            <div class="block5__text" style="text-align: left;">
+              В ОАЭ требования по постановке на налоговый учет, срокам уплаты налогов и подготовке налоговой отчетности регламентированы государством, однако ряд госорганов, контрагентов, международные финансовые институты требуют наличия налогового номера (TRN) с первого дня деятельности. 
+            </div>
+        </div>
+
+        <div class="r50_adaptive"></div>
+
+        <div class="block35 block35_width4 block35_border">
+            <div class="block35__item block35__item_currency bg-FF z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Добровольная<br class="hide-sm-min"> регистрация</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/verified-person-circle.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>                    
+
+                <div class="block35__content">
+                    <div class="r40"></div>
+                    <div class="block35__description block35__description_column">
+                        <div class="block35__currency-header">При обороте от</div>
+                        <p class="block35__currency"> <span class="block35__currency-value">185 000</span> дирхам</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block35__item block35__item_currency bg-FF z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Обязательная<br class="hide-sm-min"> регистрация</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/doc.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>                    
+
+                <div class="block35__content">
+                    <div class="r40"></div>
+                    <div class="block35__description block35__description_column">
+                        <div class="block35__currency-header">При обороте от</div>
+                        <p class="block35__currency"> <span class="block35__currency-value">375 000</span> дирхам</p>
+                    </div>
+                </div>
+            </div>              
+
+            <div class="block35__item z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Форма <br class="hide-sm-min">отчетности</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/todolist.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>
+                <div class="r1 r_bg-gray" style="width: 118%; margin-left: -40px;"></div>
+                <div class="block35__content">
+                    <div class="r40"></div>
+                    <ul class="list2">                    
+                        <li class="list2__item">Ежеквартальная подача отчетности в FTA (Federal Tax Authority)</li>
+                        <li class="list2__item">Ежемесячно при большом количестве проведении операций по банковскому счету</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block35__item z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Обязательства <br class="hide-sm-min">налогоплательщиков</div>
+                    <div class="block35__icon-wrap">                    
+                        <img src="/git/img/contour-only/white/bank-building.svg" alt="" class="block35__icon" loading="lazy">                                                
+                    </div>
+                </div>
+                <div class="r1 r_bg-gray" style="width: 118%; margin-left: -40px;"></div>
+                <div class="block35__content">
+                    <div class="r40"></div>
+                    <ul class="list2">                    
+                        <li class="list2__item">Предоставление налоговой отчетности и своевременная уплата НДС</li>
+                        <li class="list2__item">Предоставление налоговых инвойсов клиентам по факту оказания услуги</li>
+                    </ul>
+                </div>
+            </div>     
+        </div>
+
+        <div class="r50_adaptive"></div>        
+        <a href="#" class="btn btn_center btn_border2 btn_white z-idx3 btn_space-between" onclick="toggleModal('form01');">
+					Получить консультацию
+          <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+            <use href="#btn__icon-modal"></use>
+          </svg>
+        </a>
+        <div class="r60_adaptive"></div>
+    </div>
+	<div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock3" class="bg-FF z-idx3 bg_wave-center">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Ведение бухгалтерского учета в ОАЭ</h2>
+        <div class="r50_adaptive"></div>        
+
+        <div class="block5 block5_no-border block5_message bg-F9">
+            <div class="block5__message-icon-wrap">
+                <img src="/git/img/contour-only/white/i-message.svg" alt="i" class="block5__message-icon" loading="lazy">
+            </div>
+            <div class="block5__text" style="text-align: left;">
+							Несмотря на то, что в Арабских Эмиратах отсутствует требование обязательного ведения бухгалтерского учета, компаниям регламентировано готовить отчетность и хранить первичную документацию в течение 5 лет. Однако ведение бухучета может помочь бизнесу при решении целого ряда задач.							
+            </div>
+        </div>
+        
+        <div class="r50_adaptive"></div>
+    
+        <div class="block47 block47_width3 block47_radius-25 block47_min block47_col">
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/pass-money.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">                                 
+                    Получение торгового финансирования
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/coins-revert.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">                                      
+                    Контроль над финансовыми потоками, оптимизация затрат
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/magnifier-new.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">                    
+                    Подтверждение прозрачности бизнеса для налоговых органов
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/graph-screen.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">                    
+                    Минимизация стоимости аудиторской отчетности
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/todolist.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">                    
+                    Простота формирования налоговой отчетности
+                </div>                
+            </div>
+            <div class="block47__item">
+                <div class="block47__icon-wrap">
+                    <img src="/git/img/contour-only/white/doc.svg" alt="" class="block47__icon" loading="lazy">
+                </div>                
+                <div class="block47__text">                    
+                    Доказательство центра управления и контроля в ОАЭ
+                </div>                
+            </div>
+        </div>
+
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Закажите профессиональную консультацию по ведению налоговой <br class="hide-sm-min">и бухгалтерской отчетности для Вашей компании</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Cвязаться со специалистом</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section id="scrollBlock4" class="bg-F9 z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Преимущества комплексных решений SORP Group по сопровождению бизнеса в ОАЭ</h2>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block35 block35_width2">
+            <div class="block35__item">
+                <div class="block35__head">
+                    <div class="block35__title">Налоговое и <br class="hide-sm-min">бухгалтерское<br class="hide-sm-min"> сопровождение</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/tax-papers-2.svg" alt="" class="block35__icon" loading="lazy">                                    
+                    </div>
+                </div>
+
+                <div class="block35__description">
+                    <div class="block35__description-text">
+											Пакетное решение по<br class="hide-sm-min"> ведению бухучета и сдачи <br class="hide-sm-min">налоговой отчетности
+                    </div>
+                    <div class="block35__discount">Экономия
+                        <span class="block35__discount-value">-20%</span>
+                    </div>
+                </div>
+                <div class="r20"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r50_adaptive"></div>
+                <div class="block35__content">
+                    
+                    <div class="block22 block22_min">
+                        <div class="block22__item">          
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/checked.svg" alt="" class="block22__icon" loading="lazy">                          
+                            </div>
+                            
+                            <div class="block22__text">
+                                
+                                <div class="block22__description">Подтверждение наличия реального офиса у компании при открытии корпоративного счета в банке ОАЭ путем аренды готовых оборудованных площадей в БЦ SORP Group.</div>
+                            </div>
+                        </div>
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/checked.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Составление договоров, актов, аудиторских заключений с целью обоснования и подтверждения экономической целесообразности коммерческих операций, подготовка консолидированного аудиорского отчета.</div>
+                            </div>
+                        </div>
+        
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/checked.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Качественный анализ финансового и бухгалтерского учета, проверка корректности начисления налогов и формирование данных с целью возмещения средств для увеличения Вашей прибыли и снижения издержек. </div>
+                            </div>
+                        </div>            
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/checked.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__description">Быстрая и качественная организация ведения учета в Вашей компании на любом этапе, помощь в сохранении и увеличении прибыльности Вашего бизнеса в условиях новых законодательных правил. </div>
+                            </div>
+                        </div>   
+                    </div>
+
+                </div>
+                <div class="r50_adaptive"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r40"></div>
+                <a href="#" class="btn btn_white btn_w100 z-idx3 btn_space-between" onclick="toggleModal('form01');">
+                    Выбрать данное решение с выгодой 20%
+                    <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                      <use href="#btn__icon-modal"></use>
+                    </svg>
+                </a>                
+            </div>
+            <div class="block35__item">
+                <div class="block35__head">
+                    <div class="block35__title">Комплексное<br class="hide-sm-min"> сопровождение<br class="hide-sm-min"> бизнеса</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/tie.svg" alt="" class="block35__icon" loading="lazy">                                    
+                    </div>
+                </div>
+
+                <div class="block35__description">
+                    <div class="block35__description-text">
+                        Решения по регистрации и ведению бизнеса в ОАЭ<br class="hide-sm-min">и за ее пределами
+                    </div>
+                    <div class="block35__discount">
+                        Выгода
+                        <span class="block35__discount-value">
+                            -30%
+                        </span>
+                    </div>
+                </div>
+                <div class="r20"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r50_adaptive"></div>
+                <div class="block35__content">
+                    
+                    <div class="block22 block22_min">
+                        <div class="block22__item">          
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/checked.svg" alt="" class="block22__icon" loading="lazy">                     
+                            </div>
+                            
+                            <div class="block22__text">                                
+                                <div class="block22__description">Анализ бизнес-идеи, разработка стратегии, подготовка бизнес-плана, проведение необходимых процедур due diligence, оценка перспектив развития Вашего будущего бизнеса.</div>
+                            </div>
+                        </div>
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/checked.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Открытие всех типов компаний, филиалов, проведение релокации бизнеса и построение холдингов и структур, для ведения бизнеса в Эмиратах, получение лицензий, осуществление процедур сертификации продукции.</div>
+                            </div>
+                        </div>
+        
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/checked.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Операционное управление бизнесом на всех этапах его становления, ревизионный и антикризисный контроль, комплекс услуг по подтверждению центра управления и контроля и экономического присутствия в ОАЭ.</div>
+                            </div>
+                        </div>            
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/checked.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            <div class="block22__text">                                
+                                <div class="block22__description">Конфиденциальные юридические решения для целей оптимизации налогообложения, сохранения данных о бенефициарах и защиты от автоматического обмена информацией в соответствии со стандартом CRS. </div>
+                            </div>
+                        </div>   
+                    </div>
+
+                </div>
+                <div class="r50_adaptive"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r40"></div>
+                <a href="#" class="btn btn_white btn_w100 z-idx3 btn_space-between" onclick="toggleModal('form01');">
+                    Выбрать данное решение с выгодой 30%
+                    <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                      <use href="#btn__icon-modal"></use>
+                    </svg>
+                </a>                
+            </div>   
+        </div>
+
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-FA">
+            <img src="/git/img/contour-only/black-and-red/tax-graph.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__content">
+                <div class="block5__text">
+									Обратившись к специалистам SORP Group за получением аутсорсинговых бухгалтерских услуг и налоговым консультированием, Вы не только получите качественную поддержку бизнеса в этой области и сократите Ваши расходы на ведение деятельности, но и обеспечите доказательство экономического присутствия и подтверждение налоговой принадлежности операций к ОАЭ.
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Оставьте заявку и узнайте о преимуществах аутсорсингового <br class="hide-sm-min">обслуживания от SORP Group в области налогов и бухучета</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Связаться со специалистом</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--     why_sorp      -->
+<section class="bg-F9" id="scrollBlock5">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP Group – надежный партнер при ведении Вашего бизнеса в ОАЭ</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">Международные стандарты</div>
+					<div class="tslider-item__text fadeInUp">Конфиденциальные юридические решения для оптимизации налогообложения, сокрытия бенефициаров и защиты от автоматического обмена данными в соответствии со стандартом CRS</div>
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+						<div class="back"></div>
+						<div class="tslider-item__number">Возможности для расширения</div>
+						<div class="tslider-item__text wow fadeInUp">Гибкий договор аренды позволяет в любой момент увеличить арендуемые площади по мере роста вашей команды</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">15 лет на рынке ОАЭ</div>
+						<div class="tslider-item__text">Экспертные знания и опыт проведения профессиональных консультаций, открытия и комплексного сопровождения компаний в различных отраслях экономики</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Банковская поддержка</div>
+						<div class="tslider-item__text">Помощь в открытии банковских счетов, выборе банка, подходящего для ваших целей, помощь в прохождении процедуры KYC (“Know Your Customer”)</div>
+					</div>
+
+          <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">Экспертиза документации</div>
+						<div class="tslider-item__text">Проверка концепции вашей компании на предмет стратегических и юридических ошибок. Стратегическое партнерство с лучшими юристами ОАЭ и всего мира обеспечат оперативную правовую поддержку вашего бизнеса</div>
+					</div>
+				<div class="tns-controls">
+					<div class="button" onclick="slideup()"></div>
+					<div class="button" onclick="slidedown()"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="r1 r_bg-gray"></div>
+</section>
+
+<section class="bg-F9" id="scrollBlock5">
+	<div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<div class="registration">
+			<div class="registration__info">
+				<div class="registration__title">Получите бесплатную<br class="hide-sm-min"> консультацию <br class="hide-sm-min">эксперта</div>
+				<div class="r20"></div>          
+					Отправьте заявку и получите ответ эксперта <br>SORP Group по вопросам бухгалтерского и налогового сопровождения Вашего бизнеса.
+					<br><br>
+					Профессионалы SORP внимательно следят за последними мировыми тенденциями и готовы оказать грамотную поддержку Вашей компании.
+					<br><br>
+					Обратитесь в SORP Group и закажите полное сопровождение Вашего бизнеса уже сейчас!
+				<div class="r20"></div>
+			</div>
+			<div class="registration__form-block">
+					<div class="registration__title">Индивидуальное решение для Вас</div>
+					<div class="r10"></div>
+					{$_modx->getChunk('form4_new')}
+			</div>
+		</div>
+		<div class="r60_adaptive"></div>
+	</div>
+	<div class="r1 r_bg-gray"></div>
+</section>
+
+{/block}
+{include 'footer_new'}

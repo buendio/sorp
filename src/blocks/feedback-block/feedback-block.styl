@@ -1,0 +1,20 @@
+.feedback-block {
+  color: #fff; font-size: 22px; line-height: 31px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+
+  &__text { font-size: 18px; line-height: 1.55; font-weight: 400; margin-bottom: 30px; }
+  &__btn { width: 100%; text-align: center; border-radius: 4px; cursor: pointer; padding: 10px 25px; font-size: 17px; font-weight: 700; white-space: nowrap; border: 1px solid #fff; transition: 0.3s; }
+  &__btn:hover { background: #fff; color: #d64356;}
+  
+  &__btn_red:hover {  background-color: #d64356; color: #fff; }
+  &_dark { color: #000; }
+  &__btn&__btn_dark { border-color: #d64356; }
+}
+
+@media(min-width: screen-sm-min) {
+  .feedback-block {
+    flex-wrap: nowrap;
+
+    &__text { margin: 0 50px 0 0; font-size: 20px; }
+    &__btn { width: 100%; max-width: 370px; font-size: 18px; padding-top: 18px; padding-bottom: 18px; border: 2px solid #fff; }
+  }
+}

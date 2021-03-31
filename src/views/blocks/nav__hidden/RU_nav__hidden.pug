@@ -1,0 +1,195 @@
+.nav__hidden
+  .nav__hidden-close
+  .nav__hidden-container
+    .nav__hidden-item-box.nav__hidden-item-box_head
+      .nav__hidden-logo-box
+        <a class="nav__hidden-logo" href="{$_modx->config.site_url}">
+        svg.nav__hidden-logo-icon
+          | <use xlink:href="#logo_white"></use>
+        </a>
+        if eng_version
+          .nav__hidden-logo-signature Основные направления деятельности
+      if eng_version
+        .nav__hidden-eng-version
+          .nav__hidden-eng-version-icon.lazy(data-bg="../dist/img/blocks/nav__hidden/attention.svg")
+          p.nav__hidden-eng-version-text Ознакомиться с направлениями деятельности
+            span.nav__hidden-eng-version-text-span  ENG
+          .nav__hidden-eng-version-icon.lazy(data-bg="../dist/img/blocks/nav__hidden/tab.svg")
+
+  .nav__hidden-container.nav__hidden-container_border-top
+    .nav__hidden-item-box
+      .nav__hidden-item
+        .nav__hidden-item-line
+        a.nav__hidden-item-title(href="/biznes-v-oae/")
+          span.nav__hidden-item-title-span Открытие бизнеса в ОАЭ
+        ul.nav__hidden-item-point-box
+          li
+            a.nav__hidden-item-point(href="/uae-business-setup/") Как начать свой бизнес в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/uae-market/") Как выйти на рынок ОАЭ
+          li
+            a.nav__hidden-item-point(href="/license/") Как получить лицензию на бизнес в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/buy-business/") Как купить готовый бизнес в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/investment/") Как инвестировать в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/immigration-services/") Сопровождение эмиграции и релокации бизнеса в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/trading-opportunities/") Как организовать торговый бизнес в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/business-services/") Как организовать бизнес в сфере сервиса в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/manufacturing/") Как открыть производство в ОАЭ
+      .nav__hidden-item
+        .nav__hidden-item-line
+        a.nav__hidden-item-title(href="/registratsiya-kompanii/")
+          span.nav__hidden-item-title-span Регистрация компаний в ОАЭ
+        ul.nav__hidden-item-point-box
+          li
+            a.nav__hidden-item-point(href="/local-company-in-uae/") Регистрация на локальной земле
+          li
+            a.nav__hidden-item-point(href="/freezone-company-in-uae/") Регистрация СЭЗ компаний
+          li
+            a.nav__hidden-item-point(href="/uae-offshore/") Регистрация офшоров (IBC) компаний
+          li
+            a.nav__hidden-item-point(href="/holding-company-in-uae/") Построение холдингов или структур
+          li
+            a.nav__hidden-item-point(href="/trust/") Создание Арабского траста
+          li
+            a.nav__hidden-item-point(href="/buy-company/") Решения по приобретению готовых юридических лиц
+            //- ЗДЕСЬ НЕТ ССЫЛКИ
+          li
+            label.nav__hidden-item-point(for="modal2" data-reason="Профессиональная бизнес лицензия в ОАЭ") Профессиональная бизнес лицензия в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/business-nominee-services/") Решения по номинальному сервису
+          li
+            a.nav__hidden-item-point(href="/bank-account/") Поддержка при открытии банковских счетов в ОАЭ
+      .nav__hidden-item
+        .nav__hidden-item-line
+        a.nav__hidden-item-title(href="/business-center/")
+          span.nav__hidden-item-title-span Бизнес-центр<br> в ОАЭ
+        ul.nav__hidden-item-point-box
+          li
+            a.nav__hidden-item-point(href="/office-rent-dubai/") Аренда офисов в Бизнес Центре SORP
+          li
+            a.nav__hidden-item-point(href="/sustainability-office-dubai/") SORP Sustainability Space
+          li
+            a.nav__hidden-item-point(href="/coworking-dubai/") Решения по аренде мест в коворкинге
+          li
+            a.nav__hidden-item-point(href="/meeting-room-dubai/") Аренда переговорных и конференц-зала
+          li
+            a.nav__hidden-item-point(href="/conference-room/") Виртуальный офис в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/virtual-office-dubai/") Аудитории для тренингов и ивентов
+          li
+            a.nav__hidden-item-point(href="/business-school/") Школа бизнеса SORP на базе SORP Business Center
+          li
+            label.nav__hidden-item-point(for="modal2" data-reason="Мультифункциональный аутсорсинговый центр") Мультифункциональный аутсорсинговый центр
+          li
+            label.nav__hidden-item-point(for="modal2" data-reason="Бизнес-акселератор SORP для стартапов в ОАЭ") Бизнес-акселератор SORP для стартапов в ОАЭ
+      .nav__hidden-item
+        .nav__hidden-item-line
+        a.nav__hidden-item-title(href="/business-support/")
+          span.nav__hidden-item-title-span Поддержка бизнеса в ОАЭ
+        ul.nav__hidden-item-point-box
+          li
+            a.nav__hidden-item-point(href="/legal-support/") Правовая поддержка и PRO-услуги
+          li
+            a.nav__hidden-item-point(href="/taxes-and-accounting/") Налоги и бухгалтерия в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/license-renewal/") Продление бизнес лицензий в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/documents-legalization/") Легализация документации для бизнеса
+          li
+            a.nav__hidden-item-point(href="/trade-and-logistic/") Сертификация товара в ОАЭ
+          li
+            a.nav__hidden-item-point(href="/product-certification/") Торговля и логистика в ОАЭ: решения SORP
+          li
+            a.nav__hidden-item-point(href="/business-management/") Управление вашими бизнес процессами в ОАЭ
+          li
+            label.nav__hidden-item-point(for="modal2" data-reason="Антикризисная поддержка бизнеса") Антикризисная поддержка бизнеса
+          li
+            label.nav__hidden-item-point(for="modal2" data-reason="Распространенные ошибки при открытии бизнеса") Распространенные ошибки при открытии бизнеса
+  .nav__hidden-container.nav__hidden-container_border-top
+    .nav__hidden-item-box
+      .nav__hidden-item-box.nav__hidden-item-box_half
+        .nav__hidden-item
+          .nav__hidden-item-line
+          a.nav__hidden-item-title(href="/tax-adviser/")
+            span.nav__hidden-item-title-span Международное налоговое планирование
+          ul.nav__hidden-item-point-box
+            li
+              a.nav__hidden-item-point(href="/tax-residency-in-uae/") Налоговое резидентство в ОАЭ
+            li
+              a.nav__hidden-item-point(href="/consolidation/") Консолидация бизнеса и активов в ОАЭ
+            li
+              a.nav__hidden-item-point(href="/kyc/") Сохранность банковской тайны при стандарте KYC
+            li
+              a.nav__hidden-item-point(href="/sorp-business-center/") Подтверждение Economic Substance в ОАЭ
+            li
+              label.nav__hidden-item-point(for="modal2" data-reason="Нивелирование налоговых рисков в ОАЭ") Нивелирование налоговых рисков в ОАЭ
+            li
+              label.nav__hidden-item-point(for="modal2" data-reason="Сохранение анонимности финансов и активов") Сохранение анонимности финансов и активов
+        .nav__hidden-item
+          .nav__hidden-item-line
+          a.nav__hidden-item-title(href="/international-business/")
+            span.nav__hidden-item-title-span Оптимизация международного бизнеса из ОАЭ
+          ul.nav__hidden-item-point-box
+            li
+              a.nav__hidden-item-point(href="/trading-opportunities/") Международная торговля под флагом ОАЭ
+            li
+              label.nav__hidden-item-point(for="modal2" data-reason="Оказание услуг и сервисов под флагом ОАЭ ") Оказание услуг и сервисов под флагом ОАЭ
+            li
+              label.nav__hidden-item-point(for="modal2" data-reason="Ведение инвестиционной деятельности из ОАЭ") Ведение инвестиционной деятельности из ОАЭ
+            li
+              label.nav__hidden-item-point(for="modal2" data-reason="Оформление недвижимости и активов на компанию ОАЭ") Оформление недвижимости и активов на компанию ОАЭ
+            li
+              label.nav__hidden-item-point(for="modal2" data-reason="Преимущества последней зоны для свободы бизнеса") Преимущества последней зоны для свободы бизнеса
+            li
+              label.nav__hidden-item-point(for="modal2" data-reason="Бэк-офис для эффективного управления бизнесом") Бэк-офис для эффективного управления бизнесом
+        .nav__help-block.lazy(data-bg="./dist/img/blocks/nav/blue-wave.svg")
+          .nav__help-title Закажите бесплатную консультацию от наших <br class="hide-tn show-md-min"> специалистов SORP
+
+          .nav__help-content
+            .nav__help-description Комплексные решения для вашего бизнеса в ОАЭ и мире
+            label.btn.btn_radius5.btn_h45.btn_hover-red.js-modal(for="modal2" data-reason="Заказать консультацию (форма в всплывающем бургере)" data-title="Заказать консультацию") Заказать консультацию
+
+
+      //-.nav__hidden-article
+        a.nav__hidden-item-title(href="")
+          span.nav__hidden-item-title-span Центр<br> бизнес-экспертизы<br> и методологий
+        ul.nav__hidden-item-article-box
+          li
+            a.nav__hidden-item-point(href="") Сколько стоит открыть бизнес в Дубае
+          li
+            a.nav__hidden-item-point(href="") Открыть онлайн-бизнес в ОАЭ: решения и перспективы
+          li
+            a.nav__hidden-item-point(href="") Как импортировать продукцию в Арабских Эмиратах
+          li
+            a.nav__hidden-item-point(href="") Как вести экспорт и реэкспорт из Арабских Эмиратах
+          li
+            a.nav__hidden-item-point(href="") Факторы получения лицензий при открытии мультибизнеса
+          li
+            a.nav__hidden-item-point(href="") Где выгодно регистрировать и вести бизнес в 2020/2021 году
+          li
+            a.nav__hidden-item-point(href="") Как лицензия ОАЭ определяет  стратегию развития бизнеса
+          li
+            a.nav__hidden-item-point(href="") Контролируемый бизнес без контроля
+          li
+            a.nav__hidden-item-point(href="") Оформление торговой лицензии в ОАЭ
+          li
+            a.nav__hidden-item-point(href="") Лицензирование инвестиционно — финансовой деятельности в ОАЭ
+          li
+            a.nav__hidden-item-point(href="") Лицензирование бизнеса в сфере недвижимости в ОАЭ
+          li
+            a.nav__hidden-item-point(href="") Лицензирование деятельности в сфере логистики в ОАЭ
+          li
+            a.nav__hidden-item-point(href="") Лицензирование бизнеса в сфере туризма
+          li
+            a.nav__hidden-item-point(href="") Лицензирование строительного бизнеса в ОАЭ
+          li
+            a.nav__hidden-item-point(href="") Лицензирование инжинирингового бизнеса в ОАЭ
+          li
+            a.nav__hidden-item-point(href="") Лицензирование образовательной деятельности в ОАЭ
+        a.nav__hidden-item-btn.btn.btn_radius5(href="#") Показать все статьи

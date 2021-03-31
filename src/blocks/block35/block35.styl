@@ -1,0 +1,60 @@
+RedColor = #D64356;
+BlueColor = #4943CD;
+.block35 { display: flex; justify-content: space-between; flex-direction: column; margin-bottom: -40px;
+  &__item { background-color: #FFF; padding: 50px 0 40px; width: 100%; margin-bottom: 40px; transition: .3s; 
+    &:hover { box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1); transform: scale(1.02); } 
+    & > *:not(.block35__divider) { padding-left: 20px; padding-right: 30px; }
+
+    .block35_underscore & { border-bottom: 5px solid BlueColor; }  //-  добавляет бордер внизу
+  }
+
+  &__head { display:flex; justify-content: space-between; padding-bottom: 20px;}
+  &__title { line-height: 36px; font-size: 24px; font-weight: 500; color: #000; }
+  &__divider { height: 1px; width: 100%; background-color: #E3E3E3; }
+  &__icon-wrap { width: 50px; height: 50px; margin-left: 15px; border-radius: 7px; display: flex; align-items:center; justify-content: center; flex-shrink: 0; background: linear-gradient(180deg, #4943CD 0%, rgba(73, 67, 205, 0.9) 100%); }
+  &__icon-wrap_circle { height: 40px; width: 40px; border-radius: 100%; }
+  &__icon { width: 32px; height: 32px; }
+  &__icon-char { color: #fff; font-size: 24px; font-weight: 500; line-height: 24px; }
+  &__content-header { margin: 30px 0; font-size: 21px; font-weight: 300; line-height: 28px; color: #7D879C; }
+  &__content { font-size: 15px; font-weight: 300; line-height: 24px; color: #000; }
+  &__description { display: flex; flex-direction: column; justify-content: space-between; font-size: 20px; font-weight: 300; line-height: 28px; color: #7D879C; 
+    &-text { width: 90%; }
+  }
+  .list__item { color: #252B39;  font-size: 15px; font-weight: 300; line-height: 24px; }
+  &_border .block35__item { border: 1px solid #8F959F; }
+
+  &_red {
+      &.block35_underscore .block35__item { border-bottom-color: RedColor; }
+      .block35__icon-wrap { background: RedColor; } 
+  }
+  
+  &_anchor {
+    .block35__item {
+      &:hover { 
+        background-color: BlueColor; 
+        background-image: url("../img/blocks/anchor-pattern-reverse.png");
+        background-repeat: no-repeat; background-position-y: 60px; background-size: 100%; border-bottom-color: BlueColor;
+        .block35__title, .block35__content { color: #FFF; }
+        .block35__icon-wrap { background: transparent; border: 1px solid #fff; }
+        .block35__divider { opacity: 0; }
+      }
+    }
+  }
+
+  .block35-slider &__item { width: calc(100% - 20px); }
+}
+
+@media(min-width: screen-xs-min) {
+  .block35 {
+    &__item > *:not(.block35__divider) { padding-left: 40px; padding-right: 40px; }
+    &__head { padding-bottom: 40px; }
+    &__title { font-size: 28px; } 
+    &__description { flex-direction: row; font-size: 21px; } 
+  } }
+  
+@media(min-width: screen-md-min) { 
+  .block35 { flex-direction: row;
+    &__item { width: 49%; } 
+    &_width3 .block35__item { width: calc(33.33% - 20px); } 
+    &_width4 { flex-wrap: wrap; margin-bottom: -22px; & .block35__item { margin-bottom: 22px; } }
+  } }

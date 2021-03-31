@@ -1,0 +1,395 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+    	<path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+    	<path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+    <symbol id="btn__icon" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.291748 10.7884L1.27464 11.6392L1.76608 11.2126L7.82088 5.98838L1.76608 0.764161L1.27464 0.337599L0.291748 1.18838L0.783192 1.6126L5.85239 5.98838L0.783192 10.3642L0.291748 10.7884ZM5.84968 10.7884L6.83256 11.6392L7.324 11.2126L13.3788 5.98838L7.324 0.764161L6.83256 0.337599L5.84968 1.18838L6.34112 1.6126L11.4103 5.98838L6.34112 10.3642L5.84968 10.7884Z" />
+    </symbol>
+    
+    <symbol id="doc" viewBox="0 0 59 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.125 9.75H11.375C10.944 9.75 10.5307 9.92121 10.226 10.226C9.92121 10.5307 9.75 10.944 9.75 11.375C9.75 11.806 9.92121 12.2193 10.226 12.524C10.5307 12.8288 10.944 13 11.375 13H21.125C21.556 13 21.9693 12.8288 22.274 12.524C22.5788 12.2193 22.75 11.806 22.75 11.375C22.75 10.944 22.5788 10.5307 22.274 10.226C21.9693 9.92121 21.556 9.75 21.125 9.75Z" fill="black"/>
+        <path d="M21.125 19.5H11.375C10.944 19.5 10.5307 19.6712 10.226 19.976C9.92121 20.2807 9.75 20.694 9.75 21.125C9.75 21.556 9.92121 21.9693 10.226 22.274C10.5307 22.5788 10.944 22.75 11.375 22.75H21.125C21.556 22.75 21.9693 22.5788 22.274 22.274C22.5788 21.9693 22.75 21.556 22.75 21.125C22.75 20.694 22.5788 20.2807 22.274 19.976C21.9693 19.6712 21.556 19.5 21.125 19.5Z" fill="black"/>
+        <path d="M21.125 29.25H11.375C10.944 29.25 10.5307 29.4212 10.226 29.726C9.92121 30.0307 9.75 30.444 9.75 30.875C9.75 31.306 9.92121 31.7193 10.226 32.024C10.5307 32.3288 10.944 32.5 11.375 32.5H21.125C21.556 32.5 21.9693 32.3288 22.274 32.024C22.5788 31.7193 22.75 31.306 22.75 30.875C22.75 30.444 22.5788 30.0307 22.274 29.726C21.9693 29.4212 21.556 29.25 21.125 29.25Z" fill="black"/>
+        <path d="M52 45.5H48.75C48.8346 43.1962 49.7327 40.9969 51.285 39.2925C55.25 36.335 58.5 32.89 58.5 27.625C58.497 23.8746 57.0565 20.2681 54.4751 17.5476C51.8936 14.8271 48.3675 13.1996 44.6225 13L32.0125 0.4875C31.8161 0.255677 31.5563 0.0862428 31.265 0H4.875C3.58207 0 2.34209 0.513615 1.42785 1.42785C0.513615 2.34209 0 3.58207 0 4.875V60.125C0 61.4179 0.513615 62.6579 1.42785 63.5721C2.34209 64.4864 3.58207 65 4.875 65H40.625C41.9179 65 43.1579 64.4864 44.0721 63.5721C44.9864 62.6579 45.5 61.4179 45.5 60.125V58.5H56.875C57.306 58.5 57.7193 58.3288 58.024 58.024C58.3288 57.7193 58.5 57.306 58.5 56.875V52C58.5 50.2761 57.8152 48.6228 56.5962 47.4038C55.3772 46.1848 53.7239 45.5 52 45.5ZM55.25 27.625C55.0281 29.4942 54.383 31.2883 53.3637 32.8708C52.3444 34.4532 50.9777 35.7825 49.3675 36.7575C46.9952 39.0612 45.6089 42.1951 45.5 45.5H42.25C42.167 42.2089 40.8164 39.0769 38.48 36.7575C36.8517 35.7934 35.466 34.4689 34.4293 32.8858C33.3927 31.3027 32.7327 29.503 32.5 27.625C32.5 24.6082 33.6984 21.7149 35.8317 19.5817C37.9649 17.4484 40.8582 16.25 43.875 16.25C46.8918 16.25 49.7851 17.4484 51.9183 19.5817C54.0516 21.7149 55.25 24.6082 55.25 27.625ZM39.9425 13H32.5V5.5575L39.9425 13ZM42.25 60.125C42.25 60.556 42.0788 60.9693 41.774 61.274C41.4693 61.5788 41.056 61.75 40.625 61.75H4.875C4.44402 61.75 4.0307 61.5788 3.72595 61.274C3.42121 60.9693 3.25 60.556 3.25 60.125V4.875C3.25 4.44402 3.42121 4.0307 3.72595 3.72595C4.0307 3.42121 4.44402 3.25 4.875 3.25H29.25V14.625C29.25 15.056 29.4212 15.4693 29.726 15.774C30.0307 16.0788 30.444 16.25 30.875 16.25H34.8075C33.081 17.6021 31.6839 19.3284 30.7212 21.2987C29.7586 23.269 29.2556 25.4321 29.25 27.625C29.25 32.89 32.6625 36.335 36.3675 39.2925C37.9342 40.9964 38.8641 43.1893 39 45.5H35.75C34.0261 45.5 32.3728 46.1848 31.1538 47.4038C29.9348 48.6228 29.25 50.2761 29.25 52V56.875C29.25 57.306 29.4212 57.7193 29.726 58.024C30.0307 58.3288 30.444 58.5 30.875 58.5H42.25V60.125ZM55.25 55.25H32.5V52C32.5 51.138 32.8424 50.3114 33.4519 49.7019C34.0614 49.0924 34.888 48.75 35.75 48.75H52C52.862 48.75 53.6886 49.0924 54.2981 49.7019C54.9076 50.3114 55.25 51.138 55.25 52V55.25Z" fill="black"/>
+        <path d="M16.25 39C14.9644 39 13.7077 39.3812 12.6388 40.0954C11.5699 40.8097 10.7368 41.8248 10.2448 43.0126C9.75282 44.2003 9.62409 45.5072 9.8749 46.7681C10.1257 48.029 10.7448 49.1872 11.6538 50.0962C12.5629 51.0052 13.721 51.6243 14.9819 51.8751C16.2428 52.1259 17.5497 51.9972 18.7374 51.5052C19.9252 51.0132 20.9403 50.1801 21.6546 49.1112C22.3688 48.0423 22.75 46.7856 22.75 45.5C22.75 43.7761 22.0652 42.1228 20.8462 40.9038C19.6272 39.6848 17.9739 39 16.25 39ZM16.25 48.75C15.6072 48.75 14.9789 48.5594 14.4444 48.2023C13.9099 47.8452 13.4934 47.3376 13.2474 46.7437C13.0014 46.1499 12.937 45.4964 13.0625 44.866C13.1879 44.2355 13.4974 43.6564 13.9519 43.2019C14.4064 42.7474 14.9855 42.4378 15.616 42.3124C16.2464 42.187 16.8999 42.2514 17.4937 42.4974C18.0876 42.7434 18.5952 43.1599 18.9523 43.6944C19.3094 44.2289 19.5 44.8572 19.5 45.5C19.5 46.362 19.1576 47.1886 18.5481 47.7981C17.9386 48.4076 17.112 48.75 16.25 48.75Z" fill="#CC4051"/>
+    </symbol>
+    <symbol id="discount" viewBox="0 0 80 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.4688 26.6562H0.435547V23.6973H14.4688V26.6562Z" fill="black"/>
+        <path d="M27.9746 20.7676H31.6074C33.6191 20.7676 35.377 20.416 36.8809 19.7129C38.3848 18.9902 39.5273 18.0137 40.3086 16.7832C41.1094 15.5332 41.5098 14.0977 41.5098 12.4766C41.5098 9.74219 40.7383 7.60352 39.1953 6.06055C37.6523 4.51758 35.4355 3.74609 32.5449 3.74609C29.8105 3.74609 27.5645 4.55664 25.8066 6.17773C24.0684 7.7793 23.1992 9.89844 23.1992 12.5352H19.6836C19.6836 10.3281 20.2402 8.31641 21.3535 6.5C22.4668 4.66406 24.0098 3.24805 25.9824 2.25195C27.9551 1.25586 30.1426 0.757812 32.5449 0.757812C36.4121 0.757812 39.459 1.8125 41.6855 3.92188C43.9121 6.03125 45.0254 8.92188 45.0254 12.5938C45.0254 14.6445 44.3711 16.5391 43.0625 18.2773C41.7734 19.9961 39.9961 21.2852 37.7305 22.1445C40.3867 22.8867 42.3984 24.166 43.7656 25.9824C45.1328 27.7793 45.8164 29.9277 45.8164 32.4277C45.8164 36.0801 44.625 39.0195 42.2422 41.2461C39.8594 43.4727 36.6758 44.5859 32.6914 44.5859C30.1523 44.5859 27.8184 44.0781 25.6895 43.0625C23.5801 42.0469 21.9395 40.6309 20.7676 38.8145C19.6152 36.9785 19.0391 34.8496 19.0391 32.4277H22.5547C22.5547 35.1426 23.502 37.3594 25.3965 39.0781C27.291 40.7773 29.7227 41.627 32.6914 41.627C35.7188 41.627 38.0723 40.8555 39.752 39.3125C41.4512 37.75 42.3008 35.4941 42.3008 32.5449C42.3008 29.6934 41.3828 27.5156 39.5469 26.0117C37.7305 24.5078 35.0449 23.7559 31.4902 23.7559H27.9746V20.7676Z" fill="black"/>
+        <path d="M79.1855 26.2168C79.1855 32.2324 78.082 36.8027 75.875 39.9277C73.668 43.0332 70.416 44.5859 66.1191 44.5859C61.9004 44.5859 58.668 43.0625 56.4219 40.0156C54.1758 36.9492 53.0234 32.4961 52.9648 26.6562V19.0098C52.9648 13.0137 54.0781 8.47266 56.3047 5.38672C58.5312 2.30078 61.7832 0.757812 66.0605 0.757812C70.2793 0.757812 73.502 2.25195 75.7285 5.24023C77.9551 8.20898 79.1074 12.5938 79.1855 18.3945V26.2168ZM75.6699 18.5703C75.6699 13.6875 74.8691 9.99609 73.2676 7.49609C71.6855 4.99609 69.2832 3.74609 66.0605 3.74609C62.8965 3.74609 60.5137 4.9668 58.9121 7.4082C57.3105 9.84961 56.4902 13.4531 56.4512 18.2188V26.5977C56.4512 31.4609 57.2715 35.1816 58.9121 37.7598C60.5723 40.3379 62.9746 41.627 66.1191 41.627C69.2441 41.627 71.6074 40.3672 73.209 37.8477C74.8301 35.3281 75.6504 31.6367 75.6699 26.7734V18.5703Z" fill="black"/>
+        <path d="M85.9238 9.54688C85.9238 7.00781 86.7051 4.9082 88.2676 3.24805C89.8496 1.56836 91.8516 0.728516 94.2734 0.728516C96.6953 0.728516 98.6875 1.56836 100.25 3.24805C101.832 4.9082 102.623 7.06641 102.623 9.72266V11.8027C102.623 14.3027 101.842 16.3926 100.279 18.0723C98.7363 19.7324 96.7539 20.5625 94.332 20.5625C91.9297 20.5625 89.9277 19.7422 88.3262 18.1016C86.7246 16.4609 85.9238 14.293 85.9238 11.5977V9.54688ZM88.7656 11.8027C88.7656 13.6191 89.2637 15.1133 90.2598 16.2852C91.2754 17.457 92.6328 18.043 94.332 18.043C95.9922 18.043 97.3105 17.457 98.2871 16.2852C99.2832 15.0938 99.7812 13.5605 99.7812 11.6855V9.54688C99.7812 7.73047 99.2734 6.23633 98.2578 5.06445C97.2422 3.87305 95.9141 3.27734 94.2734 3.27734C92.6523 3.27734 91.3242 3.86328 90.2891 5.03516C89.2734 6.20703 88.7656 7.76953 88.7656 9.72266V11.8027ZM107.398 33.541C107.398 31.002 108.18 28.9023 109.742 27.2422C111.324 25.582 113.316 24.752 115.719 24.752C118.121 24.752 120.113 25.582 121.695 27.2422C123.297 28.8828 124.098 31.0508 124.098 33.7461V35.8262C124.098 38.3652 123.307 40.4648 121.725 42.125C120.162 43.7852 118.18 44.6152 115.777 44.6152C113.375 44.6152 111.373 43.7949 109.771 42.1543C108.189 40.4941 107.398 38.3359 107.398 35.6797V33.541ZM110.211 35.8262C110.211 37.6621 110.709 39.166 111.705 40.3379C112.721 41.5098 114.078 42.0957 115.777 42.0957C117.457 42.0957 118.785 41.5098 119.762 40.3379C120.758 39.1465 121.256 37.5938 121.256 35.6797V33.541C121.256 31.666 120.748 30.1621 119.732 29.0293C118.736 27.877 117.398 27.3008 115.719 27.3008C114.078 27.3008 112.75 27.877 111.734 29.0293C110.719 30.1816 110.211 31.7246 110.211 33.6582V35.8262ZM95.4453 40.4551L93.248 39.0488L114.078 5.70898L116.275 7.11523L95.4453 40.4551Z" fill="black"/>
+        <rect y="23" width="15" height="4" fill="#CC4051"/>
+    </symbol>
+    <symbol id="navigation" viewBox="0 0 49 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M46.506 24.6071C46.506 39.0774 24.1429 62.7559 24.1429 62.7559C24.1429 62.7559 1.77979 39.0774 1.77979 24.6071C1.77979 11.5313 11.067 2.24402 24.1429 2.24402C37.2187 2.24402 46.506 11.5313 46.506 24.6071Z" stroke="#1D1D1B" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M31.5714 19.5L21.3572 29.7143L16.7143 25.0714" stroke="#CC4051" stroke-width="3" stroke-miterlimit="10"/>
+        <path d="M24.1429 38.0714C31.3226 38.0714 37.1429 32.2511 37.1429 25.0714C37.1429 17.8917 31.3226 12.0714 24.1429 12.0714C16.9632 12.0714 11.1429 17.8917 11.1429 25.0714C11.1429 32.2511 16.9632 38.0714 24.1429 38.0714Z" stroke="#1D1D1B" stroke-width="3" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="shield" viewBox="0 0 53 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.4643 65C26.3718 65 26.1867 65 26.0942 64.9067C10.4562 60.2439 0 46.0689 0 29.6557V8.8594C0 8.2066 0.555195 7.64706 1.20292 7.64706C4.71916 7.64706 7.58766 4.7561 7.58766 1.21234C7.58766 0.559541 8.14286 0 8.79058 0H44.138C44.7857 0 45.3409 0.559541 45.3409 1.21234C45.3409 4.7561 48.2094 7.64706 51.7256 7.64706C52.3734 7.64706 52.9286 8.2066 52.9286 8.8594V29.5624C52.9286 45.9756 42.4724 60.2439 26.8344 64.9067C26.6493 65 26.5568 65 26.4643 65ZM9.90097 2.51793C9.34578 6.34146 6.29221 9.5122 2.49838 9.97848V29.5624C2.40584 44.7633 12.1218 58.0057 26.4643 62.4821C40.8068 58.0057 50.5227 44.7633 50.5227 29.5624V9.97848C46.6364 9.41894 43.5828 6.34146 43.0276 2.42468H9.90097V2.51793Z" fill="black"/>
+        <path d="M26.4643 41.406C20.2646 41.406 15.1753 36.2769 15.1753 30.0287C15.1753 23.7805 20.2646 18.6514 26.4643 18.6514C32.664 18.6514 37.7533 23.7805 37.7533 30.0287C37.7533 36.2769 32.664 41.406 26.4643 41.406ZM26.4643 21.076C21.5601 21.076 17.5812 25.0861 17.5812 30.0287C17.5812 34.9713 21.5601 38.9814 26.4643 38.9814C31.3685 38.9814 35.3474 34.9713 35.3474 30.0287C35.3474 25.0861 31.3685 21.076 26.4643 21.076Z" fill="black"/>
+        <path d="M25.1688 34.9713C24.7987 34.9713 24.5211 34.8781 24.336 34.5983L21.8376 32.0804C21.375 31.6141 21.375 30.7748 21.8376 30.3085C22.1152 30.0287 22.3928 29.9355 22.6704 29.9355C22.948 29.9355 23.3182 30.0287 23.5032 30.3085L25.1688 31.9871L30.6282 26.485C30.9058 26.2052 31.1834 26.1119 31.461 26.1119C31.8311 26.1119 32.1087 26.2052 32.2938 26.485C32.7565 26.9512 32.7565 27.7906 32.2938 28.2568L26.0016 34.5983C25.8165 34.8781 25.5389 34.9713 25.1688 34.9713Z" fill="#CD4051"/>
+    </symbol>
+</svg>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+            <div class="first-screen__box">
+                <div class="first-screen__logo-box first-screen__logo-box_new">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">Business License renewal in the UAE</h1>
+                    <p class="first-screen__text">Renew your business license with an expert help from a leading Dubai consulting group. Save up to 30% of your costs by ordering all services in one place</p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Leave a request</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--         block-frames             -->
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">Trade Licenses in the UAE are issued by the Department of Economic Development Authority and permits business owners to carry out business in the UAE. In order to continue operating, any type of license requires an annual renewal. This rule applies to all types of local companies and those companies established in the FZEs</div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <div class="r60 hide-sm-min"></div>
+    </div>
+</section>
+
+<div class="r1 r_bg-gray"></div>
+
+<!--             Решения   ||      solutions             -->
+<style>
+    .block1 .block1__head:hover { background-color: #[[*link_attributes]]; } 
+</style>
+<section id="scrollBlock1" class="bg-F9">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Our solutions for legal support of your business</h2>
+        <div class="r30"></div>
+        <div class="sub-header">SORP Group will take care of all procedures, including issues related to relations with registrars and government authorities, as well as provide space for license renewal. This procedure is easy to implement with us, convenient and even possible remotely</div>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block1 block1_modal">
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01');">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">PRO service for license</div>
+                        <div class="block1__head-text">
+                            PRO service for license, approvals and other company documents renewal in the UAE
+                        </div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <ul class="bem-list">
+                            <li class="bem-list__item">License renewal by government licensing authorities.</li>
+                            <li class="bem-list__item">Cooperation with government services, registration authorities, immigration services in order to renew immigration cards, as well as registration with the Ministry of Labour and other agencies.</li>
+                            <li class="bem-list__item">Resolving issues related to obtaining the necessary approvals from supervisory authorities to renew the permit to conduct business in the case of a complex license.</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Get a consultation
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use xlink:href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01');">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Lease agreements</div>
+                        <div class="block1__head-text">Lease agreements, sustainability contracts (Estidama), flexi desks, offices with Ejari</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                        <ul class="bem-list">
+                            <li class="bem-list__item">Optimisation of the costs of renting space required when renewing a licence for a local company by providing a sustainability contract.</li>
+                            <li class="bem-list__item">Savings on accommodation due to the ability to renew the licence and place staff in the minimum rental space.</li>
+                            <li class="bem-list__item">Optimal office rentals with Ejari contract for local company registration and the possibility to pay by installments.</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Get a consultation
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use xlink:href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01');">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Special features</div>
+                        <div class="block1__head-text">Special features for attracting a local partner or agent to the company</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                    <ul class="bem-list">
+                        <li class="bem-list__item">Verification of the correctness and security of the relationship that you previously entered into with a local partner or agent.</li>
+                        <li class="bem-list__item">Provision of an offer containing the cost of services of a nominee service (local partner or agent) when ordering a range of services.</li>
+                        <li class="bem-list__item">Registration of relationship of the local nominee service provided by us, according to a standard set by international experts.</li>
+                    </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Get a consultation
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use xlink:href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01');">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Beneficiary concealment service</div>
+                        <div class="block1__head-text">Beneficiary concealment service by providing a technical director or nominee shareholder</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                    <ul class="bem-list">
+                        <li class="bem-list__item">Creation of a safe and secure corporate structure.</li>
+                        <li class="bem-list__item">Application of nominal business instruments within the framework of the standard requirements for confirmation of economic substance in the UAE.</li>
+                        <li class="bem-list__item">Saving costs for company administration when ordering a comprehensive package of services from our company.</li>
+                    </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Get a consultation
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use xlink:href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01');">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Comprehensive service</div>
+                        <div class="block1__head-text">Comprehensive service on tax and accounting support</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                    <ul class="bem-list">
+                        <li class="bem-list__item">Accounting, tax reporting, PRO services and legal support.</li>
+                        <li class="bem-list__item">Possibility of using a simplified taxation system when joining our tax group.</li>
+                        <li class="bem-list__item">Registration of audit reports required in individual cases by the FZE.</li>
+                        <li class="bem-list__item">Obtaining comprehensive tax advice on doing business both in the UAE and abroad.</li>
+                    </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Get a consultation
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use xlink:href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block1__item z-idx3">
+                <a class="block1__head" href="#" onclick="toggleModal('form01');">
+                    <div class="block1__head-content">
+                        <div class="block1__head-title">Comprehensive service</div>
+                        <div class="block1__head-text">Comprehensive service for companies doing international business from the UAE</div>
+                    </div>
+                </a>
+                <div class="block1__content">
+                    <div class="block1__content-text">
+                    <ul class="bem-list">
+                        <li class="bem-list__item">Secretarial service.</li>
+                        <li class="bem-list__item">Confirmation of the centre of management and economic substance in the UAE.</li>
+                        <li class="bem-list__item">Confirming the centre of vital interests in the UAE for shareholders and directors of companies.</li>
+                        <li class="bem-list__item">Obtaining a tax certificate.</li>
+                    </ul>
+                    </div>
+                    <a href="#" class="block1__btn btn btn_white btn_border1 btn_space-between" onclick="toggleModal('form01');">
+                        Get a consultation
+                        <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                          <use xlink:href="#btn__icon-modal"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<!--         ФОС          -->
+<div class="bg bg_red">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Get a personalised offer to renew your licence and optimise the cost of doing business in the UAE</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Contact an expert</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--          Что вы получите             -->
+<section class="bg-F9" id="scrollBlock2">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">When contacting SORP Group for complex services, you get the following solutions</h2>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block18">
+            <div class="block18__item block18__item_big">
+                <div class="block18__icon-wrap">
+                    <svg class="block18__icon">
+                        <use href="#doc"></use>
+                    </svg>
+                </div>
+                <div class="box-thin-shape"></div>
+                <div class="box-shape bg-F9"></div>
+                <div class="block18__text">
+                    <div class="block18__title block18__title_big block18__description-pr120">Timely renewal of the licence and other company documents</div>
+                    <div class="block18__description block18__description_big">Even if you are not in the UAE, all the necessary actions regulated by the licence renewal rules will be completed on time</div>
+                </div>
+            </div>
+            <div class="block18__item block18__item_big">
+                <div class="block18__icon-wrap">
+                    <svg class="block18__icon">
+                        <use href="#discount"></use>
+                    </svg>
+                </div>
+                <div class="block18__text">
+                    <div class="block18__title block18__title_big block18__description-pr120">Up to 30% cost savings for the company by ordering a range of services</div>
+                    <div class="block18__description block18__description_big">This is ensured by the SORP Group supplying the entire range of services, with its own Business Centre and optimum pricing</div>
+                </div>
+            </div>
+            
+            <div class="block18__item block18__item_big">
+                <div class="block18__icon-wrap">
+                    <svg class="block18__icon">
+                        <use href="#navigation"></use>
+                    </svg>
+                </div>
+                <div class="block18__text">
+                    <div class="block18__title block18__title_big block18__description-pr120">Confirmation of economic substance in the UAE</div>
+                    <div class="block18__description block18__description_big">Fulfilment of the requirements, of the legislation for entities conducting activities, regarding the need to confirm their economic presence, and submitting reports to the regulator</div>
+                </div>
+            </div>
+            <div class="block18__item block18__item_big">
+                <div class="block18__icon-wrap">
+                    <svg class="block18__icon">
+                        <use href="#shield"></use>
+                    </svg>
+                </div>
+            <div class="box-thin-shape box-thin-shape_XY-Lside"></div>
+            <div class="box-shape bg-F9 box-shape_XY-Lside"></div>
+                <div class="block18__text"> 
+                    <div class="block18__title block18__title_big block18__description-pr120">Company security within the framework of automatic exchange of tax information</div>
+                    <div class="block18__description block18__description_big">Expertise for corporate structure and its security from automatic exchange of information, the confidentiality of shareholders, directors of companies and signatories for current accounts</div>
+                </div>
+            </div>
+        </div>
+        <div class="r50_adaptive"></div>
+        <a href="#" class="btn btn_gray-bg btn_center btn_border2 btn_white btn_space-between z-idx3" onclick="toggleModal('form01');">
+            Request a consultation
+            <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+              <use xlink:href="#btn__icon-modal"></use>
+            </svg>
+        </a>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="r1 r_bg-gray"></div>
+
+<!-- Почему SORP - Slider -->
+<section class="bg-F9" id="scrollBlock3">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP Group - a full range of services for the establishment, maintenance and management of business in the UAE</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">15 years of experience</div>
+					<div class="tslider-item__text fadeInUp">In the field of registration, business support and solving difficult cases to support activities in the UAE</div>
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+						<div class="back"></div>
+						<div class="tslider-item__number">Expertise</div>
+						<div class="tslider-item__text wow fadeInUp">We are able to conduct an expert examination of the business concept and core business processes of your company in the UAE</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">SORP's business center</div>
+						<div class="tslider-item__text">5000 square meters of modern office space in a prestigious location in Dubai for rent to accommodate businesses and pass permits’ renewal procedures</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Comprehensive service</div>
+						<div class="tslider-item__text">Wide range of tools for providing outsourcing services to support and maintain your business in the UAE</div>
+					</div>
+
+                    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">International standard</div>
+						<div class="tslider-item__text">Confidential legal solutions to optimize taxation, conceal beneficiaries, and protect against automatic data exchange in accordance with the CRS standard</div>
+					</div>
+					
+				    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">The legitimacy and anonymity</div>
+						<div class="tslider-item__text">We will ensure the security of your investments, take measures to properly comply with current legislation and maintain the confidentiality of information</div>
+					</div>
+				    <div class="tns-controls">
+					    <div class="button" onclick="slideup()"></div>
+					    <div class="button" onclick="slidedown()"></div>
+				    </div>
+			    </div>
+		</div>
+	</div>
+</section>
+
+<div class="r1 r_bg-gray"></div>
+
+<div class="sreg2 sreg2--white" style="z-index: auto;">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="sreg2__i">
+            <div class="sreg2__block">
+                <h2 class="fadeInUp">Get professional help from experts</h2>
+                <div class="r20"></div>
+                <p class="wow fadeInUp">
+                    Renew your business license and outsource all non-core business support issues in the UAE.
+                    <br><br>
+                    SORP Group experts will help you to choose the optimal package of solutions for your business, timely renew the licences and provide comprehensive support for your business in the UAE.
+                </p>
+            </div>
+            <div class="sopr-registration wow fadeInUp animated" style="visibility: visible;">
+                <p id="reg">Leave a request</p>
+                <div role="form" class="wpcf7" id="wpcf7-f273-o1" lang="ru-RU" dir="ltr">
+                    <div class="screen-reader-response"></div>
+                    {$_modx->getChunk('form4')}
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</div>
+
+<div class="r1 r_bg-gray"></div>
+
+{/block}
+{include 'footer'}

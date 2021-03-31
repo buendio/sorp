@@ -1,0 +1,401 @@
+extends ../layouts/default
+
+block variables
+  - const title = "article1";
+  - page = "article1";
+
+block content
+  main
+    section.bg_first-screen
+      .container
+        .first-screen
+          .first-screen__box
+            .first-screen__logo-box
+              .first-screen__logo(data-bg="/git/img/blocks/logo-inner.gif")
+            .first-screen__content
+              h1.first-screen__title Антикризисное управление компанией в сложный период
+              p.first-screen__text.
+                Изучите все способы санации бизнеса и правильного завершения деятельности в ОАЭ
+              label.first-screen__btn.btn.btn_radius5.btn_hover-red.btn_h55(for="modal1") Оставить заявку
+
+    section
+      .r60_adaptive
+      // КРАСНАЯ РАМКА
+      .container
+        .block-frames
+          .block-frames__border
+          p.block-frames__wrapper.
+            В любой ситуации правильно выбранная стратегия обеспечивает успешное решение возникших
+            трудностей. Консультанты SORP помогут вам в сопровождении вашей деятельности и обеспечат
+            комплексную антикризисную поддержку и широкий спектр аутсорсинговых услуг. Мы подскажем
+            верные решения в любой сложившейся ситуации и подберём оптимальный путь оздоровления вашего
+            бизнеса в соответствии с действующим на территории ОАЭ законодательством.
+      .r60_adaptive
+      .r40.show-md-min.hide-tn
+
+    section.bg.bg_fa
+      .r60_adaptive
+      .container
+        h2.title Почему бизнес в ОАЭ может оказаться убыточным?
+        .r50_adaptive
+        .block24.block24_width2
+          .block24__item
+            .block24__img.lazy(data-bg="./dist/img/blocks/block24/icon.svg")
+            .block24__content
+              h3.block24__title Неверно выбранная стратегия, приведшая к ошибкам в выборе лицензии и места регистрации
+              p.block24__text Результатом этих действий стало непопадание в намеченную нишу и отсутствие выхода на целевую аудиторию
+          .block24__item
+            .block24__img.lazy(data-bg="./dist/img/blocks/block24/icon.svg")
+            .block24__content
+              h3.block24__title Отсутствие УТП (уникального торгового предложения)
+              p.block24__text И, как следствие, невозможность оставаться конкурентоспособным на рынке аналогичных товаров или услуг
+          .block24__item
+            .block24__img.lazy(data-bg="./dist/img/blocks/block24/icon.svg")
+            .block24__content
+              h3.block24__title Внешние, неудачно сложившиеся обстоятельства
+              p.block24__text Результатом этих действий стало непопадание в намеченную нишу и отсутствие выхода на целевую аудиторию
+          .block24__item
+            .block24__img.lazy(data-bg="./dist/img/blocks/block24/icon.svg")
+            .block24__content
+              h3.block24__title Рискованная финансовая стратегия и слишком большой объём кредитных средств при небольших оборотах
+              p.block24__text Которые привели к невозможности своевременно расплатиться по счетам с контрагентами и поставщиками
+      .r60_adaptive
+
+    section.bg.bg_red
+      .r30
+      .r5
+      .container
+        .feedback-block
+          h3.feedback-block__text Получите индивидуальный план по выходу из кризисной ситуации
+          label.feedback-block__btn(for="modal1") Получить консультацию
+      .r30
+      .r5
+
+    section
+      .r60_adaptive
+      .container
+        h2.title Почему не нужно бросать бизнес и убегать от финансовых проблем?
+        .r50_adaptive
+        .flex.flex_width2
+          .flex__item
+            p.quote.
+              Самое важное, что нужно помнить бизнесмену, оказавшемуся в трудной ситуации — не следует поддаваться соблазну оставить всё, как есть и спешно покинуть ОАЭ.
+              <br> <br>
+              Если вы поступите таким образом, то вы совершите большую ошибку, последствия которой сыграют свою негативную роль в вашей жизни.
+          .flex__item.flex__item_flex.flex__item_justify-content-end.hide-tn.show-md-min
+            .flex.flex_justify-content-end
+              .bg.bg_map-dubai.lazy(data-bg="./dist/img/pages/article1/bg1.svg")
+      .r60_adaptive
+      .r1.r_bg-e3
+
+    section
+      .container
+        .r30
+        h2.title Последствия от «брошенного» бизнеса
+        .r30
+        .r1.r_bg-red
+        .r30
+      .block15(data-block='0')
+        .block15__item-container(data-index='0')
+          .container
+            .block15__item
+              .block15__column
+                .block15__top
+                  .block15__icon
+                    img.block15__img.lazy(src="/assets/templates/main/img/mask.png" data-src="./dist/img/pages/article1/block15/1.svg" alt="")
+                  h3.block15__title Огласка на международном уровне, благодаря автоматическому обмену
+                label.btn.btn_white.btn_space-between(for="modal1")
+                  | Получить консультацию
+                  svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+                    use(xlink:href='#btn__icon-modal')
+              .block15__column
+                .block15__desc
+                  p.block15__desc-item Во-первых, это событие получит огласку на международном уровне. Как только вы прекратите свою деятельность на территории ОАЭ, вы лишаетесь статуса налогового резидента.
+                  p.block15__desc-item Это значит, что все сведения о вас и вашей компании (в том числе нарушения, долговые обязательства, неисполненные контракты на территории Эмиратов и др.) попадают в систему автоматического обмена информацией, и те данные, которые вы, вероятно, хотели бы сохранить в тайне, получат огласку.
+                  p.block15__desc-item Наличие подобных сведений в международной системе принесёт негативные последствия для вас лично и вашего бизнеса в целом. Это ощутимый неприятный удар по вашей репутации, показатель вашей ненадёжности и некомпетентности.
+
+        .block15__item-container(data-index='1')
+          .container
+            .block15__item
+              .block15__column
+                .block15__top
+                  .block15__icon
+                    img.block15__img.lazy(src="/assets/templates/main/img/mask.png" data-src="./dist/img/pages/article1/block15/2.svg" alt="")
+                  h3.block15__title Незакрытые обязательства и долги негативно скажутся на вашей кредитной истории
+                label.btn.btn_white.btn_space-between(for="modal1")
+                  | Получить консультацию
+                  svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+                    use(xlink:href='#btn__icon-modal')
+              .block15__column
+                .block15__desc
+                  p.block15__desc-item Во-вторых, незакрытые обязательства и долги негативно скажутся на вашей кредитной истории, в том числе в других странах. Практически все развитые страны используют международную банковскую систему сбора информации о субъектах бизнеса во всем мире.
+                  p.block15__desc-item Это своего рода международный реестр, куда попадает информация обо всех долгах, штрафах, неисполненных обязательствах, нарушениях трудовых норм бизнесменов и многое другое. Уходя из бизнеса с таким “багажом”, вы рискуете оказаться в чёрном списке не только в ОАЭ, но и в других цивилизованных странах, а также у крупных международных банковских структур. Ваши шансы получить кредиты и займы на развитие нового бизнеса на выгодных для вас условиях существенно снижаются.
+
+        .block15__item-container(data-index='2')
+          .container
+            .block15__item
+              .block15__column
+                .block15__top
+                  .block15__icon
+                    img.block15__img.lazy(src="/assets/templates/main/img/mask.png" data-src="./dist/img/pages/article1/block15/3.svg" alt="")
+                  h3.block15__title Незакрытые обязательства и долги негативно скажутся на вашей кредитной истории
+                label.btn.btn_white.btn_space-between(for="modal1")
+                  | Получить консультацию
+                  svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+                    use(xlink:href='#btn__icon-modal')
+              .block15__column
+                .block15__desc
+                  p.block15__desc-item Во-вторых, незакрытые обязательства и долги негативно скажутся на вашей кредитной истории, в том числе в других странах. Практически все развитые страны используют международную банковскую систему сбора информации о субъектах бизнеса во всем мире.
+                  p.block15__desc-item Это своего рода международный реестр, куда попадает информация обо всех долгах, штрафах, неисполненных обязательствах, нарушениях трудовых норм бизнесменов и многое другое. Уходя из бизнеса с таким “багажом”, вы рискуете оказаться в чёрном списке не только в ОАЭ, но и в других цивилизованных странах, а также у крупных международных банковских структур. Ваши шансы получить кредиты и займы на развитие нового бизнеса на выгодных для вас условиях существенно снижаются.
+
+        .block15__item-container(data-index='3')
+          .container
+            .block15__item
+              .block15__column
+                .block15__top
+                  .block15__icon
+                    img.block15__img.lazy(src="/assets/templates/main/img/mask.png" data-src="./dist/img/pages/article1/block15/3.svg" alt="")
+                  h3.block15__title Возможная негативная интерпретация доходов, как мошеннических
+                label.btn.btn_white.btn_space-between(for="modal1")
+                  | Получить консультацию
+                  svg.btn__icon-svg(xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 128 128')
+                    use(xlink:href='#btn__icon-modal')
+              .block15__column
+                .block15__desc
+                  p.block15__desc-item В-четвёртых, ваше бегство может быть интерпретировано как мошенничество. На вас будет заведено уголовное дело, которое может привести к международному розыску.
+      .r1.r_bg-e3
+
+
+    section.bg_fa
+      .r30
+      .r60_adaptive
+      .container
+        .feedback-bigblock
+          .flex.flex_width2
+            .flex__item
+              .feedback-bigblock__info-box.borderline.borderline_quote.borderline_red.borderline_border10
+                h3.feedback-bigblock__info-title Успешное решение возникших трудностей
+                .feedback-bigblock__info-text
+                  p.feedback-bigblock__info-text-item В любой ситуации правильно выбранная стратегия обеспечивает успешное решение возникших трудностей.
+                  p.feedback-bigblock__info-text-item Мы подскажем верные решения в любой сложившейся ситуации и подберём оптимальный путь оздоровления вашего бизнеса в соответствии с действующим законодательством
+
+                .borderline__quote.borderline__quote_top.borderline__quote_background-fa.lazy(data-bg="./dist/img/blocks/borderline/quotes.svg")
+                .borderline__quote.borderline__quote_bottom.borderline__quote_background-fa.lazy(data-bg="./dist/img/blocks/borderline/quotes.svg")
+
+            .flex__item
+              .feedback-bigblock__form
+                h3.feedback-bigblock__form-title Получите антикризисные решения
+                form.form-block
+                  input.callOrderReason(type='hidden', name='reason')
+                  input.page(type='hidden', name='page', value='[[~[[*id]]? &scheme=`full`]]')
+                  input.site-message(type='text', name='name', value='')
+                  input.site-message(type='text', name='firstname', value='')
+                  input.site-message(type='text', name='lastname', value='')
+                  .form-block__item
+                    label.form-block__label(for='fio3') Ваше имя
+                    input#fio3.form-block__input(type='text' name='fio3' value='')
+                  .form-block__item
+                    label.form-block__label(for='phone3') Телефон
+                    input#phone3.form-block__input(type='text' name='phone3' value='')
+                  .form-block__item
+                    input.btn.btn_radius5.btn_w100.btn_h70.btn_font-s20(type='submit' value='Получить решение')
+                  //-p.form-block__confid Поля, отмеченные символом * обязательны для заполнения
+      .r30
+      .r60_adaptive
+
+    section.bg_fa
+      .r1.r_bg-e3
+      .container
+        .r60_adaptive
+        h2.title Законные способы выхода из кризисной ситуации
+        .r50_adaptive
+        p.description Все приведённые выше аргументы говорят о том, что несмотря на ситуацию и обстоятельства, если вы находитесь на гране кризиса или испытываете финансовые трудности, нужно действовать согласно букве закона.
+        .r50_adaptive
+        .r1.r_bg-red
+        .r50_adaptive
+
+        .block1.block1_white.block1_light.block1_anchor
+          .block1__item
+            a.block1__head(href='#')
+              .block1__head-content
+                h3.block1__head-title Банкротство бизнеса
+                p.block1__head-text
+                  | Ликвидация компании через суд по признаку финансовой несостоятельности
+              .block1__head-icon
+          .block1__item
+            a.block1__head(href='#')
+              .block1__head-content
+                h3.block1__head-title Ликвидация юридического лица
+                p.block1__head-text
+                  | Необходимо закрыть все долги и банковский счет с дальнейшей процедурой ликвидации бизнеса
+              .block1__head-icon
+          .block1__item
+            a.block1__head(href='#')
+              .block1__head-content
+                h3.block1__head-title Продажа бизнеса
+                p.block1__head-text
+                  | Выгодное решение, учитывая, что в ОАЭ всегда есть высокий спрос на готовый работающий бизнес
+              .block1__head-icon
+          .block1__item
+            a.block1__head(href='#')
+              .block1__head-content
+                h3.block1__head-title Заморозка лицензии на определенный срок
+                p.block1__head-text
+                  | Приостановка бизнеса с сохранением юридического лица с лицензией на срок до 3 лет
+              .block1__head-icon
+          .block1__item
+            a.block1__head(href='#')
+              .block1__head-content
+                h3.block1__head-title Рестуктуризация финансов
+                p.block1__head-text
+                  | Обращение в суд и инициация процедуры финансового оздоровления, до иска кредитора
+              .block1__head-icon
+          .block1__item
+            a.block1__head(href='#')
+              .block1__head-content
+                h3.block1__head-title Антикризисное управление
+                p.block1__head-text
+                  | Доверьтесь нашим решениям, которые помогут вывести ваш бизнес из сложной ситуации
+              .block1__head-icon
+
+        .r50_adaptive
+        .block5
+          <svg class="block5__icon" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M57.7198 28.0225H54.2216C53.7577 28.0225 53.3128 28.2067 52.9848 28.5348C52.6568 28.8628 52.4725 29.3077 52.4725 29.7715C52.4725 30.2354 52.6568 30.6803 52.9848 31.0083C53.3128 31.3364 53.7577 31.5206 54.2216 31.5206H57.7198C58.1836 31.5206 58.6285 31.3364 58.9565 31.0083C59.2846 30.6803 59.4688 30.2354 59.4688 29.7715C59.4688 29.3077 59.2846 28.8628 58.9565 28.5348C58.6285 28.2067 58.1836 28.0225 57.7198 28.0225Z" fill="#CC4051"/>
+          <path d="M64.7161 7.0335H58.4544L51.9478 0.561895C51.8203 0.33303 51.6247 0.149607 51.3881 0.0371697C51.1693 -0.0123899 50.9422 -0.0123899 50.7234 0.0371697H19.2399C19.0211 -0.0123899 18.794 -0.0123899 18.5753 0.0371697C18.357 0.111753 18.1634 0.24486 18.0156 0.421968L11.509 7.0335H5.24725C3.85559 7.0335 2.52093 7.58634 1.53688 8.57039C0.552834 9.55444 0 10.8891 0 12.2808V57.7569C0 59.1486 0.552834 60.4832 1.53688 61.4673C2.52093 62.4513 3.85559 63.0042 5.24725 63.0042H27.9853L33.5824 69.4058C33.7497 69.5928 33.9546 69.7423 34.1837 69.8447C34.4127 69.9471 34.6608 70 34.9117 70C35.1626 70 35.4107 69.9471 35.6397 69.8447C35.8688 69.7423 36.0737 69.5928 36.241 69.4058L41.978 63.0042H64.7161C66.1077 63.0042 67.4424 62.4513 68.4265 61.4673C69.4105 60.4832 69.9633 59.1486 69.9633 57.7569V12.2808C69.9633 10.8891 69.4105 9.55444 68.4265 8.57039C67.4424 7.58634 66.1077 7.0335 64.7161 7.0335ZM35.9961 21.0262H33.9672L28.72 15.7789L30.469 14.0298H39.4943L41.2434 15.7789L35.9961 21.0262ZM39.4943 10.5317H30.469L23.4727 3.53534H46.4906L39.4943 10.5317ZM42.7126 12.2808L50.7234 4.26995L55.2361 8.78259L47.2253 16.7934L42.7126 12.2808ZM19.2399 4.26995L27.2507 12.2808L22.7381 16.7934L14.7273 8.78259L19.2399 4.26995ZM5.24725 59.506C4.78336 59.506 4.33848 59.3217 4.01046 58.9937C3.68245 58.6657 3.49817 58.2208 3.49817 57.7569V12.2808C3.49817 11.8169 3.68245 11.372 4.01046 11.044C4.33848 10.7159 4.78336 10.5317 5.24725 10.5317H11.509L21.5137 20.5014C21.6708 20.6688 21.8604 20.8021 22.071 20.8933C22.2816 20.9845 22.5086 21.0315 22.7381 21.0315C22.9676 21.0315 23.1946 20.9845 23.4052 20.8933C23.6157 20.8021 23.8054 20.6688 23.9624 20.5014L26.2363 18.2626L31.2386 23.265L20.989 53.6991C20.8905 53.9878 20.8678 54.2971 20.9229 54.5972C20.978 54.8973 21.1092 55.1782 21.3038 55.4132L24.802 59.506H5.24725ZM34.9817 65.5928L24.6971 53.874L34.4919 24.5243H35.4714L45.2663 53.874L34.9817 65.5928ZM66.4652 57.7569C66.4652 58.2208 66.2809 58.6657 65.9529 58.9937C65.6249 59.3217 65.18 59.506 64.7161 59.506H44.9514L48.4496 55.4132C48.6443 55.1782 48.7755 54.8973 48.8306 54.5972C48.8857 54.2971 48.8629 53.9878 48.7644 53.6991L38.6198 23.265L43.7271 18.2626L46.0009 20.5014C46.1579 20.6688 46.3476 20.8021 46.5582 20.8933C46.7688 20.9845 46.9958 21.0315 47.2253 21.0315C47.4547 21.0315 47.6818 20.9845 47.8923 20.8933C48.1029 20.8021 48.2926 20.6688 48.4496 20.5014L58.4544 10.5317H64.7161C65.18 10.5317 65.6249 10.7159 65.9529 11.044C66.2809 11.372 66.4652 11.8169 66.4652 12.2808V57.7569Z" fill="black"/>
+          </svg>
+
+          p.block5__text
+            | Вместе с консультантами SORP вы сможете пройти процедуру финансового оздоровления, чтобы найти возможность рассчитаться по долгам и, в зависимости от ваших целей, привести бизнес в порядок либо правильно завершить все дела
+        .r60_adaptive
+
+    section.bg.bg_red
+      .r30
+      .r5
+      .container
+        .feedback-block
+          h3.feedback-block__text Получите индивидуальный план по выходу из кризисной ситуации
+          label.feedback-block__btn(for="modal1") Получить консультацию
+      .r30
+      .r5
+
+    section
+      .r60_adaptive
+      .container
+        h2.title.title_color-dark Подробнее о способах выхода из кризисной ситуации
+        .r50_adaptive
+        .borderline.borderline_pattern-right
+          h3.title.title_font-s38 Банкротство
+          .r30
+          .description
+            p.description__item Если вы понимаете, что финансовая ситуация вашей компании приблизилась к критическим показателм, вам срочно нужно обратиться в суд и инициировать процедуру финансового оздоровления, пока у ваших кредиторов не возникло право возбудить на вас уголовное дело.
+            p.description__item Рассмотрев ваше заявление, суд назначит эксперта (trustee), который проведёт финансовый аудит, выяснит размер вашей задолженности перед кредиторами и поможет вам составить график погашения долгов. Этот документ регистрируется в суде и предъявляется кредиторам, которые вынуждены согласиться с этими мерами, так как они заинтересованы в том, чтобы вы смогли с ними расплатиться. Функцию надзора за действиями руководства компании-должника в данной ситуации осуществляет Комитет по финансовой реструктуризации.
+          .r50_adaptive
+          .block12.block12_modal.block12_borderline
+            .block12__item
+              img.block12__icon(src="./dist/img/pages/article1/block12/1.svg" alt="")
+              .block12__content
+                h4.block12__title Договорное обслуживание
+                p.block12__text Составление договоров найма, сервисных и инвестиционных соглашений
+            .block12__item
+              img.block12__icon(src="./dist/img/pages/article1/block12/2.svg" alt="")
+              .block12__content
+                h4.block12__title Сопровождение найма персонала
+                p.block12__text Иммиграционные процедуры и оформление сотрудников в министерстве труда
+            .block12__item
+              img.block12__icon(src="./dist/img/pages/article1/block12/3.svg" alt="")
+              .block12__content
+                h4.block12__title PRO обслуживание
+                p.block12__text Ведение коммуникации с государственными органами от лица компании
+
+        .r50_adaptive
+        .borderline.borderline_pattern-right
+          h3.title.title_font-s38 Банкротство
+          .r30
+          .description
+            p.description__item Если вы понимаете, что финансовая ситуация вашей компании приблизилась к критическим показателм, вам срочно нужно обратиться в суд и инициировать процедуру финансового оздоровления, пока у ваших кредиторов не возникло право возбудить на вас уголовное дело.
+            p.description__item Рассмотрев ваше заявление, суд назначит эксперта (trustee), который проведёт финансовый аудит, выяснит размер вашей задолженности перед кредиторами и поможет вам составить график погашения долгов. Этот документ регистрируется в суде и предъявляется кредиторам, которые вынуждены согласиться с этими мерами, так как они заинтересованы в том, чтобы вы смогли с ними расплатиться. Функцию надзора за действиями руководства компании-должника в данной ситуации осуществляет Комитет по финансовой реструктуризации.
+          .r50_adaptive
+          .block12.block12_modal.block12_borderline
+            .block12__item
+              img.block12__icon(src="./dist/img/pages/article1/block12/1.svg" alt="")
+              .block12__content
+                h4.block12__title Договорное обслуживание
+                p.block12__text Составление договоров найма, сервисных и инвестиционных соглашений
+            .block12__item
+              img.block12__icon(src="./dist/img/pages/article1/block12/2.svg" alt="")
+              .block12__content
+                h4.block12__title Сопровождение найма персонала
+                p.block12__text Иммиграционные процедуры и оформление сотрудников в министерстве труда
+            .block12__item
+              img.block12__icon(src="./dist/img/pages/article1/block12/3.svg" alt="")
+              .block12__content
+                h4.block12__title PRO обслуживание
+                p.block12__text Ведение коммуникации с государственными органами от лица компании
+        .r60_adaptive
+
+
+    section.bg_f9
+      .r60_adaptive
+      .container
+        h2.title SORP Group станет Вашим надежным партнёром в долгосрочной работе на территории ОАЭ
+        .r50_adaptive
+        p.description Ведущая консалтинговая группа, оказывающая полный цикл услуг по инкорпорации, сопровождению и управлению бизнесом на территории ОАЭ и за их пределами. Мы имеем безупречную репутацию, широкие возможности и активы
+        .slider#vslideouter
+          .slide.first
+            .slide-shadow
+            h3.slide__item-title Уникальные бизнес-мероприятия
+            p.slide__item-description Установление деловых контактов, возможность презентовать свои услуги и участвовать и получать знания на тренинговых курсах SORP
+          .text_slider__inner
+            .slide.second
+              .slide-shadow
+              h3.slide__item-title Комплекс всех услуг
+              p.slide__item-description Компания предлагает комплексное решение для бизнеса и акционеров: от регистрации компаний до получения статуса налогового резидента страны
+            .slide.third
+              .slide-shadow
+              h3.slide__item-title Комплексные услуги
+              p.slide__item-description Комплексные решения для регистрации и сопровождения инвестиций
+            .slide
+              .slide-shadow
+              h3.slide__item-title 15 лет успешной работы
+              p.slide__item-description Мы помогли тысячам клиентов начать и развивать свой бизнес в ОАЭ
+            .slide-controls
+              .arrow.arrow_prev.arrow_vertical(onclick="window.slideup()")
+              .arrow.arrow_next.arrow_vertical(onclick="window.slidedown()")
+
+    section.bg_fa
+      .r30
+      .r60_adaptive
+      .container
+        .feedback-bigblock
+          .flex.flex_width2
+            .flex__item
+              .feedback-bigblock__info-box.borderline.borderline_quote.borderline_red.borderline_border10
+                h3.feedback-bigblock__info-title Успешное решение возникших трудностей
+                .feedback-bigblock__info-text
+                  p.feedback-bigblock__info-text-item В любой ситуации правильно выбранная стратегия обеспечивает успешное решение возникших трудностей.
+                  p.feedback-bigblock__info-text-item Мы подскажем верные решения в любой сложившейся ситуации и подберём оптимальный путь оздоровления вашего бизнеса в соответствии с действующим законодательством
+
+                .borderline__quote.borderline__quote_top.borderline__quote_background-fa.lazy(data-bg="./dist/img/blocks/borderline/quotes.svg")
+                .borderline__quote.borderline__quote_bottom.borderline__quote_background-fa.lazy(data-bg="./dist/img/blocks/borderline/quotes.svg")
+
+            .flex__item
+              .feedback-bigblock__form
+                h3.feedback-bigblock__form-title Получите антикризисные решения
+                form.form-block
+                  input.callOrderReason(type='hidden', name='reason')
+                  input.page(type='hidden', name='page', value='[[~[[*id]]? &scheme=`full`]]')
+                  input.site-message(type='text', name='name', value='')
+                  input.site-message(type='text', name='firstname', value='')
+                  input.site-message(type='text', name='lastname', value='')
+                  .form-block__item
+                    label.form-block__label(for='fio4') Ваше имя
+                    input#fio4.form-block__input(type='text' name='fio4' value='')
+                  .form-block__item
+                    label.form-block__label(for='phone4') Телефон
+                    input#phone4.form-block__input(type='text' name='phone4' value='')
+                  .form-block__item
+                    input.btn.btn_radius5.btn_w100.btn_h70.btn_font-s20(type='submit' value='Получить решение')
+                  //-p.form-block__confid Поля, отмеченные символом * обязательны для заполнения
+      .r30
+      .r60_adaptive

@@ -1,0 +1,15 @@
+.form-block {
+  &__item_search { display: flex; margin-bottom: 0; }
+
+  &__input_search { color: #000; font-size: 16px; font-weight: 400; line-height: 22px; border-bottom-color: #C4C4C4; 
+    &:focus { border-bottom-color: darken(#c4c4c4, 20%); }  
+  }
+
+  &__search-btn {
+    margin-left: 20px; min-width: 70px; width: 70px; height: 40px; transition: .3s ease-out; border-radius: 5px; cursor: pointer;
+    background: #D64356 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEfSURBVHgBzVWLEYIwDA1O4AYyghvIBrgBbsAIsAEjVCdRJ4AN6gawQUw1vSvIJ+2J57t7x+de8tI2hAhGgIhbumTEPTEmdsSGeI+i6AahMImJCudxJcbgCxNE1JykZaOMeCCm/Kwdoyw0eT1VIa+wckwSqYGyyYX6gvWaz2uxeosYhOCzMMjndBt4d4vBmTrkAXJc+HoEYSUpeIDP49UQc7qNc9+BB2i1Vr+VGswfViCMQcP3e59Ap0WbRaFtOfAzUBxXScSaxSUI4BQla+1BQCnQtqwtQArn60RefjKSWGEf9eKXPEhywv5As+OgHbyrsD+7vEzM6Mg5cGhU2T3HzwEZ1uYUuJsK/prJQgE/N9EY8sf7V5NVt0vBWnC35wm3lCh3y7zcbQAAAABJRU5ErkJggg==') no-repeat center;
+
+    &:hover { background-color: darken(#D64356, 5%); }
+    &:active { background-color: darken(#D64356, 10%); box-shadow 0 0 8px 1px rgba(214,67,86, 0.5); }
+  }
+}

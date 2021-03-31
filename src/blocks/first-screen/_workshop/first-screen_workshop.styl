@@ -1,0 +1,15 @@
+.first-screen__workshop {
+  &-wrap { display: flex; flex-direction: column-reverse;}
+  &-start { display: flex; align-items: center; margin-bottom: 20px; }
+  &-icon { width: 40px; height: 40px; margin-right: 10px; }
+  &-text { font-size: 18px; font-weight: 400; line-height: 27px; 
+    span { font-weight: 500; } }
+}
+
+@media (min-width: screen-sm-min) {
+  .first-screen__workshop {
+    &-start { margin-left: 40px; margin-bottom: 0; }
+    &-wrap { flex-direction: row; }
+    &-text { white-space: nowrap; }
+  }
+}

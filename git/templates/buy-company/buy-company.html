@@ -1,0 +1,700 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+    	<path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+    	<path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+    <symbol id="btn__icon" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.291748 10.7884L1.27464 11.6392L1.76608 11.2126L7.82088 5.98838L1.76608 0.764161L1.27464 0.337599L0.291748 1.18838L0.783192 1.6126L5.85239 5.98838L0.783192 10.3642L0.291748 10.7884ZM5.84968 10.7884L6.83256 11.6392L7.324 11.2126L13.3788 5.98838L7.324 0.764161L6.83256 0.337599L5.84968 1.18838L6.34112 1.6126L11.4103 5.98838L6.34112 10.3642L5.84968 10.7884Z" />
+    </symbol>
+    <symbol id="block5" viewBox="0 0 81 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40.5 98C40.3158 98 40.1317 97.9719 39.9617 97.9157C16.064 90.8042 0 69.3856 0 44.6221V13.3515C0 12.3255 0.835782 11.4963 1.86988 11.4963C7.22455 11.4963 11.5876 7.16765 11.5876 1.85516C11.5876 0.829198 12.4234 0 13.4575 0H67.5283C68.5766 0 69.4124 0.829198 69.4124 1.85516C69.4124 7.16765 73.7755 11.4963 79.1301 11.4963C80.1642 11.4963 81 12.3255 81 13.3515V44.6221C81 69.3856 64.936 90.7902 41.0383 97.9157C40.8683 97.9719 40.6842 98 40.5 98ZM15.1999 3.76653C14.3499 9.58497 9.66107 14.2369 3.79643 15.0802L3.75394 44.6221C3.75394 67.4743 18.5147 87.3891 40.4858 94.1773C62.4853 87.3891 77.2602 67.4743 77.2602 44.6221V15.1364C71.3389 14.251 66.6501 9.59902 65.8143 3.76653L15.2141 3.72437L15.1999 3.76653Z" fill="black"/>
+        <path d="M40.5 62.3585C30.9523 62.3585 23.1752 54.6427 23.1752 45.1702C23.1752 35.6977 30.9523 27.9819 40.5 27.9819C50.0477 27.9819 57.8248 35.6977 57.8248 45.1702C57.8248 54.6427 50.0619 62.3585 40.5 62.3585ZM40.5 31.6922C33.0205 31.6922 26.9292 37.7355 26.9292 45.1561C26.9292 52.5768 33.0205 58.6201 40.5 58.6201C47.9795 58.6201 54.0708 52.5768 54.0708 45.1561C54.0708 37.7355 47.9937 31.6922 40.5 31.6922Z" fill="#D64356"/>
+        <path d="M38.5735 52.7736C38.0777 52.7736 37.596 52.5768 37.2419 52.2255L33.3746 48.3887C32.638 47.6579 32.638 46.4773 33.3746 45.7605C33.7288 45.4092 34.1962 45.2124 34.7062 45.2124C35.2162 45.2124 35.6836 45.4092 36.0378 45.7605L38.531 48.2341L46.9029 40.0124C47.2571 39.661 47.7246 39.4642 48.2345 39.4642C48.7303 39.4642 49.212 39.661 49.5661 40.0124C50.3027 40.7432 50.3027 41.9237 49.5661 42.6405L39.905 52.2255C39.5367 52.5768 39.0693 52.7736 38.5735 52.7736Z" fill="#D64356"/>
+    </symbol>
+</svg>
+[[*id:is=`1`:then=``:else=` 
+    <style>
+        .header, .nav, .bg_article, .block1__head_active, .block1__head:hover, .block7__item:hover, .block12__item:hover, .block8__item:hover, .block9__item:hover {
+            background-color: #[[*link_attributes]] !important;
+        }
+        .block7__item:hover {
+            border-bottom: 5px solid #[[*link_attributes]] !important;
+        }
+    </style>
+`]]
+
+<style>
+    :root {
+        --header-bg-color: [[*headercolor:is=``:then=`#[[*link_attributes]] `:else=`#[[*headercolor]]`]] !important
+}
+</style>
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+                <div class="first-screen__box">
+                    <div class="first-screen__logo-box first-screen__logo-box_new">
+                        <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                    </div>
+                    <div class="first-screen__content first-screen__content_new">
+                        <h1 class="first-screen__title">Приобретение готовой<br class="hide-sm-min"> компании в ОАЭ</h1>
+                        <p class="first-screen__text">Это покупка уникального инструмента, который призван оперативно решать<br class="hide-sm-min"> многие возникающие бизнес-задачи, когда решающим фактором является<br class="hide-sm-min"> период существования компании</p>
+                        <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <!--         block-frames             -->
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">
+                Для того чтобы новое юридическое лицо стало полноправным участником бизнес-сообщества, получило все налоговые льготы и преимущества резидентского статуса, могла претендовать на получение банковских кредитов, участие в серьезных тендерах и заключение крупных контрактов, нужно не менее двух лет вести активную деятельность и доказывать контрагентам свою состоятельность и надежность. 
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+        <div class="r60 hide-sm-min"></div>
+    </div>
+</section>
+
+<!--             возможности || goals             -->
+<style>
+    @media (min-width: 992px) { #scrollBlock1 .block41__item { width:31% } } 
+</style>
+<section id="scrollBlock1" class="bg-FF z-idx3 bg_wave">
+        <div class="container_bem">
+        <h2 class="title">Цели, которые достигаются приобретением готового юридического лица</h2>
+        <div class="r30_adaptive"></div>
+        <p class="description">
+            Локальные (зарегистрированные на основной земле) компании пользуются максимальной поддержкой государства и являются особым инструментом ведения бизнеса на внутреннем рынке Объединенных Арабских Эмиратов и за их пределами. Такая форма организации деятельности опеределена законодательством и не имеет аналогов в других странах. 
+        </p>
+        <div class="r50_adaptive"></div>
+        <div class="block41">
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Престиж<br class="hide-sm-min"> и репутация <br class="hide-sm-min"></div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/three-people-2.svg" alt="" loading="lazy">
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">                
+                    Подтвердить надёжность и стабильность компании для контрагентов и партнеров, финансовых институтов
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Бизнес-<br class="hide-sm-min">портфель <br class="hide-sm-min"></div>
+                    <div class="block41__icon-wrap">                    
+                        <img src="/git/img/contour-only/white/briefcase.svg" alt="" class="block41__icon" loading="lazy">
+                    </div>
+                </div>
+                <div class="block41__desc">                
+                    Обеспечить возможность формирования договорной базы в предыдущих периодах деятельности компании
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Участие<br class="hide-sm-min"> в тендерах<br class="hide-sm-min"></div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/girl.svg" alt="" class="block41__icon" loading="lazy">
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Выступать в качестве поручителя<br class="hide-sm-min"> 
+                    и гаранта, участвовать в местных<br class="hide-sm-min"> 
+                    и международных конкурсах
+                </div>
+            </div>
+            
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Доступ<br class="hide-sm-min"> к кредитам<br class="hide-sm-min"></div>
+                    <div class="block41__icon-wrap">                    
+                        <div class="block41__icon">
+                            <img src="/git/img/contour-only/white/bank-building.svg" alt="" class="block41__icon" loading="lazy">
+                        </div>                    
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Получить продукты лизинга, а также кредитования в банках и финансовых институтах ОАЭ
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Статус<br class="hide-sm-min"> резидента<br class="hide-sm-min"></div>
+                    <div class="block41__icon-wrap">                    
+                        <img src="/git/img/contour-only/white/verified-person.svg" alt="" class="block41__icon" loading="lazy">                  
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Оформить сертификат налогового домициля ОАЭ, получить защиту от<br class="hide-sm-min"> обмена налоговой информацией.
+                </div>
+            </div>
+            <div class="block41__item">
+                <div class="block41__head">
+                    <div class="block41__title">Консолидация активов<br class="hide-sm-min"></div>
+                    <div class="block41__icon-wrap">                    
+                        <img src="/git/img/contour-only/white/document-tall.svg" alt="" class="block41__icon" loading="lazy">                
+                    </div>
+                </div>
+                <div class="block41__desc">
+                    Сформировать бухгалтерский отчет<br class="hide-sm-min"> 
+                    за предыдущие финансовые периоды, подтверждённый аудитором
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 bg-E3"></div>
+    </section> 
+
+<!--         ФОС          -->
+<div class="bg bg_red">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Узнайте о преимуществах регистрации локальной компании для вашего бизнеса</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Получить консультацию</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--             Варианты || types         Здесь нет описания    -->
+<style> .block9__item:hover { background-color: #[[*link_attributes]] !important; }.block9__item { padding: 33px 23px!important;cursor:pointer; }</style>
+<section id="scrollBlock2" class="bg-FA">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">SORP предлагает готовые компании, прошедшие юридическую проверку</h2>
+        <div class="r50_adaptive"></div>
+            <div class="block9">
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Торговая компания<br class="hide-sm-min"> Mainland регистрация</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">LLC-Limited Liability Company</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">2-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Регистрационный офис, подтверждение экономического присутствия и наличие локального спонсора с долей владения<br class="hide-sm-min"> в размере 51%.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Компания с лицензией Marketing Management</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Sole <br class="hide-sm-min">Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                   более
+                                    <span class="block9__time-desc_important">2-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Регистрационный офис, предоставление местного агента, наличие номинального директора (опционально). Полное 100 % владение для нового акционера.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Компания с лицензией IT Services</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Sole <br class="hide-sm-min">Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">3-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Регистрационный офис, предоставление местного агента, наличие номинального директора (опционально). Полное 100 % владение для нового акционера.
+                    </div>
+                </div>
+                
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Компания с лицензией Event Management</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Sole <br>Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">2-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Регистрационный офис, наличие местного агента, наличие номинального директора (опционально). Предусматривает полное владение для нового акционера.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Компания с лицензией General Trading</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">LLC-Limited Liability Company</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">1-го года</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Регистрационный офис, подтверждение экономического присутствия и наличие локального спонсора с долей владения<br class="hide-sm-min"> в размере 51%.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Инвестиционная компания</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">LLC-Limited Liability Company</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">1-го года</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Регистрационный офис, подтверждение экономического присутствия и наличие локального спонсора с долей владения в размере 51%.
+                    </div>
+                </div>
+                
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Торговая компания Free Zone регистрация</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">FZE – Free Zone Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">2-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Флекси-офис, 100% иностранное владение, предоставление номинального директора<br class="hide-sm-min"> и услугу подтверждения центра принятия управленческих решений (опционально).
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Консалтинговая компания (Free Zone)</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">FZE - Free Zone Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">2-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Флекси-офис, 100% иностранное владение, предоставление номинального директора<br class="hide-sm-min"> и услугу подтверждения центра принятия управленческих решений (опционально).
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Логистическая компания (Free Zone)</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">FZE - Free Zone Establishment</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">3-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Флекси-офис, 100% иностранное владение, предоставление номинального директора<br class="hide-sm-min"> и услугу подтверждения центра принятия управленческих решений (опционально).
+                    </div>
+                </div>
+                
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Структура для международных сделок</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Компания, учрежденная<br class="hide-sm-min"> в СЭЗ, со 100% владением со стороны IBC ОАЭ</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">2-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Два юридических лица, регистрационный адрес, наличие номинального директора (опционально). Предусматривает полное иностранное владение.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Структура для международных инвестиций</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Компания, учрежденная<br class="hide-sm-min"> в СЭЗ, со 100% владением со стороны IBC ОАЭ</div>
+                            
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">1-го года</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Два юридических лица, регистрационный адрес, наличие номинального директора (опционально). Предусматривает полное иностранное владение.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Офшорная компания (International Business Company)</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">IBC - International Business Company</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">2-x лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Регистрационный адрес, предоставление номинального директора (опционально). Предусматривает полное иностранное владение.
+                    </div>
+                </div>
+                
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Инвестиционно - финансовая компания услуга сокрытия бенефициара</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Локальная лицензия, учрежденная двумя юрлицами из ОАЭ</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">2-x лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">Номинального локального акционера<br class="hide-sm-min">  и переоформляемую на заказчика FZ<br class="hide-sm-min">  компанию.</div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-rtl" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Зарубежная торговля нефтепродуктами услуга сокрытия бенефициара </div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Локальная лицензия, учрежденная двумя юрдицами из ОАЭ</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">3-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Номинального локального акционера<br class="hide-sm-min">  и переоформляемую на заказчика FZ<br class="hide-sm-min">  компанию.
+                    </div>
+                </div>
+                <div class="block9__item z-idx3 wow fadeInUp bg_wave-ltr" onclick="toggleModal('form01');">
+                    <div class="block9__header">
+                        <div class="block9__title">Структура с общей торговой лицензией услуга сокрытия бенефициара</div>
+                        <div class="block9__subtitle">
+                            <div class="block9__company">Локальная лицензия учрежденная двумя юрдицами из ОАЭ</div>
+                            <div class="block9__time">
+                                <div class="block9__time-icon">
+                                    <img src="git/img/contour-only/black-and-red/icon-time.svg" alt="">
+                                </div>
+                                <div class="block9__time-desc">
+                                    Более
+                                    <span class="block9__time-desc_important">3-х лет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block9__includes">Включает</div>
+                    <div class="block9__desc">
+                        Номинального локального акционера<br class="hide-sm-min">  и переоформляемую на заказчика FZ<br class="hide-sm-min">  компанию.
+                    </div>
+                </div>
+            </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<!--         ФОС          -->
+<div class="bg bg_red">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Выберите готовую компанию и специалисты SORP переоформят ее<br class="hide-sm-min"> на Вас в кратчайший срок</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Заказать</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--             Шаги || steps             -->
+<style>
+     @media (min-width: 992px) { #scrollBlock3 .block5 { padding-right: 22px; } } 
+</style>
+<section id="scrollBlock3" class="bg-FA z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title header-2_dark-blue">Этапы приобретения готовой компании с экспертами SORP</h2>
+        <div class="r30"></div>
+        <div class="block-snake block-snake_line-right">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__img">
+                    <img src="/git/img/contour-only/white/doc3.svg" alt="">
+                </div>    
+
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Предварительный анализ задач</div>
+                    Мы вникнем в детали будущей<br class="hide-sm-min"> деятельности и дадим оценку,<br class="hide-sm-min"> 
+                    какое из готовых юридических<br class="hide-sm-min"> 
+                    лиц Вам подойдет
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__img">
+                    <img src="/git/img/contour-only/white/key.svg" alt="">
+                </div>    
+                <div class="block-snake__text block-snake__text_gray pr-60">
+                    <div class="block-snake__text-header">Поиск готовой компании</div>
+                    Проверим на наличие долгов. Проведем экспертную оценку юридических и финансовых документов
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                    <div class="block-snake__img">
+                        <img src="/git/img/contour-only/white/handshake.svg" alt="">
+                    </div>
+                    <div class="block-snake__text block-snake__text_gray">
+                        <div class="block-snake__text-header">Переход права собственности</div>
+                        Подготовим пакет документов для перерегистрации в соответствии с законом. Назначим номинального директора. Смена наименования
+                    </div>
+                </div>
+        </div>
+        
+        <div class="block-snake">
+            <div class="block-snake__item fadeInUp">
+                    <div class="block-snake__img">
+                        <img src="/git/img/contour-only/white/world.svg" alt="">
+                    </div>
+                    <div class="block-snake__text block-snake__text_gray">
+                        <div class="block-snake__text-header">
+                            Иммиграционные<br class="hide-sm-min"> процедуры
+                        </div>
+                            Получим разрешения в ведомствах<br class="hide-sm-min">  по  иммиграциии ОАЭ, оформление резидентских  виз для владельцев<br class="hide-sm-min"> и работников
+                    </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__img">
+                    <img src="/git/img/contour-only/white/card.svg" alt="">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                        <div class="block-snake__text-header">
+                            Открытие банковского<br class="hide-sm-min"> счёта
+                        </div>
+                        Подберём банковское решение, сформируем пакет документов<br class="hide-sm-min">
+                        по требованию банка, включая<br class="hide-sm-min">
+                        бизнес - профайл компании
+                    </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__img">
+                    <img src="/git/img/contour-only/white/portfel.svg" alt="">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Формирование аудиторского<br class="hide-sm-min"> отчёта</div>
+                    Для подготовки консолидированной отчётности. В случае необходимости - оформление сертификата налогового резидентства на компанию
+                </div>
+            </div>
+        </div>
+        
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-FA">
+            <svg class="block5__icon block5__icon_big">
+                <use xlink:href="#block5"></use>
+            </svg>
+            <div class="block5__text">
+                SORP Group уделяет особое внимание процедуре проверки готовых компаний: наши юристы тщательно собирают всю информацию об акционерах, а также проверяют отсутствие долговых обязательств и наличие действующих лицензий. Для того чтобы избежать рисков, необходимо знать все тонкости местного законодательства. SORP более 15-ти лет является признанным экспертом в области бизнес-консалтинга на рынке ОАЭ. Наши специалисты подберут только проверенные и гарантированные решения.
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<!--         ФОС          -->
+<div class="bg bg_red">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Выберите готовую компанию и специалисты SORP переоформят ее<br class="hide-sm-min"> на Вас в кратчайший срок</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Заказать</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!-- Почему SORP - Slider -->
+<section class="bg-F9" id="why_sorp">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP — полный спектр услуг по регистрации, сопровождению, управлению бизнесом</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">Компетенции в Due Diligence</div>
+					<div class="tslider-item__text fadeInUp">У нас есть опыт и знания в проведение проверок компаний в ОАЭ, с использованием всех возможных методов, включая: местный суд, проверка результатов инспекций государственных органов</div>
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+						<div class="back"></div>
+						<div class="tslider-item__number">SORP - команда профессионалов</div>
+						<div class="tslider-item__text wow fadeInUp"> В нашем составе специалисты по созданию и построению бизнеса, команда юристов, собственный аудиторский и бухгалтерский департамент</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">Оценка готовых юридических лиц</div>
+						<div class="tslider-item__text">Мы проводим анализ юридических документов приобретаемых компаний, способны восстановить финансовый и бухгалтерский учет</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Комплекс всех услуг</div>
+						<div class="tslider-item__text">SORP предлагает комплексную поддержку приобретаемых компаний и их акционеров: от лицензирования, продления банковских счетов до получения статуса налогового резидента страны</div>
+					</div>
+
+                    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">15 лет успешной работы</div>
+						<div class="tslider-item__text">Мы помогли тысячам клиентов приобрести, построить и развить бизнес в ОАЭ</div>
+					</div>
+					
+				    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">Безопасность и анонимность</div>
+						<div class="tslider-item__text">Мы обеспечим безопасность ваших инвестиций и примем меры по сохранению конфиденциальности</div>
+					</div>
+				    <div class="tns-controls">
+					    <div class="button" onclick="slideup()"></div>
+					    <div class="button" onclick="slidedown()"></div>
+				    </div>
+			    </div>
+		</div>
+	</div>
+</section>
+
+        <!-- ФОРМА НИЗ -->
+    <section class="bg-F9" id="scrollBlock6">
+    <div class="r1 bg-E3"></div>     
+        <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="registration">
+            <div class="registration__info">
+            <div class="registration__title">Приобретите проверенную<br class="hide-sm-min"> компанию</div>
+            <div class="r20"></div>
+                Оставьте заявку и получите консультацию нашего специалиста по подбору готовой компании в ОАЭ.
+                <br><br>
+                Эксперты SORP Group подберут оптимальный вариант с учетом Ваших потребностей и окажут Вам всестороннюю поддержку.
+                <br><br>
+                Уже сегодня Вы сможете сделать первый шаг на пути к решению Ваших бизнес-задач.
+            </div>
+            <div class="registration__form-block">
+                <div class="registration__title">Купить компанию</div>
+                <div class="r10"></div>
+                {$_modx->getChunk('form4_new')}
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+        </div>
+        <div class="r1 bg-E3"></div>
+    </section> 
+
+{/block}
+{include 'footer'}

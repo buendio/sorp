@@ -1,0 +1,567 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+    	<path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+    	<path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+    <symbol id="btn__icon" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.291748 10.7884L1.27464 11.6392L1.76608 11.2126L7.82088 5.98838L1.76608 0.764161L1.27464 0.337599L0.291748 1.18838L0.783192 1.6126L5.85239 5.98838L0.783192 10.3642L0.291748 10.7884ZM5.84968 10.7884L6.83256 11.6392L7.324 11.2126L13.3788 5.98838L7.324 0.764161L6.83256 0.337599L5.84968 1.18838L6.34112 1.6126L11.4103 5.98838L6.34112 10.3642L5.84968 10.7884Z" />
+    </symbol>
+    <symbol id="bl11-percentage" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00226 7.90503C5.00226 6.35815 5.50031 5.09253 6.49641 4.10815C7.4925 3.11206 8.79914 2.61401 10.4163 2.61401C12.057 2.61401 13.3695 3.11206 14.3538 4.10815C15.3499 5.09253 15.848 6.38745 15.848 7.99292V9.25854C15.848 10.7937 15.3499 12.0535 14.3538 13.0378C13.3695 14.0222 12.0687 14.5144 10.4515 14.5144C8.86945 14.5144 7.56281 14.0339 6.53156 13.073C5.51203 12.1003 5.00226 10.7937 5.00226 9.15308V7.90503ZM7.99055 9.25854C7.99055 10.0671 8.2132 10.7234 8.65851 11.2273C9.11555 11.7195 9.7132 11.9656 10.4515 11.9656C11.178 11.9656 11.764 11.7195 12.2093 11.2273C12.6546 10.7234 12.8773 10.0437 12.8773 9.18823V7.90503C12.8773 7.09644 12.6487 6.44019 12.1917 5.93628C11.7464 5.43237 11.1546 5.18042 10.4163 5.18042C9.67805 5.18042 9.08625 5.43823 8.64094 5.95386C8.20734 6.45776 7.99055 7.12573 7.99055 7.95776V9.25854ZM17.307 22.3015C17.307 20.7312 17.8167 19.4597 18.8362 18.4871C19.8558 17.5144 21.1566 17.0281 22.7386 17.0281C24.3323 17.0281 25.6331 17.5144 26.6409 18.4871C27.6605 19.4597 28.1702 20.7722 28.1702 22.4246V23.6726C28.1702 25.196 27.678 26.4558 26.6937 27.4519C25.721 28.4363 24.4144 28.9285 22.7737 28.9285C21.1331 28.9285 19.8089 28.4421 18.8011 27.4695C17.805 26.4851 17.307 25.1902 17.307 23.5847V22.3015ZM20.2952 23.6726C20.2952 24.4695 20.5237 25.1257 20.9808 25.6414C21.4495 26.1453 22.0472 26.3972 22.7737 26.3972C23.5237 26.3972 24.1097 26.157 24.5316 25.6765C24.9652 25.1843 25.182 24.4988 25.182 23.6199V22.3015C25.182 21.4812 24.9534 20.825 24.4964 20.3328C24.0394 19.8406 23.4534 19.5945 22.7386 19.5945C22.012 19.5945 21.4202 19.8406 20.9632 20.3328C20.5179 20.825 20.2952 21.5046 20.2952 22.3718V23.6726ZM11.3304 26.6609L9.13312 25.3953L21.6312 5.39136L23.8284 6.65698L11.3304 26.6609Z" />        
+    </symbol>
+</svg>
+
+<style>
+  .block7__item { z-index: 3; background-color: #fff; padding: 35px 25px 35px 25px; }
+  .block7 .block7__item:hover { background-color: #[[*link_attributes]]; border-color: #[[*link_attributes]]; }
+</style>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+            <div class="first-screen__box">
+                <div class="first-screen__logo-box first-screen__logo-box_new">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">Legal Support and PRO-services<br class="hide-sm-min"> in the UAE</h1>
+                    <p class="first-screen__text">SORP Group’s professionals efficiently resolve all legal, migration and administrative<br class="hide-sm-min"> issues which may occur while starting and running your business in the UAE, and deal<br class="hide-sm-min"> with the authorities on your behalf using 15 years of experience in the UAE.</p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">Expertise in the ins and outs of how business works in the UAE and the intricacies of the legal system, legislation and bureaucracy, is a major plus factor to have on your side. SORP has been operating in the UAE for more than 15 years, tracking all changes in the law as well as building well-established relations with the country’s governmental authorities. The experts of SORP Group are very well placed to guide and advise you, protecting your business interests and helping you along the path to success.</div>
+        </div>
+        <div class="r30 hide-sm-min"></div>
+        <div class="r60_adaptive"></div>
+    </div>
+		<div class="r1 r_bg-gray"></div>
+</section>
+
+<section id="scrollBlock1" class="bg-F9">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Legal and PRO solutions that SORP Group can provide to your business</h2>
+        <div class="r30"></div>
+        <div class="description">Inexperience in the ways of doing business in a foreign country presents a major risk to successfully starting and running a business. At best, it means getting things done can take a lot longer, with the cost of trial and error to consider. For many years, SORP Group’s experienced lawyers and PRO staff have been helping clients overcome legal and administrative challenges on the way to achieving their business objectives.</div>
+        <div class="r50_adaptive"></div>
+
+        <div class="block7 block7_modal">
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/hands.svg" alt="" loading="lazy" style="width: 70px !important;">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Legal <br class="hide-sm-min">issues</div>
+                    <div class="block7__text">Legal services, consultation and support for incorporation, IP, legal agreements, contracts, and more</div>
+                </div>
+            </div>    
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/tie.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Document<br class="hide-sm-min"> preparation and expertise </div>
+                    <div class="block7__text">Vetting legal agreements, contract wording, communications with the authorities and other requirements</div>
+                </div>
+            </div>    
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/verified-person.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Legal <br class="hide-sm-min">research</div>
+                    <div class="block7__text">Studying certain aspects of law and providing legal opinions to inform your decision making</div>
+                </div>
+            </div>
+            
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/visa.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Immigration<br class="hide-sm-min"> and labor procedures</div>
+                    <div class="block7__text">Visa support and employee hiring procedures with the UAE Ministry of Human Resources & Emiratisation</div>
+                </div>
+            </div>
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/magnifier-new.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Representation with government authorities</div>
+                    <div class="block7__text">Submitting documents, applications, and resolving legal or procedural issues with the regulatory authorities</div>
+                </div>
+            </div>
+            <div class="block7__item"  onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/document-edit.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Notary <br class="hide-sm-min">service</div>
+                    <div class="block7__text">Certifying documents in the court of Dubai, executing various powers of attorney on behalf of your business</div>
+                </div>
+            </div>
+            <div class="block7__item"  onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/office.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Due diligence of trading partners and stakeholders</div>
+                    <div class="block7__text">Conducting due diligence on parties of interest prior to engaging them, to understand and mitigate risks</div>
+                </div>
+            </div>
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/scales.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Out-of-court <br class="hide-sm-min">dispute settlement</div>
+                    <div class="block7__text">Resolving any conflicts  between your business and third parties before a court hands down a verdict</div>
+                </div>
+            </div>
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/document-edit.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Support in<br class="hide-sm-min"> real estate deals</div>
+                    <div class="block7__text">Ensuring that any property involved in a purchase or a sale has clear and unencumbered title</div>
+                </div>
+            </div>
+
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/girl.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Drawing up <br class="hide-sm-min">a will</div>
+                    <div class="block7__text">Assistance in registering your title to UAE real estate as part of estate planning procedures</div>
+                </div>
+            </div>
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/graph-screen.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Dissolution <br class="hide-sm-min">of legal entities</div>
+                    <div class="block7__text">Legal dissolving your company and its operations while meeting all UAE legal requirements</div>
+                </div>
+            </div>
+            <div class="block7__item" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/verified-person.svg" alt="" loading="lazy">
+                </div>
+                <div class="block7__content">
+                    <div class="block7__title">Support in <br class="hide-sm-min">bankruptcy procedures</div>
+                    <div class="block7__text">Winding up your UAE business due to the company’s financial insolvency</div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-FA">
+            <img src="/git/img/contour-only/black-and-red/stopwatch.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__content">
+                <div class="block5__text">
+									SORP’s very extensive range of business services has made it possible for us to create our subscription options, which deliver bundles of legal and PRO services that ensure your business runs smoothly, with help on call when needed. In addition, our subscribers also receive VIP service in the form of addressing their more complicated legal matters and protecting their interests. For specialized expertise in complex or weighty issues, we engage the best local advocates so that our clients quickly receive the very best possible legal support.
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Contact SORP Group to discuss legal and PRO services for your business</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Get a quote</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section id="scrollBlock2" class="bg-F9">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">SORP Group offers you bundled solutions that deliver impressive advantages</h2>
+        <div class="r30_adaptive"></div>
+        <div class="description">SORP Group is very much a customer-focused provider, always attending promptly to clients’ needs while delivering high-quality professional services. Our subscription packs represent extremely cost-effective propositions. Clients can obtain a wide range of services across a number of packages from a single supplier.</div>
+        <div class="r50_adaptive"></div>
+        
+        <div class="block35 block35_width2">
+            <div class="block35__item z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Legal support and PRO services for business</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/percentage-papers.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>
+
+                <div class="block35__description">
+                    <div class="block35__description-text">Blend of solutions for legal and PRO support of your business</div>
+                    <div class="block35__discount">
+											Saving
+                      <span class="block35__discount-value">20%</span>
+                    </div>
+                </div>
+                <div class="r20"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r50_adaptive"></div>
+                <div class="block35__content">
+                    
+                    <div class="block22 block22_min">
+                        <div class="block22__item">          
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/doc-stack.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            
+                            <div class="block22__text">
+                                <div class="block22__title">Document preparation</div>
+                                <div class="block22__description">Preparing applications, agreements and legal documents required to incorporate and launch your UAE business</div>
+                            </div>
+                        </div>
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/office.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__title">Mixture of PRO services</div>
+                                <div class="block22__description">Representing your company with government bodies, visa support, submitting documents to UAE institutions</div>
+                            </div>
+                        </div>
+        
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/human-network.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__title">Due diligence</div>
+                                <div class="block22__description">Conducting due diligence as and when required to check out potential trading partners, suppliers and stakeholders</div>
+                            </div>
+                        </div>            
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/human-network.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__title">Deal-making support</div>
+                                <div class="block22__description">Checking fairness of deal execution, running negotiations, preparation and legalization of documents </div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/human-network.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__title">International services</div>
+                                <div class="block22__description">Studying the law of a stakeholder’s jurisdiction, efficient application of double taxation treaties</div>
+                            </div>
+												</div>
+                        <div class="block22__item">
+													<div class="block22__icon-wrap">
+															<img src="/git/img/contour-only/white/shield.svg" alt="" class="block22__icon" loading="lazy">
+													</div>
+													<div class="block22__text">
+															<div class="block22__title">Business owner’s risks evaluation</div>
+															<div class="block22__description">Business efficiency evaluation, assessment of internal and external risks and errors in legal decision making</div>
+													</div>
+											</div>
+                    </div>
+
+                </div>
+                <div class="r50_adaptive"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r40"></div>
+                <a href="#" class="btn btn_white btn_w100 z-idx3 btn_space-between" onclick="toggleModal('form01');">
+									Choose this solution saving up to 20%
+                  <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                    <use href="#btn__icon-modal"></use>
+                  </svg>
+                </a>                
+            </div>
+            <div class="block35__item z-idx3">
+                <div class="block35__head">
+                    <div class="block35__title">Comprehensive business support</div>
+                    <div class="block35__icon-wrap">
+                        <img src="/git/img/contour-only/white/tie.svg" alt="" class="block35__icon" loading="lazy">                        
+                    </div>
+                </div>
+
+                <div class="block35__description">
+                    <div class="block35__description-text">Solutions for legal, accounting and administrative support </div>
+                    <div class="block35__discount">
+											Saving
+                      <span class="block35__discount-value">30%</span>
+                    </div>
+                </div>
+                <div class="r20"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r50_adaptive"></div>
+                <div class="block35__content">
+                    
+                    <div class="block22 block22_min">
+                        <div class="block22__item">          
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/doc-stack.svg" alt="" class="block22__icon" loading="lazy">             
+                            </div>
+                            
+                            <div class="block22__text">
+                                <div class="block22__title">Comprehensive legal support</div>
+                                <div class="block22__description">Provision of a full bundle of professional legal and PRO services for your UAE business </div>
+                            </div>
+                        </div>
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/office.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__title">Administrative support</div>
+                                <div class="block22__description">Resolving administrative issues, secretarial services, HR policy development</div>
+                            </div>
+                        </div>
+        
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/human-network.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__title">Business management services</div>
+                                <div class="block22__description">Operations management of your business at all stages, business review and crisis management</div>
+                            </div>
+                        </div>            
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/human-network.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__title">Accounting services</div>
+                                <div class="block22__description">High-quality accounting for your business operations, safe keeping of source documents </div>
+                            </div>
+                        </div>  
+                        <div class="block22__item">
+                            <div class="block22__icon-wrap">
+                                <img src="/git/img/contour-only/white/human-network.svg" alt="" class="block22__icon" loading="lazy">
+                            </div>
+                            <div class="block22__text">
+                                <div class="block22__title">Tax planning</div>
+                                <div class="block22__description">Tax registration with Federal Tax Authority, preparation and timely submission of tax returns</div>
+                            </div>
+												</div>
+                        <div class="block22__item">
+													<div class="block22__icon-wrap">
+															<img src="/git/img/contour-only/white/shield.svg" alt="" class="block22__icon" loading="lazy">
+													</div>
+													<div class="block22__text">
+															<div class="block22__title">International tax advice</div>
+															<div class="block22__description">Optimizing your business taxation, obtaining tax resident status to protect against automatic data exchange (CSR)</div>
+													</div>
+											</div>
+                    </div>
+
+                </div>
+                <div class="r50_adaptive"></div>
+                <div class="r1 r_bg-gray" style="width: 118.45%; margin-left: -40px;"></div>
+                <div class="r40"></div>
+                <a href="#" class="btn btn_white btn_w100 z-idx3 btn_space-between" onclick="toggleModal('form01');">
+									Choose this solution saving up to 30%
+                    <svg class="btn__icon-svg btn__icon-svg_black" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+                      <use href="#btn__icon-modal"></use>
+                    </svg>
+                </a>                
+            </div>   
+        </div>
+
+        <div class="r50_adaptive"></div>
+        <div class="block5 z-idx3 bg-FA">
+            <img src="/git/img/contour-only/black-and-red/girl.svg" alt="" class="block5__icon block5__icon_left">
+            <div class="block5__content">
+              <div class="block5__text">
+								It’s not only top-class and cost-effective support that you receive from SORP Group’s specialists but also proof that the management and control center of your business is clearly within the UAE. That is a critical requirement to prove economic substance in the country and firmly anchors your tax affairs as belonging under the jurisdiction of the UAE.
+              </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<section id="scrollBlock3" class="bg-F9 z-idx3">
+		<div class="r1 r_bg-gray"></div>
+    <div class="container_bem">
+        <div class="r50_adaptive"></div>
+        <h2 class="title">Crisis management solutions for our subscribers</h2>    
+        <div class="r50_adaptive"></div>
+
+        <div class="block11-new block11-new_white block11-new_dark-hover">
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png" alt="">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png" alt="">                    
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">30% discount</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+													Legal entitiy <br class="hide-sm-min">formations
+                        </div>
+                        <div class="block11-new__desc">
+													Incorporation of local companies, holdings and other structures needed to operate a business in the UAE
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png" alt="">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png" alt="">       
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">30% discount</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+													Office space in SORP’s Business Center 
+                        </div>
+                        <div class="block11-new__desc">
+													Rent-free office terms, work stations in co-working areas, flex-desks and virtual office options (3 months)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block11-new__item" onclick="toggleModal('form01');">
+                <div class="block11-new__item-inner">
+                    <img class="block11-new__pattern" src="/git/img/blocks/block11/block11-bg2.png" alt="">
+                    <img class="block11-new__pattern-hover" src="/git/img/blocks/block11/bl11-wave-blue.png" alt="">       
+                    <div class="block11-new__top">
+                        <div class="block11-new__top-title">30% discount</div>
+                        <div class="block11-new__icon-box">
+                            <svg class="block11-new__icon">
+                                <use href="#bl11-percentage"></use>
+                            </svg>                       
+                        </div>
+                    </div>
+                    <div class="block11-new__content">
+                        <div class="block11-new__title">
+													Local sponsor or agent’s services
+                        </div>
+                        <div class="block11-new__desc">
+													Provided to obtain and renew local licenses (DED) and solve many special business requirements
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Contact SORP Group to discuss legal and PRO services for your business</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Get a quote</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<section class="bg-F9" id="scrollBlock4">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">SORP provides professional support for your business to meet all requirements of UAE law</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">Стратегические партнерства</div>
+					<div class="tslider-item__text fadeInUp">Статус экспертов, наличие аккредитации, налаженные отношения с профильными ведомствами</div>
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+						<div class="back"></div>
+						<div class="tslider-item__number">Full range of services</div>
+						<div class="tslider-item__text wow fadeInUp">SORP Group provides a comprehensive solution for the business and its shareholders: from incorporating a company to getting UAE tax resident status</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">Персональный подход</div>
+						<div class="tslider-item__text">Конфиденциальные юридические решения для оптимизации налогообложения, сокрытия бенефициаров и защиты от автоматического обмена данными в соответствии со стандартом CRS</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Комплексные решения</div>
+						<div class="tslider-item__text"> Мы выполняем работы “под ключ” - от составления плана развития вашей компании до выбора организационно-правовой формы юридического лица</div>
+					</div>
+
+                    <div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">15 лет на рынке ОАЭ</div>
+						<div class="tslider-item__text">Экспертные знания и опыт проведения профессиональных консультаций, открытия и комплексного сопровождения компаний в различных отраслях экономики</div>
+					</div>
+					
+				<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number ta-center">Банковская поддержка</div>
+						<div class="tslider-item__text">Помощь в открытии банковских счетов, выборе банка, подходящего для ваших целей, помощь в прохождении процедуры KYC (“Know Your Customer”)</div>
+					</div>
+				<div class="tns-controls">
+					<div class="button" onclick="slideup()"></div>
+					<div class="button" onclick="slidedown()"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-F9" id="scrollBlock5">
+    <div class="container_bem">
+    <div class="r1 r_bg-gray"></div>
+      <div class="r60_adaptive"></div>
+      <div class="registration">
+        <div class="registration__info">
+          <div class="registration__title">Get a free consultation with a SORP expert</div>
+          <div class="r20"></div>
+        	Submit a request and get a free consultation with one of our experts about legal support and PRO services for your business in the UAE.
+        	<br><br>
+        	Our specialists will help you choose the best fit bundle of services and provide comprehensive support for your actvities in the Emirates.
+        	<br><br>
+        	Give your UAE business the best chance for growth and success together with SORP Group!
+        </div>
+        <div class="registration__form-block">
+            <div class="registration__title">Request a consultation</div>
+            <div class="r10"></div>
+            {$_modx->getChunk('form4_new')}
+        </div>
+      </div>
+      <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 bg-E3"></div>
+</section>
+{/block}
+{include 'footer_new'}

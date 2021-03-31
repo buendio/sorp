@@ -1,0 +1,29 @@
+<form class="registration__form" id="js-form_4" method="post" lang="ru-RU" dir="ltr">
+    <input type="hidden" name="formid" value="[[!uniqid]]" />
+    <input type="hidden" name="pageurl" value="{$_modx->config.site_url}[[*uri]]" />
+    <input type="hidden" name="formid" value="[[!uniqid]]" />
+    <input type="hidden" name="pageid" value="[[*id]]" />
+    
+    <div class="registration__input-wrap">
+        [[++cultureKey:is=`ru`:then=`<label class="registration__label" for="form_4_name">Ваше имя</label><input class="registration__input" type="text" name="form_4_name" id="form_4_name" value="" size="40" aria-invalid="false" aria-label="Ваше имя">`]]
+        [[++cultureKey:is=`en`:then=`<label class="registration__label" for="form_4_name">Your name</label><input class="registration__input" type="text" name="form_4_name" id="form_4_name" value="" size="40" aria-invalid="false" aria-label="Your name">`]]
+    </div>
+    <div class="registration__input-wrap">
+        [[++cultureKey:is=`ru`:then=`<label class="registration__label" for="form_4_phone">Телефон</label><input class="registration__input" type="text" name="form_4_phone" id="form_4_phone" value="" size="40" placeholder="+" aria-required="true" aria-invalid="false" aria-label="Телефон">`]]
+        [[++cultureKey:is=`en`:then=`<label class="registration__label" for="form_4_phone">Phone</label><input class="registration__input" type="text" name="form_4_phone" id="form_4_phone" value="" size="40" placeholder="+" aria-required="true" aria-invalid="false" aria-label="phone">`]]
+    </div>
+    <div class="registration__input-wrap">
+        [[++cultureKey:is=`ru`:then=`<label class="registration__label" for="form_4_email">Электронная почта</label><input class="registration__input" type="text" name="form_4_email" id="form_4_email" value="" size="40" aria-invalid="false" aria-label="Электронная почта">`]]
+        [[++cultureKey:is=`en`:then=`<label class="registration__label" for="form_4_email">Your name</label><input class="registration__input" type="text" name="form_4_email" id="form_4_email" value="" size="40" aria-invalid="false" aria-label="Email">`]]
+    </div>
+    <div class="registration__input-wrap registration__input-wrap_captcha">
+        <span class="wpcf7-form-control-wrap">
+            [[!recaptchav2_render]]
+            [[!+fi.error.recaptchav2_error]]
+        </span>
+    </div>
+    
+    <button class="btn btn_w100 btn_h65 btn_hover-red btn_size18" type="submit">
+        [[++cultureKey:is=`ru`:then=`Отправить заявку`]][[++cultureKey:is=`en`:then=`Send request`]]
+    </button>
+</form>

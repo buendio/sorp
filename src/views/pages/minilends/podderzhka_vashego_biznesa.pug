@@ -1,0 +1,120 @@
+extends ../../layouts/default_minilinds
+
+block variables
+  - const title = "podderzhka_vashego_biznesa"
+  - page = "minilends"
+  - logo_main = true
+  - minilends = true
+  - burgerHide = true
+
+block content
+  main
+    section.bg.bg_minilends
+      .first-screen.lazy(data-bg="/dist/img/minilends/blocks/first-screen/55_solutions.svg")
+        h1.first-screen__title
+          +lang(
+          'Поддержка вашего бизнеса в&nbsp;Арабских Эмиратах',
+          'Business support for your business in the UAE'
+          )
+        p.first-screen__text
+          +lang(
+          'Получите все услуги в одном месте',
+          'Get all services in one place'
+          )
+          <br>
+          +lang(
+          '',
+          'with a '
+          )
+
+          span.first-screen__text-span
+            +lang(
+            'со скидкой 30%',
+            '30 discount%'
+            )
+
+        label.first-screen__btn.btn.btn_w100.btn_hover-red.btn_font-s18.btn_radius5.js-modal(for="modal2" data-reason="Оставить заявку (1-й экран) - миниленд")
+          +lang(
+          'Оставить заявку',
+          'Get more details'
+          )
+
+    section
+      .r20
+      .r5
+      .container
+        .block-frames
+          .block-frames__box.lazy(data-bg="/dist/img/minilends/pages/55_solutions/block-frames.svg")
+            p.block-frames__text
+              +lang(
+              'Клиенты SORP бизнес-центра получают консалтинговую поддержку и&nbsp;могут поручить нам полный цикл услуг по&nbsp;сопровождению ' +
+              'бизнеса от&nbsp;регистрации юридических лиц в&nbsp;ОАЭ до&nbsp;бухгалтерского сопровождения и&nbsp;налогового консалтинга.',
+
+              'SORP Business Center clients receive consulting support and&nbsp;can entrust us&nbsp;with the&nbsp;full range of&nbsp;integrated business ' +
+              'services from company incorporation in the UAE to accounting support and&nbsp;tax consulting.'
+              )
+      .r20
+      .r5
+
+    section
+      .container
+        h2.title
+          +lang(
+          'Станьте резидентом SORP бизнес-центра в&nbsp;Дубае',
+          'Operate out of a&nbsp;prestigious business center in&nbsp;Dubai'
+          )
+        .r20
+        .block1
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/pc.svg")
+            p.block1__text
+              +lang(
+              'Оборудованные SMART офисы для&nbsp;успешного ведения бизнеса',
+              'Fully-equipped SMART offices for&nbsp;successful business'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/license.svg")
+            p.block1__text
+              +lang(
+              'Получение и&nbsp;продление лицензий в&nbsp;Дубайском Экономическом Департаменте (DED) или&nbsp;СЭЗ ОАЭ\n',
+              'Obtain and&nbsp;renew your DED or&nbsp;FTZ issued business licenses'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/service.svg")
+            p.block1__text
+              +lang(
+              'Профессиональный номинальный сервис для&nbsp;создания локальных компаний или&nbsp;сокрытие владения',
+              'Reliable nominee services for&nbsp;incorporating Mainland companies and&nbsp;concealing beneficiary details'
+              )
+          .block1__item
+            .block1__icon.lazy(data-bg="/dist/img/minilends/blocks/block1/support.svg")
+            p.block1__text
+              +lang(
+              'Правовая и&nbsp;налоговая поддержка, административный и&nbsp;PRO саппорт',
+              'Legal and&nbsp;tax assistance, administrative and&nbsp;PRO-support'
+              )
+        .r20
+        .r5
+    section.bg.bg_f9
+      .r3.r_bg-red
+      .container
+        .r20
+        .r5
+        h2.title.title_center
+          +lang(
+          'Профессиональная поддержка SORP GROUP',
+          'SORP GROUP professional business support'
+          )
+        .r10
+        .r5
+        p.description.description_center
+          +lang(
+          'Передайте на&nbsp;аутсорсинг все непрофильные вопросы по&nbsp;сопровождению бизнеса в&nbsp;ОАЭ',
+          'Outsource all non-core business support activities in the&nbsp;United Arab Emirates'
+          )
+        .r20
+        include ../../blocks/minilends/form/form
+      .r20
+      .r5
+
+    include ../../blocks/minilends/pnumber/pnumber

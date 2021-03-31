@@ -1,0 +1,473 @@
+{include 'header'}
+{block 'content'}
+<svg width="0" height="0" style="position:absolute">
+    <symbol id="btn__icon-modal" height="128"  width="128" viewBox="0 0 128 128">
+    	<path d="M74.508,108.239c-0.772,0-1.479-0.445-1.81-1.148l-16.863-35.84L20.732,55.116c-0.734-0.337-1.193-1.083-1.164-1.891  c0.03-0.808,0.543-1.518,1.3-1.8l83.312-31.107c0.729-0.271,1.552-0.096,2.105,0.452c0.555,0.548,0.739,1.369,0.475,2.102  l-30.371,84.047c-0.274,0.761-0.98,1.28-1.788,1.318C74.569,108.238,74.538,108.239,74.508,108.239z M26.772,53.49l31.396,14.432  c0.429,0.197,0.774,0.539,0.975,0.965l15.122,32.139l27.264-75.448L26.772,53.49z"/>
+    	<path d="M57.334,71.738c-0.512,0-1.023-0.195-1.414-0.586c-0.781-0.78-0.781-2.047,0-2.828l47.545-47.546  c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L58.748,71.152C58.357,71.543,57.846,71.738,57.334,71.738z"/>
+    </symbol>
+</svg>
+
+<style>
+    .block7 .block7__item:hover { background-color: #[[*link_attributes]]; border-bottom-color: #[[*link_attributes]]; }    
+    .block-snake__text { padding-right: 60px; }    
+    @media (min-width: 980px) { .block-frames { width: 930px; } }
+    @media (min-width: 770px) { .block5 { align-items: center; } }    
+</style>
+
+<section class="tops-wrapper">
+    <div class="bg_first-screen" style="background-color: #[[*link_attributes]]">
+        <div class="first-screen">
+            <div class="first-screen__box">
+                <div class="first-screen__logo-box first-screen__logo-box_new">
+                    <img class="first-screen__logo" src="/git/img/blocks/mask.png" data-src="/git/img/blocks/logo-inner.gif" alt="SORP">
+                </div>
+                <div class="first-screen__content first-screen__content_new">
+                    <h1 class="first-screen__title">Регистрация компании в Свободных Экономических Зонах ОАЭ</h1>
+                    <p class="first-screen__text">Доступные решения инкорпорации со 100% иностранным владением для ведения бизнеса на территории СЭЗ и за пределами страны</p>
+                    <a class="first-screen__btn btn btn_w100-sm btn_radius btn_hover-red btn_h55" href="#" onclick="toggleModal('form01')">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--         block-frames             -->
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <div class="block-frames">
+            <div class="block-frames__border"></div>
+            <div class="block-frames__wrapper">
+                На территории Арабских Эмиратов насчитывается более 50 Свободных Экономических Зон (СЭЗ), которые предоставляют иностранным предпринимателям свою инфраструктуру и лояльные условия регистрации оншорных компаний для ведения международного бизнеса. СЭЗ делятся на узкоспециализированные, ориентированные на определенный вид деятельности и привязанные к крупным логистическим центрам. Зарубежные инвесторы могут открыть FZE (FreeZone Establishment) компанию практически в любой сфере.
+            </div>
+        </div>
+        <div class="r30 hide-sm-min"></div>
+        <div class="r60_adaptive"></div>        
+    </div>
+</section>
+
+<!--         Уникальные Особенности          -->
+<section id="scrollBlock1" class="z-idx3 bg-FF bg_wave">
+    <div class="container_bem">
+    <h2 class="title">Возможности, которые открываются при регистрации бизнеса в СЭЗ ОАЭ</h2>
+    <div class="r30"></div>
+    <div class="description">Регистрируя юридическое лицо в одной из Свободных Экономических Зон, вы получаете бюджетный инструмент для организации международного бизнеса и возможность использовать преимущества  законодательства, банковской системы, развитую логистическую и транспортную инфраструктуру страны</div>
+    <div class="r50_adaptive"></div>
+    <div class="block41">
+        <div class="block41__item">
+            <div class="block41__head">
+                <div class="block41__title">Торговая деятельность</div>
+                <div class="block41__icon-wrap">                    
+                    <div class="block41__icon">
+                        <img src="/git/img/contour-only/white/verified-person.svg" alt="" class="block41__icon" loading="lazy">                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="block41__desc">                
+                Вести международную торговлю, экспортировать, реэкспортировать, реализовывать товары на местном <br class="hide-sm-min">рынке через дистрибьюторов
+            </div>
+        </div>
+        <div class="block41__item">
+            <div class="block41__head">
+                <div class="block41__title">Организация производства</div>
+                <div class="block41__icon-wrap">                    
+                    <div class="block41__icon">
+                        <img src="/git/img/contour-only/white/hands.svg" alt="" class="block41__icon" loading="lazy">                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="block41__desc">
+                Воспользоваться преимуществами беспошлинного ввоза сырья, хранения <br class="hide-sm-min"> на территории СЭЗ и экспорта готовой продукции за пределы ОАЭ 
+            </div>
+        </div>
+        <div class="block41__item">
+            <div class="block41__head">
+                <div class="block41__title">Оказание <br class="hide-sm-min"> услуг и сервисов</div>
+                <div class="block41__icon-wrap">                    
+                    <div class="block41__icon">
+                        <img src="/git/img/contour-only/white/box-parcel.svg" alt="" class="block41__icon" loading="lazy">                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="block41__desc">
+                Оказывать широкий спектр услуг международным контрагентам, <br class="hide-sm-min"> в том числе на территории СЭЗ, <br class="hide-sm-min"> в которой зарегистрирован бизнес                
+            </div>
+        </div>
+        <div class="block41__item">
+            <div class="block41__head">
+                <div class="block41__title">ВНЖ и налоговое резидентсво</div>
+                <div class="block41__icon-wrap">                    
+                    <div class="block41__icon">
+                        <img src="/git/img/contour-only/white/office.svg" alt="" class="block41__icon" loading="lazy">                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="block41__desc">
+                Получить вид на жительство и статус налогового резидента акционерам, сотрудникам и их семьям
+            </div>
+        </div>
+        <div class="block41__item">
+            <div class="block41__head">
+                <div class="block41__title">Оформление <br class="hide-sm-min"> собственности</div>
+                <div class="block41__icon-wrap">                    
+                    <div class="block41__icon">
+                        <img src="/git/img/contour-only/white/diploma.svg" alt="" class="block41__icon" loading="lazy">                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="block41__desc">
+                Активы и недвижимость, в том числе - зарубежные, можно зарегистрировать <br class="hide-sm-min">на компанию СЭЗ
+            </div>
+        </div>
+        <div class="block41__item">
+            <div class="block41__head">
+                <div class="block41__title">Международный бизнес</div>
+                <div class="block41__icon-wrap">                    
+                    <div class="block41__icon">
+                        <img src="/git/img/contour-only/white/tax-graph.svg" alt="" class="block41__icon" loading="lazy">                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="block41__desc">                
+                Минимизировать налоговую нагрузку за счет отсутствия корпоративных налогов при международной деятельности
+            </div>
+        </div>
+    </div>    
+    <div class="r50_adaptive"></div>
+    <div class="block5">
+        <img src="/git/img/contour-only/black-and-red/customer1.svg"  alt="" class="block5__icon" loading="lazy">
+        <div class="block5__text">
+            Стандарты KYC (Know Your Customer) и CRS (Common Reporting Standart), а также <br class="hide-sm-min"> требования ESR (Economic Substance) - новая реальность современного бизнеса, - <br class="hide-sm-min"> обязывают подтверждать фактическую операционную деятельность на территории <br class="hide-sm-min">ОАЭ. Опираясь на законы страны, мы рекомендуем эффективные решения по <br class="hide-sm-min"> предоставлению Центра Управления и Контроля для вашей FZE компании.
+        </div>
+    </div>
+    <div class="r60_adaptive"></div>
+</div>
+</section>  
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Узнайте о преимуществах регистрации FZE компании для вашего бизнеса</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Получить консультацию</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!--         block7          -->
+<section id="scrollBlock2" class="bg-FA">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Решения SORP по регистрации фризон компаний в ОАЭ</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block7 block7_modal block7_icon-visible">
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/graph-screen.svg" loading="lazy">
+                </div>
+                <div class="block7__title">Подготовка <br class="hide-sm-min"> бизнес-модели</div>
+                <div class="block7__text">Определим подходящую <br class="hide-sm-min">лицензию и выберем <br class="hide-sm-min"> зону инкорпорации с <br class="hide-sm-min">учётом ваших целей</div>
+            </div>
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01')">
+                <div class="block7__icon">                    
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/doc.svg" loading="lazy">
+                </div>
+                <div class="block7__title">Регистрация <br class="hide-sm-min"> бизнеса</div>
+                <div class="block7__text">Быстрое прохождение <br class="hide-sm-min"> юридических процедур за <br class="hide-sm-min"> счет тесного сотрудничества <br class="hide-sm-min">с лицензирующими органами</div>
+            </div>
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/growth.svg" loading="lazy">
+                </div>
+                <div class="block7__title">Открытие <br class="hide-sm-min">банковских счетов</div>
+                <div class="block7__text">Тесное сотрудничество с банками ОАЭ, понимание процедур и содействие в прохождении проверок KYC</div>
+            </div>
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/office.svg" loading="lazy">
+                </div>
+                <div class="block7__title">Дубайский адрес инкорпорации</div>
+                <div class="block7__text">Предоставим офис в БЦ SORP для прохождения банковских проверок KYC и подтверждения Центра Управления и Контроля</div>
+            </div>
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/wallet.svg" loading="lazy">
+                </div>
+                <div class="block7__title">PRO поддержка <br class="hide-sm-min"> бизнеса</div>
+                <div class="block7__text">Обеспечим сопровождение <br class="hide-sm-min"> при получении виз инвестору, работникам и членам их семей, продлим лицензии и разрешения</div>
+            </div>
+            <div class="block7__item bg-FF z-idx3" onclick="toggleModal('form01')">
+                <div class="block7__icon">
+                    <img class="block7__icon-img" src="/git/img/contour-only/gray/human-network.svg" loading="lazy">
+                </div>
+                <div class="block7__title">Аутсорсинг<br class="hide-sm-min"> бизнес-процессов</div>                
+                <div class="block7__text">Предоставим юридические, налоговые, бухгалтерские и административные сервисы, полное сопровождение бизнеса</div>
+            </div>
+        </div>
+        <div class="r50_adaptive"></div>
+        <a href="#" class="btn btn_gray-bg btn_center btn_border2 btn_white btn_space-between" onclick="toggleModal('form01');">
+            Получить консультацию
+            <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+            <use href="#btn__icon-modal"></use>
+            </svg>
+        </a>
+        <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<!--  Змейка    -->
+<section id="scrollBlock3" class="bg-FA z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Уникальные особенности ведения бизнеса в СЭЗ ОАЭ</h2>
+        <div class="r50_adaptive"></div>        
+        <div class="block-snake block-snake_line-right">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/shopping-cart.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">100% владение</div>
+                    Компания, открытая в СЭЗ, полностью принадлежит иностранному инвестору, <br class="hide-sm-min"> без требований к наличию местного партнёра и агента
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/tie.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Отраслевая специфика</div>
+                    СЭЗ ОАЭ имеют собственные направления лицензирования: промышленное, инвестиционно<br class="hide-sm-min">-финансовое, консалтинговое, торговое, логистическое, и т.д.
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/tax-graph.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Размещение бизнеса</div>
+                    Аренда и приобретение коммерческих, складских и промышленных помещений разрешена в пределах СЭЗ<br class="hide-sm-min"> по месту регистрации
+                </div>
+            </div>
+        </div>
+        <div class="block-snake">
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/person-percentage.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Процедура регистрации</div>
+                    <div class="r20 hide-sm-min"></div>
+                    Процесс лицензирования Free Zone компании уникален в каждой СЭЗ и зависит от вида бизнес-активности
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/shield.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Визовые ограничения</div>
+                    <div class="r20 hide-sm-min"></div>
+                    Количество виз, которые может получить компания, зависит от размера арендуемого помещения
+                </div>
+            </div>
+            <div class="block-snake__item fadeInUp">
+                <div class="block-snake__icon-wrap">
+                    <img src="/git/img/contour-only/white/office.svg" alt="" class="block-snake__icone" loading="lazy">
+                </div>
+                <div class="block-snake__text block-snake__text_gray">
+                    <div class="block-snake__text-header">Продление лицензий</div>
+                    <div class="r20 hide-sm-min"></div>
+                    Ряд СЭЗ ОАЭ предъявляют требования к сдаче ежегодной финансовой отчетности и аудиту
+                </div>
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+        
+        <a href="#" class="btn btn_gray-bg btn_center btn_border2 btn_white btn_space-between z-idx3" onclick="toggleModal('form01');">
+            Получить консультацию
+            <svg class="btn__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 128 128">
+            <use href="#btn__icon-modal"></use>
+            </svg>
+        </a>
+
+        <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<!--  block48  -->
+<section id="scrollBlock4" class="bg-F9 z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Как выбрать СЭЗ для регистрации вашей компании?</h2>
+        <div class="r50_adaptive"></div>
+
+        <div class="block48">
+            <div class="block48__item">
+                <div class="block48__icon">
+                    <img src="/git/img/contour-only/white/doc.svg" alt="" loading="lazy">
+                </div>
+                <div class="block48__title">Регламент<br class="hide-sm-min"> инкорпорации</div>
+                <div class="block48__text">
+                    Лицензия определяет выбор СЭЗ. Каждая из Экономических Зон имеет свой собственный список бизнес-активностей. Документы, сроки регистрации и наличие дополнительных согласований зависят от внутренних регуляций
+                </div>
+            </div>
+            <div class="block48__item">
+                <div class="block48__icon">
+                    <img src="/git/img/contour-only/white/office.svg" alt="" loading="lazy">
+                </div>
+                <div class="block48__title">Логистика и наличие инфраструктуры</div>
+                <div class="block48__text">
+                    Близость транспортных узлов определяет место регистрации. Важно учитывать требования <br class="hide-sm-min">к доставке и хранению грузов, наличию производственных площадей, инженерных сетей <br class="hide-sm-min">и технических условий
+                </div>
+            </div>
+            <div class="block48__item">
+                <div class="block48__icon">
+                    <img src="/git/img/contour-only/white/calculator-tax.svg" alt="" loading="lazy">
+                </div>
+                <div class="block48__title">Затраты на регистрацию и продление</div>
+                <div class="block48__text">
+                    Расходы на инкорпорацию, аренду и продление лицензии зависят от принципов ценообразования и расположения зоны. Удалённость от Дубая и Абу-Даби определяет более бюджетное формирование ценовой политики СЭЗ
+                </div>                    
+            </div>
+        </div>
+
+        <div class="r50_adaptive"></div>
+
+        <div class="block5">
+            <img src="/git/img/contour-only/black-and-red/bank-building.svg" alt="" class="block5__icon">            
+            <div class="block5__text">
+                У банков есть свой внутренний рейтинг зон ОАЭ, по которому они определяют надежность зарегистрированных там компаний, что может в будущем существенно облегчить ситуацию <br class="hide-sm-min">с открытием банковских счетов. Контрагенты также уделяют особое внимание юрисдикиции инкорпорации, поэтому, если Вы планируете выход на внутренний рынок, следует уделить внимание премиальным СЭЗ или открыть бизнес на локальной земле.
+            </div>
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+    <div class="r1 r_bg-gray"></div>
+</section>
+
+<!--        Решения            -->
+<section id="scrollBlock5" class="bg-FF z-idx3">
+    <div class="container_bem">
+        <div class="r60_adaptive"></div>
+        <h2 class="title">Решения SORP по сопровождению компаний, зарегистрированных в ОАЭ</h2>
+        <div class="r50_adaptive"></div>
+        <div class="block14">
+            <div class="block14__item">
+                <div class="block14__title">Методологии <br class="hide-sm-min"> и бизнес - анализ</div>
+                <div class="block14__text">Мы проведем исследования рынка и конкурентной среды, особенностей законодательства. Подберём площади для создания и ведения бизнеса, реализуем выбранную стратегию</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Консалтинговое сопровождение</div>
+                <div class="block14__text">Обеспечим прохождение всех этапов старта ведения бизнеса. Выстроим взаимоотношения с государственными органами, сопровождающими бизнес - деятельность</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Номинальные сервисы</div>
+                <div class="block14__text">Предоставим ограниченного в правах директора и акционера для исключения трансфертного ценообразования и сокрытия фактических бенефициаров компании</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Оформление налогового резидентства</div>
+                <div class="block14__text">Получение статуса налогового резидента - защиты от обмена налоговой информацией по стандарту CRS и применение соглашений об исключении двойного налогообложения</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Международное Налоговое Планирование</div>
+                <div class="block14__text">Индивидуальные решения по повышению эффективности схем налоговой оптимизации международного бизнеса на  базе законодательства ОАЭ  и успешной экспертизе</div>
+            </div>
+            <div class="block14__item">
+                <div class="block14__title">Подтверждение экономического присутствия в ОАЭ</div>
+                <div class="block14__text">Доказательство факта ведения операционной деятельности по месту регистрации компании, наличия центра управления и налоговой принадлежности операций к ОАЭ</div>
+            </div>            
+        </div>
+        <div class="r60_adaptive"></div>
+    </div>
+</section>
+
+<div class="bg bg_red z-idx3">
+    <div class="r30"></div>
+    <div class="r5"></div>
+    <div class="container_bem">
+        <div class="feedback-block">
+            <div class="feedback-block__text">Узнайте о возможностях, которые откроют Свободные Экономические Зоны ОАЭ для вашего бизнеса</div>
+            <div class="feedback-block__btn" onclick="toggleModal('form01');">Получить консультацию</div>
+        </div>
+    </div>
+    <div class="r30"></div>
+    <div class="r5"></div>
+</div>
+
+<!-- Почему SORP - Slider -->
+<section class="bg-F9" id="scrollBlock6">
+    <div class="container_bem">
+		<div class="r60_adaptive"></div>
+		<h2 class="title">Многолетний опыт SORP — гарантия успеха вашего бизнеса в ОАЭ</h2>
+			<div id="vslideouter" class="slider_02 text_slider">
+				<div class="slide-elem tslider-item-new flex_column first">
+					<div class="back"></div>
+					<div class="tslider-item__number">Статус эксперта</div>
+					<div class="tslider-item__text fadeInUp">Мы способны принять юридически верное решение по планированию стратегии Вашей компании для защиты от налогового обмена</div>
+				</div>
+
+				<div class="text_slider__inner">
+					<div class="slide-elem tslider-item-new flex_column second">
+						<div class="back"></div>
+						<div class="tslider-item__number">Комплекс всех услуг</div>
+						<div class="tslider-item__text wow fadeInUp">Компания предлагает комплексное решение для бизнеса и акционеров: от регистрации компаний до получения статуса налогового резидента страны</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column third">
+						<div class="back"></div>
+						<div class="tslider-item__number">15 лет опыта в ОАЭ</div>
+						<div class="tslider-item__text">В области регистрации, сопровождения компаний, финансового и налогового планирования</div>
+					</div>
+
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Комплексное обслуживание</div>
+						<div class="tslider-item__text">Комплексное решение от подготовки бизнес-плана до регистрации компании, полный спектр услуг по сопровождению юридических и физических лиц</div>
+					</div>									
+					
+					<div class="slide-elem tslider-item-new flex_column">
+						<div class="back"></div>
+						<div class="tslider-item__number">Собственный бизнес-центр SORP</div>
+						<div class="tslider-item__text">5000 квадратных метров современных офисных пространств престижной локации Дубая в аренду для размещения бизнеса и прохождения процедур лицензирования</div>
+					</div>
+					
+				    <div class="tns-controls">
+					    <div class="button" onclick="slideup()"></div>
+					    <div class="button" onclick="slidedown()"></div>
+				    </div>
+			    </div>
+		</div>
+	</div>
+</section>
+
+<!-- registration -->
+<section class="bg-F9" id="scrollBlock7">
+    <div class="r1 r_bg-gray"></div>
+    <div class="container_bem">
+      <div class="r60_adaptive"></div>
+      <div class="registration">
+        <div class="registration__info">
+          <div class="registration__title">Зарегистрируйте<br class="hide-sm-min"> компанию в СЭЗ</div>
+          <div class="r20"></div>
+          Оставьте заявку и получите консультацию специалиста по инкорпорации Free Zone Establishment в ОАЭ.
+          <br><br>
+          Эксперты SORP Group подберут оптимальное  решение по регистрации Вашей компании с учетом стоящих перед Вами целей и окажут всестороннюю поддержку.
+          <br><br>
+          Уже сегодня Вы сможете сделать первый шаг на пути к созданию успешного бизнеса!
+        </div>
+        <div class="registration__form-block">
+            <div class="registration__title">Зарегистрировать компанию</div>
+            <div class="r10"></div>
+            {$_modx->getChunk('form4_new')}
+        </div>
+      </div>
+      <div class="r60_adaptive"></div>
+    </div>  
+    <div class="r1 r_bg-gray"></div>  
+</section>
+
+{/block}
+{include 'footer_new'}
